@@ -1,0 +1,50 @@
+.layout_12col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.6rem;
+}
+
+.home-header_heading {
+  font-size: clamp(3.2rem, 12.8vw, 40rem);
+  text-transform: uppercase;
+  grid-column-start: span 12;
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.home-header_img-wrap {
+  grid-column-start: span 7;
+}
+
+.home-header_img-wrap img {
+  width: 100%;
+}
+
+.home-header_content-wrap {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.2rem;
+  padding-top: 9.5rem;
+  line-height: 1.15;
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 2;
+}
+
+.home-header_motto {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  align-self: flex-end;
+}
+
+.button-group {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.is-full-width {
+  width: 100%;
+}
