@@ -3618,6 +3618,21 @@ h3 {
   letter-spacing: -0.03em !important;
 }
 
+.layout_12col {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.6rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.is-full-width {
+  width: 100%;
+}
+
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover,

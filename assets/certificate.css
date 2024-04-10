@@ -1,0 +1,10 @@
+.section_heading-wrap {
+  grid-column-start: span 5;
+}
+
+.certificate_content-wrap {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
