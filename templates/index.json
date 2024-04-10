@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,10 +22,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "button"],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -46,14 +43,14 @@
           "type": "featured_collection",
           "settings": {
             "collection": "courses",
-            "button_name": "Open"
+            "button_name": "View Courses"
           }
         },
         "featured_collection_EV9Bp4": {
           "type": "featured_collection",
           "settings": {
             "collection": "products",
-            "button_name": "Open"
+            "button_name": "Shop Now"
           }
         }
       },
@@ -73,8 +70,5 @@
       }
     }
   },
-  "order": [
-    "home-header",
-    "card-links"
-  ]
+  "order": ["home-header", "card-links"]
 }
