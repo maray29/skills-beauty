@@ -8,3 +8,15 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
+
+.certificate_img-wrap {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.certificate_img-wrap img {
+  width: 100%;
+  height: auto;
+}

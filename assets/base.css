@@ -878,6 +878,7 @@ summary::-webkit-details-marker {
   font-size: 2.2rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.03em;
+  margin-top: 0rem;
   /* color: rgba(var(--color-foreground), 0.7); */
 }
 
