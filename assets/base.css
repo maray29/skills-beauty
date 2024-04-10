@@ -3,6 +3,7 @@
   --alpha-button-border: 1;
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
+  --border-primary: #d4d8dd;
 }
 
 .product-card-wrapper .card,
@@ -118,10 +119,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
-  .page-width {
-    padding: 0 5rem;
-  }
-
   .header.page-width,
   .utility-bar__grid.page-width {
     padding-left: 3.2rem;
@@ -3606,6 +3603,9 @@ details-disclosure > details {
 html {
   scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+}
 
 h2 {
   text-transform: uppercase;
@@ -3617,6 +3617,21 @@ h3 {
   font-size: calc(var(--font-heading-scale) * 2rem) !important;
   font-weight: 600 !important;
   letter-spacing: -0.03em !important;
+}
+
+.padding-section-small {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.padding-section-medium {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.padding-section-large {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .layout_12col {

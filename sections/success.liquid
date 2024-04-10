@@ -1,11 +1,22 @@
-{{ 'certificate.css' | asset_url | stylesheet_tag }}
+{{ 'success.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width padding-section-large">
   <div class="layout_12col">
-    <div class="section_heading-wrap">
-      <h2 class="h1">Подарочный Сертификат</h2>
+    <div class="section_img-wrap">
+      {%- if section.settings.header_img != blank -%}
+        {{
+          section.settings.header_img
+          | image_url: width: 1500
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
     </div>
-    <div class="certificate_content-wrap">
+    <div class="section_heading-wrap">
+      <h2 class="h1">Наши успехи в Beauty Сфeре</h2>
+    </div>
+    <div class="success_content-wrap">
       {% render 'tag-component', tag_content: section.settings.tag_content %}
       {% comment %}
         {%- for block in section.blocks -%}
@@ -13,7 +24,7 @@
       {% endcomment %}
       <p class="subtitle">Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
     </div>
-    <div class="certificate_img-wrap">
+    <div class="success_img-wrap">
       {%- if section.settings.image != blank -%}
         {{
           section.settings.image
@@ -29,14 +40,19 @@
 
 {% schema %}
 {
-  "name": "t:sections.certificate.name",
+  "name": "t:sections.success.name",
   "tag": "section",
-  "class": "section_certificate",
+  "class": "section_success",
   "settings": [
     {
       "type": "image_picker",
+      "id": "header_img",
+      "label": "t:sections.success.settings.header_img.label"
+    },
+    {
+      "type": "image_picker",
       "id": "image",
-      "label": "t:sections.certificate.settings.image.label"
+      "label": "t:sections.success.settings.image.label"
     },
     {
       "type": "text",

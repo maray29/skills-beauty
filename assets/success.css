@@ -1,0 +1,14 @@
+.section_img-wrap {
+  display: flex;
+  grid-column-start: span 6;
+}
+
+.section_heading-wrap {
+  grid-column-start: 6;
+  grid-column-end: 13;
+}
+
+.success_img-wrap {
+  grid-column-start: span 12;
+  grid-row-start: 3;
+}

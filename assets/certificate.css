@@ -1,5 +1,6 @@
 .section_heading-wrap {
   grid-column-start: span 5;
+  padding-bottom: 6rem;
 }
 
 .certificate_content-wrap {
@@ -10,6 +11,10 @@
 }
 
 .certificate_img-wrap {
+  display: flex;
+  border-radius: 1.2rem;
+  border: 1px solid var(--border-primary);
+  overflow: hidden;
   grid-column-start: 7;
   grid-column-end: 12;
   grid-row-start: 3;
