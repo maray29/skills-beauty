@@ -494,6 +494,10 @@
   }
 }
 
-.card-links > img {
+.card-links .card:hover .media.media--hover-effect > img:first-child:only-child,
+.card-links
+  .card-wrapper:hover
+  .media.media--hover-effect
+  > img:first-child:only-child {
   transform: scale(1);
 }

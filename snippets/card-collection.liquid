@@ -8,9 +8,10 @@
   - extend_height: {Boolean} Card height extends to available container space. Default: false (optional)
   - wrapper_class: {String} Wrapper class for card (optional)
   - placeholder_image: {String} Placeholder image when collection is empty (optional)
+  - button_name: {String} Custom name for the button. Default is the collection title (optional)
 
   Usage:
-  {% render 'card-collection' %}
+  {% render 'card-collection', button_name: 'Shop Now' %}
 {% endcomment %}
 
 {%- liquid
@@ -31,7 +32,7 @@
   endif
 -%}
 
-<div class="card-wrapper animate-arrow {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
+<div class="card-wrapper {% if wrapper_class and wrapper_class != 'none' %}{{ wrapper_class }}{% else %}collection-card-wrapper{% endif %}">
   <div
     class="
       card
@@ -90,9 +91,11 @@
                 {% else %}
                   href="{{ card_collection.url }}"
                 {% endif %}
-                class="full-unstyled-link"
+                class="button"
               >
-                {%- if card_collection.title != blank -%}
+                {%- if button_name != blank -%}
+                  {{- button_name | escape -}}
+                {%- elsif card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
@@ -122,7 +125,7 @@
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
-              class="full-unstyled-link"
+              class="button is-full-width"
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}

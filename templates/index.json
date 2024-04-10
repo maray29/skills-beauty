@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,10 +22,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "button"],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -53,7 +50,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -61,10 +58,7 @@
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "button"],
       "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
@@ -108,41 +102,8 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_mbNfPe": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_BWjUJY": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "courses"
-          }
-        },
-        "featured_collection_EV9Bp4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "products"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_BWjUJY",
-        "featured_collection_EV9Bp4"
-      ],
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "card-links": {
-      "type": "collection-list",
+      "type": "card-links",
       "blocks": {
         "featured_collection_BWjUJY": {
           "type": "featured_collection",
@@ -175,11 +136,5 @@
       }
     }
   },
-  "order": [
-    "home-header",
-    "image_banner",
-    "featured_collection",
-    "card-links",
-    "collection_list_mbNfPe"
-  ]
+  "order": ["home-header", "image_banner", "featured_collection", "card-links"]
 }
