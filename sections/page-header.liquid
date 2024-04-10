@@ -1,0 +1,22 @@
+{{ 'page-header.css' | asset_url | stylesheet_tag }}
+
+<div class="layout_12col">
+  <div class="page-header_heading-wrap">
+    <h2>Подарочный Сертификат</h2>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "page-header",
+  "tag": "section",
+  "class": "page-header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.page-header.settings.image.label"
+    }
+  ]
+}
+{% endschema %}

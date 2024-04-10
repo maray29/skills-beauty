@@ -1,0 +1,32 @@
+<div class="layout_12col">
+  <div class="section_heading-wrap">
+    <h2>Подарочный Сертификат</h2>
+  </div>
+  <div class="certificate_content-wrap">
+    {%- for block in section.blocks -%}
+      {% render 'tag-component', tag_content: block.settings.tag_content %}
+    {%- endfor -%}
+    <p>Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "certificate",
+  "tag": "section",
+  "class": "section_certificate",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.certificate.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "tag_content",
+      "default": "Наши задачи и цели",
+      "label": "Tag Content"
+    }
+  ]
+}
+{% endschema %}
