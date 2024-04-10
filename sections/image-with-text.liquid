@@ -80,8 +80,17 @@
                   >
                     {{ block.settings.caption | escape }}
                   </p>
+                {%- when 'tag' -%}
+                  <div class="tag">
+                    <span class="icon-wrap">{% render 'icon-asterisk' %}</span>
+                    {{ block.settings.tag_content }}
+                  </div>
                 {%- when 'text' -%}
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                    <div class="tag">
+                      <span class="icon-wrap">{% render 'icon-asterisk' %}</span>
+                      Наши задачи и цели
+                    </div>
                     {{ block.settings.text }}
                   </div>
                 {%- when 'button' -%}
@@ -457,6 +466,18 @@
           "id": "button_style_secondary",
           "default": false,
           "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+        }
+      ]
+    },
+    {
+      "type": "tag",
+      "name": "Tag",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag_content",
+          "default": "Наши задачи и цели",
+          "label": "Tag Content"
         }
       ]
     }

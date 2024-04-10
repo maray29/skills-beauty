@@ -75,7 +75,7 @@
         "heading_DniyBW": {
           "type": "heading",
           "settings": {
-            "heading": "Our mission & goals",
+            "heading": "Our goals & mission",
             "heading_size": "h1"
           }
         },
@@ -89,7 +89,7 @@
         "button_JPrQy7": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
