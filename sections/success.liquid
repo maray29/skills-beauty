@@ -14,15 +14,15 @@
       {%- endif -%}
     </div>
     <div class="section_heading-wrap">
+      {% render 'tag-component', tag_content: section.settings.tag_content %}
       <h2 class="h1">Наши успехи в Beauty Сфeре</h2>
+      <p class="subtitle">Небольшой параграф про опыт работы, обучении, и тд.</p>
     </div>
     <div class="success_content-wrap">
-      {% render 'tag-component', tag_content: section.settings.tag_content %}
       {% comment %}
         {%- for block in section.blocks -%}
         {%- endfor -%}
       {% endcomment %}
-      <p class="subtitle">Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
     </div>
     <div class="success_img-wrap">
       {%- if section.settings.image != blank -%}

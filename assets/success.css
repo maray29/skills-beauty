@@ -3,6 +3,10 @@
   grid-column-start: span 6;
 }
 
+.section_img-wrap img {
+  width: 100%;
+}
+
 .section_heading-wrap {
   grid-column-start: 6;
   grid-column-end: 13;
