@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,18 +22,12 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "color_scheme": "scheme-3"
       }
     },
     "card-links": {
@@ -79,11 +73,11 @@
             "heading_size": "h1"
           }
         },
-
         "text_jNgJXx": {
           "type": "text",
           "settings": {
-            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
+            "tag_content": "Наши задачи и цели",
             "text_style": "subtitle"
           }
         },
@@ -98,12 +92,11 @@
       },
       "block_order": [
         "heading_DniyBW",
-        "tag_JG6eKR",
         "text_jNgJXx",
         "button_JPrQy7"
       ],
       "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
+        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -121,11 +114,8 @@
     "certificate": {
       "type": "certificate",
       "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "tag_content": "Наши задачи и цели"
       }
     }
   },
