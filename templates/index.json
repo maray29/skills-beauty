@@ -53,7 +53,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "products",
-            "button_name": "Open"
+            "button_name": "Shop now"
           }
         }
       },
