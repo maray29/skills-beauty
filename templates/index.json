@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,7 +22,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -79,10 +82,16 @@
             "heading_size": "h1"
           }
         },
+        "tag_JG6eKR": {
+          "type": "tag",
+          "settings": {
+            "tag_content": "Наши задачи и цели!"
+          }
+        },
         "text_jNgJXx": {
           "type": "text",
           "settings": {
-            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
             "text_style": "subtitle"
           }
         },
@@ -95,9 +104,14 @@
           }
         }
       },
-      "block_order": ["heading_DniyBW", "text_jNgJXx", "button_JPrQy7"],
+      "block_order": [
+        "heading_DniyBW",
+        "tag_JG6eKR",
+        "text_jNgJXx",
+        "button_JPrQy7"
+      ],
       "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
+        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -113,5 +127,9 @@
       }
     }
   },
-  "order": ["home-header", "card-links", "image_with_text_zLdqtf"]
+  "order": [
+    "home-header",
+    "card-links",
+    "image_with_text_zLdqtf"
+  ]
 }
