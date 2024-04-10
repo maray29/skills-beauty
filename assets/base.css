@@ -312,7 +312,7 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 6.4rem);
   }
 }
 
@@ -875,8 +875,8 @@ summary::-webkit-details-marker {
 }
 
 .subtitle {
-  font-size: 1.8rem;
-  line-height: calc(1 + 0.8 / var(--font-body-scale));
+  font-size: 2.4rem;
+  line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.06rem;
   color: rgba(var(--color-foreground), 0.7);
 }
@@ -3604,6 +3604,11 @@ details-disclosure > details {
 
 html {
   scroll-behavior: smooth;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: -0.03em !important;
 }
 
 h3 {
