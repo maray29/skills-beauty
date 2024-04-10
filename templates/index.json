@@ -82,7 +82,7 @@
         "text_jNgJXx": {
           "type": "text",
           "settings": {
-            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере. Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
+            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере. Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
             "text_style": "body"
           }
         },
@@ -95,13 +95,9 @@
           }
         }
       },
-      "block_order": [
-        "heading_DniyBW",
-        "text_jNgJXx",
-        "button_JPrQy7"
-      ],
+      "block_order": ["heading_DniyBW", "text_jNgJXx", "button_JPrQy7"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
+        "image": "shopify://shop_images/about_img-wrap.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -117,13 +113,5 @@
       }
     }
   },
-<<<<<<< HEAD
-  "order": ["home-header", "card-links"]
-=======
-  "order": [
-    "home-header",
-    "card-links",
-    "image_with_text_zLdqtf"
-  ]
->>>>>>> 9bd3963cd73414d6fe051e53f5efa2993f266ae6
+  "order": ["home-header", "card-links", "image_with_text_zLdqtf"]
 }
