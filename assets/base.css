@@ -3608,7 +3608,14 @@ html {
   margin: 0;
 }
 
+h1 {
+  font-size: clamp(4rem, 6vw, 10rem) !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1 !important;
+}
+
 h2 {
+  font-size: calc(var(--font-heading-scale) * 6.4rem) !important;
   text-transform: uppercase;
   letter-spacing: -0.03em !important;
   line-height: 1 !important;

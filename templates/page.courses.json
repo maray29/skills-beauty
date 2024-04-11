@@ -1,22 +1,58 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "page-header": {
       "type": "page-header",
       "settings": {
-        "image": "shopify:\/\/shop_images\/success_img.webp",
-        "heading": "Courses"
+        "image": "shopify://shop_images/success_img.webp",
+        "heading": "Courses",
+        "tag": "Skills Beauty",
+        "subheading": "Мы создаем сообщество, которое усиливает уверенность в себе через искусство и науку о красоте."
+      }
+    },
+    "image_with_text_zLdqtf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_DniyBW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Цель наших курсов",
+            "heading_size": "h1"
+          }
+        },
+        "text_jNgJXx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+            "tag_content": "Наши задачи и цели",
+            "text_style": "subtitle"
+          }
+        },
+        "button_JPrQy7": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": ["heading_DniyBW", "text_jNgJXx", "button_JPrQy7"],
+      "settings": {
+        "image": "shopify://shop_images/about_img-wrap.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
-  "order": [
-    "main",
-    "page-header"
-  ]
+  "order": ["page-header", "image_with_text_zLdqtf"]
 }

@@ -1,8 +1,41 @@
 {{ 'page-header.css' | asset_url | stylesheet_tag }}
 
-<div class="layout_12col">
-  <div class="page-header_heading-wrap">
-    <h1>{{ section.settings.heading }}</h1>
+<div class="page-width">
+  <div class="layout_12col">
+    <div class="page-header_heading-wrap">
+      <div class="tag">{{ section.settings.tag }}</div>
+      <h1 class="h1 text-style-allcaps">{{ section.settings.heading }}</h1>
+    </div>
+    <div class="page-header_img-wrap">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1500
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+    <div class="page-header_content-wrap">
+      <p class="subtitle">{{ section.settings.subheading }}</p>
+      <div class="button-group">
+        {%- if section.settings.button_label != blank -%}
+          <a
+            {% if section.settings.button_link == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.button_link }}"
+            {% endif %}
+            class="button is-full-width"
+            {{ section.shopify_attributes }}
+          >
+            {{ section.settings.button_label | escape }}
+            {% render 'icon-arrow-down' %}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
   </div>
 </div>
 
@@ -22,6 +55,30 @@
       "id": "heading",
       "default": "Courses",
       "label": "t:sections.page-header.heading.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "tag",
+      "default": "Skills Beauty",
+      "label": "t:sections.page-header.tag.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "default": "Some text that relates to the page and the value prop.",
+      "label": "t:sections.page-header.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Посмотреть все курсы",
+      "label": "t:sections.page-header.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "default": "/",
+      "label": "t:sections.page-header.settings.button_link.label"
     }
   ]
 }
