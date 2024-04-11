@@ -2,7 +2,7 @@
 
 <div class="layout_12col">
   <div class="page-header_heading-wrap">
-    <h2>Подарочный Сертификат</h2>
+    <h1>{{ section.settings.heading }}</h1>
   </div>
 </div>
 
@@ -16,6 +16,12 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.page-header.settings.image.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Courses",
+      "label": "t:sections.page-header.heading.label"
     }
   ]
 }

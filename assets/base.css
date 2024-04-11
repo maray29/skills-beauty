@@ -873,7 +873,7 @@ summary::-webkit-details-marker {
 
 .subtitle {
   font-size: 2.2rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
   letter-spacing: 0.03em;
   margin-top: 0rem;
   /* color: rgba(var(--color-foreground), 0.7); */
@@ -1243,6 +1243,7 @@ button.shopify-payment-button__button--unbranded {
   justify-content: center;
   align-items: center;
   border: 0;
+  gap: 0.8rem;
   /* padding: 0 2rem; */
   cursor: pointer;
   font: inherit;
@@ -3634,6 +3635,47 @@ h3 {
   padding-bottom: 8rem;
 }
 
+.max-width-small {
+  max-width: 32rem;
+}
+
+.max-width-medium {
+  max-width: 42rem;
+}
+
+.max-width-large {
+  max-width: 52rem;
+}
+
+.text-size-normal {
+  font-size: 1.6rem;
+}
+
+.text-size-medium {
+  font-size: 2rem;
+}
+
+.text-size-large {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.text-weight-medium {
+  font-weight: 500;
+}
+
+.text-weight-semibold {
+  font-weight: 600;
+}
+
+.text-weight-bold {
+  font-weight: 700;
+}
+
+.text-style-allcaps {
+  text-transform: uppercase;
+}
+
 .layout_12col {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -3643,6 +3685,13 @@ h3 {
 .button-group {
   display: flex;
   gap: 1.6rem;
+  padding-top: 3.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .button-group {
+    flex-direction: column;
+  }
 }
 
 .is-full-width {
@@ -3655,6 +3704,11 @@ h3 {
 .shopify-payment-button__button--unbranded:hover {
   background-color: white;
   color: black;
+}
+
+.button--secondary:hover {
+  background-color: black !important;
+  color: white !important;
 }
 
 .tag {

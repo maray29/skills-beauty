@@ -2,7 +2,7 @@
 
 <div class="page-width padding-section-large">
   <div class="layout_12col">
-    <div class="section_img-wrap">
+    <div class="success_header-img-wrap">
       {%- if section.settings.header_img != blank -%}
         {{
           section.settings.header_img
@@ -13,16 +13,72 @@
         {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
       {%- endif -%}
     </div>
-    <div class="section_heading-wrap">
+    <div class="success_heading-wrap">
       {% render 'tag-component', tag_content: section.settings.tag_content %}
       <h2 class="h1">Наши успехи в Beauty Сфeре</h2>
-      <p class="subtitle">Небольшой параграф про опыт работы, обучении, и тд.</p>
+      <p class="subtitle max-width-medium">Небольшой параграф про опыт работы, обучении, и тд.</p>
     </div>
-    <div class="success_content-wrap">
-      {% comment %}
-        {%- for block in section.blocks -%}
-        {%- endfor -%}
-      {% endcomment %}
+    <div class="success_items">
+      <div class="success_item">
+        <div class="success_number">{{ section.settings['success_item-1_number'] }}</div>
+        <div class="text-size-large text-weight-medium">{{ section.settings['success_item-1_text'] }}</div>
+        <div class="success_button-wrap">
+          {%- if section.settings['success_item-1_button_label'] != blank -%}
+            <a
+              {% if section.settings['success_item-1_button_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.success_item-1_button_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['success_item-1_button_label'] | escape }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="success_item">
+        <div class="success_number">{{ section.settings['success_item-2_number'] }}</div>
+        <div class="text-size-large text-weight-medium">{{ section.settings['success_item-2_text'] }}</div>
+        <div class="success_button-wrap">
+          {%- if section.settings['success_item-2_button_label'] != blank -%}
+            <a
+              {% if section.settings['success_item-2_button_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.success_item-2_button_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['success_item-2_button_label'] | escape }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="success_item">
+        <div class="success_number">{{ section.settings['success_item-3_number'] }}</div>
+        <div class="text-size-large text-weight-medium">{{ section.settings['success_item-3_text'] }}</div>
+        <div class="success_button-wrap">
+          {%- if section.settings['success_item-3_button_label'] != blank -%}
+            <a
+              {% if section.settings['success_item-1_button_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.success_item-3_button_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['success_item-3_button_label'] | escape }}
+              {% render 'icon-arrow-up-right' %}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
     </div>
     <div class="success_img-wrap">
       {%- if section.settings.image != blank -%}
@@ -59,6 +115,78 @@
       "id": "tag_content",
       "default": "Наши задачи и цели",
       "label": "Tag Content"
+    },
+    {
+      "type": "text",
+      "id": "success_item-1_number",
+      "default": "2300+",
+      "label": "Success item number"
+    },
+    {
+      "type": "text",
+      "id": "success_item-1_text",
+      "default": "Счастливых клиентов",
+      "label": "Success item text"
+    },
+    {
+      "type": "text",
+      "id": "success_item-1_button_label",
+      "default": "О Нашей Студии",
+      "label": "t:sections.success.settings.success_item-1_button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "success_item-1_button_link",
+      "default": "/",
+      "label": "t:sections.success.settings.success_item-1_button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "success_item-2_number",
+      "default": "168+",
+      "label": "Success item number"
+    },
+    {
+      "type": "text",
+      "id": "success_item-2_text",
+      "default": "Проведенных оффлайн уроков",
+      "label": "Success item text"
+    },
+    {
+      "type": "text",
+      "id": "success_item-2_button_label",
+      "default": "Наши Курсы",
+      "label": "t:sections.success.settings.success_item-2_button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "success_item-2_button_link",
+      "default": "/",
+      "label": "t:sections.success.settings.success_item-2_button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "success_item-3_number",
+      "default": "100,000+",
+      "label": "Success item number"
+    },
+    {
+      "type": "text",
+      "id": "success_item-3_text",
+      "default": "Просмотров на Youtube",
+      "label": "Success item text"
+    },
+    {
+      "type": "text",
+      "id": "success_item-3_button_label",
+      "default": "Наш Youtube",
+      "label": "t:sections.success.settings.success_item-3_button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "success_item-3_button_link",
+      "default": "/",
+      "label": "t:sections.success.settings.success_item-3_button_link.label"
     }
   ],
   "presets": [

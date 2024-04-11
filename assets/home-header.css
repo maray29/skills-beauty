@@ -9,18 +9,21 @@
 }
 
 .home-header_img-wrap {
+  display: flex;
   grid-column-start: span 7;
 }
 
 .home-header_img-wrap img {
   width: 100%;
+  height: auto;
 }
 
 .home-header_content-wrap {
   display: flex;
   flex-direction: column;
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 1.5vw, 2rem);
   padding-top: 9.5rem;
+  padding-left: 2rem;
   line-height: 1.15;
   grid-column-start: 8;
   grid-column-end: 13;
@@ -32,4 +35,8 @@
   grid-column-end: 13;
   grid-row-start: 2;
   align-self: flex-end;
+}
+
+.home-header_motto > * {
+  padding-bottom: 0rem;
 }
