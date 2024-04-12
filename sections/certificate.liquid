@@ -3,9 +3,9 @@
 <div class="page-width padding-section-large">
   <div class="layout_12col">
     <div class="section_heading-wrap">
-      <h2 class="h1">Подарочный Сертификат</h2>
+      <h2>{{ section.settings.heading }}</h2>
     </div>
-    <div class="certificate_content-wrap">
+    <div class="section_subheading-wrap">
       {% render 'tag-component', tag_content: section.settings.tag_content %}
       {% comment %}
         {%- for block in section.blocks -%}
@@ -33,6 +33,12 @@
   "tag": "section",
   "class": "section_certificate",
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Подарочный Сертификат",
+      "label": "t:sections.team.settings.heading.label"
+    },
     {
       "type": "image_picker",
       "id": "image",

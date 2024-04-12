@@ -1,0 +1,50 @@
+{{ 'certificate.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width padding-section-large">
+  <div class="layout_12col">
+    <div class="section_heading-wrap">
+      {% render 'tag-component', tag_content: section.settings.tag_content %}
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+    <div class="section_subheading-wrap">
+      <p class="subtitle">Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
+    </div>
+    <div>
+      {% for member in shop.metaobjects.team_member %}
+        <div>member.name</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.team.name",
+  "tag": "section",
+  "class": "section_team",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Page heading",
+      "label": "t:sections.team.settings.heading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.team.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "tag_content",
+      "default": "Специалисты Skills Beauty",
+      "label": "Tag Content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.team.presets.name"
+    }
+  ]
+}
+{% endschema %}
