@@ -1,5 +1,5 @@
 .home-header_heading {
-  font-size: clamp(3.2rem, 12.8vw, 40rem);
+  font-size: clamp(3.2rem, 12.8vw, 40rem) !important;
   text-transform: uppercase;
   grid-column-start: span 12;
   padding: 0rem 0rem;
