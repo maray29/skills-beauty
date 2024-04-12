@@ -1,4 +1,5 @@
-{{ 'certificate.css' | asset_url | stylesheet_tag }}
+{{ 'team.css' | asset_url | stylesheet_tag }}
+{{ 'section.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width padding-section-large">
   <div class="layout_12col">
@@ -7,11 +8,44 @@
       <h2>{{ section.settings.heading }}</h2>
     </div>
     <div class="section_subheading-wrap">
-      <p class="subtitle">Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
+      <p class="subtitle">{{ section.settings.subheading }}</p>
     </div>
-    <div>
-      {% for member in shop.metaobjects.team_member %}
-        <div>member.name</div>
+    <div class="team_list">
+      {% for member in shop.metaobjects.team_member.values %}
+        <div class="team_item">
+          <div class="team_photo">
+            {% comment %} {{ member.photo | metafield_tag }} {% endcomment %}
+            <img
+              srcset="
+                {%- if member.photo.width >= 165 -%}{{ member.photo | image_url: width: 165 }} 165w,{%- endif -%}
+                {%- if member.photo.width >= 360 -%}{{ member.photo | image_url: width: 360 }} 360w,{%- endif -%}
+                {%- if member.photo.width >= 533 -%}{{ member.photo | image_url: width: 533 }} 533w,{%- endif -%}
+                {%- if member.photo.width >= 720 -%}{{ member.photo | image_url: width: 720 }} 720w,{%- endif -%}
+                {%- if member.photo.width >= 940 -%}{{ member.photo | image_url: width: 940 }} 940w,{%- endif -%}
+                {%- if member.photo.width >= 1066 -%}{{ member.photo | image_url: width: 1066 }} 1066w,{%- endif -%}
+                {{ member.photo | image_url }} {{ member.photo.width }}w
+              "
+              src="{{ member.photo | image_url: width: 533 }}"
+              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
+              alt="{{ member.photo.alt | escape }}"
+              class="motion-reduce"
+              loading="lazy"
+              width="{{ member.photo.width }}"
+              height="{{ member.photo.height }}"
+            >
+          </div>
+          <div>
+            <h3 class="team_name">
+              {{ member.name }}
+            </h3>
+            <div class="team_title">
+              {{ member.title }}
+            </div>
+          </div>
+          <p>
+            {{ member.bio }}
+          </p>
+        </div>
       {% endfor %}
     </div>
   </div>
@@ -28,6 +62,12 @@
       "id": "heading",
       "default": "Page heading",
       "label": "t:sections.team.settings.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "Небольшой параграф рассказывающий о специалистах курсов.",
+      "label": "t:sections.team.settings.subheading.label"
     },
     {
       "type": "image_picker",

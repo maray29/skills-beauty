@@ -3627,6 +3627,19 @@ h3 {
   letter-spacing: -0.03em !important;
 }
 
+.course-card__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.course-card__component {
+  display: grid;
+}
+
+.course-card__heading {
+  font-size: calc(var(--font-heading-scale) * 2.4rem) !important;
+}
+
 .padding-section-small {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -3695,6 +3708,35 @@ h3 {
   padding-top: 3.2rem;
 }
 
+.is-vertical {
+  flex-direction: column;
+}
+
+.card_button-group {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+
+.card_course-price {
+  font-size: 3.2rem !important;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.card_course {
+  padding: 1.6rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 1.2rem;
+  background-color: --var(--bg-primary);
+}
+
+.card__media {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 991px) {
   .button-group {
     flex-direction: column;
@@ -3727,6 +3769,75 @@ h3 {
   line-height: 1;
   text-transform: uppercase;
   padding-bottom: 1.6rem;
+}
+
+.course__grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.card__component {
+  border: 1px solid var(--border-primary);
+  border-radius: 1.2rem;
+  padding: 1.6rem;
+}
+
+.course__item,
+.card__component,
+.card__inner {
+  width: 100% !important;
+  max-width: none !important;
+  display: grid !important;
+  grid-template-rows: subgrid !important;
+  grid-row-start: span 5 !important;
+}
+
+.card__content {
+  display: grid !important;
+  grid-template-rows: subgrid !important;
+  grid-row-start: span 4 !important;
+  padding: 0 !important;
+}
+
+.card__information {
+  display: grid !important;
+  grid-template-rows: subgrid !important;
+  row-gap: 1.2rem !important;
+  grid-row-start: span 3 !important;
+  padding: 0rem !important;
+}
+
+.card__tag {
+  text-transform: uppercase;
+  border-radius: 100vw;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid rgba(var(--color-badge-border), var(--alpha-badge-border));
+  padding: 0.5rem 1rem;
+  justify-self: left;
+}
+
+.card__media {
+  display: grid !important;
+  grid-template-rows: subgrid !important;
+  grid-row-start: span 1 !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.card__heading {
+  font-size: calc(var(--font-heading-scale) * 2.4rem) !important;
+}
+
+.is-course-card .media {
+  position: relative !important;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.is-course-card .media img {
+  position: relative;
 }
 
 /* .grid {
