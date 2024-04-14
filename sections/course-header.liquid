@@ -1,0 +1,114 @@
+{{ 'page-header.css' | asset_url | stylesheet_tag }}
+{{ 'course-header.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+  <div class="layout_12col">
+    <div class="course-header_img-wrap">
+      {%- if metaobject.media != blank -%}
+        {{
+          metaobject.media
+          | image_url: width: 1500
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+    <div class="course-header_content-wrap">
+      <div class="course-header_heading-wrap">
+        <h1 class="course-header_heading text-style-allcaps">{{ metaobject.name }}</h1>
+        {% for instructor in metaobject.instructors.value %}
+          <div class="info_item">
+            <div class="text-weight-semibold">Преподаватель:</div>
+            <div>{{ instructor.name }}</div>
+          </div>
+        {% endfor %}
+      </div>
+      {% comment %} <p class="subtitle">{{ section.settings.subheading }}</p> {% endcomment %}
+      <div class="course-header_info">
+        <div class="info_item">
+          <div class="text-weight-semibold">Формат:</div>
+          <div>{{ metaobject.type }}</div>
+        </div>
+        {% if metaobject.access %}
+          <div class="info_item">
+            <div class="text-weight-semibold">Доступ:</div>
+            <div>{{ metaobject.access }}</div>
+          </div>
+        {% endif %}
+        <div class="info_item">
+          <div class="text-weight-semibold">Дата:</div>
+          <div>{{ metaobject.date | date: '%B %d, %Y' }}</div>
+        </div>
+        <div class="info_item">
+          <div class="text-weight-semibold">Сертификат:</div>
+          <div>{{ metaobject.certificate }}</div>
+        </div>
+        <div class="info_item">
+          <div class="text-weight-semibold">Длительность:</div>
+          <div>{{ metaobject.duration }}</div>
+        </div>
+      </div>
+      <div class="button-group">
+        <a
+          href="{{ section.settings.button_link }}"
+          class="button"
+          {{ section.shopify_attributes }}
+        >
+          Оставить заявку
+          {% render 'icon-arrow-up-right' %}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "page-header",
+  "tag": "section",
+  "class": "page-header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.page-header.settings.image.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Courses",
+      "label": "t:sections.page-header.heading.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "tag",
+      "default": "Skills Beauty",
+      "label": "t:sections.page-header.tag.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "default": "Some text that relates to the page and the value prop.",
+      "label": "t:sections.page-header.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Посмотреть все курсы",
+      "label": "t:sections.page-header.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "default": "/",
+      "label": "t:sections.page-header.settings.button_link.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.page-header.presets.name"
+    }
+  ]
+}
+{% endschema %}

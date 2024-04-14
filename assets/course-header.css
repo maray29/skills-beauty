@@ -1,0 +1,58 @@
+.course-header_content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  gap: 3.2rem;
+}
+
+.course-header_img-wrap {
+  display: flex;
+  grid-column-start: 6;
+  grid-column-end: 13;
+  grid-row-start: 1;
+}
+
+.course-header_img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.course-header_heading {
+  font-size: clamp(3.2rem, 3vw, 4.8rem) !important;
+}
+
+.course-header_heading-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.course-header_info {
+  display: flex;
+  --cols: 2;
+  --gap: 0.8rem;
+  --gap-row: 0.8rem;
+  gap: var(--gap-row) var(--gap);
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.info_item {
+  /* The flex basis is adjusted to ensure the content fits on one line, considering the padding and border if any */
+  flex-basis: calc(
+    (100% / var(--cols)) - var(--gap) + (var(--gap) / var(--cols))
+  );
+  display: flex;
+  gap: 0.6rem; /* Maintains the gap between internal items */
+  flex-grow: 0; /* Prevents the item from growing beyond its flex-basis */
+  align-items: center; /* Aligns children of the item in the center vertically */
+  white-space: nowrap; /* Ensures that the content of the item does not wrap */
+}
+
+body {
+  letter-spacing: -0.02em;
+}

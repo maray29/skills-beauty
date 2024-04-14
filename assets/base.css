@@ -3601,6 +3601,12 @@ details-disclosure > details {
 
 /* Custom CSS */
 
+@font-face {
+  font-family: "Inter";
+  src: url("{{ '[Inter-VariableFont_slnt,wght.woff2]' | asset_url }}")
+    format("[font-format]");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -3764,9 +3770,10 @@ h3 {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   line-height: 1;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   padding-bottom: 1.6rem;
 }
@@ -3776,68 +3783,10 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr !important;
 }
 
-.card__component {
-  border: 1px solid var(--border-primary);
-  border-radius: 1.2rem;
-  padding: 1.6rem;
-}
-
-.course__item,
-.card__component,
-.card__inner {
-  width: 100% !important;
-  max-width: none !important;
-  display: grid !important;
-  grid-template-rows: subgrid !important;
-  grid-row-start: span 5 !important;
-}
-
-.card__content {
-  display: grid !important;
-  grid-template-rows: subgrid !important;
-  grid-row-start: span 4 !important;
-  padding: 0 !important;
-}
-
-.card__information {
-  display: grid !important;
-  grid-template-rows: subgrid !important;
-  row-gap: 1.2rem !important;
-  grid-row-start: span 3 !important;
-  padding: 0rem !important;
-}
-
-.card__tag {
-  text-transform: uppercase;
-  border-radius: 100vw;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1;
-  border: 1px solid rgba(var(--color-badge-border), var(--alpha-badge-border));
-  padding: 0.5rem 1rem;
-  justify-self: left;
-}
-
-.card__media {
-  display: grid !important;
-  grid-template-rows: subgrid !important;
-  grid-row-start: span 1 !important;
-  position: relative !important;
-  width: 100% !important;
-}
-
-.card__heading {
-  font-size: calc(var(--font-heading-scale) * 2.4rem) !important;
-}
-
-.is-course-card .media {
-  position: relative !important;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-}
-
-.is-course-card .media img {
-  position: relative;
+.info_item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 /* .grid {
