@@ -15,13 +15,6 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    {% style %}
-      @font-face {
-        font-family: 'newinter';
-        src: url("{{ 'inter.woff2' | file_url }}") format('woff2');
-      }
-    {% endstyle %}
-
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
