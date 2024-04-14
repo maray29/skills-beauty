@@ -3,9 +3,9 @@
     "logo": "shopify://shop_images/skills-beauty-logo_809271ad-0792-44e0-9790-866b5c46e85d.svg",
     "logo_width": 150,
     "favicon": "shopify://shop_images/skills-beauty-logo-square_bd308fd0-2ea8-4d9a-9814-37a3f7f038a4.svg",
-    "type_header_font": "mont",
+    "type_header_font": "inter",
     "heading_scale": 100,
-    "type_body_font": "mont",
+    "type_body_font": "inter",
     "body_scale": 100,
     "page_width": 2400,
     "spacing_sections": 0,
@@ -252,9 +252,9 @@
           }
         }
       },
-      "type_header_font": "mont",
+      "type_header_font": "inter",
       "heading_scale": 100,
-      "type_body_font": "mont",
+      "type_body_font": "inter",
       "body_scale": 100,
       "page_width": 1200,
       "spacing_sections": 0,
