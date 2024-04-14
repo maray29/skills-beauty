@@ -3601,10 +3601,10 @@ details-disclosure > details {
 
 /* Custom CSS */
 
-@font-face {
+/* @font-face {
   font-family: "Inter";
-  src: url("{{ 'inter.woff2' | asset_url }}") format("woff2");
-}
+  src: url("{{ 'inter.woff2' | file_url }}") format("woff2");
+} */
 
 html {
   scroll-behavior: smooth;
