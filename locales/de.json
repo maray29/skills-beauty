@@ -513,5 +513,12 @@
       "expanded": "Formular für den Empfänger des Geschenkgutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Geschenkgutscheins minimiert"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "field_errors": {
+        "payment_gateway_missing": "Geben Sie eine Zahlungsmethode ein."
+      }
+    }
   }
 }
