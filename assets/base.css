@@ -3603,8 +3603,7 @@ details-disclosure > details {
 
 @font-face {
   font-family: "Inter";
-  src: url("{{ '[Inter-VariableFont_slnt,wght.woff2]' | asset_url }}")
-    format("[font-format]");
+  src: url("{{ '[Montserrat.woff2]' | asset_url }}") format("[woff2]");
 }
 
 html {
