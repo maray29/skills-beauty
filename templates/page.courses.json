@@ -3,13 +3,13 @@
     "page-header": {
       "type": "page-header",
       "settings": {
-        "image": "shopify://shop_images/success_img.webp",
+        "image": "shopify:\/\/shop_images\/success_img.webp",
         "heading": "Courses",
         "tag": "Skills Beauty",
         "subheading": "Мы создаем сообщество, которое усиливает уверенность в себе через искусство и науку о красоте."
       }
     },
-    "image_with_text": {
+    "image_with_text_zLdqtf": {
       "type": "image-with-text",
       "blocks": {
         "heading_DniyBW": {
@@ -22,8 +22,8 @@
         "text_jNgJXx": {
           "type": "text",
           "settings": {
-            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
-            "tag_content": "",
+            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
+            "tag_content": "Для чего мы делимся знаниями?",
             "text_style": "text-size-large"
           }
         },
@@ -36,9 +36,13 @@
           }
         }
       },
-      "block_order": ["heading_DniyBW", "text_jNgJXx", "button_JPrQy7"],
+      "block_order": [
+        "heading_DniyBW",
+        "text_jNgJXx",
+        "button_JPrQy7"
+      ],
       "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
+        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -49,16 +53,16 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 256,
-        "padding_bottom": 128
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "featured_collection": {
+    "featured_collection_igqxLb": {
       "type": "featured-collection",
       "settings": {
         "title": "Наши Курсы",
         "heading_size": "h1",
-        "description": "<p>Небольшой параграф рассказывающий о типах курсов и некоторых деталях.</p>",
+        "description": "<p>Небольшой параграф рассказывающий о типах курсов и некоторых деталях.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "courses",
@@ -84,12 +88,16 @@
     "team": {
       "type": "team",
       "settings": {
-        "tag_content": "Специалисты Skills Beauty",
         "heading": "Наша команда",
-        "padding_top": 128,
-        "padding_bottom": 128
+        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "tag_content": "Специалисты Skills Beauty"
       }
     }
   },
-  "order": ["page-header", "image_with_text", "team", "featured_collection"]
+  "order": [
+    "page-header",
+    "team",
+    "image_with_text_zLdqtf",
+    "featured_collection_igqxLb"
+  ]
 }
