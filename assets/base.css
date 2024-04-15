@@ -290,7 +290,7 @@ h5,
 }
 
 h1 {
-  font-size: clamp(4rem, 6vw, 10rem) !important;
+  font-size: clamp(4rem, 6vw, 10rem);
   letter-spacing: -0.03em !important;
   line-height: 1 !important;
   font-weight: 520 !important;
@@ -313,7 +313,12 @@ h3 {
 body {
   font-family: "inter", serif !important;
   line-height: 1.35 !important;
-  font-weight: 420 !important;
+  font-weight: 300 !important;
+  /* font-variation-settings: "wght" 300; */
+}
+
+strong {
+  font-weight: 600 !important;
 }
 
 .hxl {
@@ -424,20 +429,22 @@ blockquote {
 }
 
 .caption-with-letter-spacing {
-  font-size: 1rem;
-  letter-spacing: 0.13rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .caption-with-letter-spacing--medium {
-  font-size: 1.2rem;
-  letter-spacing: 0.16rem;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .caption-with-letter-spacing--large {
-  font-size: 1.4rem;
-  letter-spacing: 0.18rem;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .caption-large,
@@ -3743,7 +3750,7 @@ html {
   font-size: 3.2rem !important;
   font-weight: 620;
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.04em !important;
 }
 
 .card_course {
@@ -3790,7 +3797,7 @@ html {
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  padding-bottom: 1.6rem;
+  /* padding-bottom: 1.6rem; */
 }
 
 .course__grid {

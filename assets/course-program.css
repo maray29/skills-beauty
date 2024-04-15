@@ -1,0 +1,25 @@
+.course-program_component {
+  border-top: 1px solid #d4d8dd;
+}
+
+.course-program_program {
+  font-size: 1.8rem;
+  grid-column-start: 2;
+  grid-column-end: 13;
+  padding-top: 3.6rem;
+}
+
+.course-program_program h3 {
+  font-size: 3.2rem !important;
+  text-transform: uppercase;
+  line-height: 1.5 !important;
+}
+
+.course-program_program h3,
+.course-program_program ul {
+  padding-bottom: 3.6rem;
+}
+
+.course-program_program p {
+  padding-bottom: 1.6rem;
+}

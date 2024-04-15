@@ -1,4 +1,4 @@
-{{ 'team.css' | asset_url | stylesheet_tag }}
+{{ 'course-instructors.css' | asset_url | stylesheet_tag }}
 {{ 'section.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -18,17 +18,19 @@
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
     <div class="layout_12col">
-      {% render 'tag-component', tag_content: section.settings.tag_content %}
       <div class="section_heading-wrap">
+        {% render 'tag-component', tag_content: section.settings.tag_content %}
         <h2>{{ section.settings.heading }}</h2>
       </div>
-      <div class="section_subheading-wrap subtitle">
-        {{ section.settings.subheading }}
-      </div>
-      <div class="team_list">
-        {% for member in shop.metaobjects.team_member.values %}
-          <div class="team_item">
-            <div class="team_photo">
+      {% comment %}
+        <div class="section_subheading-wrap subtitle">
+          {{ section.settings.subheading }}
+        </div>
+      {% endcomment %}
+      <div class="instructor_list">
+        {% for member in metaobject.instructors.value %}
+          <div class="instructor_item">
+            <div class="instructor_photo">
               {% comment %} {{ member.photo | metafield_tag }} {% endcomment %}
               <img
                 srcset="
@@ -49,16 +51,16 @@
                 height="{{ member.photo.height }}"
               >
             </div>
-            <div class="team_info">
-              <h3 class="team_name">
+            <div class="instructor_info">
+              <h3 class="instructor_name">
                 {{ member.name }}
               </h3>
-              <div class="team_title">
+              <div class="instructor_title">
                 {{ member.title }}
               </div>
-            </div>
-            <div>
-              {{ member.description | metafield_tag }}
+              <div class="text-size-medium">
+                {{ member.description | metafield_tag }}
+              </div>
             </div>
           </div>
         {% endfor %}

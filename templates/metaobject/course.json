@@ -1,7 +1,10 @@
 {
   "sections": {
     "course-header": {
-      "type": "course-header"
+      "type": "course-header",
+      "settings": {
+        "padding_bottom": 128
+      }
     },
     "image-with-text": {
       "type": "image-with-text",
@@ -39,14 +42,49 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 128,
         "padding_bottom": 128
       }
+    },
+    "course-program": {
+      "type": "course-program",
+      "settings": {
+        "tag_content": "Уникальная программа от Skills Beauty",
+        "heading": "Программа курса",
+        "subheading": "{{ metaobject.program_description | metafield_tag }}",
+        "padding_top": 128,
+        "padding_bottom": 128
+      }
+    },
+    "course-result": {
+      "type": "course-result",
+      "settings": {
+        "image": "shopify://shop_images/certificate_img.webp",
+        "tag_content": "Скиллы и знания",
+        "heading": "Результаты",
+        "subheading": "{{ metaobject.result | metafield_tag }}",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "section_color_scheme": "scheme-2"
+      }
+    },
+    "course-instructors": {
+      "type": "course-instructors",
+      "settings": {
+        "tag_content": "Специалист Skills Beauty",
+        "heading": "Преподаватель курса"
+      }
     }
   },
-  "order": ["course-header", "image-with-text"]
+  "order": [
+    "course-header",
+    "image-with-text",
+    "course-program",
+    "course-result",
+    "course-instructors"
+  ]
 }
