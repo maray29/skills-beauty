@@ -446,3 +446,25 @@
     row-gap: var(--grid-desktop-vertical-spacing);
   }
 }
+
+/* Custom CSS */
+
+.image-with-text__img-wrap {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.image-with-text__img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.image-with-text__content-wrap {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  max-width: 64rem;
+}
+
+.image-with-text__text {
+  padding-top: 4.2rem;
+}

@@ -27,10 +27,15 @@
   grid-row-start: 3;
 }
 
+.success_img-wrap img {
+  width: 100%;
+  height: auto;
+}
+
 .success_items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  gap: 3.2rem;
   grid-column-start: span 12;
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
@@ -52,4 +57,5 @@
 .success_button-wrap {
   width: 100%;
   padding-top: 6.4rem;
+  margin-top: auto;
 }
