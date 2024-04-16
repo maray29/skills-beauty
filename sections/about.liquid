@@ -1,5 +1,5 @@
 {{ 'section.css' | asset_url | stylesheet_tag }}
-{{ 'service.css' | asset_url | stylesheet_tag }}
+{{ 'about.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -24,13 +24,20 @@
       </div>
       <div class="section_subheading-wrap subtitle">
         {{ section.settings.subheading }}
-      </div>
-      <div class="service_list">
-        {% for block in section.blocks %}
-          <a href="{{ block.settings.link }}" class="button is-service">
-            {{ block.settings.label }}
+        <div class="section_button-wrap">
+          <a href="{{ section.settings.link }}" class="button is-service">
+            {{ section.settings.label }}
             {% render 'icon-arrow-up-right' %}
           </a>
+        </div>
+      </div>
+
+      <div class="feature-card_list">
+        {% for block in section.blocks %}
+          <div class="feature-card_item">
+            <h3>{{ block.settings.heading }}</h3>
+            <div>{{ block.settings.text }}</div>
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -85,23 +92,35 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 128
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "default": "Записаться",
+      "label": "t:sections.services.blocks.buttons.settings.button_label_1.label"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "default": "/",
+      "label": "t:sections.services.blocks.buttons.settings.button_link_1.label"
     }
   ],
   "blocks": [
     {
-      "type": "button",
-      "name": "t:sections.services.blocks.button.name",
+      "type": "feature-card",
+      "name": "t:sections.about.blocks.feature-card.name",
       "settings": [
         {
-          "type": "text",
-          "id": "label",
-          "default": "Button label",
-          "label": "t:sections.services.blocks.buttons.settings.button_label_1.label"
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.about.blocks.feature-card.settings.heading.label"
         },
         {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.services.blocks.buttons.settings.button_link_1.label"
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.about.blocks.feature-card.settings.text.label"
         }
       ]
     }

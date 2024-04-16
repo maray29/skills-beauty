@@ -14,11 +14,140 @@
     "services": {
       "type": "services",
       "settings": {
-        "tag": "Skills Beauty",
-        "heading": "НашИ Услуги",
+        "tag_content": "Skills Beauty",
+        "heading": "Наши Услуги",
         "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.</p>"
-      }
+      },
+      "blocks": {
+        "button-1": {
+          "type": "button",
+          "settings": {
+            "label": "Оформление бровей",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-2": {
+          "type": "button",
+          "settings": {
+            "label": "Свадебные услуги",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-3": {
+          "type": "button",
+          "settings": {
+            "label": "Ресницы",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-5": {
+          "type": "button",
+          "settings": {
+            "label": "Обучение для себя",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-6": {
+          "type": "button",
+          "settings": {
+            "label": "Макияж и укладки",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-7": {
+          "type": "button",
+          "settings": {
+            "label": "Обучение для мастера",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-8": {
+          "type": "button",
+          "settings": {
+            "label": "Extra",
+            "link": "shopify://collections/all"
+          }
+        },
+        "button-9": {
+          "type": "button",
+          "settings": {
+            "label": "Выездные услуги",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "button-1",
+        "button-2",
+        "button-3",
+        "button-4",
+        "button-5",
+        "button-6",
+        "button-7",
+        "button-8",
+        "button-9"
+      ]
+    },
+    "about": {
+      "type": "about",
+      "settings": {
+        "tag_content": "Пространство заботы о наших гостях",
+        "heading": "О студии",
+        "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.</p>"
+      },
+      "blocks": {
+        "feature-card-1": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Удобное расположение",
+            "text": "<p>10 минут от ближайшего метро</p>"
+          }
+        },
+        "feature-card-2": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Beauty Сервис",
+            "text": "<p>Работа мастеров в четыре руки</p>"
+          }
+        },
+        "feature-card-3": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Меню напитков",
+            "text": "<p>Возможность взять напиток с собой</p>"
+          }
+        },
+        "feature-card-4": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Время работы",
+            "text": "<p>Возможны услуги вне рабочего время студии</p>"
+          }
+        },
+        "feature-card-5": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Сертификат",
+            "text": "<p>Подарочный сертификат на любую сумму и услугу</p>"
+          }
+        },
+        "feature-card-6": {
+          "type": "feature-card",
+          "settings": {
+            "heading": "Больше чем студия",
+            "text": "<p>Сообщество и пространство заботы</p>"
+          }
+        }
+      },
+      "block_order": [
+        "feature-card-1",
+        "feature-card-2",
+        "feature-card-3",
+        "feature-card-4",
+        "feature-card-5",
+        "feature-card-6"
+      ]
     }
   },
-  "order": ["page-header", "services"]
+  "order": ["page-header", "services", "about"]
 }

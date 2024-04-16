@@ -1,0 +1,18 @@
+.feature-card_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  gap: 1.6rem;
+}
+
+.feature-card_item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  gap: 1.6rem;
+  border: 1px solid var(--border-primary);
+  border-radius: 1.2rem;
+  min-height: 16rem;
+}

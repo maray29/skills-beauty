@@ -1,12 +1,12 @@
 .tag {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 6;
   grid-row-start: 1;
 }
 
 .section_heading-wrap {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 2;
   padding-bottom: 4rem;
 }
@@ -18,4 +18,8 @@
   grid-row-end: 3;
   /* padding-top: 1.6rem; */
   padding-bottom: 8rem;
+}
+
+.section_button-wrap {
+  padding-top: 3.2rem;
 }

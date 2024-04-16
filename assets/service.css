@@ -1,0 +1,12 @@
+.service_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  gap: 1.6rem;
+}
+
+.is-service {
+  justify-content: space-between;
+}
