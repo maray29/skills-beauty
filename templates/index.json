@@ -14,7 +14,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Learn more",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -22,7 +22,10 @@
           }
         }
       },
-      "block_order": ["heading", "button"],
+      "block_order": [
+        "heading",
+        "button"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
         "tag_content": "СТИЛЬ — ЭТО КРАСОТА ЖИЗНИ"
@@ -31,9 +34,9 @@
     "image_with_text": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
+        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
         "heading": "Our goals & mission",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере. Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте.</p> <p>Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере. Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте.<\/p> <p>Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 256,
@@ -43,21 +46,21 @@
     "success": {
       "type": "success",
       "settings": {
-        "header_img": "shopify://shop_images/success_header-img_8afb1410-0d88-44e9-ba11-53ccd7a099a6.webp",
-        "image": "shopify://shop_images/success_img.webp",
+        "header_img": "shopify:\/\/shop_images\/success_header-img_8afb1410-0d88-44e9-ba11-53ccd7a099a6.webp",
+        "image": "shopify:\/\/shop_images\/success_img.webp",
         "tag_content": "Факты и цифры",
         "success_item-1_number": "2300+",
         "success_item-1_text": "Счастливых клиентов",
         "success_item-1_button_label": "О Нашей Студии",
-        "success_item-1_button_link": "/",
+        "success_item-1_button_link": "\/",
         "success_item-2_number": "168+",
         "success_item-2_text": "Проведенных оффлайн уроков",
         "success_item-2_button_label": "Наши Курсы",
-        "success_item-2_button_link": "/",
+        "success_item-2_button_link": "\/",
         "success_item-3_number": "100,000+",
         "success_item-3_text": "Просмотров на Youtube",
         "success_item-3_button_label": "Наш Youtube",
-        "success_item-3_button_link": "/",
+        "success_item-3_button_link": "\/",
         "padding_top": 128,
         "padding_bottom": 128
       }
@@ -99,18 +102,16 @@
       "type": "certificate",
       "settings": {
         "heading": "Подарочный Сертификат",
-        "image": "shopify://shop_images/certificate_img.webp",
-        "tag_content": "Как использовать сертификат?",
-        "success_item-1_button_label": "О Нашей Студии",
-        "success_item-1_button_link": "/"
+        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "tag_content": "Как использовать сертификат?"
       }
     },
     "partnership": {
       "type": "partnership",
       "settings": {
-        "image": "shopify://shop_images/partnership_img.webp",
+        "image": "shopify:\/\/shop_images\/partnership_img.webp",
         "heading": "Стань партнером Skills Beauty",
-        "subheading": "<p>Небольшой параграф, который рассказывает и объясняет о партнерстве с брендом.</p>",
+        "subheading": "<p>Небольшой параграф, который рассказывает и объясняет о партнерстве с брендом.<\/p>",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 0,

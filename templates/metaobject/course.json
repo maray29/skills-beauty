@@ -9,14 +9,11 @@
     "image-with-text": {
       "type": "image-with-text",
       "settings": {
+        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
         "heading": "Для кого этот курс?",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
-
-        "image": "shopify://shop_images/about_img-wrap.webp",
-
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
         "section_color_scheme": "scheme-3",
         "color_scheme": "scheme-3",
-
         "padding_top": 128,
         "padding_bottom": 128
       }
@@ -24,9 +21,9 @@
     "course-program": {
       "type": "course-program",
       "settings": {
-        "tag_content": "Уникальная программа от Skills Beauty",
         "heading": "Программа курса",
         "subheading": "{{ metaobject.program_description | metafield_tag }}",
+        "tag_content": "Уникальная программа от Skills Beauty",
         "padding_top": 128,
         "padding_bottom": 128
       }
@@ -34,10 +31,10 @@
     "course-result": {
       "type": "course-result",
       "settings": {
-        "image": "shopify://shop_images/certificate_img.webp",
-        "tag_content": "Скиллы и знания",
         "heading": "Результаты",
         "subheading": "{{ metaobject.result | metafield_tag }}",
+        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "tag_content": "Скиллы и знания",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "scheme-2"
@@ -46,8 +43,8 @@
     "course-instructors": {
       "type": "course-instructors",
       "settings": {
-        "tag_content": "Специалист Skills Beauty",
-        "heading": "Преподаватель курса"
+        "heading": "Преподаватель курса",
+        "tag_content": "Специалист Skills Beauty"
       }
     }
   },
