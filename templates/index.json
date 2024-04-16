@@ -82,8 +82,8 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 256,
+        "padding_bottom": 256
       }
     },
     "card-links": {
@@ -115,8 +115,8 @@
         "columns_desktop": 2,
         "color_scheme": "",
         "columns_mobile": "1",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 128,
+        "padding_bottom": 128
       }
     },
     "certificate": {

@@ -1,0 +1,110 @@
+{{ 'section.css' | asset_url | stylesheet_tag }}
+{{ 'certificate.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="layout_12col">
+      <div class="section_heading-wrap">
+        {% render 'tag-component', tag_content: section.settings.tag_content %}
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="section_subheading-wrap subtitle">
+        {{ section.settings.subheading }}
+      </div>
+      <div class="certificate_img-wrap">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1500
+            | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+          }}
+        {%- else -%}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.course-program.name",
+  "tag": "section",
+  "class": "section_course-program",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Page heading",
+      "label": "t:sections.course-program.settings.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
+      "label": "t:sections.course-program.settings.subheading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.course-program.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "tag_content",
+      "default": "Специалисты Skills Beauty",
+      "label": "t:sections.course-program.settings.tag_content.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 128
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    },
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.course-program.presets.name"
+    }
+  ]
+}
+{% endschema %}

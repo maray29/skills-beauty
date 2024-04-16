@@ -1,63 +1,78 @@
-{{ 'page-header.css' | asset_url | stylesheet_tag }}
 {{ 'course-header.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width">
-  <div class="layout_12col">
-    <div class="course-header_img-wrap">
-      {%- if metaobject.media != blank -%}
-        {{
-          metaobject.media
-          | image_url: width: 1500
-          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-        }}
-      {%- else -%}
-        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-      {%- endif -%}
-    </div>
-    <div class="course-header_content-wrap">
-      <div class="course-header_heading-wrap">
-        <h1 class="course-header_heading text-style-allcaps">{{ metaobject.name }}</h1>
-        {% for instructor in metaobject.instructors.value %}
-          <div class="info_item">
-            <div class="text-weight-semibold">Преподаватель:</div>
-            <div>{{ instructor.name }}</div>
-          </div>
-        {% endfor %}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="layout_12col">
+      <div class="course-header_img-wrap">
+        {%- if metaobject.media != blank -%}
+          {{
+            metaobject.media
+            | image_url: width: 1500
+            | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+          }}
+        {%- else -%}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
       </div>
-      {% comment %} <p class="subtitle">{{ section.settings.subheading }}</p> {% endcomment %}
-      <div class="course-header_info">
-        <div class="info_item">
-          <div class="text-weight-semibold">Формат:</div>
-          <div>{{ metaobject.type }}</div>
+      <div class="course-header_content-wrap">
+        <div class="course-header_heading-wrap">
+          <h1 class="course-header_heading text-style-allcaps">{{ metaobject.name }}</h1>
+          {% for instructor in metaobject.instructors.value %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Преподаватель:</div>
+              <div>{{ instructor.name }}</div>
+            </div>
+          {% endfor %}
         </div>
-        {% if metaobject.access %}
+        {% comment %} <p class="subtitle">{{ section.settings.subheading }}</p> {% endcomment %}
+        <div class="course-header_info">
           <div class="info_item">
-            <div class="text-weight-semibold">Доступ:</div>
-            <div>{{ metaobject.access }}</div>
+            <div class="text-weight-semibold">Формат:</div>
+            <div>{{ metaobject.type }}</div>
           </div>
-        {% endif %}
-        <div class="info_item">
-          <div class="text-weight-semibold">Дата:</div>
-          <div>{{ metaobject.date | date: '%B %d, %Y' }}</div>
+          {% if metaobject.access %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Доступ:</div>
+              <div>{{ metaobject.access }}</div>
+            </div>
+          {% endif %}
+          <div class="info_item">
+            <div class="text-weight-semibold">Дата:</div>
+            <div>{{ metaobject.date | date: '%B %d, %Y' }}</div>
+          </div>
+          <div class="info_item">
+            <div class="text-weight-semibold">Сертификат:</div>
+            <div>{{ metaobject.certificate }}</div>
+          </div>
+          <div class="info_item">
+            <div class="text-weight-semibold">Длительность:</div>
+            <div>{{ metaobject.duration }}</div>
+          </div>
         </div>
-        <div class="info_item">
-          <div class="text-weight-semibold">Сертификат:</div>
-          <div>{{ metaobject.certificate }}</div>
+        <div class="button-group">
+          <a
+            href="{{ section.settings.button_link }}"
+            class="button"
+            {{ section.shopify_attributes }}
+          >
+            Оставить заявку
+            {% render 'icon-arrow-up-right' %}
+          </a>
         </div>
-        <div class="info_item">
-          <div class="text-weight-semibold">Длительность:</div>
-          <div>{{ metaobject.duration }}</div>
-        </div>
-      </div>
-      <div class="button-group">
-        <a
-          href="{{ section.settings.button_link }}"
-          class="button"
-          {{ section.shopify_attributes }}
-        >
-          Оставить заявку
-          {% render 'icon-arrow-up-right' %}
-        </a>
       </div>
     </div>
   </div>
@@ -103,6 +118,26 @@
       "id": "button_link",
       "default": "/",
       "label": "t:sections.page-header.settings.button_link.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
     }
   ],
   "presets": [
