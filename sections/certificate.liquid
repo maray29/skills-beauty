@@ -1,29 +1,60 @@
 {{ 'certificate.css' | asset_url | stylesheet_tag }}
-{{ 'section.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width padding-section-large">
-  <div class="layout_12col">
-    <div class="section_heading-wrap">
-      <h2>{{ section.settings.heading }}</h2>
-    </div>
-    <div class="section_subheading-wrap">
-      {% render 'tag-component', tag_content: section.settings.tag_content %}
-      {% comment %}
-        {%- for block in section.blocks -%}
-        {%- endfor -%}
-      {% endcomment %}
-      <p class="subtitle">Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p>
-    </div>
-    <div class="certificate_img-wrap">
-      {%- if section.settings.image != blank -%}
-        {{
-          section.settings.image
-          | image_url: width: 1500
-          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-        }}
-      {%- else -%}
-        {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-      {%- endif -%}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="layout_12col">
+      <div class="certificate_heading-wrap">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="certificate_subheading-wrap subtitle">
+        {% render 'tag-component', tag_content: section.settings.tag_content %}
+        {% comment %}
+          {%- for block in section.blocks -%}
+          {%- endfor -%}
+        {% endcomment %}
+        {{ section.settings.subheading }}
+        <div class="success_button-wrap">
+          {%- if section.settings['success_item-1_button_label'] != blank -%}
+            <a
+              {% if section.settings['success_item-1_button_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.success_item-1_button_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['success_item-1_button_label'] | escape }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="certificate_img-wrap">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1500
+            | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+          }}
+        {%- else -%}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>
     </div>
   </div>
 </div>
@@ -38,7 +69,13 @@
       "type": "inline_richtext",
       "id": "heading",
       "default": "Подарочный Сертификат",
-      "label": "t:sections.team.settings.heading.label"
+      "label": "t:sections.certificate.settings.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "<p>Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p> <p>Сертификат можно заказать онлайн и забрать в студии.</p>",
+      "label": "t:sections.certificate.settings.subheading.label"
     },
     {
       "type": "image_picker",
@@ -49,7 +86,39 @@
       "type": "text",
       "id": "tag_content",
       "default": "Наши задачи и цели",
-      "label": "Tag Content"
+      "label": "t:sections.certificate.settings.tag.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 128
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "О Нашей Студии",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "default": "/",
+      "label": "t:sections.all.button.button_link.label"
     }
   ],
   "presets": [

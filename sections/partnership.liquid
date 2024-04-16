@@ -1,4 +1,4 @@
-{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'partnership.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -25,9 +25,51 @@
 -%}
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
-  <div class="page-width">
+  <div class="page-width padding-0">
     <div class="layout_12col">
-      <div class="image-with-text__img-wrap">
+      <div class="partnership_content-wrap">
+        <div class="partnership_heading-wrap">
+          <h2
+            {{ section.shopify_attributes }}
+          >
+            {{ section.settings.heading }}
+          </h2>
+        </div>
+        <div class="partnership_text subtitle">
+          {{ section.settings.subheading }}
+        </div>
+        <div class="partnership_button-wrap">
+          {%- if section.settings['button-1_label'] != blank -%}
+            <a
+              {% if section.settings['button-1_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button-1_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['button-1_label'] | escape }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- endif -%}
+          {%- if section.settings['button-2_label'] != blank -%}
+            <a
+              {% if section.settings['button-2_link'] == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button-2_link }}"
+              {% endif %}
+              class="button button--secondary is-full-width"
+              {{ section.shopify_attributes }}
+            >
+              {{ section.settings['button-2_label'] | escape }}
+              {% render 'icon-arrow' %}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="partnership_img-wrap">
         {%- if section.settings.image != blank -%}
           {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
             {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
@@ -50,18 +92,6 @@
         {%- else -%}
           {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-      </div>
-      <div class="image-with-text__content-wrap">
-        <h2
-          {{ section.shopify_attributes }}
-        >
-          {{ section.settings.heading }}
-        </h2>
-        <div
-          class="image-with-text__text subtitle"
-        >
-          {{ section.settings.subheading }}
-        </div>
       </div>
     </div>
   </div>
@@ -96,13 +126,13 @@
       "type": "color_scheme",
       "id": "section_color_scheme",
       "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
+      "default": "scheme-3"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.multirow.settings.container_color_scheme.label",
-      "default": "scheme-1"
+      "default": "scheme-3"
     },
     {
       "type": "range",
@@ -112,7 +142,7 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 128
+      "default": 0
     },
     {
       "type": "range",
@@ -122,7 +152,31 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 128
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "button-1_label",
+      "default": "Для брендов",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button-1_link",
+      "default": "/",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "button-2_label",
+      "default": "Для Инфлюенсеров",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button-2_link",
+      "default": "/",
+      "label": "t:sections.all.button.button_link.label"
     }
   ],
   "presets": [

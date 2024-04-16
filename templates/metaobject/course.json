@@ -8,44 +8,15 @@
     },
     "image-with-text": {
       "type": "image-with-text",
-      "blocks": {
-        "heading_DniyBW": {
-          "type": "heading",
-          "settings": {
-            "heading": "Для кого этот курс?",
-            "heading_size": "h1"
-          }
-        },
-        "text_jNgJXx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
-            "tag_content": "Цели курса",
-            "text_style": "text-size-large"
-          }
-        },
-        "button_JPrQy7": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": ["heading_DniyBW", "text_jNgJXx", "button_JPrQy7"],
       "settings": {
+        "heading": "Для кого этот курс?",
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+
         "image": "shopify://shop_images/about_img-wrap.webp",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+
         "section_color_scheme": "scheme-3",
         "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
+
         "padding_top": 128,
         "padding_bottom": 128
       }

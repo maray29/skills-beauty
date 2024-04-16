@@ -3,7 +3,7 @@
     "page-header": {
       "type": "page-header",
       "settings": {
-        "image": "shopify:\/\/shop_images\/success_img.webp",
+        "image": "shopify://shop_images/success_img.webp",
         "heading": "Courses",
         "tag": "Skills Beauty",
         "subheading": "Мы создаем сообщество, которое усиливает уверенность в себе через искусство и науку о красоте."
@@ -12,8 +12,8 @@
     "image_with_text": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
+        "image": "shopify://shop_images/about_img-wrap.webp",
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 256,
@@ -25,7 +25,7 @@
       "settings": {
         "title": "Наши Курсы",
         "heading_size": "h1",
-        "description": "<p>Небольшой параграф рассказывающий о типах курсов и некоторых деталях.<\/p>",
+        "description": "<p>Небольшой параграф рассказывающий о типах курсов и некоторых деталях.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "courses",
@@ -58,10 +58,5 @@
       }
     }
   },
-  "order": [
-    "page-header",
-    "image_with_text",
-    "team",
-    "featured_collection"
-  ]
+  "order": ["page-header", "image_with_text", "team", "featured_collection"]
 }
