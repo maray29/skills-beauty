@@ -102,9 +102,9 @@
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
-    "social_instagram_link": "",
-    "social_youtube_link": "",
-    "social_tiktok_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/skills.beauty.berlin",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCiaK_TnVlCmu02uecT24Riw",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@skillsbeauty",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -139,10 +139,10 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#FCFCFD",
+          "background": "#fcfcfd",
           "background_gradient": "",
-          "text": "#1F2228",
-          "button": "#1F2228",
+          "text": "#1f2228",
+          "button": "#1f2228",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
@@ -161,7 +161,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#16181D",
+          "background": "#16181d",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
