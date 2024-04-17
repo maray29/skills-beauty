@@ -5,10 +5,14 @@
     "footer": {
       "type": "footer",
       "settings": {
+<<<<<<< HEAD
         "header": "Skills Beauty",
         "color_scheme": "scheme-1",
+=======
+        "color_scheme": "scheme-3",
+>>>>>>> 2d254b04e1c72bf682d58984039f765d0cdc5ca9
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Skills Beauty Рассылка",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
@@ -16,10 +20,16 @@
         "payment_enable": true,
         "show_policy": true,
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 72,
         "padding_bottom": 36
       }
     }
   },
+<<<<<<< HEAD
   "order": ["footer"]
+=======
+  "order": [
+    "footer"
+  ]
+>>>>>>> 2d254b04e1c72bf682d58984039f765d0cdc5ca9
 }
