@@ -282,7 +282,7 @@ h5,
 .h4,
 .h5 {
   /* font-family: var(--font-heading-family); */
-  font-family: "inter", serif !important;
+  font-family: "inter", sans-serif !important;
   /* font-weight: 420 !important; */
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
@@ -345,13 +345,13 @@ strong {
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: clamp(3rem, 6vw, 6rem);
 }
 
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 6.4rem);
+    font-size: clamp(4rem, 6vw, 8rem);
   }
 }
 
@@ -1830,7 +1830,7 @@ details[open] > .share-button__fallback {
   font-size: 1rem;
   top: calc(var(--inputs-border-width) + 0.5rem);
   left: calc(var(--inputs-border-width) + 2rem);
-  letter-spacing: 0.04rem;
+  /* letter-spacing: 0.04rem; */
 }
 
 .field__input:focus,
@@ -1839,7 +1839,7 @@ details[open] > .share-button__fallback {
 .customer .field input:focus,
 .customer .field input:not(:placeholder-shown),
 .customer .field input:-webkit-autofill {
-  padding: 2.2rem 1.5rem 0.8rem 2rem;
+  /* padding: 2.2rem 1.5rem 0.8rem 2rem; */
   margin: var(--inputs-border-width);
 }
 
@@ -3724,6 +3724,15 @@ html {
 
 .text-style-allcaps {
   text-transform: uppercase;
+}
+
+.text-style-link {
+  text-decoration: none;
+  color: rgb(var(--color-foreground));
+}
+
+.text-style-link:hover {
+  text-decoration: underline;
 }
 
 .container-small {

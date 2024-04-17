@@ -2,13 +2,23 @@
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+.footer-block__links {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0rem;
+  gap: 0.8rem;
+}
+
 .footer:not(.color-scheme-1) {
   border-top: none;
 }
 
 .footer__content-top {
   padding-bottom: 5rem;
-  display: block;
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 1.6rem;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 749px) {
@@ -88,7 +98,7 @@
 
 .footer__column {
   width: 100%;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .footer__column--info {
@@ -127,9 +137,9 @@
 
 .footer-block--newsletter {
   display: flex;
-  align-items: flex-end;
-  margin-top: 3rem;
+  /* align-items: flex-end; */
   gap: 1rem;
+  padding-top: 1rem;
 }
 
 .footer-block--newsletter:only-child {
@@ -143,16 +153,24 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer-block--newsletter {
-    flex-wrap: nowrap;
-    justify-content: center;
+  .footer-block__newsletter {
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-self: end;
   }
 }
 
 .footer-block__heading {
-  margin-bottom: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
   margin-top: 0;
-  font-size: 3.2rem !important;
+  font-size: 1.6rem !important;
+  text-transform: none !important;
+}
+
+.is-brand-name {
+  font-size: clamp(3.2rem, 6.5vw, 14rem) !important;
 }
 
 @media screen and (min-width: 990px) {
@@ -176,19 +194,19 @@
 }
 
 .footer-block__newsletter {
-  text-align: center;
-  flex-grow: 1;
+  /* text-align: center; */
+  /* flex-grow: 1; */
 }
 
 .newsletter-form__field-wrapper {
-  max-width: 36rem;
+  /* max-width: 36rem; */
 }
 
 @media screen and (min-width: 750px) {
   /* Pushes other components to the right of the flexbox */
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
-    margin-right: auto;
+    /* margin-right: auto; */
   }
 
   .footer-block__newsletter:not(:only-child) .footer__newsletter {
@@ -255,10 +273,10 @@
 .footer__localization {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */
   flex-wrap: wrap;
-  padding: 1rem 1rem 0;
+  /* padding: 1rem 1rem 0; */
 }
 
 .footer__localization:empty {
@@ -272,7 +290,7 @@
 
 @media screen and (min-width: 750px) {
   .footer__localization {
-    padding: 0.4rem 0;
+    /* padding: 0.4rem 0; */
     justify-content: flex-start;
   }
 
