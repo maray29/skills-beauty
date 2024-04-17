@@ -3,76 +3,73 @@
     "page-header": {
       "type": "page-header",
       "settings": {
-        "image": "shopify://shop_images/success_img.webp",
+        "image": "shopify:\/\/shop_images\/success_img.webp",
         "heading": "Студия",
         "tag": "Skills Beauty",
         "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
         "button_label": "Наши услуги",
-        "button_link": "#services"
+        "button_link": "#services",
+        "padding_top": 0,
+        "padding_bottom": 128
       }
     },
     "services": {
       "type": "services",
-      "settings": {
-        "tag_content": "Skills Beauty",
-        "heading": "Наши Услуги",
-        "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.</p>"
-      },
       "blocks": {
         "button-1": {
           "type": "button",
           "settings": {
             "label": "Оформление бровей",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-2": {
           "type": "button",
           "settings": {
             "label": "Свадебные услуги",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-3": {
           "type": "button",
           "settings": {
             "label": "Ресницы",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-5": {
           "type": "button",
           "settings": {
             "label": "Обучение для себя",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-6": {
           "type": "button",
           "settings": {
             "label": "Макияж и укладки",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-7": {
           "type": "button",
           "settings": {
             "label": "Обучение для мастера",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-8": {
           "type": "button",
           "settings": {
             "label": "Extra",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         },
         "button-9": {
           "type": "button",
           "settings": {
             "label": "Выездные услуги",
-            "link": "shopify://collections/all"
+            "link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -80,62 +77,63 @@
         "button-1",
         "button-2",
         "button-3",
-        "button-4",
         "button-5",
         "button-6",
         "button-7",
         "button-8",
         "button-9"
-      ]
+      ],
+      "settings": {
+        "heading": "Наши Услуги",
+        "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.<\/p>",
+        "tag_content": "Skills Beauty",
+        "padding_top": 128,
+        "padding_bottom": 128
+      }
     },
     "about": {
       "type": "about",
-      "settings": {
-        "tag_content": "Пространство заботы о наших гостях",
-        "heading": "О студии",
-        "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.</p>"
-      },
       "blocks": {
         "feature-card-1": {
           "type": "feature-card",
           "settings": {
             "heading": "Удобное расположение",
-            "text": "<p>10 минут от ближайшего метро</p>"
+            "text": "<p>10 минут от ближайшего метро<\/p>"
           }
         },
         "feature-card-2": {
           "type": "feature-card",
           "settings": {
             "heading": "Beauty Сервис",
-            "text": "<p>Работа мастеров в четыре руки</p>"
+            "text": "<p>Работа мастеров в четыре руки<\/p>"
           }
         },
         "feature-card-3": {
           "type": "feature-card",
           "settings": {
             "heading": "Меню напитков",
-            "text": "<p>Возможность взять напиток с собой</p>"
+            "text": "<p>Возможность взять напиток с собой<\/p>"
           }
         },
         "feature-card-4": {
           "type": "feature-card",
           "settings": {
             "heading": "Время работы",
-            "text": "<p>Возможны услуги вне рабочего время студии</p>"
+            "text": "<p>Возможны услуги вне рабочего время студии<\/p>"
           }
         },
         "feature-card-5": {
           "type": "feature-card",
           "settings": {
             "heading": "Сертификат",
-            "text": "<p>Подарочный сертификат на любую сумму и услугу</p>"
+            "text": "<p>Подарочный сертификат на любую сумму и услугу<\/p>"
           }
         },
         "feature-card-6": {
           "type": "feature-card",
           "settings": {
             "heading": "Больше чем студия",
-            "text": "<p>Сообщество и пространство заботы</p>"
+            "text": "<p>Сообщество и пространство заботы<\/p>"
           }
         }
       },
@@ -146,8 +144,42 @@
         "feature-card-4",
         "feature-card-5",
         "feature-card-6"
-      ]
+      ],
+      "settings": {
+        "heading": "О студии",
+        "subheading": "<p>Небольшой параграф рассказывающий об услугах в студии.<\/p>",
+        "tag_content": "Пространство заботы о наших гостях",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "label": "Записаться",
+        "link": "\/"
+      }
+    },
+    "1713344670411ccd5a": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_Rzqryk": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_Rzqryk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
-  "order": ["page-header", "services", "about"]
+  "order": [
+    "page-header",
+    "services",
+    "about",
+    "1713344670411ccd5a"
+  ]
 }
