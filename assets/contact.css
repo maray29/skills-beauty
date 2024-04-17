@@ -1,0 +1,48 @@
+.tag {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+}
+
+.section_contact .tag {
+  padding-bottom: 1.6rem;
+}
+
+.section_heading-wrap {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  padding-bottom: 4rem;
+}
+
+.contact_socials,
+.contact_address,
+.contact_time {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.contact_time {
+  padding-bottom: 0rem;
+}
+
+.contact_socials p,
+.contact_address p,
+.contact_time p {
+  margin-bottom: 0rem;
+}
+
+.contact_socials .list-social {
+  justify-content: flex-start;
+}
+
+.list-social__link {
+  padding: 0.8rem !important;
+}
+
+.list-social__item .icon {
+  width: 2.8rem !important;
+  height: 2.8rem !important;
+}

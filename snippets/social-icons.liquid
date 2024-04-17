@@ -18,6 +18,22 @@
       </a>
     </li>
   {%- endif -%}
+  {%- if settings.social_whatsapp_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_whatsapp_link }}" class="link list-social__link">
+        {%- render 'icon-whatsapp' -%}
+        <span class="visually-hidden">{{ 'general.social.links.whatsapp' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_whatsapp_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_telegram_link }}" class="link list-social__link">
+        {%- render 'icon-telegram' -%}
+        <span class="visually-hidden">{{ 'general.social.links.telegram' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
   {%- if settings.social_instagram_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_instagram_link }}" class="link list-social__link">

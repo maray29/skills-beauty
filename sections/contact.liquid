@@ -1,0 +1,138 @@
+{{ 'contact.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+  if section.settings.color_scheme == section.settings.section_color_scheme and section.settings.content_layout == 'no-overlap'
+    assign remove_color_classes = true
+  endif
+-%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="services">
+  <div class="page-width">
+    <div class="container-medium">
+      {% render 'tag-component', tag_content: section.settings.tag_content %}
+      <div class="section_heading-wrap">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="contact_socials">
+        <h3>{{ section.settings.heading_social }}</h3>
+        {% render 'social-icons', class: 'my-class' %}
+      </div>
+      <div class="contact_address">
+        <h3>{{ section.settings.heading_address }}</h3>
+        {{ section.settings.text_address }}
+      </div>
+      <div class="contact_time">
+        <h3>{{ section.settings.heading_time }}</h3>
+        {{ section.settings.text_time }}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.services.name",
+  "tag": "section",
+  "class": "section_contact",
+  "settings": [
+    {
+      "type": "text",
+      "id": "tag_content",
+      "default": "Свяжитесь с нами если у вас есть вопросы",
+      "label": "Tag Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Контакты",
+      "label": "t:sections.services.settings.heading.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_social",
+      "default": "Контакты",
+      "label": "t:sections.services.settings.heading_social.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_address",
+      "default": "Контакты",
+      "label": "t:sections.services.settings.heading_address.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text_address",
+      "default": "<p>Auguste-Viktoria-Straße 7, Grunewald  14193,</p> <p>Berlin, Deutschland</p>",
+      "label": "t:sections.services.settings.text_address.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading_time",
+      "default": "Контакты",
+      "label": "t:sections.services.settings.heading_time.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text_time",
+      "default": "<p>Пн-Пт: 10:00-20:00</p><p>Сб: 10:00-18:00</p><p>Вc: Выходной</p>",
+      "label": "t:sections.services.settings.text_time.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 128
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    },
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-3"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.services.presets.name",
+      "category": "Service"
+    }
+  ]
+}
+{% endschema %}

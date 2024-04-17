@@ -3726,6 +3726,16 @@ html {
   text-transform: uppercase;
 }
 
+.container-small {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.container-medium {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
 .layout_12col {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -3792,10 +3802,10 @@ html {
 
 .tag {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.8rem;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 520;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
