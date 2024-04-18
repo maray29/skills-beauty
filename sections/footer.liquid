@@ -238,8 +238,14 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
+        <div class="footer__column">
+          <h3 class="footer-block__heading">Адрес</h3>
+          {% comment %} {{ shop.address.summary }} {% endcomment %}
+          {% comment %} {{ section.settings.address }} {% endcomment %}
+          {{ location.studio.address }}
+        </div>
       </div>
-      <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+      <div class="footer__content-bottom-wrapper {% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
         <div class="footer__copyright caption">
           <small class="copyright__content"
             >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
@@ -373,6 +379,12 @@
   ],
   "settings": [
     {
+      "type": "richtext",
+      "id": "address",
+      "label": "Address",
+      "default": "<p>Auguste-Viktoria-Straße 7 • Grunewald • 14193 • Berlin  • Deutschland</p>"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
@@ -482,17 +494,17 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 128,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 72
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 128,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
