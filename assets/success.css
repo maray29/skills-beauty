@@ -1,6 +1,8 @@
 .success_header-img-wrap {
   display: flex;
   grid-column-start: span 6;
+  width: clamp(10rem, 25vw, 32rem);
+  justify-self: end;
 }
 
 .success_header-img-wrap img {
@@ -10,9 +12,12 @@
 }
 
 .success_heading-wrap {
+  display: flex;
+  flex-direction: column;
   grid-column-start: 7;
   grid-column-end: 13;
-  padding-bottom: 6.4rem;
+  /* padding-bottom: 6.4rem; */
+  align-self: center;
 }
 
 .success_heading-wrap h2 {

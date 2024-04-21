@@ -11,6 +11,10 @@
   padding-bottom: 4rem;
 }
 
+.section_heading-wrap .tag {
+  margin-bottom: 1.6rem;
+}
+
 .section_subheading-wrap {
   grid-column-start: 2;
   grid-column-end: 6;

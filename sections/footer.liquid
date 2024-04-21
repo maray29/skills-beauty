@@ -241,29 +241,41 @@
         <div class="footer__column">
           <h3 class="footer-block__heading">Адрес</h3>
           {% comment %} {{ shop.address.summary }} {% endcomment %}
-          {% comment %} {{ section.settings.address }} {% endcomment %}
-          {{ location.studio.address }}
+          {{ section.settings.address }}
+          {% comment %} {{ location.studio.address }} {% endcomment %}
+          {% comment %}
+            {% for location in shop.locations %}
+              {{ location.name }}
+            {% endfor %}
+          {% endcomment %}
+          {% comment %} {{ location.studio.metafields.opening_time }} {% endcomment %}
+        </div>
+        <div class="footer__column">
+          <h3 class="footer-block__heading">Время работы</h3>
+          {{ section.settings.opening_time }}
         </div>
       </div>
       <div class="footer__content-bottom-wrapper {% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
-        <div class="footer__copyright caption">
+        <div class="footer__copyright caption text-style-allcaps">
           <small class="copyright__content"
             >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
           </small>
-          <small class="copyright__content">{{ powered_by_link }}</small>
-          {%- if section.settings.show_policy -%}
-            <ul class="policies list-unstyled">
-              {%- for policy in shop.policies -%}
-                {%- if policy != blank -%}
-                  <li>
-                    <small class="copyright__content"
-                      ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                    >
-                  </li>
-                {%- endif -%}
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
+          {% comment %} <small class="copyright__content">{{ powered_by_link }}</small> {% endcomment %}
+          {% comment %}
+            {%- if section.settings.show_policy -%}
+              <ul class="policies list-unstyled">
+                {%- for policy in shop.policies -%}
+                  {%- if policy != blank -%}
+                    <li>
+                      <small class="copyright__content"
+                        ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                      >
+                    </li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          {% endcomment %}
         </div>
       </div>
     </div>
@@ -380,9 +392,15 @@
   "settings": [
     {
       "type": "richtext",
+      "id": "opening_time",
+      "label": "Opening time",
+      "default": "<p>Пн-Пт: 10:00-20:00<br>Сб: 10:00-18:00<br>Вc: выходной</p>"
+    },
+    {
+      "type": "richtext",
       "id": "address",
       "label": "Address",
-      "default": "<p>Auguste-Viktoria-Straße 7 • Grunewald • 14193 • Berlin  • Deutschland</p>"
+      "default": "<p>Auguste-Viktoria-Straße 7 <br> Grunewald • 14193 <br> Berlin • Deutschland</p>"
     },
     {
       "type": "color_scheme",

@@ -42,3 +42,7 @@
 .instructor_title {
   padding-bottom: 3.2rem;
 }
+
+.instructor_description p {
+  margin-bottom: 1.6rem;
+}
