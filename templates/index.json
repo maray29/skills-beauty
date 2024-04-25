@@ -37,7 +37,8 @@
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 256,
-        "padding_bottom": 128
+        "padding_bottom": 128,
+        "section_id": "about"
       }
     },
     "success": {

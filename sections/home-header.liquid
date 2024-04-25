@@ -12,6 +12,21 @@
   <div class="home-header_content-wrap">
     <p>{{ section.settings.subheading }}</p>
     <div class="button-group">
+      {%- if section.settings['button-1_label'] != blank -%}
+        <a
+          {% if section.settings['button-1_link'] == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings['button-1_link'] }}"
+          {% endif %}
+          class="button button--secondary is-full-width"
+          {{ section.shopify_attributes }}
+        >
+          {{ section.settings['button-1_label'] | escape }}
+          {% render 'icon-arrow-down' %}
+        </a>
+      {%- endif -%}
+
       <a href="/pages/about-us" class="button is-full-width">
         УЗНАТЬ О НАС
         {% render 'icon-arrow-down' %}
@@ -171,147 +186,34 @@
       "label": "t:sections.all.image.label"
     },
     {
+      "type": "text",
+      "id": "button-1_label",
+      "default": "УЗНАТЬ О НАС",
+      "label": "Текст 1-ой кнопки"
+    },
+    {
+      "type": "url",
+      "id": "button-1_link",
+      "default": "/#about",
+      "label": "Ссылка 1-ой кнопки"
+    },
+    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     },
     {
-      "type": "header",
-      "content": "t:sections.all.animation.content"
-    },
-    {
       "type": "text",
       "id": "tag_content",
       "default": "СТИЛЬ — ЭТО КРАСОТА ЖИЗНИ",
       "label": "Tag Content"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "heading",
-      "name": "t:sections.home-header.blocks.heading.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "heading",
-          "default": "Image banner",
-          "label": "t:sections.home-header.blocks.heading.settings.heading.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
-        }
-      ]
     },
-    {
-      "type": "text",
-      "name": "t:sections.home-header.blocks.text.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "inline_richtext",
-          "id": "text",
-          "default": "Give customers details about the banner image(s) or content on the template.",
-          "label": "t:sections.home-header.blocks.text.settings.text.label"
-        },
-        {
-          "type": "select",
-          "id": "text_style",
-          "options": [
-            {
-              "value": "body",
-              "label": "t:sections.home-header.blocks.text.settings.text_style.options__1.label"
-            },
-            {
-              "value": "subtitle",
-              "label": "t:sections.home-header.blocks.text.settings.text_style.options__2.label"
-            },
-            {
-              "value": "caption-with-letter-spacing",
-              "label": "t:sections.home-header.blocks.text.settings.text_style.options__3.label"
-            }
-          ],
-          "default": "body",
-          "label": "t:sections.home-header.blocks.text.settings.text_style.label"
-        }
-      ]
-    },
-    {
-      "type": "buttons",
-      "name": "t:sections.home-header.blocks.buttons.name",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label_1",
-          "default": "Button label",
-          "label": "t:sections.home-header.blocks.buttons.settings.button_label_1.label",
-          "info": "t:sections.home-header.blocks.buttons.settings.button_label_1.info"
-        },
-        {
-          "type": "url",
-          "id": "button_link_1",
-          "label": "t:sections.home-header.blocks.buttons.settings.button_link_1.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary_1",
-          "default": false,
-          "label": "t:sections.home-header.blocks.buttons.settings.button_style_secondary_1.label"
-        },
-        {
-          "type": "text",
-          "id": "button_label_2",
-          "default": "Button label",
-          "label": "t:sections.home-header.blocks.buttons.settings.button_label_2.label",
-          "info": "t:sections.home-header.blocks.buttons.settings.button_label_2.info"
-        },
-        {
-          "type": "url",
-          "id": "button_link_2",
-          "label": "t:sections.home-header.blocks.buttons.settings.button_link_2.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary_2",
-          "default": false,
-          "label": "t:sections.home-header.blocks.buttons.settings.button_style_secondary_2.label"
-        }
-      ]
-    }
+    {}
   ],
   "presets": [
     {
-      "name": "t:sections.home-header.presets.name",
-      "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "text"
-        },
-        {
-          "type": "buttons"
-        }
-      ]
+      "name": "t:sections.home-header.presets.name"
     }
   ]
 }
