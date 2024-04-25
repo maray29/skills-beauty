@@ -12,16 +12,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
-  .section-collection-list .page-width {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .section-collection-list .collection-list:not(.slider) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
 }
 
 .collection-list__item:only-child {
@@ -58,4 +48,16 @@
 
 .collection-list-view-all {
   margin-top: 2rem;
+}
+
+/* Custom */
+@media screen and (max-width: 478px) {
+  .card-links_component {
+    flex-direction: column;
+  }
+
+  .collection-list__item {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }

@@ -42,3 +42,29 @@
 .home-header_motto > * {
   padding-bottom: 0rem;
 }
+
+@media screen and (max-width: 478px) {
+  .home-header_heading {
+    font-size: clamp(3.2rem, 12vw, 40rem) !important;
+    padding-top: 1.6rem;
+  }
+
+  .home-header_img-wrap {
+    display: flex;
+    grid-column-start: span 12;
+  }
+
+  .home-header_content-wrap {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    padding: 0;
+  }
+
+  .home-header_motto {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 4;
+  }
+}

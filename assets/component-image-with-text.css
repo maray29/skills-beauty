@@ -480,3 +480,23 @@
 .image-with-text__text {
   padding-top: 4.2rem;
 }
+
+@media screen and (max-width: 478px) {
+  .image-with-text__img-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .image-with-text__content-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .image-with-text__text {
+    padding-top: 3.2rem;
+  }
+}

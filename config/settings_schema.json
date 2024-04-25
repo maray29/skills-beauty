@@ -61,31 +61,49 @@
           {
             "type": "color",
             "id": "button",
-            "label": "t:settings_schema.colors.settings.button_background.label",
-            "default": "#121212"
+            "label": "t:settings_schema.colors.settings.button.label",
+            "default": "#1F2228"
           },
           {
             "type": "color",
-            "id": "button_background_hover",
-            "label": "t:settings_schema.colors.settings.button_background_hover.label",
-            "default": "#121212"
+            "id": "button_hover",
+            "label": "t:settings_schema.colors.settings.button_hover.label",
+            "default": "#EAECF0"
           },
           {
             "type": "color",
             "id": "button_label",
             "label": "t:settings_schema.colors.settings.button_label.label",
-            "default": "#FFFFFF"
+            "default": "#F9FAFB"
           },
           {
             "type": "color",
             "id": "button_label_hover",
             "label": "t:settings_schema.colors.settings.button_label_hover.label",
-            "default": "#FFFFFF"
+            "default": "#1F2228"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button",
+            "label": "t:settings_schema.colors.settings.secondary_button.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_hover",
+            "label": "t:settings_schema.colors.settings.secondary_button_hover.label",
+            "default": "#121212"
           },
           {
             "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "secondary_button_label_hover",
+            "label": "t:settings_schema.colors.settings.secondary_button_label_hover.label",
             "default": "#121212"
           },
           {
