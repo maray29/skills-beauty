@@ -127,8 +127,14 @@
         "button_background": {
           "label": "Solid button background"
         },
+        "button_background_hover": {
+          "label": "Solid button background hover"
+        },
         "button_label": {
           "label": "Solid button label"
+        },
+        "button_label_hover": {
+          "label": "Solid button label hover"
         },
         "secondary_button_label": {
           "label": "Outline button"
