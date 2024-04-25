@@ -445,7 +445,12 @@
       }
     },
     "home-header": {
-      "name": "Home header"
+      "name": "Home header",
+      "settings": {
+        "tag_content": {
+          "label": "Tag text"
+        }
+      }
     },
     "announcement-bar": {
       "name": "Announcement bar",
