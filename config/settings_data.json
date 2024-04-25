@@ -143,8 +143,13 @@
           "background_gradient": "",
           "text": "#1F2228",
           "button": "#1F2228",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
+          "button_hover": "#1760F1",
+          "button_label": "#F9FAFB",
+          "button_label_hover": "#1F2228",
+          "secondary_button": "#F2F4F7",
+          "secondary_button_hover": "#1F2228",
+          "secondary_button_label": "#1F2228",
+          "secondary_button_label_hover": "#434A54",
           "shadow": "#121212"
         }
       },
@@ -153,9 +158,14 @@
           "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
+          "button": "#1F2228",
+          "button_hover": "#FCFCFD",
           "button_label": "#f3f3f3",
+          "button_label_hover": "#FCFCFD",
+          "secondary_button": "#121212",
+          "secondary_button_hover": "#121212",
           "secondary_button_label": "#121212",
+          "secondary_button_label_hover": "#121212",
           "shadow": "#121212"
         }
       },
@@ -165,30 +175,13 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
+          "button_hover": "#000000",
           "button_label": "#000000",
+          "button_label_hover": "#000000",
+          "secondary_button": "#ffffff",
+          "secondary_button_hover": "#121212",
           "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4": {
-        "settings": {
-          "background": "#121212",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-5": {
-        "settings": {
-          "background": "#334fb4",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
+          "secondary_button_label_hover": "#121212",
           "shadow": "#121212"
         }
       }

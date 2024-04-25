@@ -1232,17 +1232,6 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
-.button--secondary,
-.button--tertiary {
-  --color-button: var(--color-secondary-button);
-  --color-button-text: var(--color-secondary-button-text);
-}
-
-.button--tertiary {
-  --alpha-button-background: 0;
-  --alpha-button-border: 0.2;
-}
-
 .button,
 .shopify-challenge__button,
 .customer button,
@@ -1306,7 +1295,36 @@ button.shopify-payment-button__button--unbranded {
   padding: 0.8rem 3.2rem !important;
 }
 
-.button:before,
+.button--secondary,
+.button--tertiary {
+  background-color: rgb(var(--color-secondary-button));
+  color: rgb(var(--color-secondary-button-text));
+  border-color: rgb(var(--color-secondary-button));
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button--tertiary {
+  --alpha-button-background: 0;
+  --alpha-button-border: 0.2;
+}
+
+/* Hover */
+
+.button:not([disabled]):hover,
+.shopify-challenge__button:hover,
+.customer button:hover,
+.shopify-payment-button__button--unbranded:hover {
+  background-color: var(--color-button-hover);
+  color: var(--color-button-text-hover);
+}
+
+.button--secondary:hover {
+  background-color: rgb(var(--color-secondary-button-hover)) !important;
+  color: rgb(var(--color-secondary-button-text-hover)) !important;
+}
+
+/* .button:before,
 .shopify-challenge__button:before,
 .customer button:before,
 .shopify-payment-button__button--unbranded:before,
@@ -1341,18 +1359,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 var(--buttons-border-width)
       rgba(var(--color-button), var(--alpha-button-background));
   transition: box-shadow var(--duration-short) ease;
-}
-
-.button:not([disabled]):hover::after,
-.shopify-challenge__button:hover::after,
-.customer button:hover::after,
-.shopify-payment-button__button--unbranded:hover::after {
-  /* --border-offset: 1.3px;
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 calc(var(--buttons-border-width) + 1px)
-      rgba(var(--color-button), var(--alpha-button-background)); */
-}
+} */
 
 .button--secondary:after {
   --border-opacity: var(--buttons-border-opacity);
@@ -3794,19 +3801,6 @@ html {
 
 .is-full-width {
   width: 100%;
-}
-
-.button:not([disabled]):hover,
-.shopify-challenge__button:hover,
-.customer button:hover,
-.shopify-payment-button__button--unbranded:hover {
-  background-color: white;
-  color: black;
-}
-
-.button--secondary:hover {
-  background-color: black !important;
-  color: white !important;
 }
 
 .tag {

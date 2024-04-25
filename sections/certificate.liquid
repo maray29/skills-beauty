@@ -28,17 +28,17 @@
         {% endcomment %}
         {{ section.settings.subheading }}
         <div class="success_button-wrap">
-          {%- if section.settings['success_item-1_button_label'] != blank -%}
+          {%- if section.settings['button-1_label'] != blank -%}
             <a
-              {% if section.settings['success_item-1_button_link'] == blank %}
+              {% if section.settings['button-1_link'] == blank %}
                 role="link" aria-disabled="true"
               {% else %}
-                href="{{ section.settings.success_item-1_button_link }}"
+                href="{{ section.settings.button-1_link }}"
               {% endif %}
               class="button button--secondary is-full-width"
               {{ section.shopify_attributes }}
             >
-              {{ section.settings['success_item-1_button_label'] | escape }}
+              {{ section.settings['button-1_label'] | escape }}
               {% render 'icon-arrow' %}
             </a>
           {%- endif -%}
@@ -110,14 +110,13 @@
     },
     {
       "type": "text",
-      "id": "button_label",
-      "default": "О Нашей Студии",
+      "id": "button-1_label",
+      "default": "Подарить",
       "label": "t:sections.all.button.button_label.label"
     },
     {
       "type": "url",
-      "id": "button_link",
-      "default": "/",
+      "id": "button-1_link",
       "label": "t:sections.all.button.button_link.label"
     }
   ],

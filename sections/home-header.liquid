@@ -19,22 +19,39 @@
           {% else %}
             href="{{ section.settings['button-1_link'] }}"
           {% endif %}
-          class="button button--secondary is-full-width"
+          class="button button--primary is-full-width"
           {{ section.shopify_attributes }}
         >
           {{ section.settings['button-1_label'] | escape }}
+          {% render 'icon-arrow' %}
+        </a>
+      {%- endif -%}
+
+      {%- if section.settings['button-2_label'] != blank -%}
+        <a
+          {% if section.settings['button-2_link'] == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ section.settings['button-2_link'] }}"
+          {% endif %}
+          class="button button--secondary is-full-width"
+          {{ section.shopify_attributes }}
+        >
+          {{ section.settings['button-2_label'] | escape }}
           {% render 'icon-arrow-down' %}
         </a>
       {%- endif -%}
 
-      <a href="/pages/about-us" class="button is-full-width">
-        УЗНАТЬ О НАС
-        {% render 'icon-arrow-down' %}
-      </a>
-      <a href="/collections/all" class="button button--secondary is-full-width">
-        ОБУЧЕНИЕ
-        {% render 'icon-arrow' %}
-      </a>
+      {% comment %}
+        <a href="/pages/about-us" class="button is-full-width">
+          УЗНАТЬ О НАС
+          {% render 'icon-arrow-down' %}
+        </a>
+        <a href="/collections/all" class="button button--secondary is-full-width">
+          ОБУЧЕНИЕ
+          {% render 'icon-arrow' %}
+        </a>
+      {% endcomment %}
     </div>
   </div>
   <div class="home-header_motto">
@@ -188,14 +205,26 @@
     {
       "type": "text",
       "id": "button-1_label",
-      "default": "УЗНАТЬ О НАС",
+      "default": "Обучение",
       "label": "Текст 1-ой кнопки"
     },
     {
       "type": "url",
       "id": "button-1_link",
-      "default": "/#about",
+      "default": "/",
       "label": "Ссылка 1-ой кнопки"
+    },
+    {
+      "type": "text",
+      "id": "button-2_label",
+      "default": "Узнать о нас",
+      "label": "Текст 2-ой кнопки"
+    },
+    {
+      "type": "url",
+      "id": "button-2_link",
+      "default": "/",
+      "label": "Ссылка 2-ой кнопки"
     },
     {
       "type": "color_scheme",
@@ -208,8 +237,7 @@
       "id": "tag_content",
       "default": "СТИЛЬ — ЭТО КРАСОТА ЖИЗНИ",
       "label": "Tag Content"
-    },
-    {}
+    }
   ],
   "presets": [
     {

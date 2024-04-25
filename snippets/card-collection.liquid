@@ -9,7 +9,7 @@
   - wrapper_class: {String} Wrapper class for card (optional)
   - placeholder_image: {String} Placeholder image when collection is empty (optional)
   - button_name: {String} Custom name for the button. Default is the collection title (optional)
-
+  - button_link: {String} Custom link (optional)
   Usage:
   {% render 'card-collection', button_name: 'Shop Now' %}
 {% endcomment %}
@@ -88,6 +88,8 @@
               <a
                 {% if card_collection == blank %}
                   role="link" aria-disabled="true"
+                {%- elsif card_collection.button_link != blank -%}
+                  href="{{ card_collection.button_link }}"
                 {% else %}
                   href="{{ card_collection.url }}"
                 {% endif %}
@@ -122,9 +124,12 @@
             <a
               {% if card_collection == blank %}
                 role="link" aria-disabled="true"
+              {% elsif button_link != blank %}
+                href="{{ button_link }}"
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
+              href="{{ card_collection.button_link }}"
               class="button is-full-width"
             >
               {%- if button_name != blank -%}
@@ -134,7 +139,7 @@
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-              <span class="icon-wrap">{% render 'icon-arrow' %}</span>            
+              <span class="icon-wrap">{% render 'icon-arrow' %}</span>
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
