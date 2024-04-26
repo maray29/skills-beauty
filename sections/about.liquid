@@ -18,8 +18,8 @@
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="services">
   <div class="page-width">
     <div class="layout_12col">
-      {% render 'tag-component', tag_content: section.settings.tag_content %}
       <div class="section_heading-wrap">
+        {% render 'tag-component', tag_content: section.settings.tag_content %}
         <h2>{{ section.settings.heading }}</h2>
       </div>
       <div class="section_subheading-wrap subtitle">

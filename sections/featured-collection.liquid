@@ -51,9 +51,9 @@
   <div class="page-width">
     <div class="section_header">
       <div class="layout_12col">
-        {% render 'tag-component', tag_content: section.settings.tag_content %}
         {%- if section.settings.title != blank -%}
           <div class="section_heading-wrap">
+            {% render 'tag-component', tag_content: section.settings.tag_content %}
             <h2 class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
               {{ section.settings.title }}
             </h2>

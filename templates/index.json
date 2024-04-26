@@ -28,7 +28,9 @@
       "type": "success",
       "settings": {
         "header_img": "shopify://shop_images/mascara_img.webp",
-        "image": "shopify://shop_images/mascara_img.webp",
+        "image_1": "shopify://shop_images/success-item-1_img-wrap.webp",
+        "image_2": "shopify://shop_images/success-item-2_img-wrap.webp",
+        "image_3": "shopify://shop_images/success-item-3_img-wrap.webp",
         "tag_content": "Факты и цифры",
         "success_item-1_number": "2300+",
         "success_item-1_text": "Счастливых клиентов",

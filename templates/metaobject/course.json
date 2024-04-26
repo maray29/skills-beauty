@@ -9,11 +9,11 @@
     "image-with-text": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
+        "image": "shopify://shop_images/about_img-wrap.webp",
         "heading": "Для кого этот курс?",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. <\/p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-3",
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+        "section_color_scheme": "",
+        "color_scheme": "",
         "padding_top": 128,
         "padding_bottom": 128
       }
@@ -33,7 +33,7 @@
       "settings": {
         "heading": "Результаты",
         "subheading": "{{ metaobject.result | metafield_tag }}",
-        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "image": "shopify://shop_images/certificate_img.webp",
         "tag_content": "Скиллы и знания",
         "padding_top": 128,
         "padding_bottom": 128,
