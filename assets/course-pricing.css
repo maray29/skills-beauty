@@ -1,0 +1,63 @@
+.price_list {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.price_item {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row-start: span 3;
+  gap: 0rem;
+}
+
+.price_content {
+  display: grid;
+  padding: 4rem 2.4rem;
+  gap: 3.2rem;
+  border-radius: 1.2rem;
+  background-color: rgb(var(--color-background-secondary));
+  grid-template-rows: subgrid;
+  grid-row-start: span 2;
+}
+
+.price_header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  grid-template-rows: subgrid;
+  grid-row-start: span 1;
+}
+
+.price_price {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.price_benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding-left: 0rem;
+  /* grid-template-rows: subgrid; */
+  /* grid-row-start: span 1; */
+}
+
+.price_benefits li {
+  list-style-type: none; /* Removes the default bullet */
+  position: relative;
+  padding-left: 30px;
+}
+
+.price_benefits li::before {
+  content: url("https://cdn.shopify.com/s/files/1/0640/9689/5127/files/check.svg?v=1714312440");
+  position: absolute;
+  left: 0; /* Aligns the bullet to the left */
+  top: -0.25rem; /* Adjust this value to align vertically as needed */
+}
+
+.price_button-wrap {
+  padding-top: 1.6rem;
+}

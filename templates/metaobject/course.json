@@ -46,9 +46,22 @@
         "heading": "Преподаватель курса",
         "tag_content": "Специалист Skills Beauty"
       }
+    },
+    "course-pricing": {
+      "type": "course-pricing",
+      "settings": {
+        "heading": "Стоимость курса",
+        "subheading": "<p>Курсы для себя.</p>",
+        "tag_content": "Прайс",
+        "button-1_label": "Оставить заявку",
+        "button-1_link": "https://maray.ai",
+        "color_scheme": "scheme-2",
+        "section_color_scheme": "scheme-2"
+      }
     }
   },
   "order": [
+    "course-pricing",
     "course-header",
     "image-with-text",
     "course-program",

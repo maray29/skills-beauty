@@ -12,13 +12,11 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -29,8 +27,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -41,8 +38,7 @@
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "text_eYQeHi": {
           "type": "text",
@@ -102,7 +98,7 @@
           "settings": {
             "heading": "Instruction",
             "icon": "question_mark",
-            "row_content": "<p>{{ product.metafields.custom.instruction | metafield_tag }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.instruction | metafield_tag }}</p>",
             "page": ""
           }
         },
@@ -111,7 +107,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "question_mark",
-            "row_content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}<\/p>",
+            "row_content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}</p>",
             "page": ""
           }
         }
@@ -155,9 +151,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "collapsible_content_rH4feT",
-    "related-products"
-  ]
+  "order": ["main", "collapsible_content_rH4feT", "related-products"]
 }

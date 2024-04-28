@@ -1,0 +1,154 @@
+{{ 'course-pricing.css' | asset_url | stylesheet_tag }}
+{{ 'section.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="layout_12col">
+      <div class="section_heading-wrap is-centered">
+        {% render 'tag-component', tag_content: section.settings.tag_content %}
+        <h2>{{ metaobject.pricing_heading }}</h2>
+        <div class="section_subheading-wrap subtitle max-width-medium">
+          <p>
+            {{ metaobject.pricing_description }}
+          </p>
+        </div>
+      </div>
+      <div class="price_list">
+        {% for price in metaobject.price.value %}
+          <div class="price_item">
+            <div class="price_content">
+              <div class="price_header">
+                <h3 class="text-size-large text-weight-semibold">
+                  {{ price.tier_name }}
+                </h3>
+                <div class="price_price">
+                  {{ price.price }}
+                </div>
+              </div>
+              <ul class="price_benefits">
+                {% for benefit in price.benefit.value %}
+                  <li>
+                    {{ benefit }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="price_button-wrap">
+              {% if metaobject.type == 'offline' %}
+                {%- if section.settings['button-1_label'] != blank -%}
+                  <a
+                    {% if section.settings['button-1_link'] == blank %}
+                      role="link" aria-disabled="true"
+                    {% else %}
+                      href="{{ section.settings.button-1_link }}"
+                    {% endif %}
+                    class="button is-full-width"
+                    {{ section.shopify_attributes }}
+                  >
+                    {{ section.settings['button-1_label'] | escape }}
+                    {% render 'icon-arrow-up-right' %}
+                  </a>
+                {%- endif -%}
+              {% else %}
+                <div>online</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.team.name",
+  "tag": "section",
+  "class": "section_team",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Page heading",
+      "label": "t:sections.team.settings.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
+      "label": "t:sections.team.settings.subheading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.team.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "tag_content",
+      "default": "Специалисты Skills Beauty",
+      "label": "Tag Content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 128
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    },
+    {
+      "type": "text",
+      "id": "button-1_label",
+      "default": "Оставить заявку",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button-1_link",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.team.presets.name"
+    }
+  ]
+}
+{% endschema %}

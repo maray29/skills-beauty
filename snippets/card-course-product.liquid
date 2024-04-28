@@ -44,6 +44,7 @@
           {% for tag in card_product.tags %}
             <div class="card__tag">{{ tag }}</div>
           {% endfor %}
+          <div>text</div>
           <h3
             class="card__heading"
             {% if card_product.featured_media or settings.card_style == 'card' %}

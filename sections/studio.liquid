@@ -1,0 +1,168 @@
+{{ 'section.css' | asset_url | stylesheet_tag }}
+{{ 'studio.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="layout_12col">
+      <div class="studio_img-wrap">
+        <img
+          srcset="
+            {%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if section.settings.image.width >= 533 -%}{{ section.settings.image | image_url: width: 533 }} 533w,{%- endif -%}
+            {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if section.settings.image.width >= 940 -%}{{ section.settings.image | image_url: width: 940 }} 940w,{%- endif -%}
+            {%- if section.settings.image.width >= 1066 -%}{{ section.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+            {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
+          "
+          src="{{ section.settings.image | image_url: width: 533 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
+          alt="{{ section.settings.image.alt | escape }}"
+          class="motion-reduce"
+          loading="lazy"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.height }}"
+        >
+      </div>
+      <div class="studio_heading-wrap text-style-vertical">
+        <h2>{{ section.settings.heading }}</h2>
+      </div>
+      <div class="studio_subheading-wrap subtitle">
+        {{ section.settings.subheading }}
+        {%- if section.settings['button-1_label'] != blank -%}
+          <a
+            {% if section.settings['button-1_link'] == blank %}
+              role="link" aria-disabled="true"
+            {% else %}
+              href="{{ section.settings.button-1_link }}"
+            {% endif %}
+            class="button is-full-width"
+            {{ section.shopify_attributes }}
+          >
+            {{ section.settings['button-1_label'] | escape }}
+            {% render 'icon-arrow' %}
+          </a>
+        {%- endif -%}
+      </div>
+      <div class="feature_list">
+        {% for block in section.blocks %}
+          <div class="feature_item">
+            <div class="feature_icon-wrap">
+              {%- if block.settings.icon != blank -%}
+                {{ block.settings.icon | image_url: width: 48 | image_tag }}
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="feature_content">
+              <h3>{{ block.settings.heading }}</h3>
+              <div>{{ block.settings.subheading }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.services.name",
+  "tag": "section",
+  "class": "section_services",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Page heading",
+      "label": "t:sections.services.settings.heading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
+      "label": "t:sections.services.settings.subheading.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.services.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "button-1_label",
+      "default": "Подарить",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button-1_link",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 128
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Выгода",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Название"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Описание"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Иконка"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.services.presets.name",
+      "category": "Service"
+    }
+  ]
+}
+{% endschema %}

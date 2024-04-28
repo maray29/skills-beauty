@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-start: 2;
   grid-column-end: 12;
-  grid-row-start: 4;
+  grid-row-start: 3;
   gap: 1.6rem;
 }
 

@@ -5,12 +5,23 @@
 }
 
 .section_heading-wrap {
-  display: flex;
-  flex-direction: column;
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 4rem;
+}
+
+.is-centered {
+  grid-column-end: 13;
+  align-items: center;
+  text-align: center;
+}
+
+.is-centered .section_subheading-wrap {
+  padding-top: 3.2rem;
+  padding-bottom: 0;
 }
 
 .section_heading-wrap .tag {
