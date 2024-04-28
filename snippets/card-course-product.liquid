@@ -44,7 +44,6 @@
           {% for tag in card_product.tags %}
             <div class="card__tag">{{ tag }}</div>
           {% endfor %}
-          <div>text</div>
           <h3
             class="card__heading"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -52,7 +51,7 @@
             {% endif %}
           >
             <a
-              href="{{ card_product.url }}"
+              href="{{ card_product.metafields.custom.course.value.system.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
@@ -207,7 +206,9 @@
                 {%- endform -%}
               </product-form>
             {%- endif -%}
-            <a href="" class="button is-full-width"> {{ 'products.product.learn_more' | t }} </a>
+            <a href="{{ card_product.metafields.custom.course.value.system.url }}" class="button is-full-width">
+              {{ 'products.product.learn_more' | t }}
+            </a>
           </div>
         {%- endif -%}
 

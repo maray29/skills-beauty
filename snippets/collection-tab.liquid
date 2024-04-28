@@ -1,0 +1,73 @@
+{% comment %}
+  Renders a collection list
+
+  Accepts:
+  - collection: {Object} Product collection
+  - limit: {}
+
+  Usage:
+  {% render 'collection-tab', collection: collection %}
+{% endcomment %}
+
+<ul
+  class="course__grid grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+  role="list"
+  aria-label="{{ 'general.slider.name' | t }}"
+>
+  {%- for product in collection.products limit: limit -%}
+    <li
+      class="course__item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}
+        data-cascade
+        style="--animation-order: {{ forloop.index }};"
+      {% endif %}
+    >
+      {% render 'card-course-product',
+        card_product: product,
+        media_aspect_ratio: section.settings.image_ratio,
+        image_shape: section.settings.image_shape,
+        show_secondary_image: section.settings.show_secondary_image,
+        show_vendor: section.settings.show_vendor,
+        show_rating: section.settings.show_rating,
+        show_quick_add: section.settings.enable_quick_add,
+        section_id: section.id
+      %}
+    </li>
+  {%- else -%}
+    {%- for i in (1..section.settings.columns_desktop) -%}
+      <li
+        class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
+      >
+        {% liquid
+          assign ridx = forloop.rindex
+          if ridx == 5
+            assign ridx = 1
+          endif
+        %}
+        {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+        {% render 'card-course-product',
+          show_vendor: section.settings.show_vendor,
+          media_aspect_ratio: section.settings.image_ratio,
+          image_shape: section.settings.image_shape,
+          placeholder_image: placeholder_image
+        %}
+      </li>
+    {%- endfor -%}
+  {%- endfor -%}
+</ul>
+
+{%- if section.settings.show_view_all and more_in_collection -%}
+  <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <a
+      href="{{ section.settings.collection.url }}"
+      class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+      aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+    >
+      {{ 'sections.featured_collection.view_all' | t }}
+    </a>
+  </div>
+{%- endif -%}

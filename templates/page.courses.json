@@ -23,19 +23,20 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Наши Курсы",
-        "heading_size": "h1",
+        "title": "Courses",
         "description": "<p>Небольшой параграф рассказывающий о типах курсов и некоторых деталях.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "courses",
+        "offline_collection": "offline-courses",
         "products_to_show": 16,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
+        "section_color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -44,7 +45,7 @@
         "enable_quick_add": true,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 128,
+        "padding_top": 64,
         "padding_bottom": 128
       }
     },
@@ -58,5 +59,5 @@
       }
     }
   },
-  "order": ["page-header", "image_with_text", "team", "featured_collection"]
+  "order": ["featured_collection", "image_with_text", "team", "page-header"]
 }
