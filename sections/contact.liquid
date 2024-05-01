@@ -1,18 +1,6 @@
 {{ 'contact.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+{% render 'section-padding' %}
 
 {%- liquid
   assign fetch_priority = 'auto'
@@ -27,21 +15,23 @@
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="services">
   <div class="page-width">
     <div class="container-medium">
-      <div class="section_heading-wrap">
-        {% render 'tag-component', tag_content: section.settings.tag_content %}
-        <h2>{{ section.settings.heading }}</h2>
-      </div>
-      <div class="contact_socials">
-        <h3>{{ section.settings.heading_social }}</h3>
-        {% render 'social-icons', class: 'my-class' %}
-      </div>
-      <div class="contact_address">
-        <h3>{{ section.settings.heading_address }}</h3>
-        {{ section.settings.text_address }}
-      </div>
-      <div class="contact_time">
-        <h3>{{ section.settings.heading_time }}</h3>
-        {{ section.settings.text_time }}
+      <div class="contact_content-wrap">
+        <div class="section_heading-wrap">
+          {% render 'tag-component', tag_content: section.settings.tag_content %}
+          <h2>{{ section.settings.heading }}</h2>
+        </div>
+        <div class="contact_socials">
+          <h3>{{ section.settings.heading_social }}</h3>
+          {% render 'social-icons', class: 'my-class' %}
+        </div>
+        <div class="contact_address">
+          <h3>{{ section.settings.heading_address }}</h3>
+          {{ section.settings.text_address }}
+        </div>
+        <div class="contact_time">
+          <h3>{{ section.settings.heading_time }}</h3>
+          {{ section.settings.text_time }}
+        </div>
       </div>
     </div>
   </div>

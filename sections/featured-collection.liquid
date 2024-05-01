@@ -14,19 +14,7 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+{% render 'section-padding' %}
 
 {%- liquid
   assign online_products = section.settings.collection.products
@@ -57,7 +45,7 @@
       <div class="layout_12col">
         {%- if section.settings.title != blank -%}
           <div class="section_heading-wrap is-centered">
-            <h1 class="text-style-allcaps {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <h1 class="course-heading text-style-allcaps {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
               {{ section.settings.title }}
             </h1>
             {%- if section.settings.description != blank
@@ -489,7 +477,7 @@
 {% style %}
   .tabs {
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
   .tab-links {
     list-style: none;

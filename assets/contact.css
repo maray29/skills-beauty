@@ -1,10 +1,15 @@
+.contact_content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
 .contact_socials,
 .contact_address,
 .contact_time {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding-bottom: 3.2rem;
+  /* padding-bottom: 3.2rem; */
 }
 
 .contact_time {

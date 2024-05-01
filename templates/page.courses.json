@@ -1,14 +1,5 @@
 {
   "sections": {
-    "page-header": {
-      "type": "page-header",
-      "settings": {
-        "image": "shopify://shop_images/success_img.webp",
-        "heading": "Courses",
-        "tag": "Skills Beauty",
-        "subheading": "Мы создаем сообщество, которое усиливает уверенность в себе через искусство и науку о красоте."
-      }
-    },
     "image_with_text": {
       "type": "image-with-text",
       "settings": {
@@ -59,5 +50,5 @@
       }
     }
   },
-  "order": ["featured_collection", "image_with_text", "team", "page-header"]
+  "order": ["featured_collection", "image_with_text", "team"]
 }

@@ -14,7 +14,7 @@
   row-gap: 4.2rem;
   column-gap: 1.2rem;
   padding: 1.6rem;
-  padding-top: 18rem;
+  padding-top: clamp(6.4rem, 8vw, 18rem);
 }
 
 .partnership_heading-wrap {
@@ -54,6 +54,7 @@
 .partnership_img-wrap img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 0 !important;
   transform: scale(1.01);
 }
@@ -63,6 +64,7 @@
     grid-column-start: 1;
     grid-column-end: 13;
     padding-top: 6.4rem;
+    row-gap: 3.2rem;
   }
 
   .partnership_heading-wrap {
@@ -87,5 +89,15 @@
   .partnership_img-wrap {
     grid-column-start: 1;
     grid-column-end: 13;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .partnership_text {
+    grid-column-end: 7;
+  }
+
+  .partnership_button-wrap {
+    grid-column-end: 7;
   }
 }

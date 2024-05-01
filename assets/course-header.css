@@ -18,6 +18,7 @@
 .course-header_img-wrap img {
   width: 100%;
   height: auto;
+  margin-top: 1.6rem;
 }
 
 .course-header_heading {
@@ -55,4 +56,20 @@
 
 body {
   letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 478px) {
+  .course-header_content-wrap {
+    padding-top: 3.2rem;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+  }
+
+  .course-header_img-wrap {
+    margin-top: 0rem;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+  }
 }

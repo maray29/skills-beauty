@@ -5,25 +5,11 @@
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
+{% render 'section-padding' %}
+
 {%- style -%}
   .footer {
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-  }
-
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
   }
 {%- endstyle -%}
 
@@ -232,12 +218,7 @@
             <a class="text-style-link" href="">Shipping & Return</a>
           </ul>
         </div>
-        <div class="footer__column">
-          <h3 class="footer-block__heading">Социальные сети</h3>
-          {%- if has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%}
-        </div>
+
         <div class="footer__column">
           <h3 class="footer-block__heading">Адрес</h3>
           {% comment %} {{ shop.address.summary }} {% endcomment %}
@@ -253,6 +234,12 @@
         <div class="footer__column">
           <h3 class="footer-block__heading">Время работы</h3>
           {{ section.settings.opening_time }}
+        </div>
+        <div class="footer__column">
+          <h3 class="footer-block__heading">Социальные сети</h3>
+          {%- if has_social_icons -%}
+            {%- render 'social-icons', class: 'footer__list-social' -%}
+          {%- endif -%}
         </div>
       </div>
       <div class="footer__content-bottom-wrapper {% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">

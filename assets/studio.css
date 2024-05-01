@@ -62,10 +62,41 @@
 .feature_icon-wrap {
   width: 6.4rem;
   height: 6.4rem;
+  aspect-ratio: 1 / 1;
 }
 
 .feature_icon-wrap img {
   display: flex;
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 478px) {
+  .studio_img-wrap {
+    grid-column-start: 1;
+    grid-column-end: 12;
+  }
+
+  .studio_heading-wrap {
+    grid-column-start: 12;
+    grid-column-end: 13;
+  }
+
+  .studio_subheading-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    padding-top: 0rem;
+    gap: 3.2rem;
+  }
+
+  .text-style-vertical h2 {
+    font-size: clamp(8rem, 10vw, 12rem) !important;
+  }
+
+  .feature_list {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    padding-top: 0rem;
+  }
 }

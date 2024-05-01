@@ -61,11 +61,11 @@
     }
   },
   "order": [
-    "course-pricing",
     "course-header",
     "image-with-text",
     "course-program",
     "course-result",
-    "course-instructors"
+    "course-instructors",
+    "course-pricing"
   ]
 }

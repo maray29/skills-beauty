@@ -28,3 +28,24 @@
   grid-column-start: 2;
   grid-column-end: 6;
 }
+
+@media screen and (max-width: 478px) {
+  .page-header_img-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+  }
+
+  .page-header_heading-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    align-self: flex-end;
+  }
+
+  .page-header_content-wrap {
+    padding-top: 0rem;
+    grid-column-start: 2;
+    grid-column-end: 13;
+  }
+}

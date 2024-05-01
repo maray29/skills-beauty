@@ -76,3 +76,17 @@
   width: 100%;
   height: auto;
 }
+
+@media screen and (max-width: 991px) {
+  .team_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .team_list {
+    grid-column-end: 12;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+}

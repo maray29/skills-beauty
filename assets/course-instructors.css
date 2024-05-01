@@ -46,3 +46,10 @@
 .instructor_description p {
   margin-bottom: 1.6rem;
 }
+
+@media screen and (max-width: 478px) {
+  .instructor_item {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
