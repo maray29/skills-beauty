@@ -8,13 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Free gift for purchases above 150€",
             "link": ""
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
-      "disabled": true,
+      "block_order": [
+        "announcement-bar-0"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
@@ -44,5 +45,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
