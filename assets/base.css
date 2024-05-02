@@ -281,13 +281,20 @@ h5,
 .h3,
 .h4,
 .h5 {
-  /* font-family: var(--font-heading-family); */
   font-family: "inter", sans-serif !important;
-  /* font-weight: 420 !important; */
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
-  /* line-height: 1.35 !important; */
   word-break: break-word;
+}
+
+.heading-huge {
+  font-size: clamp(3.2rem, 12.8vw, 21rem) !important;
+  text-transform: uppercase;
+  grid-column-start: span 12;
+  padding: 0rem 0rem;
+  margin: 0rem 0rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
 
 h1 {
@@ -303,7 +310,6 @@ h1 {
 }
 
 h2 {
-  /* font-size: calc(var(--font-heading-scale) * 6.4rem) !important; */
   font-size: clamp(4.2rem, 4.5vw, 6.4rem) !important;
   text-transform: uppercase;
   letter-spacing: -0.03em !important;
@@ -312,7 +318,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(var(--font-heading-scale) * 2rem) !important;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem) !important;
   font-weight: 520 !important;
   letter-spacing: -0.03em !important;
 }
@@ -1723,10 +1729,11 @@ details[open] > .share-button__fallback {
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
-  border-radius: var(--inputs-radius);
-  box-shadow: 0 0 0 var(--inputs-border-width)
-    rgba(var(--color-foreground), var(--inputs-border-opacity));
+  /* border-radius: var(--inputs-radius); */
+  /* box-shadow: 0 0 0 var(--inputs-border-width)
+    rgba(var(--color-foreground), var(--inputs-border-opacity)); */
   transition: box-shadow var(--duration-short) ease;
+  transition: border 0.35s ease;
   z-index: 1;
 }
 
@@ -1742,8 +1749,7 @@ details[open] > .share-button__fallback {
 .select:hover.select:after,
 .select__select:hover.select__select:after,
 .customer .field:hover.field:after,
-.customer select:hover.select:after,
-.localization-form__select:hover.localization-form__select:after {
+.customer select:hover.select:after {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
     rgba(var(--color-foreground), var(--inputs-border-opacity));
   outline: 0;
@@ -1753,8 +1759,7 @@ details[open] > .share-button__fallback {
 .field__input:focus-visible,
 .select__select:focus-visible,
 .customer .field input:focus-visible,
-.customer select:focus-visible,
-.localization-form__select:focus-visible.localization-form__select:after {
+.customer select:focus-visible {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
     rgba(var(--color-foreground));
   outline: 0;
@@ -1764,12 +1769,21 @@ details[open] > .share-button__fallback {
 .field__input:focus,
 .select__select:focus,
 .customer .field input:focus,
-.customer select:focus,
-.localization-form__select:focus.localization-form__select:after {
+.customer select:focus {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
     rgba(var(--color-foreground));
   outline: 0;
   border-radius: var(--inputs-radius);
+}
+
+.localization-form__select {
+  border-radius: 0rem !important;
+  transition: border 0.5s ease;
+}
+.localization-form__select:hover.localization-form__select:after,
+.localization-form__select:focus.localization-form__select:after,
+.localization-form__select:focus-visible.localization-form__select:after {
+  border-bottom: 1px solid rgb(var(--color-secondary-button-hover));
 }
 
 .localization-form__select:focus {
@@ -3847,6 +3861,19 @@ html {
 
 .padding-0 {
   padding: 0 !important;
+}
+
+.utility-bar {
+  background-image: url("https://cdn.shopify.com/s/files/1/0640/9689/5127/files/announcement-bar.webp?v=1714569033");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: 100%;
+}
+
+.announcement-bar__message {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 991px) {

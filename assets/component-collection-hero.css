@@ -23,8 +23,8 @@
 .collection-hero__text-wrapper {
   flex-basis: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
 }
 
 @media screen and (min-width: 750px) {
@@ -41,6 +41,7 @@
 
 .collection-hero__title {
   margin: 2.5rem 0;
+  grid-column-start: span 2;
 }
 
 .collection-hero__title + .collection-hero__description {
@@ -52,13 +53,14 @@
 
 @media screen and (min-width: 750px) {
   .collection-hero__title + .collection-hero__description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
 
   .collection-hero__description {
-    max-width: 66.67%;
+    padding-bottom: 1.6rem;
+    /* max-width: 66.67%; */
   }
 
   .collection-hero--with-image .collection-hero__description {
@@ -100,5 +102,21 @@
     flex: 1 0 50%;
     margin-left: 3rem;
     min-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .collection-hero__text-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  .collection-hero__title {
+    margin: 1.6rem 0rem;
+  }
+
+  .collection-hero__description {
+    grid-column-start: span 2;
+    margin: 0rem !important;
   }
 }

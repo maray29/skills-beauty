@@ -1,19 +1,7 @@
 {{ 'section.css' | asset_url | stylesheet_tag }}
 {{ 'about.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+{% render 'section-padding' %}
 
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="services">
   <div class="page-width">
