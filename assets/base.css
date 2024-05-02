@@ -264,8 +264,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 @font-face {
   font-family: "inter";
   src: url("./inter.woff2") format("woff2");
-  /* src: url("./inter.woff2") format("woff2-variations"); */
-  /* src: url("./inter.woff2") format("woff2") tech("variations"); */
   font-weight: 100 900;
   font-display: swap;
 }
@@ -285,6 +283,11 @@ h5,
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
   word-break: break-word;
+}
+
+h1,
+h2 {
+  color: rgb(var(--color-heading));
 }
 
 .heading-huge {
@@ -1297,7 +1300,7 @@ button.shopify-payment-button__button--unbranded {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 0;
+
   gap: 0.8rem;
   /* padding: 0 2rem; */
   cursor: pointer;
@@ -1321,7 +1324,7 @@ button.shopify-payment-button__button--unbranded {
 .button--tertiary {
   background-color: rgb(var(--color-secondary-button));
   color: rgb(var(--color-secondary-button-text));
-  border-color: rgb(var(--color-secondary-button));
+  border-color: rgb(var(--color-border-primary));
   border-width: 1px;
   border-style: solid;
 }

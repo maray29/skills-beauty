@@ -28,6 +28,7 @@
   grid-column-end: 13;
   grid-row-start: 2;
   align-self: flex-end;
+  padding-left: 2rem;
 }
 
 .home-header_motto > * {

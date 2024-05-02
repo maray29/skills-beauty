@@ -117,6 +117,24 @@
             "id": "shadow",
             "label": "t:settings_schema.colors.settings.shadow.label",
             "default": "#121212"
+          },
+          {
+            "type": "color",
+            "id": "heading",
+            "label": "t:settings_schema.colors.settings.shadow.label",
+            "default": "#1F2228"
+          },
+          {
+            "type": "color",
+            "id": "border_primary",
+            "label": "t:settings_schema.colors.settings.shadow.label",
+            "default": "#D4D8DD"
+          },
+          {
+            "type": "color",
+            "id": "border_secondary",
+            "label": "t:settings_schema.colors.settings.shadow.label",
+            "default": "#EAECF0"
           }
         ],
         "role": {

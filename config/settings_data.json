@@ -151,7 +151,10 @@
           "secondary_button_hover": "#1f2228",
           "secondary_button_label": "#1f2228",
           "secondary_button_label_hover": "#f9fafb",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "heading": "#1F2228",
+          "border_primary": "#D4D8DD",
+          "border_secondary": "#EAECF0"
         }
       },
       "scheme-2": {
@@ -168,7 +171,10 @@
           "secondary_button_hover": "#121212",
           "secondary_button_label": "#121212",
           "secondary_button_label_hover": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "heading": "#1F2228",
+          "border_primary": "#D4D8DD",
+          "border_secondary": "#EAECF0"
         }
       },
       "scheme-3": {
@@ -185,7 +191,10 @@
           "secondary_button_hover": "#121212",
           "secondary_button_label": "#ffffff",
           "secondary_button_label_hover": "#121212",
-          "shadow": "#121212"
+          "shadow": "#121212",
+          "heading": "#FFDDC4",
+          "border_primary": "#D4D8DD",
+          "border_secondary": "#EAECF0"
         }
       }
     }
