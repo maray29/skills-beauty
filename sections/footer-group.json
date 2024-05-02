@@ -5,9 +5,10 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "header": "Skills Beauty",
+        "opening_time": "<p>Пн-Пт: 10:00-20:00<br\/>Сб: 10:00-18:00<br\/>Вc: выходной<\/p>",
+        "address": "<p>Auguste-Viktoria-Straße 7 <br\/> Grunewald • 14193 <br\/> Berlin • Deutschland<\/p>",
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Skills Beauty Рассылка",
         "enable_follow_on_shop": true,
         "show_social": true,
@@ -21,5 +22,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
