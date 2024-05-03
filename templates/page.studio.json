@@ -17,7 +17,7 @@
       "type": "studio",
       "settings": {
         "heading": "Studio",
-        "image": "shopify://shop_images/about_img-wrap.webp",
+        "image": "shopify://shop_images/studio_studio_img.webp",
         "subheading": "<p>Небольшой параграф рассказывающий о студии и Skills Beauty.</p>",
         "button-1_label": "Записаться",
         "button-1_link": "/",
@@ -170,7 +170,10 @@
             "title": "",
             "title_color": "#000000",
             "alignment": "center",
-            "html_area": ""
+            "html_area": "",
+            "padding_top": 128,
+            "padding_bottom": 128,
+            "section_color_scheme": "scheme-3"
           }
         }
       },

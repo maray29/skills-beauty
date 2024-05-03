@@ -3879,6 +3879,12 @@ html {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#insta-feed h2 {
+  padding-bottom: 4.8rem;
+  text-align: left;
+  color: rgb(var(--color-heading)) !important;
+}
+
 @media screen and (max-width: 991px) {
   .course__grid {
     grid-template-columns: repeat(2, 1fr) !important;
