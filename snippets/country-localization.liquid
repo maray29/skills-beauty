@@ -35,7 +35,7 @@
   >
     <span>
       {{- localization.country.name }} |
-      {{ localization.country.currency.iso_code }}
+      {% comment %} {{ localization.country.currency.iso_code }} {% endcomment %}
       {{ localization.country.currency.symbol -}}
     </span>
     {% render 'icon-caret' %}
