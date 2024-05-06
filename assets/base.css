@@ -3794,6 +3794,11 @@ html {
   margin: 0 auto;
 }
 
+.text-rich-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .layout_12col {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

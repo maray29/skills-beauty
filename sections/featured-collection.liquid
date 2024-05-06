@@ -52,7 +52,7 @@
               or section.settings.show_description
               and section.settings.collection.description != empty
             -%}
-              <div class="section_subheading-wrap max-width-medium subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              <div class="section_subheading-wrap max-width-large subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                 {%- if section.settings.show_description -%}
                   {{ section.settings.collection.description }}
                 {%- else -%}
