@@ -146,6 +146,24 @@
             "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_jzDEzk": {
+          "type": "slide",
+          "settings": {
+            "heading": "Отзыв",
+            "name": "Erika Müller",
+            "heading_size": "h1",
+            "subheading": "<p>Самая интересная инвестиция в этом году в себя. <\/p><p>Благодарность Катерине за то, что поделилась со мной своими знаниями. За уютный, красивый вечер. Рекомендую всем взрослым девочкам 47+. Лично мне притяжение земли сейчас не страшно, Катя научила как скорректировать маленькие дефициты которые оставляет время на лице. <\/p><p>Любите себя мои взрослые девочки, найдите время и проведите его с Катей. Комплимент от дочки: \"Мама какая ты у меня красивая\". Благодарю Катенька. 5 звёзд. Рекомендую очень, очень!!!!<\/p>",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
@@ -156,7 +174,8 @@
         "slide_KnVgPJ",
         "slide_69JqNk",
         "slide_M7LPtK",
-        "slide_ec4aHW"
+        "slide_ec4aHW",
+        "slide_jzDEzk"
       ],
       "settings": {
         "layout": "full_bleed",
