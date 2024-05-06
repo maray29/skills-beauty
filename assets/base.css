@@ -608,8 +608,9 @@ a:not([href]) {
 
 hr {
   border: none;
-  height: 0.1rem;
-  background-color: rgba(var(--color-foreground), 0.2);
+  height: 1px;
+  /* background-color: rgba(var(--color-foreground), 0.2); */
+  background-color: rgb(var(--color-border-primary));
   display: block;
   margin: 5rem 0;
 }
@@ -773,10 +774,10 @@ summary::-webkit-details-marker {
 }
 
 *:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline: 3px solid #d4d8dd;
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  /* box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3); */
 }
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
@@ -1677,8 +1678,7 @@ details[open] > .share-button__fallback {
   display: none;
 }
 
-/* component-form */
-.field__input,
+component-form .field__input,
 .select__select,
 .customer .field input,
 .customer select {
@@ -1697,14 +1697,18 @@ details[open] > .share-button__fallback {
   min-height: calc(var(--inputs-border-width) * 2);
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
   position: relative;
-  border: 0;
+  border: 1px solid rgb(var(--color-border-primary));
 }
 
-.field:before,
+/* .field__input:focus,
+.field__input:focus-visible {
+  outline: 2px blue;
+} */
+
+/* .field:before,
 .select:before,
 .customer .field:before,
-.customer select:before,
-.localization-form__select:before {
+.customer select:before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1717,13 +1721,12 @@ details[open] > .share-button__fallback {
     var(--inputs-shadow-vertical-offset) var(--inputs-shadow-blur-radius)
     rgba(var(--color-shadow), var(--inputs-shadow-opacity));
   z-index: -1;
-}
+} */
 
-.field:after,
+/* .field:after,
 .select:after,
 .customer .field:after,
-.customer select:after,
-.localization-form__select:after {
+.customer select:after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -1732,13 +1735,13 @@ details[open] > .share-button__fallback {
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
   border: 0.1rem solid transparent;
-  /* border-radius: var(--inputs-radius); */
-  /* box-shadow: 0 0 0 var(--inputs-border-width)
-    rgba(var(--color-foreground), var(--inputs-border-opacity)); */
+  border-radius: var(--inputs-radius);
+  box-shadow: 0 0 0 var(--inputs-border-width)
+    rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
   transition: border 0.35s ease;
   z-index: 1;
-}
+} */
 
 .select__select {
   font-family: var(--font-body-family);
@@ -1748,7 +1751,7 @@ details[open] > .share-button__fallback {
   color: rgba(var(--color-foreground), 0.75);
 }
 
-.field:hover.field:after,
+/* .field:hover.field:after,
 .select:hover.select:after,
 .select__select:hover.select__select:after,
 .customer .field:hover.field:after,
@@ -1757,9 +1760,9 @@ details[open] > .share-button__fallback {
     rgba(var(--color-foreground), var(--inputs-border-opacity));
   outline: 0;
   border-radius: var(--inputs-radius);
-}
+} */
 
-.field__input:focus-visible,
+/* .field__input:focus-visible,
 .select__select:focus-visible,
 .customer .field input:focus-visible,
 .customer select:focus-visible {
@@ -1767,9 +1770,9 @@ details[open] > .share-button__fallback {
     rgba(var(--color-foreground));
   outline: 0;
   border-radius: var(--inputs-radius);
-}
+} */
 
-.field__input:focus,
+/* .field__input:focus,
 .select__select:focus,
 .customer .field input:focus,
 .customer select:focus {
@@ -1777,7 +1780,7 @@ details[open] > .share-button__fallback {
     rgba(var(--color-foreground));
   outline: 0;
   border-radius: var(--inputs-radius);
-}
+} */
 
 .localization-form__select {
   border-radius: 0rem !important;
@@ -1799,6 +1802,8 @@ details[open] > .share-button__fallback {
   display: flex;
   position: relative;
   width: 100%;
+  border-radius: 1.6rem;
+  border: 1px solid rgb(var(--color-border-primary));
 }
 
 /* Select */
@@ -1870,8 +1875,9 @@ details[open] > .share-button__fallback {
 .customer .field input:not(:placeholder-shown) ~ label,
 .customer .field input:-webkit-autofill ~ label {
   font-size: 1rem;
-  top: calc(var(--inputs-border-width) + 0.5rem);
+  top: calc(var(--inputs-border-width) + 0.4rem);
   left: calc(var(--inputs-border-width) + 2rem);
+  opacity: 0.5;
   /* letter-spacing: 0.04rem; */
 }
 
@@ -3755,7 +3761,7 @@ html {
 }
 
 .text-size-large {
-  font-size: clamp(2rem, 3.2vw, 2.4rem);
+  font-size: clamp(2rem, 3vw, 2.4rem);
   line-height: 1.2;
 }
 
@@ -3842,6 +3848,11 @@ html {
 }
 
 @media screen and (max-width: 991px) {
+  .text-size-large {
+    font-size: clamp(2rem, 2vw, 2.4rem);
+    line-height: 1.2;
+  }
+
   .button-group {
     flex-direction: column;
   }

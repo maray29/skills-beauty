@@ -13,7 +13,7 @@
   flex-direction: column;
   font-size: clamp(1.6rem, 1.5vw, 2rem);
   font-weight: 420;
-  padding-top: 9.5rem;
+  padding-top: clamp(3.2rem, 6vw, 8rem);
   padding-left: 2rem;
   line-height: 1.15;
   grid-column-start: 8;
