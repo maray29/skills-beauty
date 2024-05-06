@@ -1,3 +1,13 @@
+.testimonial-slider_slider {
+  margin: 1.6rem !important;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.testimonial-slider_slider + .slideshow__controls {
+  border: 0px !important;
+}
+
 .testimonial-slider_text-wrapper {
   padding: 4.2rem;
 }

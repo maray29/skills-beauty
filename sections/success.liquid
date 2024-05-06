@@ -27,8 +27,8 @@
       </div>
       <div class="success_heading-wrap">
         {% render 'tag-component', tag_content: section.settings.tag_content %}
-        <h2>Наши успехи в Beauty Сфeре</h2>
-        <p class="subtitle max-width-medium">Небольшой параграф про опыт работы, обучении, и тд.</p>
+        <h2>{{ section.settings.heading }}</h2>
+        <div class="subtitle max-width-large">{{ section.settings.subheading }}</div>
       </div>
       <div class="success_items">
         <div class="success_item">
@@ -166,6 +166,18 @@
       "type": "image_picker",
       "id": "header_img",
       "label": "t:sections.success.settings.header_img.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Наши успехи в Beauty Сфeре",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "default": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p>",
+      "label": "Subheading"
     },
     {
       "type": "image_picker",

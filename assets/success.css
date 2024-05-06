@@ -42,7 +42,7 @@
   grid-column-start: span 12;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  gap: 3.2rem;
   padding-top: 6.4rem;
   /* padding-bottom: 6.4rem; */
 }
@@ -76,7 +76,7 @@
 .success_button-wrap {
   width: 100%;
   padding-top: clamp(4.2rem, 4.5vw, 6.4rem);
-  /* margin-top: auto; */
+  margin-top: auto;
 }
 
 @media screen and (max-width: 478px) {
