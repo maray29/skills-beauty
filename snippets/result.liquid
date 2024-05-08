@@ -1,0 +1,23 @@
+<div class="result_component">
+  <div class="result_text-wrapper">
+    <div class="result_text">
+      <div class="result_img-wrap">
+        {%- if block.settings.image != blank -%}
+          {{
+            block.settings.image
+            | image_url: width: 1500
+            | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+          }}
+        {%- endif -%}
+      </div>
+
+      <div class="result_header">
+        {%- if block.settings.heading != blank -%}
+          <div class="inline-richtext">
+            {{ block.settings.heading }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>

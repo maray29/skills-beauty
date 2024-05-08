@@ -21,12 +21,8 @@
       <div class="section_heading-wrap">
         {% render 'tag-component', tag_content: section.settings.tag_content %}
         <h2>{{ section.settings.heading }}</h2>
+        <div class="spacer-xxlarge hide-mobile-portrait"></div>
       </div>
-      {% comment %}
-        <div class="section_subheading-wrap subtitle">
-          {{ section.settings.subheading }}
-        </div>
-      {% endcomment %}
       <div class="instructor_list">
         {% for member in metaobject.instructors.value %}
           <div class="instructor_item">

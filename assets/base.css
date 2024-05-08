@@ -1309,6 +1309,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 2rem;
   font-weight: 520;
   text-decoration: none;
+  border-width: 0px;
   color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
@@ -3800,9 +3801,32 @@ html {
   margin: 0 auto;
 }
 
+.spacer-large {
+  display: block !important;
+  padding-bottom: 3.2rem;
+}
+
+.spacer-xlarge {
+  display: block !important;
+  padding-bottom: 4.8rem;
+}
+
+.spacer-xxlarge {
+  display: block !important;
+  padding-bottom: 6.4rem;
+}
+
+.spacer-huge {
+  display: block !important;
+  padding-bottom: 10rem;
+}
+
 .text-rich-text p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+.hide-desktop {
+  display: none !important;
 }
 
 .layout_12col {
@@ -3845,6 +3869,11 @@ html {
 .card__media {
   border-radius: 1.2rem;
   overflow: hidden;
+}
+
+.slider-container {
+  padding: 6.4rem 3.2rem !important;
+  border-radius: 1.2rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -3922,6 +3951,10 @@ html {
   .course__grid {
     --layout-grid-min: 35ch;
   }
+
+  .hide-tablet {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 478px) {
@@ -3936,6 +3969,10 @@ html {
     /* flex-direction: column; */
     column-gap: 0.8rem;
     row-gap: 3.2rem;
+  }
+
+  .hide-mobile-portrait {
+    display: none !important;
   }
 
   /* .course__grid {

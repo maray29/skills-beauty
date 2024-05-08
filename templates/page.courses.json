@@ -1,9 +1,9 @@
 {
   "sections": {
-    "testimonial_slider": {
-      "type": "testimonial-slider",
+    "testimonials_slider": {
+      "type": "swiper-slider",
       "blocks": {
-        "slide_DHQrpy": {
+        "slide_DdQrpy": {
           "type": "slide",
           "settings": {
             "heading": "Отзыв на курс Pro Lashes",
@@ -16,8 +16,6 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
@@ -34,8 +32,6 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
             "text_alignment_mobile": "center"
           }
         },
@@ -53,7 +49,6 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -71,7 +66,6 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -89,7 +83,6 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -107,7 +100,6 @@
             "show_text_box": true,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -124,8 +116,6 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -142,8 +132,6 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         },
@@ -160,14 +148,12 @@
             "box_align": "middle-center",
             "show_text_box": true,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "slide_DHQrpy",
+        "slide_DdQrpy",
         "slide_ieLNmp",
         "slide_zWzD7q",
         "slide_6qwVM6",
@@ -178,15 +164,11 @@
         "slide_jzDEzk"
       ],
       "settings": {
-        "layout": "full_bleed",
         "section_color_scheme": "scheme-2",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "slides_per_view": 1,
+        "content_type": "testimonial"
       }
     },
     "featured_collection": {
@@ -220,56 +202,6 @@
         "padding_bottom": 128
       }
     },
-    "slideshow_cdwGdn": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_DHQrpy": {
-          "type": "slide",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "Катя, Я сегодня весь день чувствую себя такой красивой 😍 Случайно видела себя в зеркале и от удовольствия внутри порхали бабочки 😃Спасибо большое за урок! Жду свободного времени, чтобы повторить весь мейк.",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "left"
-          }
-        },
-        "slide_ieLNmp": {
-          "type": "slide",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "Курс «Pro Day Makeup» превзошел мои ожидания! Екатерина очень доступно разъяснила основы, а также прокомментировала продукты в моей косметичке, рассказав о том, на что в следующий раз нужно обращать внимания при выборе косметики. Благодаря ее четким инструкциям я освоила тонкости контурирования и нанесения продуктов, научилась подчеркивать свои достоинства и умело скрывать недостатки. Этот курс стал настоящим открытием для меня!",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": ["slide_DHQrpy", "slide_ieLNmp"],
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "medium",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "image_with_text": {
       "type": "image-with-text",
       "settings": {
@@ -295,9 +227,8 @@
     }
   },
   "order": [
-    "testimonial_slider",
+    "testimonials_slider",
     "featured_collection",
-    "slideshow_cdwGdn",
     "image_with_text",
     "team"
   ]
