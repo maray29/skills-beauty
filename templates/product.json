@@ -47,7 +47,7 @@
         "text_eYQeHi": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.volume.value }}",
+            "text": "Volume: {{ product.metafields.custom.volume.value }}",
             "text_style": "body"
           }
         },
