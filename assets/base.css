@@ -320,7 +320,8 @@ h2 {
   font-weight: 520 !important;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: clamp(1.6rem, 2.5vw, 2.4rem) !important;
   font-weight: 520 !important;
   letter-spacing: -0.03em !important;
@@ -802,7 +803,7 @@ summary::-webkit-details-marker {
 .focus-inset:focus-visible {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: -0.2rem;
-  box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3);
+  /* box-shadow: 0 0 0.2rem 0 rgba(var(--color-foreground), 0.3); */
 }
 
 .focused.focus-inset,
@@ -1798,16 +1799,21 @@ component-form .field__input,
   box-shadow: none;
 }
 
-.text-area,
+.text-area {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 1.6rem !important;
+  border: 1px solid rgb(var(--color-border-primary));
+}
+
+/* Select */
 .select {
   display: flex;
   position: relative;
   width: 100%;
   border-radius: 1.6rem;
-  border: 1px solid rgb(var(--color-border-primary));
 }
-
-/* Select */
 
 .select .icon-caret,
 .customer select + svg {
@@ -1852,6 +1858,8 @@ component-form .field__input,
   padding-left: 1.6rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  border: 1px solid rgb(var(--color-border-primary));
+  border-radius: var(--inputs-radius);
 }
 
 .field__label,
@@ -2098,6 +2106,8 @@ input[type="checkbox"] {
 .quantity__input:focus-visible {
   background-color: rgb(var(--color-background));
   z-index: 2;
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
 .quantity__button:focus,
