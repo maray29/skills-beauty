@@ -40,6 +40,11 @@
   justify-self: left;
 }
 
+.card__tag-wrap {
+  display: flex;
+  gap: 0.8rem;
+}
+
 .card__media {
   display: grid !important;
   grid-template-rows: subgrid !important;

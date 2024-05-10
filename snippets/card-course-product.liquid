@@ -41,9 +41,11 @@
     <div class="card__inner">
       <div class="card__content">
         <div class="card__information">
-          {% for tag in card_product.tags %}
-            <div class="card__tag">{{ tag }}</div>
-          {% endfor %}
+          <div class="card__tag-wrap">
+            {% for tag in card_product.tags %}
+              <div class="card__tag">{{ tag }}</div>
+            {% endfor %}
+          </div>
           <h3
             class="card__heading"
             {% if card_product.featured_media or settings.card_style == 'card' %}
