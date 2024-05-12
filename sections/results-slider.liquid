@@ -14,14 +14,31 @@
     class="swiper slider-container page-width"
   >
     <div class="swiper-wrapper">
-      {%- for block in section.blocks -%}
+      {%- for block in metaobject.course_results.value -%}
         <div class="swiper-slide">
-          {% case section.settings.content_type %}
-            {% when 'result' %}
-              {% render 'result', block: block %}
-            {% else %}
-              {% render 'testimonial', block: block %}
-          {% endcase %}
+          <div class="result_component">
+            <div class="result_text-wrapper">
+              <div class="result_text">
+                <div class="result_img-wrap">
+                  {%- if block.result_image != blank -%}
+                    {{
+                      block.result_image
+                      | image_url: width: 1500
+                      | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                    }}
+                  {%- endif -%}
+                </div>
+
+                <div class="result_header">
+                  {%- if block.result_description != blank -%}
+                    <div class="inline-richtext">
+                      {{ block.result_description }}
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       {%- endfor -%}
     </div>

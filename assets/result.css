@@ -57,7 +57,7 @@
   border-radius: 1.2rem;
   /* border: 1px solid var(--border-primary); */
   overflow: hidden;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/4;
 }
 
 .result_img-wrap img {

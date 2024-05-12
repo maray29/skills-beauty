@@ -1,16 +1,19 @@
 .price_list {
   grid-column-start: 2;
   grid-column-end: 12;
-  --layout-grid-min: 30ch;
-  --layout-grid-gap: 3vw;
+
+  --layout-grid-min: 32rem;
+  --layout-grid-max: 34rem;
+  --layout-grid-gap: clamp(1.6rem, 2.5vw, 2.4rem);
 
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(min(100%, var(--layout-grid-min)), 1fr)
+    minmax(min(100%, var(--layout-grid-min)), var(--layout-grid-max))
   );
   gap: var(--layout-grid-gap);
-  justify-items: center;
+  /* justify-items: center; */
+  justify-content: center;
 }
 
 .price_item {

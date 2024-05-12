@@ -18,12 +18,13 @@
   aspect-ratio: 1;
   border-radius: 1.2rem;
   overflow: clip;
+  margin-top: 1.6rem;
 }
 
 .course-header_img-wrap img {
   width: 100%;
-  height: auto;
-  margin-top: 1.6rem;
+  height: 100%;
+  object-fit: cover;
 }
 
 .course-header_heading {
