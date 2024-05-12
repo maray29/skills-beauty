@@ -22,7 +22,8 @@
 }
 
 .course-program_program h3,
-.course-program_program ul {
+.course-program_program ul,
+.course-program_program ol {
   padding-bottom: 3.2rem;
 }
 

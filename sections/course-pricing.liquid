@@ -15,6 +15,9 @@
   }
 {%- endstyle -%}
 
+{% assign course_product = metaobject.product.value %}
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
+
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
     <div class="layout_12col">
@@ -64,7 +67,12 @@
                   </a>
                 {%- endif -%}
               {% else %}
-                <div>online</div>
+                {%- render 'buy-buttons',
+                  product: course_product,
+                  product_form_id: product_form_id,
+                  section_id: section.id,
+                  show_pickup_availability: false
+                -%}
               {% endif %}
             </div>
           </div>

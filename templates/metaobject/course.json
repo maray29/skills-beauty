@@ -3,15 +3,16 @@
     "course-header": {
       "type": "course-header",
       "settings": {
-        "padding_bottom": 128
+        "padding_bottom": 128,
+        "button_label": "Оставить заявку"
       }
     },
     "image-with-text": {
       "type": "image-with-text",
       "settings": {
         "image": "shopify://shop_images/about_img-wrap.webp",
-        "heading": "Для кого этот курс?",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
+        "heading": "{{ metaobject.course_goal_heading | metafield_tag }}",
+        "subheading": "{{ metaobject.course_goal | metafield_tag }}",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 128,

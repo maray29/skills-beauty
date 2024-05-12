@@ -16,6 +16,8 @@
   grid-column-end: 6;
   grid-row-start: 1;
   aspect-ratio: 1;
+  border-radius: 1.2rem;
+  overflow: clip;
 }
 
 .course-header_img-wrap img {
@@ -26,6 +28,7 @@
 
 .course-header_heading {
   font-size: clamp(4.8rem, 5vw, 7.2rem) !important;
+  font-weight: 480 !important;
 }
 
 .course-header_heading-wrap {
@@ -58,8 +61,8 @@
   white-space: nowrap; /* Ensures that the content of the item does not wrap */
 }
 
-body {
-  letter-spacing: -0.02em;
+.course-header_button-wrap {
+  max-width: 32rem;
 }
 
 @media screen and (max-width: 991px) {

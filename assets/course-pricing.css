@@ -1,9 +1,16 @@
 .price_list {
   grid-column-start: 2;
   grid-column-end: 12;
+  --layout-grid-min: 30ch;
+  --layout-grid-gap: 3vw;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3.2rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--layout-grid-min)), 1fr)
+  );
+  gap: var(--layout-grid-gap);
+  justify-items: center;
 }
 
 .price_item {
@@ -11,6 +18,7 @@
   grid-template-rows: subgrid;
   grid-row-start: span 3;
   gap: 0rem;
+  max-width: 42rem;
 }
 
 .price_content {

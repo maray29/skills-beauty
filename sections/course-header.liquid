@@ -2,6 +2,9 @@
 
 {% render 'section-padding' %}
 
+{% assign course_product = metaobject.product.value %}
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
+
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
     <div class="layout_12col">
@@ -25,41 +28,70 @@
               <div>{{ instructor.name }}</div>
             </div>
           {% endfor %}
+          {% if metaobject.author %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Автор:</div>
+              <div>{{ metaobject.author }}</div>
+            </div>
+          {% endif %}
         </div>
         {% comment %} <p class="subtitle">{{ section.settings.subheading }}</p> {% endcomment %}
         <div class="course-header_info">
-          <div class="info_item">
-            <div class="text-weight-semibold">Формат:</div>
-            <div>{{ metaobject.type }}</div>
-          </div>
+          {% if metaobject.type %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Формат:</div>
+              <div>{{ metaobject.type }}</div>
+            </div>
+          {% endif %}
           {% if metaobject.access %}
             <div class="info_item">
               <div class="text-weight-semibold">Доступ:</div>
               <div>{{ metaobject.access }}</div>
             </div>
           {% endif %}
-          <div class="info_item">
-            <div class="text-weight-semibold">Дата:</div>
-            <div>{{ metaobject.date | date: '%B %d, %Y' }}</div>
-          </div>
-          <div class="info_item">
-            <div class="text-weight-semibold">Сертификат:</div>
-            <div>{{ metaobject.certificate }}</div>
-          </div>
-          <div class="info_item">
-            <div class="text-weight-semibold">Длительность:</div>
-            <div>{{ metaobject.duration }}</div>
-          </div>
+          {% if metaobject.date_text %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Дата:</div>
+              <div>{{ metaobject.date_text | date: '%B %d, %Y' }}</div>
+            </div>
+          {% endif %}
+          {% if metaobject.certificate %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Сертификат:</div>
+              <div>{{ metaobject.certificate }}</div>
+            </div>
+          {% endif %}
+          {% if metaobject.duration %}
+            <div class="info_item">
+              <div class="text-weight-semibold">Длительность:</div>
+              <div>{{ metaobject.duration }}</div>
+            </div>
+          {% endif %}
         </div>
         <div class="course-header_button-wrap">
-          <a
-            href="{{ section.settings.button_link }}"
-            class="button"
-            {{ section.shopify_attributes }}
-          >
-            Оставить заявку
-            {% render 'icon-arrow-up-right' %}
-          </a>
+          {% if metaobject.type == 'offline' %}
+            {%- if section.settings.button_label != blank -%}
+              <a
+                {% if section.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_link }}"
+                {% endif %}
+                class="button is-full-width"
+                {{ section.shopify_attributes }}
+              >
+                {{ section.settings.button_label | escape }}
+                {% render 'icon-arrow-up-right' %}
+              </a>
+            {%- endif -%}
+          {% else %}
+            {%- render 'buy-buttons',
+              product: course_product,
+              product_form_id: product_form_id,
+              section_id: section.id,
+              show_pickup_availability: false
+            -%}
+          {% endif %}
         </div>
       </div>
     </div>
@@ -98,7 +130,7 @@
     {
       "type": "text",
       "id": "button_label",
-      "default": "Посмотреть все курсы",
+      "default": "Оставить заявку",
       "label": "t:sections.page-header.settings.button_label.label"
     },
     {
