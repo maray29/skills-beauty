@@ -14,15 +14,15 @@
         <div class="spacer-xlarge hide-mobile-portrait"></div>
         {{ section.settings.subheading }}
       </div>
-      <div class="certificate_img-wrap">
-        {% if metaobject.course.result_image %}
+      {% if metaobject.result_image %}
+        <div class="certificate_img-wrap">
           {{
-            section.settings.image
+            metaobject.result_image
             | image_url: width: 1500
             | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
           }}
-        {% endif %}
-      </div>
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

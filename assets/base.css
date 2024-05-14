@@ -273,12 +273,14 @@ h2,
 h3,
 h4,
 h5,
+h6,
 .h0,
 .h1,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+.h6 {
   font-family: "inter", sans-serif !important;
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-foreground));
@@ -367,30 +369,6 @@ strong {
   }
 }
 
-/* h1,
-.h1 {
-  font-size: clamp(3rem, 6vw, 6rem);
-} */
-
-/* @media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: clamp(4rem, 6vw, 10rem);
-  }
-} */
-
-/* h2,
-.h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
-} */
-
-/* @media only screen and (min-width: 750px) {
-  h2,
-  .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
-  }
-} */
-
 h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 1.7rem);
@@ -424,9 +402,10 @@ h5,
 
 h6,
 .h6 {
+  font-family: "inter", serif !important;
+  font-size: 1.2rem;
   color: rgba(var(--color-foreground), 0.75);
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
+  margin-block-end: 1.6rem;
 }
 
 blockquote {
@@ -3955,6 +3934,12 @@ html {
   padding-bottom: 4.8rem;
   text-align: left;
   color: rgb(var(--color-heading)) !important;
+}
+
+.metafield-rich_text_field p,
+.metafield-rich_text_field li,
+.text-rich-text p {
+  margin-bottom: 1.2rem;
 }
 
 @media screen and (max-width: 991px) {

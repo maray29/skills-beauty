@@ -13,6 +13,13 @@
     data-slides-per-view="{{ slides_per_view }}"
     class="swiper slider-container page-width"
   >
+    <div class="section_heading-wrap">
+      <h2 class="h3">
+        Результаты <br>
+        наших учеников
+      </h2>
+      <div class="spacer-large"></div>
+    </div>
     <div class="swiper-wrapper">
       {%- for block in metaobject.course_results.value -%}
         <div class="swiper-slide">

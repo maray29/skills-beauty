@@ -7,7 +7,7 @@
         "tag": "Skills Beauty",
         "subheading": "Some text that relates to the page and the value prop.",
         "button_label": "Оставить заявку",
-        "button_link": "\/",
+        "button_link": "/",
         "padding_top": 0,
         "padding_bottom": 128
       }
@@ -28,7 +28,7 @@
     "course-program": {
       "type": "course-program",
       "settings": {
-        "heading": "Программа курса",
+        "heading": "{{ metaobject.program_heading | metafield_tag }}",
         "subheading": "{{ metaobject.program_description | metafield_tag }}",
         "tag_content": "Уникальная программа от Skills Beauty",
         "padding_top": 128,
@@ -40,7 +40,7 @@
       "settings": {
         "heading": "Результаты",
         "subheading": "{{ metaobject.result | metafield_tag }}",
-        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "image": "shopify://shop_images/certificate_img.webp",
         "tag_content": "Скиллы и знания",
         "padding_top": 128,
         "padding_bottom": 128,
@@ -63,7 +63,7 @@
       "type": "course-instructors",
       "settings": {
         "heading": "Преподаватель курса",
-        "subheading": "<p>Небольшой параграф рассказывающий о специалистах курсов.<\/p>",
+        "subheading": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
         "tag_content": "Специалист Skills Beauty",
         "padding_top": 128,
         "padding_bottom": 128
@@ -73,12 +73,12 @@
       "type": "course-pricing",
       "settings": {
         "heading": "Стоимость курса",
-        "subheading": "<p>Курсы для себя.<\/p>",
+        "subheading": "<p>Курсы для себя.</p>",
         "tag_content": "Прайс",
         "padding_top": 128,
         "padding_bottom": 128,
         "button-1_label": "Оставить заявку",
-        "button-1_link": "https:\/\/maray.ai",
+        "button-1_link": "https://maray.ai",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2"
       }
