@@ -3731,15 +3731,15 @@ html {
 }
 
 .max-width-small {
-  max-width: 32rem;
+  max-width: 52rem;
 }
 
 .max-width-medium {
-  max-width: 42rem;
+  max-width: 62rem;
 }
 
 .max-width-large {
-  max-width: 52rem;
+  max-width: 72rem;
 }
 
 .text-size-normal {
