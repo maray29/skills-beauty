@@ -38,10 +38,7 @@
     "course-result": {
       "type": "course-result",
       "settings": {
-        "heading": "{{ 'course-result.heading' | t }}",
-        "subheading": "{{ metaobject.result | metafield_tag }}",
         "image": "shopify://shop_images/certificate_img.webp",
-        "tag_content": "{{ 'course-result.tag_content' | t }}",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "scheme-3",
@@ -51,7 +48,6 @@
     "results_slider": {
       "type": "results-slider",
       "settings": {
-        "heading": "{{ 'result-slider.heading' | t }}",
         "slides_per_view": 3,
         "layout": "full_bleed",
         "section_color_scheme": "scheme-3",
@@ -73,12 +69,8 @@
     "course-pricing": {
       "type": "course-pricing",
       "settings": {
-        "heading": "Стоимость курса",
-        "subheading": "<p>Курсы для себя.</p>",
-        "tag_content": "{{ 'course-pricing.tag_content' | t }}",
         "padding_top": 128,
         "padding_bottom": 128,
-        "button_label": "{{ 'course-pricing.button_label' | t }}",
         "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2"
