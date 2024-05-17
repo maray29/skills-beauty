@@ -224,7 +224,7 @@
               {%- for policy in shop.policies -%}
                 {%- if policy != blank -%}
                   <li>
-                    <a href="{{ policy.url }}">{{ policy.title }}</a>
+                    <a class="footer-link text-style-link" href="{{ policy.url }}">{{ policy.title }}</a>
                   </li>
                 {%- endif -%}
               {%- endfor -%}

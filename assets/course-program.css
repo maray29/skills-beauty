@@ -36,13 +36,18 @@
   padding-bottom: 1.6rem;
 }
 
-.course-program_program h4 {
+.course-program_program h4:not(:first-child) {
   width: 100%;
   /* display: inline-flex; */
   border-top: 1px solid #d4d8dd;
   text-transform: uppercase;
   padding-top: 3.2rem;
 }
+
+/* .course-program_program h4:not(:first-child) {
+  padding-top: 0.8rem !important;
+  border-top: 0px !important;
+} */
 
 @media screen and (max-width: 478px) {
   .course-program_program {

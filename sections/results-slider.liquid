@@ -15,8 +15,7 @@
   >
     <div class="section_heading-wrap">
       <h2 class="h3">
-        Результаты <br>
-        наших учеников
+        {{ section.settings.heading }}
       </h2>
       <div class="spacer-large"></div>
     </div>
@@ -137,6 +136,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Заглавие",
+      "default": "{{ 'result-slider.heading' | t }}"
+    },
     {
       "type": "number",
       "id": "slides_per_view",

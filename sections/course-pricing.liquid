@@ -52,17 +52,17 @@
             </div>
             <div class="price_button-wrap">
               {% if metaobject.type == 'offline' %}
-                {%- if section.settings['button-1_label'] != blank -%}
+                {%- if section.settings.button_label != blank -%}
                   <a
-                    {% if section.settings['button-1_link'] == blank %}
+                    {% if section.settings.button_link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
-                      href="{{ section.settings.button-1_link }}"
+                      href="{{ section.settings.button_link }}"
                     {% endif %}
                     class="button is-full-width"
                     {{ section.shopify_attributes }}
                   >
-                    {{ section.settings['button-1_label'] | escape }}
+                    {{ section.settings.button_label | escape }}
                     {% render 'icon-arrow-up-right' %}
                   </a>
                 {%- endif -%}
@@ -84,31 +84,14 @@
 
 {% schema %}
 {
-  "name": "t:sections.team.name",
+  "name": "Прайс курса",
   "tag": "section",
   "class": "section_team",
   "settings": [
     {
-      "type": "inline_richtext",
-      "id": "heading",
-      "default": "Page heading",
-      "label": "t:sections.team.settings.heading.label"
-    },
-    {
-      "type": "richtext",
-      "id": "subheading",
-      "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
-      "label": "t:sections.team.settings.subheading.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.team.settings.image.label"
-    },
-    {
       "type": "text",
       "id": "tag_content",
-      "default": "Специалисты Skills Beauty",
+      "default": "{{ 'course-pricing.tag_content' | t }}",
       "label": "Tag Content"
     },
     {
@@ -133,13 +116,13 @@
     },
     {
       "type": "text",
-      "id": "button-1_label",
-      "default": "Оставить заявку",
+      "id": "button_label",
+      "default": "{{ 'course-pricing.button_label' | t }}",
       "label": "t:sections.all.button.button_label.label"
     },
     {
       "type": "url",
-      "id": "button-1_link",
+      "id": "button_link",
       "label": "t:sections.all.button.button_link.label"
     },
     {

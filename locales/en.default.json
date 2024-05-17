@@ -64,6 +64,27 @@
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
+  "course-header": {
+    "instructor": "Instructor",
+    "author": "Author",
+    "format": "Format",
+    "access": "Access",
+    "date": "Date",
+    "language": "Language",
+    "duration": "Duration",
+    "certificate": "Certificate"
+  },
+  "course-result": {
+    "heading": "Outcomes",
+    "tag_content": "Skills and knowledge"
+  },
+  "course-pricing": {
+    "tag_content": "Pricing",
+    "button_label": "Enroll now"
+  },
+  "result-slider": {
+    "heading": "Our student results"
+  },
   "accessibility": {
     "skip_to_text": "Skip to content",
     "skip_to_product_info": "Skip to product information",

@@ -684,6 +684,17 @@
         "name": "Contact form"
       }
     },
+    "course-header": {
+      "name": "Course header",
+      "settings": {
+        "tag_content": {
+          "label": "Tag text"
+        },
+        "language": {
+          "label": "Language"
+        }
+      }
+    },
     "custom-liquid": {
       "name": "Custom Liquid",
       "settings": {
