@@ -1,21 +1,9 @@
 {{ 'course-instructors.css' | asset_url | stylesheet_tag }}
 {{ 'section.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
+{% render 'section-padding' %}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-{% if metaobject.course.instructors %}
+{% if metaobject.instructors %}
   <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
     <div class="page-width">
       <div class="layout_12col">
