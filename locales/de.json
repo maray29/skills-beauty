@@ -518,6 +518,260 @@
     "checkout": {
       "field_errors": {
         "payment_gateway_missing": "Geben Sie eine Zahlungsmethode ein."
+      },
+      "shipping": {
+        "estimated_delivery_date": {
+          "few": "%{count} Arbeitstage",
+          "many": "%{count} Arbeitstage"
+        },
+        "other_method": {
+          "few": "Verfügbare Optionen: %{count}, beginnend mit",
+          "many": "Verfügbare Optionen: %{count}, beginnend mit"
+        },
+        "subscription_delivery_description": {
+          "prepaid_delivery_frequency": {
+            "few": "für eine bestimmte Anzahl von Lieferungen (%{count})",
+            "many": "für eine bestimmte Anzahl von Lieferungen (%{count})"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "few": "alle %{count} Tage.",
+              "many": "alle %{count} Tage."
+            },
+            "week": {
+              "few": "alle %{count} Wochen",
+              "many": "alle %{count} Wochen"
+            },
+            "month": {
+              "few": "alle %{count} Monate",
+              "many": "alle %{count} Monate"
+            },
+            "year": {
+              "few": "alle %{count} Jahr.",
+              "many": "alle %{count} Jahr."
+            }
+          },
+          "first_n_order_free": {
+            "few": "Die ersten paar Bestellungen (%{count}) – kostenlos",
+            "many": "Die ersten paar Bestellungen (%{count}) – kostenlos"
+          },
+          "free_for_first_n_order": {
+            "few": "Für die ersten paar Bestellungen (%{count})",
+            "many": "Für die ersten paar Bestellungen (%{count})"
+          }
+        },
+        "shipping_method_first_shipment_group_title": {
+          "few": "Erste Bestellungen",
+          "many": "Erste Bestellungen"
+        },
+        "shipping_method_recurring_shipments_group_title": {
+          "few": "Regelmäßige Bestellungen",
+          "many": "Regelmäßige Bestellungen"
+        }
+      },
+      "general": {
+        "map": {
+          "cluster_title": {
+            "few": "Markierungen im Cluster: {{number}}",
+            "many": "Markierungen im Cluster: {{number}}"
+          }
+        }
+      },
+      "customer_account": {
+        "saved_address_option_description": {
+          "few": "Sie haben Adressen gespeichert: {{count}} .",
+          "many": "Sie haben Adressen gespeichert: {{count}} ."
+        }
+      },
+      "stock": {
+        "unshippable_product": {
+          "header": {
+            "few": "Für folgende Produkte ist kein Versand möglich: %{count}",
+            "many": "Für folgende Produkte ist kein Versand möglich: %{count}"
+          },
+          "message": {
+            "few": "Diese Produkte werden aus Ihrem Warenkorb entfernt, da eine Lieferung an die von Ihnen angegebene Adresse nicht möglich ist.",
+            "many": "Diese Produkte werden aus Ihrem Warenkorb entfernt, da eine Lieferung an die von Ihnen angegebene Adresse nicht möglich ist."
+          }
+        },
+        "item_label": {
+          "few": "Positionen: {{count}}",
+          "many": "Positionen: {{count}}"
+        },
+        "unfulfillable_product": {
+          "message": {
+            "few": "Die Lieferung %{delivery_method} ist für diese Artikel nicht mehr verfügbar.",
+            "many": "Die Lieferung %{delivery_method} ist für diese Artikel nicht mehr verfügbar."
+          },
+          "default_message": {
+            "few": "Die ausgewählte Versandart ist für diese Artikel nicht mehr verfügbar.",
+            "many": "Die ausgewählte Versandart ist für diese Artikel nicht mehr verfügbar."
+          }
+        }
+      },
+      "order_summary": {
+        "expand_component_information": {
+          "few": "%{count} Einheiten anzeigen",
+          "many": "%{count} Einheiten anzeigen"
+        },
+        "collapse_component_information": {
+          "few": "%{count} Einheiten ausblenden",
+          "many": "%{count} Einheiten ausblenden"
+        },
+        "discount_discovery": {
+          "merchandise_quantity_label": {
+            "few": "%{count} Produkt.",
+            "many": "%{count} Produkt."
+          }
+        },
+        "discount_title_stacking": {
+          "few": "Rabatte",
+          "many": "Rabatte"
+        },
+        "discount_order_stacking": {
+          "few": "Rabatte auf Bestellungen",
+          "many": "Rabatte auf Bestellungen"
+        }
+      },
+      "payment": {
+        "order_covered_by_gift_cards_notice": {
+          "few": "Ihr Bestellbetrag ist durch Geschenkkarten gedeckt.",
+          "many": "Ihr Bestellbetrag ist durch Geschenkkarten gedeckt."
+        },
+        "card_fields_unavailable_html": {
+          "few": "Kredit- und Debitkartenzahlungen sind derzeit nicht verfügbar.<br> <a href=\"%{current_url}\">Bitte aktualisieren Sie diese Seite<\/a> oder verwenden Sie eine andere Zahlungsmethode.",
+          "many": "Kredit- und Debitkartenzahlungen sind derzeit nicht verfügbar.<br> <a href=\"%{current_url}\">Bitte aktualisieren Sie diese Seite<\/a> oder verwenden Sie eine andere Zahlungsmethode."
+        },
+        "expired_cards_info": {
+          "few": "Es sind %{count} Karten abgelaufen. Sie können diese in Ihrem Konto einsehen und ändern.",
+          "many": "Es sind %{count} Karten abgelaufen. Sie können diese in Ihrem Konto einsehen und ändern."
+        },
+        "order_edit_banner_items_added": {
+          "few": "Hinzugefügt: %{count}",
+          "many": "Hinzugefügt: %{count}"
+        }
+      },
+      "shipping_errors": {
+        "shipping_method_not_available_generic": {
+          "few": "Einige Artikel in Ihrem Warenkorb werden möglicherweise nicht an die von Ihnen angegebene Adresse geliefert. Überprüfen Sie die Adresse, stellen Sie sicher, dass die Angaben korrekt sind, und versuchen Sie es erneut. Oder geben Sie eine andere Adresse ein.",
+          "many": "Einige Artikel in Ihrem Warenkorb werden möglicherweise nicht an die von Ihnen angegebene Adresse geliefert. Überprüfen Sie die Adresse, stellen Sie sicher, dass die Angaben korrekt sind, und versuchen Sie es erneut. Oder geben Sie eine andere Adresse ein."
+        },
+        "shipping_method_not_available_updated": {
+          "few": "Ein oder mehrere Artikel, die Sie Ihrem Warenkorb hinzugefügt haben, werden nicht an die von Ihnen angegebene Adresse geliefert. Bitte entfernen Sie solche Artikel, um Ihren Kauf abzuschließen oder kontaktieren Sie den Shop.",
+          "many": "Ein oder mehrere Artikel, die Sie Ihrem Warenkorb hinzugefügt haben, werden nicht an die von Ihnen angegebene Adresse geliefert. Bitte entfernen Sie solche Artikel, um Ihren Kauf abzuschließen oder wenden Sie sich an den Shop."
+        }
+      },
+      "processing": {
+        "wait": {
+          "medium": {
+            "few": "Ihre Bestellung wird bearbeitet. Ungefähre Wartezeit: %{count} Min.",
+            "many": "Ihre Bestellung wird bearbeitet. Ungefähre Wartezeit: %{count} Min."
+          }
+        }
+      },
+      "thank_you": {
+        "login_reorder_link_text": {
+          "few": "Kaufen Sie diese Produkte auch",
+          "many": "Kaufen Sie diese Produkte auch"
+        },
+        "gift_card_confirmation_by_text_typ": {
+          "few": "Sie erhalten in wenigen Minuten eine SMS mit Geschenkkarten.",
+          "many": "Sie erhalten in wenigen Minuten eine SMS mit Geschenkkarten."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "few": "Sie erhalten in wenigen Minuten eine E-Mail mit Ihren Geschenkkarten.",
+          "many": "Sie erhalten in wenigen Minuten eine E-Mail mit Ihren Geschenkkarten."
+        },
+        "gift_card_email_title": {
+          "few": "Geschenkgutscheine wurden per E-Mail verschickt",
+          "many": "Geschenkgutscheine wurden per E-Mail verschickt"
+        },
+        "gift_card_text_title": {
+          "few": "Geschenkkarten wurden per SMS verschickt",
+          "many": "Geschenkkarten wurden per SMS verschickt"
+        },
+        "gift_card_resent_confirmation": {
+          "few": "Geschenkgutscheine wurden erneut verschickt.",
+          "many": "Geschenkgutscheine wurden erneut verschickt."
+        },
+        "gift_card_resend_failure": {
+          "few": "Beim erneuten Versenden Ihrer Geschenkkarten ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns.",
+          "many": "Beim erneuten Versenden Ihrer Geschenkkarten ist ein Problem aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns."
+        }
+      },
+      "order_payment_collection": {
+        "changes_summary": {
+          "added": {
+            "few": "Hinzugefügt: %{count}",
+            "many": "Hinzugefügt: %{count}"
+          }
+        }
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "few": "Kauf: %{product_name} und mehrere weitere Artikel (%{count})",
+          "many": "Kauf: %{product_name} und mehrere weitere Artikel (%{count})"
+        }
+      },
+      "subscriptions": {
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "few": "Die ersten paar Zahlungen (%{count}) in Höhe von %{total_price},",
+            "many": "Die ersten paar Zahlungen (%{count}) in Höhe von %{total_price},"
+          }
+        },
+        "recurring_total_intervals": {
+          "day": {
+            "few": "%{count} Tage",
+            "many": "%{count} Tage"
+          },
+          "week": {
+            "few": "%{count} Wochen",
+            "many": "%{count} Wochen"
+          },
+          "month": {
+            "few": "%{count} Monate",
+            "many": "%{count} Monate"
+          },
+          "year": {
+            "few": "%{count} Jahre",
+            "many": "%{count} Jahre"
+          }
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "few": ", dann %{count} Gebühren. um %{total_price}",
+            "many": ", dann %{count} Gebühren. um %{total_price}"
+          }
+        }
+      },
+      "contextual_availability": {
+        "title": {
+          "few": "Produkte nicht verfügbar",
+          "many": "Produkte nicht verfügbar"
+        },
+        "products_not_available": {
+          "few": "Diese Produkte werden aus Ihrem Warenkorb entfernt, da sie in Ihrem Land oder Ihrer Region nicht zum Kauf verfügbar sind.",
+          "many": "Diese Produkte werden aus Ihrem Warenkorb entfernt, da sie in Ihrem Land oder Ihrer Region nicht zum Kauf verfügbar sind."
+        },
+        "all_products_in_cart_unavailable": {
+          "few": "Diese Produkte sind in Ihrem Land oder Ihrer Region nicht zum Kauf verfügbar.",
+          "many": "Diese Produkte sind in Ihrem Land oder Ihrer Region nicht zum Kauf verfügbar."
+        }
+      },
+      "throttle": {
+        "estimated_wait_time": {
+          "few": "Ungefähre Wartezeit: {{count}} Min.",
+          "many": "Ungefähre Wartezeit: {{count}} Min."
+        }
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "few": "Für folgende Produkte ist kein Versand möglich: %{count}",
+            "many": "Für folgende Produkte ist kein Versand möglich: %{count}"
+          }
+        }
       }
     }
   }
