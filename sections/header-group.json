@@ -8,12 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Free gift for purchases above 150€",
+            "text": "Бесплатный подарок при покупке на сумму свыше 150€",
             "link": ""
           }
         }
       },
-      "block_order": ["announcement-bar-0"],
+      "block_order": [
+        "announcement-bar-0"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
         "show_line_separator": true,
@@ -43,5 +45,8 @@
       }
     }
   },
-  "order": ["announcement-bar", "header"]
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
 }
