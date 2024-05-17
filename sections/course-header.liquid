@@ -35,7 +35,6 @@
             </div>
           {% endif %}
         </div>
-        {% comment %} <p class="subtitle">{{ section.settings.subheading }}</p> {% endcomment %}
         <div class="course-header_info">
           {% if metaobject.type %}
             <div class="info_item">
@@ -129,12 +128,6 @@
       "label": "t:sections.page-header.tag.label"
     },
     {
-      "type": "inline_richtext",
-      "id": "subheading",
-      "default": "Some text that relates to the page and the value prop.",
-      "label": "t:sections.page-header.subheading.label"
-    },
-    {
       "type": "text",
       "id": "button_label",
       "default": "Оставить заявку",
@@ -165,12 +158,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 128
-    },
-    {
-      "type": "text",
-      "id": "language",
-      "default": "Язык",
-      "label": "Язык"
     }
   ],
   "presets": [
