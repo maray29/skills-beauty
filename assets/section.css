@@ -39,6 +39,10 @@
   padding-bottom: clamp(3.2rem, 3.5vw, 8rem);
 }
 
+.section_subheading-wrap p {
+  margin-bottom: 1.6rem;
+}
+
 .section_button-wrap {
   padding-top: 3.2rem;
 }
