@@ -88,7 +88,9 @@
       "read_more_title": "Read more: {{ title }}",
       "comments": {
         "one": "{{ count }} comment",
-        "other": "{{ count }} comments"
+        "other": "{{ count }} comments",
+        "few": "Comments: {{ count }}",
+        "many": "Comments: {{ count }}"
       },
       "moderated": "Please note, comments need to be approved before they are published.",
       "comment_form_title": "Leave a comment",
@@ -192,7 +194,9 @@
       "filter_button": "Filter",
       "filters_selected": {
         "one": "{{ count }} selected",
-        "other": "{{ count }} selected"
+        "other": "{{ count }} selected",
+        "few": "Selected: {{ count }}",
+        "many": "Selected: {{ count }}"
       },
       "filter_selected_accessibility": "{{ type }} ({{ count }} filters selected)",
       "show_more": "Show more",
@@ -200,11 +204,15 @@
       "max_price": "The highest price is {{ price }}",
       "product_count": {
         "one": "{{ product_count }} of {{ count }} product",
-        "other": "{{ product_count }} of {{ count }} products"
+        "other": "{{ product_count }} of {{ count }} products",
+        "few": "{{ product_count }} from {{ count }} cont.",
+        "many": "{{ product_count }} from {{ count }} cont."
       },
       "product_count_simple": {
         "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "other": "{{ count }} products",
+        "few": "Products: {{ count }}",
+        "many": "Products: {{ count }}"
       },
       "reset": "Reset",
       "sort_button": "Sort",
@@ -220,23 +228,33 @@
       "products": "Products",
       "results_pages_with_count": {
         "one": "{{ count }} page",
-        "other": "{{ count }} pages"
+        "other": "{{ count }} pages",
+        "few": "Number of pages: {{ count }}",
+        "many": "Number of pages: {{ count }}"
       },
       "results_suggestions_with_count": {
         "one": "{{ count }} suggestion",
-        "other": "{{ count }} suggestions"
+        "other": "{{ count }} suggestions",
+        "few": "Recommendations: {{ count }}",
+        "many": "Recommendations: {{ count }}"
       },
       "results_products_with_count": {
         "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "other": "{{ count }} products",
+        "few": "Products: {{ count }}",
+        "many": "Products: {{ count }}"
       },
       "results_with_count": {
         "one": "{{ count }} result",
-        "other": "{{ count }} results"
+        "other": "{{ count }} results",
+        "few": "Results: {{ count }}",
+        "many": "Results: {{ count }}"
       },
       "results_with_count_and_term": {
         "one": "{{ count }} result found for “{{ terms }}”",
-        "other": "{{ count }} results found for “{{ terms }}”"
+        "other": "{{ count }} results found for “{{ terms }}”",
+        "few": "{{ count }} res. for the request \" {{ terms }} \"",
+        "many": "{{ count }} res. for the request \" {{ terms }} \""
       },
       "title": "Search results",
       "search_for": "Search for “{{ terms }}”",
@@ -276,7 +294,9 @@
       "menu": "Menu",
       "cart_count": {
         "one": "{{ count }} item",
-        "other": "{{ count }} items"
+        "other": "{{ count }} items",
+        "few": "Elements: {{ count }}",
+        "many": "Elements: {{ count }}"
       }
     },
     "home-header": {
@@ -354,11 +374,15 @@
       "variant_total": "Variant total",
       "items_added": {
         "one": "{{ quantity }} item added",
-        "other": "{{ quantity }} items added"
+        "other": "{{ quantity }} items added",
+        "few": "Products added: {{ quantity }}",
+        "many": "Products added: {{ quantity }}"
       },
       "items_removed": {
         "one": "{{ quantity }} item removed",
-        "other": "{{ quantity }} items removed"
+        "other": "{{ quantity }} items removed",
+        "few": "Products removed: {{ quantity }}",
+        "many": "Products removed: {{ quantity }}"
       },
       "product_variants": "Product variants",
       "total_items": "Total items",
@@ -772,8 +796,168 @@
           "title": {
             "few": "Shipping is not available for products: %{count}",
             "many": "Shipping is not available for products: %{count}"
+          },
+          "message": {
+            "few": "These products will be removed from your cart because delivery to the address you provided is not available.",
+            "many": "These products will be removed from your cart because delivery to the address you provided is not available."
           }
         }
+      },
+      "pickup_point": {
+        "paginator": {
+          "header": {
+            "few": "Showing %{first}–%{last} of %{count}",
+            "many": "Showing %{first}–%{last} of %{count}"
+          },
+          "selected_pickup_point_label": {
+            "few": "%{pickup_point_index} of %{count} points",
+            "many": "%{pickup_point_index} of %{count} points"
+          },
+          "selected_page": {
+            "few": "%{first}–%{last} of %{count} points.",
+            "many": "%{first}–%{last} of %{count} points."
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "few": "Pickup points near your location: %{count}",
+          "many": "Pickup points near your location: %{count}"
+        }
+      },
+      "local_pickup": {
+        "location_information": {
+          "few": "Number of stores with goods near the specified address (%{address}): %{count}",
+          "many": "Number of stores with goods near the specified address (%{address}): %{count}"
+        },
+        "paginator": {
+          "label": {
+            "few": "%{first}–%{last} of %{count} stores",
+            "many": "%{first}–%{last} of %{count} stores"
+          }
+        },
+        "reveal_more_label": {
+          "few": "Load more locations: %{count}",
+          "many": "Load more locations: %{count}"
+        }
+      }
+    },
+    "notices": {
+      "order": {
+        "cancel_reason": {
+          "few": "Other",
+          "many": "Other"
+        }
+      }
+    },
+    "page_titles": {
+      "search_results": {
+        "few": "%{count} res. for the request \"%{terms}\"",
+        "many": "%{count} res. for the request \"%{terms}\""
+      }
+    }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_list": {
+        "items": {
+          "few": "Positions: {{count}}",
+          "many": "Positions: {{count}}"
+        }
+      },
+      "order_status": {
+        "delivered_description_gift_card": {
+          "few": "Gift cards were sent via email.",
+          "many": "Gift cards were sent via email."
+        },
+        "gift_card_label": {
+          "few": "Gift cards",
+          "many": "Gift cards"
+        },
+        "gift_card_resend": {
+          "few": "Send emails again",
+          "many": "Send emails again"
+        },
+        "gift_card_resend_description": {
+          "few": "If you don't receive anything, try sending the emails again or",
+          "many": "If you don't receive anything, try sending the emails again or"
+        },
+        "confirmed_gift_card_additional_description": {
+          "few": "Each gift card will be sent via separate email.",
+          "many": "Each gift card will be sent via separate email."
+        },
+        "delivered_description_gift_card_text": {
+          "few": "Gift cards were sent by message.",
+          "many": "Gift cards were sent by message."
+        },
+        "gift_card_resend_text": {
+          "few": "Send messages again",
+          "many": "Send messages again"
+        },
+        "gift_card_resend_description_text": {
+          "few": "If you don't receive anything, try sending messages again or",
+          "many": "If you don't receive anything, try sending messages again or"
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "few": "Each gift card will be sent in a separate message.",
+          "many": "Each gift card will be sent in a separate message."
+        },
+        "gift_resend_success": {
+          "few": "Gift cards sent",
+          "many": "Gift cards sent"
+        },
+        "gift_resend_failure": {
+          "few": "There was a problem resending your gift cards. Please try again or contact us.",
+          "many": "There was a problem resending your gift cards. Please try again or contact us."
+        },
+        "delivered_description_digital": {
+          "few": "Orders are completed.",
+          "many": "Orders are completed."
+        }
+      },
+      "if_not_received": {
+        "few": "If you haven't received anything,",
+        "many": "If you haven't received anything,"
+      }
+    },
+    "B2B": {
+      "orders": {
+        "draft_order_list": {
+          "pending_tab_accessibility_label": {
+            "pending_orders": {
+              "few": "Orders pending: {{count}}",
+              "many": "Orders pending: {{count}}"
+            }
+          }
+        }
+      },
+      "draft_order_details": {
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "few": "Payment is overdue by {{count}} days.",
+              "many": "Payment is overdue by {{count}} days."
+            },
+            "banner_due": {
+              "few": "Payment must be made within {{count}} days.",
+              "many": "Payment must be made within {{count}} days."
+            }
+          }
+        }
+      }
+    },
+    "errors": {
+      "banner_title": {
+        "few": "Errors detected: {{count}}",
+        "many": "Errors detected: {{count}}"
+      }
+    },
+    "ui_components": {
+      "autocompleteOptionsAvailable": {
+        "few": "Available: {{count}} units",
+        "many": "Available: {{count}} units"
+      },
+      "month": {
+        "few": "months",
+        "many": "months"
       }
     }
   }
