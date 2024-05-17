@@ -7,7 +7,7 @@
         "tag": "Skills Beauty",
         "subheading": "Some text that relates to the page and the value prop.",
         "button_label": "Оставить заявку",
-        "button_link": "/",
+        "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
         "padding_top": 0,
         "padding_bottom": 128
       }
@@ -38,7 +38,7 @@
     "course-result": {
       "type": "course-result",
       "settings": {
-        "image": "shopify://shop_images/certificate_img.webp",
+        "subheading": "{{ metaobject.result | metafield_tag }}",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "scheme-3",

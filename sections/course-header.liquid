@@ -75,9 +75,10 @@
           {% endif %}
         </div>
         <div class="course-header_button-wrap">
-          {% if metaobject.type == 'offline' %}
+          {% if metaobject.type == 'in studio' %}
             {%- if section.settings.button_label != blank -%}
               <a
+                target="_blank"
                 {% if section.settings.button_link == blank %}
                   role="link" aria-disabled="true"
                 {% else %}

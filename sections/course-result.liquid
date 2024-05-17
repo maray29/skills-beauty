@@ -7,8 +7,9 @@
   <div class="page-width">
     <div class="layout_12col">
       <div class="section_heading-wrap">
-        {% render 'tag-component', tag_content: section.settings.tag_content %}
-        <h2>{{ section.settings.heading }}</h2>
+        {% assign tag_content = 'course-result.tag_content' | t %}
+        {% render 'tag-component', tag_content: tag_content %}
+        <h2>{{ 'course-result.heading' | t }}</h2>
       </div>
       <div class="section_subheading-wrap subtitle">
         <div class="spacer-xlarge hide-mobile-portrait"></div>
@@ -42,18 +43,13 @@
     {
       "type": "richtext",
       "id": "subheading",
-      "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
+      "default": "<p>Небольшой параграф.</p>",
       "label": "t:sections.course-program.settings.subheading.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.course-program.settings.image.label"
     },
     {
       "type": "text",
       "id": "tag_content",
-      "default": "Result tag",
+      "default": "Скиллы и знания",
       "label": "t:sections.course-program.settings.tag_content.label"
     },
     {
@@ -89,6 +85,14 @@
       "default": "scheme-1"
     }
   ],
+  "locales": {
+    "en": {
+      "heading": "Outcomes"
+    },
+    "ru": {
+      "heading": "Результаты"
+    }
+  },
   "presets": [
     {
       "name": "t:sections.course-program.presets.name"
