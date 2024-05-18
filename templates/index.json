@@ -59,7 +59,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "courses",
-            "button_name": "View Courses",
+            "button_name": "Посмотреть курсы",
             "button_link": "\/pages\/courses"
           }
         },
@@ -67,7 +67,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "products",
-            "button_name": "Shop Now",
+            "button_name": "Косметика",
             "button_link": ""
           }
         }
