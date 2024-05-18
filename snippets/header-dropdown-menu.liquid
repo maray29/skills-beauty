@@ -42,15 +42,6 @@
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
-
-                        {% assign stringToCheck = childlink.url %}
-                        {% if stringToCheck contains '#' %}
-                          {% assign anchor_position = stringToCheck | split: '#' %}
-                          {% assign anchor = '#' | append: anchor_position[1] %}
-                          onclick="lenis.scrollTo('{{ anchor }}')"
-                        {% else %}
-                          onclick=""
-                        {% endif %}
                       >
                         {{ childlink.title | escape }}
                       </a>
@@ -77,15 +68,6 @@
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
-
-                                {% assign stringToCheck = grandchildlink.url %}
-                                {% if stringToCheck contains '#' %}
-                                  {% assign anchor_position = stringToCheck | split: '#' %}
-                                  {% assign anchor = '#' | append: anchor_position[1] %}
-                                  onclick="lenis.scrollTo('{{ anchor }}')"
-                                {% else %}
-                                  onclick=""
-                                {% endif %}
                               >
                                 {{ grandchildlink.title | escape }}
                               </a>
@@ -106,15 +88,6 @@
             class="header__menu-item list-menu__item link link--text focus-inset"
             {% if link.current %}
               aria-current="page"
-            {% endif %}
-
-            {% assign stringToCheck = link.url %}
-            {% if stringToCheck contains '#' %}
-              {% assign anchor_position = stringToCheck | split: '#' %}
-              {% assign anchor = '#' | append: anchor_position[1] %}
-              onclick="lenis.scrollTo('{{ anchor }}')"
-            {% else %}
-              onclick=""
             {% endif %}
           >
             <span

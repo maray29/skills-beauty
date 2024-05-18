@@ -380,18 +380,25 @@
 
       console.log(lenis);
       // fix for id links
-      // document.querySelectorAll('a[href^="#"]').forEach((el) => {
-      //   el.addEventListener('click', (e) => {
-      //     e.preventDefault();
-      //     console.log('click');
-      //     const id = el.getAttribute('href')?.slice(1);
-      //     if (!id) return;
-      //     const target = document.getElementById(id);
-      //     if (target) {
-      //       target.scrollIntoView({ behavior: 'smooth' });
-      //     }
-      //   });
-      // });
+      document.querySelectorAll('a[href*="#"]').forEach((el) => {
+        console.log(el);
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          console.log('click');
+
+          // Extract the part of the href after the last '#'
+          const href = el.getAttribute('href');
+          const id = href.split('#').pop();
+
+          if (!id) return;
+          const target = document.getElementById(id);
+          console.log(target);
+          if (target) {
+            // target.scrollIntoView({ behavior: 'smooth' });
+            lenis.scrollTo(target);
+          }
+        });
+      });
     </script>
   </body>
 </html>

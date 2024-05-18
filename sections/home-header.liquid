@@ -3,11 +3,17 @@
 <div class="layout_12col page-width">
   <h1 class="heading-huge">{{ section.settings.heading }}</h1>
   <div class="home-header_img-wrap">
-    <img
-      width=""
-      height=""
-      src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/home_header_img-wrap.webp?v=1712583698"
-    >
+    {% comment %}
+      <img
+        width=""
+        height=""
+        src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/home_header_img-wrap.webp?v=1712583698"
+      >
+    {% endcomment %}
+    {{
+      section.settings.video
+      | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false
+    }}
   </div>
   <div class="home-header_content-wrap">
     <p>{{ section.settings.subheading }}</p>
@@ -29,11 +35,7 @@
 
       {%- if section.settings['button-2_label'] != blank -%}
         <a
-          {% if section.settings['button-2_link'] == blank %}
-            role="link" aria-disabled="true"
-          {% else %}
-            href="{{ section.settings['button-2_link'] }}"
-          {% endif %}
+          href="{{ section.settings['button-2_link'] }}"
           class="button button--secondary is-full-width"
           {{ section.shopify_attributes }}
         >
@@ -196,6 +198,17 @@
       "id": "subheading",
       "label": "Текст",
       "default": "МЫ СОЗДАЕМ СООБЩЕСТВО, КОТОРОЕ УКРЕПЛЯЕТ УВЕРЕННОСТЬ В СЕБЕ ЧЕРЕЗ ИСКУССТВО И НАУКУ О КРАСОТЕ."
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.video.settings.video.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "t:sections.video.settings.enable_video_looping.label",
+      "default": true
     },
     {
       "type": "image_picker",
