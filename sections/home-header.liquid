@@ -1,7 +1,7 @@
 {{ 'home-header.css' | asset_url | stylesheet_tag }}
 
 <div class="layout_12col page-width">
-  <h1 class="heading-huge">{{ section.settings.heading }}</h1>
+  <h1 class="home-header_heading heading-huge">{{ section.settings.heading }}</h1>
   <div class="home-header_img-wrap">
     {% comment %}
       <img
@@ -12,12 +12,22 @@
     {% endcomment %}
     {{
       section.settings.video
-      | video_tag: image_size: '1100x', loop: section.settings.enable_video_looping, controls: true, muted: false
+      | video_tag:
+        image_size: '1100x',
+        loop: section.settings.enable_video_looping,
+        controls: false,
+        muted: true,
+        autoplay: true
     }}
   </div>
   <div class="home-header_content-wrap">
-    <p>{{ section.settings.subheading }}</p>
-    <div class="button-group">
+    <div class="home-header_motto">
+      {% render 'tag-component', tag_content: section.settings.tag_content %}
+    </div>
+    <div class="home-header_text-wrap">
+      <p>{{ section.settings.subheading }}</p>
+    </div>
+    <div class="home-header_button-wrap">
       {%- if section.settings['button-1_label'] != blank -%}
         <a
           {% if section.settings['button-1_link'] == blank %}
@@ -55,9 +65,6 @@
         </a>
       {% endcomment %}
     </div>
-  </div>
-  <div class="home-header_motto">
-    {% render 'tag-component', tag_content: section.settings.tag_content %}
   </div>
 </div>
 

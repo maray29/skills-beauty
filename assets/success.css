@@ -93,7 +93,7 @@
   }
 
   .success_items {
-    gap: 6.4rem;
+    gap: 7.2rem;
   }
 
   .success_item {
@@ -101,6 +101,6 @@
   }
 
   .success_button-wrap {
-    padding-top: 0rem;
+    padding-top: 1.6rem;
   }
 }

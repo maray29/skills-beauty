@@ -293,13 +293,15 @@ h2 {
 }
 
 .heading-huge {
-  font-size: clamp(3.2rem, 12.8vw, 21rem) !important;
+  font-size: clamp(3.2rem, 13.2vw, 22.75rem) !important;
   text-transform: uppercase;
   grid-column-start: span 12;
   padding: 0rem 0rem;
   margin: 0rem 0rem;
   line-height: 1;
   letter-spacing: -0.05em;
+  font-weight: 480 !important;
+  letter-spacing: -0.06em !important;
 }
 
 h1 {

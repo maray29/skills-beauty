@@ -1,6 +1,8 @@
 .home-header_img-wrap {
   display: flex;
-  grid-column-start: span 7;
+  grid-column-start: span 8;
+  border-radius: 1.2rem;
+  overflow: clip;
 }
 
 .home-header_img-wrap img {
@@ -12,52 +14,83 @@
   display: flex;
   flex-direction: column;
   font-size: clamp(1.6rem, 1.5vw, 2rem);
-  font-weight: 420;
-  padding-top: clamp(3.2rem, 6vw, 8rem);
-  padding-left: 2rem;
-  line-height: 1.15;
-  grid-column-start: 8;
+  font-weight: 480;
+  /* padding-top: clamp(3.2rem, 5vw, 6rem); */
+  padding-left: 3.2rem;
+  line-height: 1.35;
+  grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 2;
   max-width: 64rem;
+  letter-spacing: -0.03em;
+  gap: 5rem;
+}
+
+.home-header_content-wrap p:not(:last-child) {
+  margin-bottom: 1.6rem;
 }
 
 .home-header_motto {
   display: flex;
-  grid-column-start: 8;
+  /* grid-column-start: 9;
   grid-column-end: 13;
-  grid-row-start: 2;
-  align-self: flex-end;
-  padding-left: 2rem;
+  grid-row-start: 2; */
+  /* align-self: flex-end; */
+  /* padding-bottom: 4rem; */
 }
 
 .home-header_motto > * {
   padding-bottom: 0rem;
 }
 
+.home-header_button-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+@media screen and (max-width: 1160px) {
+  .home-header_img-wrap {
+    grid-column-start: span 12;
+  }
+
+  .home-header_content-wrap {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+    padding-left: 0rem;
+    padding-bottom: 1.6rem;
+    gap: 2.4rem;
+  }
+}
+
 @media screen and (max-width: 478px) {
   .home-header_heading {
     font-size: clamp(3.2rem, 12vw, 40rem) !important;
-    padding-top: 1.6rem;
+    padding-top: 2.4rem;
   }
 
   .home-header_img-wrap {
     display: flex;
     grid-column-start: span 12;
+    grid-row-start: 3;
   }
 
   .home-header_content-wrap {
-    font-size: clamp(1.6rem, 1.5vw, 2rem);
-    grid-column-start: 1;
-    grid-column-end: 13;
+    grid-column-start: span 12;
     grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
     padding: 0;
   }
+}
 
-  .home-header_motto {
-    /* display: none; */
-    grid-column-start: 1;
-    grid-column-end: 13;
-    grid-row-start: 4;
-  }
+video {
+  width: 100%;
+  /* aspect-ratio: 4/4; */
+  /* object-fit: cover; */
 }
