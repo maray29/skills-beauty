@@ -109,6 +109,11 @@ noscript .localization-form__select {
   width: 100%;
   padding-right: 4rem;
   padding-bottom: 1.5rem;
+  border-bottom: 1px solid transparent;
+}
+
+.localization-selector:hover {
+  border-bottom: 1px solid var(--border-primary);
 }
 
 noscript .localization-selector.link {

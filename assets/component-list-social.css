@@ -20,6 +20,11 @@
   display: flex;
   padding: 1.1rem;
   color: rgb(var(--color-foreground));
+  transition: color 0.25s ease;
+}
+
+.list-social__link:hover {
+  color: #ffddc4;
 }
 
 .utility-bar .list-social__link {
@@ -28,5 +33,5 @@
 }
 
 .list-social__link:hover .icon {
-  transform: scale(1.07);
+  /* transform: scale(1.07); */
 }

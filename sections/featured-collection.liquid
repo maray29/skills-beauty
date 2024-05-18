@@ -67,8 +67,12 @@
 
     <div class="tabs">
       <ul class="tab-links">
-        <li class="active"><button class="button is-full-width" href="#online">Online Courses</button></li>
-        <li><button class="button is-full-width" href="#offline">Offline Courses</button></li>
+        <li class="active">
+          <button class="button is-full-width" href="#online">{{ section.settings.button_1_label }}</button>
+        </li>
+        <li>
+          <button class="button is-full-width" href="#offline">{{ section.settings.button_2_label }}</button>
+        </li>
       </ul>
 
       <div class="tab-content">
@@ -163,6 +167,18 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "button_1_label",
+      "label": "Лейбл первой кнопки",
+      "default": "Online courses"
+    },
+    {
+      "type": "text",
+      "id": "button_2_label",
+      "label": "Лейбл второй кнопки",
+      "default": "Studio courses"
+    },
     {
       "type": "collection",
       "id": "collection",

@@ -1841,11 +1841,15 @@ component-form .field__input,
   border-radius: var(--inputs-radius);
 }
 
+input {
+  font-family: inherit;
+}
+
 .field__label,
 .customer .field label {
   font-size: 1.4rem;
   left: calc(var(--inputs-border-width) + 2rem);
-  top: calc(1.25rem + var(--inputs-border-width));
+  top: calc(1.1rem + var(--inputs-border-width));
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
