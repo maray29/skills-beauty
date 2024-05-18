@@ -15,7 +15,7 @@
       </div>
       <div class="service_list">
         {% for block in section.blocks %}
-          <a href="{{ block.settings.link }}" class="button is-service">
+          <a href="{{ block.settings.link }}" class="button is-service" target="_blank">
             {{ block.settings.label }}
             {% render 'icon-arrow-up-right' %}
           </a>
