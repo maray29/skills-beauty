@@ -3980,6 +3980,10 @@ html {
   margin-bottom: 1.2rem;
 }
 
+.line {
+  overflow: clip;
+}
+
 @media screen and (max-width: 991px) {
   .course__grid {
     --layout-grid-min: 35ch;

@@ -32,6 +32,7 @@
 
 .home-header_motto {
   display: flex;
+  overflow: clip;
   /* grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 2; */
