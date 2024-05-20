@@ -93,8 +93,8 @@
         "tag_content": "Как использовать сертификат?",
         "padding_top": 128,
         "padding_bottom": 128,
-        "button-1_label": "Подарить",
-        "button-1_link": "/products/gift-certificate"
+        "button_label": "Подарить",
+        "button_link": "/products/gift-certificate"
       }
     },
     "partnership": {

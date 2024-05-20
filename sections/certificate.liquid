@@ -16,7 +16,7 @@
         {% endcomment %}
         {{ section.settings.subheading }}
         <div class="certificate_button-wrap">
-          {%- if section.settings['button-1_label'] != blank -%}
+          {%- if section.settings.button_label != blank -%}
             <a
               {% if section.settings['button-1_link'] == blank %}
                 role="link" aria-disabled="true"
@@ -26,7 +26,7 @@
               class="button is-full-width"
               {{ section.shopify_attributes }}
             >
-              {{ section.settings['button-1_label'] | escape }}
+              {{ section.settings.button_label | escape }}
               {% render 'icon-arrow' %}
             </a>
           {%- endif -%}
@@ -49,7 +49,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.certificate.name",
+  "name": "Сертификат",
   "tag": "section",
   "class": "section_certificate",
   "settings": [
@@ -57,24 +57,24 @@
       "type": "inline_richtext",
       "id": "heading",
       "default": "Подарочный Сертификат",
-      "label": "t:sections.certificate.settings.heading.label"
+      "label": "Заглавие"
     },
     {
       "type": "richtext",
       "id": "subheading",
       "default": "<p>Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p> <p>Сертификат можно заказать онлайн и забрать в студии.</p>",
-      "label": "t:sections.certificate.settings.subheading.label"
+      "label": "Подзагаловок"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.certificate.settings.image.label"
+      "label": "Изображение"
     },
     {
       "type": "text",
       "id": "tag_content",
       "default": "Наши задачи и цели",
-      "label": "t:sections.certificate.settings.tag.label"
+      "label": "Тег"
     },
     {
       "type": "range",
@@ -98,14 +98,14 @@
     },
     {
       "type": "text",
-      "id": "button-1_label",
+      "id": "button_label",
       "default": "Подарить",
-      "label": "t:sections.all.button.button_label.label"
+      "label": "Лейбл кнопки"
     },
     {
       "type": "url",
       "id": "button-1_link",
-      "label": "t:sections.all.button.button_link.label"
+      "label": "Ссылка кнопки"
     }
   ],
   "presets": [
