@@ -31,18 +31,18 @@
       </div>
       <div class="studio_subheading-wrap subtitle">
         {{ section.settings.subheading }}
-        {%- if section.settings['button-1_label'] != blank -%}
+        {%- if section.settings.button_label != blank -%}
           <a
-            {% if section.settings['button-1_link'] == blank %}
+            {% if section.settings.button_link == blank %}
               role="link" aria-disabled="true"
             {% else %}
-              href="{{ section.settings.button-1_link }}"
+              href="{{ section.settings.button_link }}"
             {% endif %}
             class="button is-full-width"
             target="_blank"
             {{ section.shopify_attributes }}
           >
-            {{ section.settings['button-1_label'] | escape }}
+            {{ section.settings.button_label | escape }}
             {% render 'icon-arrow' %}
           </a>
         {%- endif -%}
@@ -70,7 +70,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.services.name",
+  "name": "Студия",
   "tag": "section",
   "class": "section_services",
   "settings": [
@@ -78,29 +78,29 @@
       "type": "inline_richtext",
       "id": "heading",
       "default": "Page heading",
-      "label": "t:sections.services.settings.heading.label"
+      "label": "Заголовок"
     },
     {
       "type": "richtext",
       "id": "subheading",
       "default": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
-      "label": "t:sections.services.settings.subheading.label"
+      "label": "Подзаголовок"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.services.settings.image.label"
+      "label": "Изображение"
     },
     {
       "type": "text",
-      "id": "button-1_label",
+      "id": "button_label",
       "default": "Подарить",
-      "label": "t:sections.all.button.button_label.label"
+      "label": "Лейбл кнопки"
     },
     {
       "type": "url",
-      "id": "button-1_link",
-      "label": "t:sections.all.button.button_link.label"
+      "id": "button_link",
+      "label": "Ссылка кнопки"
     },
     {
       "type": "range",
@@ -149,7 +149,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.services.presets.name",
+      "name": "Пресет",
       "category": "Service"
     }
   ]

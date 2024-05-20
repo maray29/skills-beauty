@@ -18,10 +18,10 @@
         <div class="certificate_button-wrap">
           {%- if section.settings.button_label != blank -%}
             <a
-              {% if section.settings['button-1_link'] == blank %}
+              {% if section.settings.button_link == blank %}
                 role="link" aria-disabled="true"
               {% else %}
-                href="{{ section.settings.button-1_link }}"
+                href="{{ section.settings.button_link }}"
               {% endif %}
               class="button is-full-width"
               {{ section.shopify_attributes }}
@@ -104,7 +104,7 @@
     },
     {
       "type": "url",
-      "id": "button-1_link",
+      "id": "button_link",
       "label": "Ссылка кнопки"
     }
   ],
