@@ -10,15 +10,17 @@
         src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/home_header_img-wrap.webp?v=1712583698"
       >
     {% endcomment %}
-    {{
-      section.settings.video
-      | video_tag:
-        image_size: '1100x',
-        loop: section.settings.enable_video_looping,
-        controls: false,
-        muted: true,
-        autoplay: true
-    }}
+    <div class="mask">
+      {{
+        section.settings.video
+        | video_tag:
+          image_size: '1100x',
+          loop: section.settings.enable_video_looping,
+          controls: false,
+          muted: true,
+          autoplay: true
+      }}
+    </div>
   </div>
   <div class="home-header_content-wrap">
     <div class="home-header_motto">
@@ -201,10 +203,10 @@
       "default": "SKILLS BEAUTY"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "subheading",
       "label": "Текст",
-      "default": "МЫ СОЗДАЕМ СООБЩЕСТВО, КОТОРОЕ УКРЕПЛЯЕТ УВЕРЕННОСТЬ В СЕБЕ ЧЕРЕЗ ИСКУССТВО И НАУКУ О КРАСОТЕ."
+      "default": "<p>МЫ СОЗДАЕМ СООБЩЕСТВО, КОТОРОЕ УКРЕПЛЯЕТ УВЕРЕННОСТЬ В СЕБЕ ЧЕРЕЗ ИСКУССТВО И НАУКУ О КРАСОТЕ.</p>"
     },
     {
       "type": "video",

@@ -372,7 +372,7 @@
       type="module"
     >
       function animateHomeHeader(selector) {
-        const homeHeading = document.querySelectorAll(selector);
+        const homeHeading = document.querySelector(selector);
         const homeSubheading = document.querySelectorAll('.home-header_text-wrap p');
         const homeTag = document.querySelector('.home-header_motto .tag');
         const homeButtonWrap = document.querySelector('.home-header_button-wrap');
@@ -390,6 +390,19 @@
 
         const tl = gsap.timeline();
 
+        const homeHeadingBoundingRect = homeHeading.getBoundingClientRect();
+        const heightToMoveFrom = window.innerHeight / 2 - homeHeadingBoundingRect.height / 2 - 50;
+        console.log('🚀 ~ animateHomeHeader ~ heightToMoveFrom:', heightToMoveFrom);
+
+        gsap.set(homeHeading, {
+          y: heightToMoveFrom,
+          scale: 0.5,
+        });
+
+        gsap.set('.mask', {
+          autoAlpha: 0,
+        });
+
         tl.from('#shopify-section-template--16795261108375__home-header', {
           autoAlpha: 0,
         })
@@ -398,15 +411,24 @@
             yPercent: 100,
             stagger: 0.015,
             duration: 0.65,
-            ease: 'power.out4',
+            ease: 'circ.out',
           })
-          .from(
-            '.home-header_img-wrap',
+          .to(homeHeading, {
+            y: 0,
+            scale: 1,
+            delay: 0.1,
+            duration: 0.95,
+            ease: 'power4.inOut',
+          })
+          .to(
+            '.mask',
             {
-              autoAlpha: 0,
-              yPercent: 20,
+              autoAlpha: 1,
+              clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+              duration: 0.75,
+              ease: 'circ.out',
             },
-            '<0.25'
+            '<0.35'
           )
           .from(
             homeTag,
@@ -462,13 +484,10 @@
       }
       requestAnimationFrame(raf);
 
-      console.log(lenis);
       // fix for id links
       document.querySelectorAll('a[href*="#"]').forEach((el) => {
-        console.log(el);
         el.addEventListener('click', (e) => {
           e.preventDefault();
-          console.log('click');
 
           // Extract the part of the href after the last '#'
           const href = el.getAttribute('href');
@@ -476,7 +495,7 @@
 
           if (!id) return;
           const target = document.getElementById(id);
-          console.log(target);
+
           if (target) {
             // target.scrollIntoView({ behavior: 'smooth' });
             lenis.scrollTo(target);
