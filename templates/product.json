@@ -51,6 +51,13 @@
             "text_style": "body"
           }
         },
+        "text_jR7ELE": {
+          "type": "text",
+          "settings": {
+            "text": "Тип кожи: {{ product.metafields.custom.skin_type | metafield_text }}",
+            "text_style": "body"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -67,6 +74,7 @@
         "buy_buttons",
         "description",
         "text_eYQeHi",
+        "text_jR7ELE",
         "share"
       ],
       "settings": {
