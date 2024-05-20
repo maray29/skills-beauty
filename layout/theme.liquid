@@ -259,11 +259,15 @@
           font-size: 1.6rem;
         }
       }
+    {% endstyle %}
 
+    {% comment %} {%- if !request.design_mode -%} {% endcomment %}
+    {% style %}
       #shopify-section-template--16795261108375__home-header {
         visibility: hidden;
       }
     {% endstyle %}
+    {% comment %} {%- endif -%} {% endcomment %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
@@ -391,12 +395,12 @@
         const tl = gsap.timeline();
 
         const homeHeadingBoundingRect = homeHeading.getBoundingClientRect();
-        const heightToMoveFrom = window.innerHeight / 2 - homeHeadingBoundingRect.height / 2 - 50;
+        const heightToMoveFrom = window.innerHeight / 2 - homeHeadingBoundingRect.height / 2 - 100;
         console.log('🚀 ~ animateHomeHeader ~ heightToMoveFrom:', heightToMoveFrom);
 
         gsap.set(homeHeading, {
           y: heightToMoveFrom,
-          scale: 0.5,
+          scale: 0.75,
         });
 
         gsap.set('.mask', {
@@ -417,7 +421,7 @@
             y: 0,
             scale: 1,
             delay: 0.1,
-            duration: 0.95,
+            duration: 1,
             ease: 'power4.inOut',
           })
           .to(

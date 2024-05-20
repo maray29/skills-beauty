@@ -249,7 +249,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 ::selection {
-  background-color: rgba(var(--color-foreground), 0.2);
+  background-color: #ffe7d6;
 }
 
 .text-body {
@@ -462,7 +462,7 @@ blockquote {
 .select__select {
   font-size: 1.3rem;
   line-height: 1.35;
-  letter-spacing: -0.03em;
+  /* letter-spacing: -0.03em; */
 }
 
 .color-foreground {

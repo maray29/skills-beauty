@@ -10,7 +10,8 @@
         "button_label": "Наши услуги",
         "button_link": "#services",
         "padding_top": 0,
-        "padding_bottom": 128
+        "padding_bottom": 128,
+        "section_color_scheme": "scheme-1"
       }
     },
     "services": {

@@ -8,48 +8,51 @@
 
 {% assign slides_per_view = section.settings.slides_per_view %}
 
-<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
-  <div
-    data-slides-per-view="{{ slides_per_view }}"
-    class="swiper slider-container page-width"
-  >
-    <div class="section_heading-wrap">
-      <h2 class="h3">
-        {{ section.settings.heading }}
-      </h2>
-      <div class="spacer-large"></div>
-    </div>
-    <div class="swiper-wrapper">
-      {%- for block in metaobject.course_results.value -%}
-        <div class="swiper-slide">
-          <div class="result_component">
-            <div class="result_text-wrapper">
-              <div class="result_text">
-                <div class="result_img-wrap">
-                  {%- if block.result_image != blank -%}
-                    {{
-                      block.result_image
-                      | image_url: width: 1500
-                      | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                    }}
-                  {%- endif -%}
-                </div>
+{% if metaobject.course_results.value != blank %}
+  <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+    <div
+      data-slides-per-view="{{ slides_per_view }}"
+      class="swiper slider-container page-width"
+    >
+      <div class="section_heading-wrap">
+        <h2 class="h3">
+          {{ section.settings.heading }}
+        </h2>
+        <div class="spacer-large"></div>
+      </div>
 
-                <div class="result_header">
-                  {%- if block.result_description != blank -%}
-                    <div class="inline-richtext">
-                      {{ block.result_description }}
-                    </div>
-                  {%- endif -%}
+      <div class="swiper-wrapper">
+        {%- for block in metaobject.course_results.value -%}
+          <div class="swiper-slide">
+            <div class="result_component">
+              <div class="result_text-wrapper">
+                <div class="result_text">
+                  <div class="result_img-wrap">
+                    {%- if block.result_image != blank -%}
+                      {{
+                        block.result_image
+                        | image_url: width: 1500
+                        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                      }}
+                    {%- endif -%}
+                  </div>
+
+                  <div class="result_header">
+                    {%- if block.result_description != blank -%}
+                      <div class="inline-richtext">
+                        {{ block.result_description }}
+                      </div>
+                    {%- endif -%}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      {%- endfor -%}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 <link
   rel="stylesheet"

@@ -1,3 +1,11 @@
+.home-header_heading {
+  mix-blend-mode: difference;
+  color: white;
+  position: relative;
+  /* top: 10rem; */
+  z-index: 10;
+}
+
 .home-header_img-wrap {
   display: flex;
   grid-column-start: span 8;
