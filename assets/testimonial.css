@@ -28,7 +28,12 @@
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 100%;
-  background-color: rgb(var(--color-background-secondary));
+  /* background-color: rgb(var(--color-background-secondary)); */
+}
+
+.testimonial_author-img img {
+  width: 100%;
+  height: auto;
 }
 
 .testimonial_img-wrap {
@@ -47,7 +52,8 @@
 
 @media screen and (max-width: 478px) {
   .testimonial_component {
-    padding: 0rem !important;
+    padding: 0.5rem !important;
+    justify-content: flex-start;
   }
   .testimonial_component .text-size-medium {
     font-size: 1.6rem;

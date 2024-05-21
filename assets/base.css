@@ -4023,6 +4023,9 @@ html {
   .tag {
     font-size: 1.2rem;
   }
+  .tag .icon {
+    width: 1.2rem;
+  }
 }
 
 html.lenis,

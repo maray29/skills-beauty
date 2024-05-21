@@ -4,11 +4,11 @@
       "type": "home-header",
       "settings": {
         "heading": "SKILLS BEAUTY",
-        "subheading": "<p>Skill Beauty — это уникальный проект, который объединяет обучающие курсы, онлайн-магазин и услуги студии.<\/p><p>Мы стремимся вдохновлять и поддерживать каждую женщину на пути к её природной красоте и уверенности в себе.<\/p>",
-        "video": "shopify:\/\/files\/videos\/video_2024-05-18_19-45-58.mp4",
+        "subheading": "<p>Skill Beauty — это уникальный проект, который объединяет обучающие курсы, онлайн-магазин и услуги студии.</p><p>Мы стремимся вдохновлять и поддерживать каждую женщину на пути к её природной красоте и уверенности в себе.</p>",
+        "video": "shopify://files/videos/video_2024-05-18_19-45-58.mp4",
         "enable_video_looping": true,
         "button-1_label": "Обучение",
-        "button-1_link": "\/pages\/courses",
+        "button-1_link": "/pages/courses",
         "button-2_label": "Узнать о нас",
         "button-2_link": "#about",
         "tag_content": "СТИЛЬ — ЭТО КРАСОТА ЖИЗНИ"
@@ -17,9 +17,9 @@
     "image_with_text": {
       "type": "image-with-text",
       "settings": {
-        "image": "shopify:\/\/shop_images\/about_img-wrap.webp",
+        "image": "shopify://shop_images/about_img-wrap.webp",
         "heading": "Our goals & mission",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.<\/p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте.<\/p> <p>Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.<\/p>",
+        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте.</p> <p>Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 128,
@@ -30,25 +30,25 @@
     "success": {
       "type": "success",
       "settings": {
-        "header_img": "shopify:\/\/shop_images\/mascara_img.webp",
+        "header_img": "shopify://shop_images/mascara_img.webp",
         "heading": "Наши успехи в Beauty Сфeре",
-        "subheading": "<p>Мы развиваем сразу несколько направлений: это работа с клиентами, проведение обучение и создание онлайн продуктов<\/p>",
-        "image_1": "shopify:\/\/shop_images\/success-item-1_img-wrap.webp",
-        "image_2": "shopify:\/\/shop_images\/success-item-2_img-wrap.webp",
-        "image_3": "shopify:\/\/shop_images\/success-item-3_img-wrap.webp",
+        "subheading": "<p>Мы развиваем сразу несколько направлений: это работа с клиентами, проведение обучение и создание онлайн продуктов</p>",
+        "image_1": "shopify://shop_images/success-item-1_img-wrap.webp",
+        "image_2": "shopify://shop_images/success-item-2_img-wrap.webp",
+        "image_3": "shopify://shop_images/success-item-3_img-wrap.webp",
         "tag_content": "Факты и цифры",
         "success_item-1_number": "2300+",
-        "success_item-1_text": "Счастливых клиентов",
+        "success_item-1_text": "Счастливых клиентов которые посетили наше пространство и оценили качество обслуживания",
         "success_item-1_button_label": "О Нашей Студии",
-        "success_item-1_button_link": "\/pages\/studio",
+        "success_item-1_button_link": "/pages/studio",
         "success_item-2_number": "168+",
-        "success_item-2_text": "Проведенных оффлайн уроков",
+        "success_item-2_text": "Проведенных оффлайн уроков как для себя так и для начинающих специалистов",
         "success_item-2_button_label": "Наши Курсы",
-        "success_item-2_button_link": "\/pages\/courses",
+        "success_item-2_button_link": "/pages/courses",
         "success_item-3_number": "100,000+",
-        "success_item-3_text": "Просмотров на Youtube",
+        "success_item-3_text": "Просмотров на YouTube, где мы снимаем обучающие ролики и рассказываем истории преображений",
         "success_item-3_button_label": "Наш Youtube",
-        "success_item-3_button_link": "https:\/\/www.youtube.com\/channel\/UCiaK_TnVlCmu02uecT24Riw",
+        "success_item-3_button_link": "https://www.youtube.com/channel/UCiaK_TnVlCmu02uecT24Riw",
         "padding_top": 128,
         "padding_bottom": 128
       }
@@ -61,7 +61,7 @@
           "settings": {
             "collection": "online-courses",
             "button_name": "Посмотреть курсы",
-            "button_link": "\/pages\/courses"
+            "button_link": "/pages/courses"
           }
         },
         "featured_collection_EV9Bp4": {
@@ -87,30 +87,30 @@
       "type": "certificate",
       "settings": {
         "heading": "Подарочный Сертификат",
-        "subheading": "<p>Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.<\/p><p>Сертификат можно заказать онлайн и забрать в студии.<\/p>",
-        "image": "shopify:\/\/shop_images\/certificate_img.webp",
+        "subheading": "<p>Цифровой сертификат подходит для оплаты услуг, курсов и продукции в магазине.</p><p>Сертификат можно заказать онлайн и забрать в студии.</p>",
+        "image": "shopify://shop_images/certificate_img.webp",
         "tag_content": "Как использовать сертификат?",
         "padding_top": 128,
         "padding_bottom": 128,
         "button_label": "Подарить",
-        "button_link": "\/products\/gift-certificate"
+        "button_link": "/products/gift-certificate"
       }
     },
     "partnership": {
       "type": "partnership",
       "settings": {
-        "image": "shopify:\/\/shop_images\/partnership_img.webp",
+        "image": "shopify://shop_images/partnership_img.webp",
         "tag_content": "Коллаборация",
         "heading": "Стань партнером Skills Beauty",
-        "subheading": "<p>Возможно мы найдем с вами взаимовыгодное сотрудничество!<\/p><p>Оставляйте заявку! Мы не за стандартные решения!<\/p>",
+        "subheading": "<p>Возможно мы найдем с вами взаимовыгодное сотрудничество!</p><p>Оставляйте заявку! Мы не за стандартные решения!</p>",
         "section_color_scheme": "",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0,
         "button-1_label": "Для брендов",
-        "button-1_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScTIoF_wOR51e79qxZ0dnHXgcWILE7lErFDIv8Aqrc6mdgUGA\/viewform",
+        "button-1_link": "https://docs.google.com/forms/d/e/1FAIpQLScTIoF_wOR51e79qxZ0dnHXgcWILE7lErFDIv8Aqrc6mdgUGA/viewform",
         "button-2_label": "Для Инфлюенсеров",
-        "button-2_link": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLScTIoF_wOR51e79qxZ0dnHXgcWILE7lErFDIv8Aqrc6mdgUGA\/viewform"
+        "button-2_link": "https://docs.google.com/forms/d/e/1FAIpQLScTIoF_wOR51e79qxZ0dnHXgcWILE7lErFDIv8Aqrc6mdgUGA/viewform"
       }
     },
     "newsletter_UT7xRC": {
@@ -126,13 +126,12 @@
         "paragraph_JFfafP": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "email_form_JHfWPG": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
