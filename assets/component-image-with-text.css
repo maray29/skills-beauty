@@ -453,7 +453,7 @@
   width: 100%;
   border-radius: 1.2rem;
   background-color: rgb(var(--color-background-secondary));
-  /* overflow: hidden; */
+  overflow: clip;
   position: relative;
 }
 
