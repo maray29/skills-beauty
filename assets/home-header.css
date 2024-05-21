@@ -3,7 +3,7 @@
   color: white;
   position: relative;
   /* top: 10rem; */
-  z-index: 10;
+  z-index: 2;
 }
 
 .home-header_img-wrap {

@@ -326,7 +326,7 @@ h2 {
 
 h3,
 .h3 {
-  font-size: clamp(1.6rem, 2.5vw, 2.4rem) !important;
+  font-size: clamp(1.85rem, 2.5vw, 2.4rem) !important;
   font-weight: 520 !important;
   letter-spacing: -0.03em !important;
 }
