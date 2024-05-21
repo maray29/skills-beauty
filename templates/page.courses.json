@@ -3,7 +3,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "courses",
+        "collection": "online-courses",
         "offline_collection": "offline-courses",
         "section_color_scheme": "scheme-1",
         "tag_content": "Обучение",
