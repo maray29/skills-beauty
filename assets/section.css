@@ -19,6 +19,14 @@
   text-align: center;
 }
 
+.is-slider-header {
+  flex-direction: row;
+  gap: 1.6rem;
+  justify-content: space-between;
+  padding-bottom: 3.2rem;
+  align-items: flex-end;
+}
+
 .is-centered .section_subheading-wrap {
   padding-top: 3.2rem;
   /* padding-bottom: 0; */

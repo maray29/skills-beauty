@@ -14,11 +14,25 @@
       data-slides-per-view="{{ slides_per_view }}"
       class="swiper slider-container page-width"
     >
-      <div class="section_heading-wrap">
-        <h2 class="h3">
+      <div class="section_heading-wrap is-slider-header">
+        <h2 class="max-width-medium">
           {{ section.settings.heading }}
         </h2>
-        <div class="spacer-large"></div>
+        <div class="slider-navigation">
+          <!-- Left Navigation Button -->
+          <button aria-label="Previous image" class="slider-button swiper-button-prev">
+            <span aria-hidden="true">
+              {% render 'icon-arrow-left' %}
+            </span>
+          </button>
+
+          <!-- Right Navigation Button -->
+          <button aria-label="Next image" class="slider-button swiper-button-next">
+            <span aria-hidden="true">
+              {% render 'icon-arrow' %}
+            </span>
+          </button>
+        </div>
       </div>
 
       <div class="swiper-wrapper">

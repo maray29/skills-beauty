@@ -77,3 +77,32 @@
 /*.results-slider_text-wrapper {
     padding: 3.2rem !important;
   } */
+.slider-navigation {
+  display: flex;
+  gap: 1.6rem;
+}
+.slider-button {
+  color: rgb(var(--color-button-text));
+  background-color: rgb(var(--color-button));
+  padding: 0.5rem 4rem;
+  height: auto;
+  width: auto;
+  border-radius: 100vw;
+  transition: color var(--duration-default) ease;
+  transition: background-color 0.15s ease-out;
+}
+
+.slider-button span {
+  display: inline-flex;
+}
+
+.slider-button .icon-arrow {
+  display: inline-flex;
+  width: 2rem;
+  height: auto;
+}
+
+.slider-button:hover {
+  color: rgb(var(--color-button-text-hover));
+  background-color: rgb(var(--color-button-hover));
+}

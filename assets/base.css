@@ -3796,6 +3796,11 @@ html {
   margin: 0 auto;
 }
 
+.spacer-medium {
+  display: block !important;
+  padding-bottom: 2.4rem;
+}
+
 .spacer-large {
   display: block !important;
   padding-bottom: 3.2rem;
