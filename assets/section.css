@@ -75,4 +75,10 @@
   .is-centered .max-width-medium {
     max-width: 80%;
   }
+
+  .is-slider-header {
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: flex-start;
+  }
 }

@@ -23,6 +23,7 @@
   grid-column-start: 7;
   grid-column-end: 12;
   grid-row-start: 2;
+  align-items: flex-start;
 }
 
 .certificate_img-wrap img {

@@ -15,19 +15,24 @@
   /* grid-template-columns: repeat(2, 1fr); */
   display: flex;
   gap: 4.8rem;
+  align-items: flex-start;
 }
 
 .instructor_photo {
   display: flex;
+  flex-basis: 40%;
+  height: auto;
   border: 1px solid var(--border-primary);
   border-radius: 1.2rem;
   overflow: hidden;
+  align-items: flex-start;
   /* max-width: 32rem; */
 }
 
 .instructor_photo img {
   width: 100%;
   height: auto;
+  /* object-fit: cover; */
 }
 
 .instructor_info {
@@ -45,6 +50,15 @@
 
 .instructor_description p {
   margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 991px) {
+  .instructor_list {
+    grid-column-start: 1;
+  }
+
+  .instructor_photo {
+    grid-column-start: 1;
+  }
 }
 
 @media screen and (max-width: 478px) {

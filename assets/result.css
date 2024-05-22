@@ -83,7 +83,8 @@
 }
 .slider-button {
   color: rgb(var(--color-button-text));
-  background-color: rgb(var(--color-button));
+  background-color: rgb(var(--color-heading));
+  /* border: 2px solid rgb(var(--color-heading)); */
   padding: 0.5rem 4rem;
   height: auto;
   width: auto;
