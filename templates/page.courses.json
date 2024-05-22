@@ -126,19 +126,6 @@
         "padding_bottom": 0
       }
     },
-    "image_with_text": {
-      "type": "image-with-text",
-      "settings": {
-        "image": "shopify://shop_images/about_img-wrap.webp",
-        "heading": "Our goals & mission",
-        "subheading": "<p>Вдохновлять и поддерживать тех, кто заинтересован в Beauty-сфере.</p> <p> Мы стремимся создать сообщество, которое развивает уверенность в себе через искусство и науку о красоте. </p> <p> Наши мастера служат примером применения наших обучающих методик, предлагая клиентам высококачественные услуги, передовые методы и сервис.</p>",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 128,
-        "padding_bottom": 128,
-        "section_id": ""
-      }
-    },
     "team": {
       "type": "team",
       "settings": {
@@ -150,10 +137,5 @@
       }
     }
   },
-  "order": [
-    "featured_collection",
-    "testimonials_slider",
-    "image_with_text",
-    "team"
-  ]
+  "order": ["featured_collection", "testimonials_slider", "team"]
 }

@@ -15,6 +15,7 @@
       "type": "image-with-text",
       "settings": {
         "image": "{{ metaobject.course_goal_image.value }}",
+        "video": "{{ metaobject.course_goal_image.value }}",
         "heading": "{{ metaobject.course_goal_heading | metafield_tag }}",
         "subheading": "{{ metaobject.course_goal | metafield_tag }}",
         "section_color_scheme": "",

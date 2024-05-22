@@ -270,6 +270,7 @@
     {% comment %} {%- endif -%} {% endcomment %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'section.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -420,7 +421,7 @@
           .to(homeHeading, {
             y: 0,
             scale: 1,
-            delay: 0.1,
+            delay: 0.05,
             duration: 1,
             ease: 'power4.inOut',
           })
@@ -491,19 +492,21 @@
       // fix for id links
       document.querySelectorAll('a[href*="#"]').forEach((el) => {
         el.addEventListener('click', (e) => {
-          e.preventDefault();
-
-          // Extract the part of the href after the last '#'
+          // Prevent default only if target ID exists on the page
           const href = el.getAttribute('href');
           const id = href.split('#').pop();
 
-          if (!id) return;
+          if (!id) return; // Continue with default behavior if no ID is present
+
           const target = document.getElementById(id);
 
           if (target) {
-            // target.scrollIntoView({ behavior: 'smooth' });
+            // Prevent default action if the target exists
+            e.preventDefault();
+            // Scroll to the target if it exists on the current page
             lenis.scrollTo(target);
           }
+          // If the target does not exist, do nothing (let the browser follow the link)
         });
       });
     </script>

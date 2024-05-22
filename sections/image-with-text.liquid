@@ -12,36 +12,41 @@
   endif
 -%}
 
-<div
-  class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}"
-  id="{{ section.settings.section_id }}"
->
-  <div class="page-width">
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width" id="{{ section.settings.section_id }}">
     <div class="image-with-text__component">
       <div class="layout_12col">
         <div class="image-with-text__img-wrap">
-          {%- if section.settings.image != blank -%}
-            {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
-              {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
-              {%- capture sizes -%}
-                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-                (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-              {%- endcapture -%}
+          {% if section.settings.image.media_type == 'image' %}
+            {%- if section.settings.image != blank -%}
+              {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                      (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                    {%- endcapture -%}
+              {%- else -%}
+                {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                    {%- endcapture -%}
+              {%- endif -%}
+              {{
+                section.settings.image
+                | image_url: width: 1500
+                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              }}
+
             {%- else -%}
-              {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-              {%- capture sizes -%}
-                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-              {%- endcapture -%}
+              {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
+          {% else %}
             {{
-              section.settings.image
-              | image_url: width: 1500
-              | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              section.settings.video
+              | video_tag: image_size: '1100x', loop: true, controls: false, muted: true, autoplay: true
             }}
-          {%- else -%}
-            {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
+          {% endif %}
         </div>
         <div class="image-with-text__content-wrap">
           <h2
@@ -80,6 +85,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.video.settings.video.label"
     },
     {
       "type": "inline_richtext",

@@ -42,30 +42,28 @@
 <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
   <div class="page-width">
     <div class="section_header">
-      <div class="layout_12col">
-        {%- if section.settings.title != blank -%}
-          <div class="section_heading-wrap is-centered">
-            <h1 class="course-heading text-style-allcaps {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              {{ section.settings.title }}
-            </h1>
-            {%- if section.settings.description != blank
-              or section.settings.show_description
-              and section.settings.collection.description != empty
-            -%}
-              <div class="section_subheading-wrap max-width-medium subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                {%- if section.settings.show_description -%}
-                  {{ section.settings.collection.description }}
-                {%- else -%}
-                  {{ section.settings.description -}}
-                {%- endif %}
-              </div>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-      </div>
+      {%- if section.settings.title != blank -%}
+        <div class="section_heading-wrap is-centered">
+          <h1 class="course-heading text-style-allcaps {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {{ section.settings.title }}
+          </h1>
+          {%- if section.settings.description != blank
+            or section.settings.show_description
+            and section.settings.collection.description != empty
+          -%}
+            <div class="section_subheading-wrap max-width-medium subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              {%- if section.settings.show_description -%}
+                {{ section.settings.collection.description }}
+              {%- else -%}
+                {{ section.settings.description -}}
+              {%- endif %}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
     </div>
 
-    <div class="tabs">
+    <div class="tabs {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul class="tab-links">
         <li class="active">
           <button class="button is-full-width" href="#online">{{ section.settings.button_1_label }}</button>
