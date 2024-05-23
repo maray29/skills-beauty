@@ -3748,6 +3748,10 @@ html {
   max-width: 72rem;
 }
 
+.max-width-huge {
+  max-width: 84rem;
+}
+
 .text-size-normal {
   font-size: 1.6rem;
 }
