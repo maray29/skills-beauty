@@ -316,7 +316,8 @@ h1 {
   font-weight: 420 !important;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: clamp(4.2rem, 4.5vw, 6.4rem) !important;
   text-transform: uppercase;
   letter-spacing: -0.03em !important;
@@ -923,7 +924,7 @@ summary::-webkit-details-marker {
 
 .subtitle {
   /* font-size: 2rem; */
-  font-size: clamp(1.6rem, 2vw, 2rem);
+  font-size: clamp(1.6rem, 1.5vw, 2rem);
   font-weight: 480;
   /* line-height: calc(1 + 0.2 / var(--font-body-scale)); */
   letter-spacing: -0.03em;
@@ -3931,12 +3932,18 @@ html {
   display: flex;
   align-items: flex-start;
   gap: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 520;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  /* padding-bottom: 1.6rem; */
+  /* color: #50463f; */
+}
+
+.tag .icon-wrap {
+  display: inline-flex;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .course__grid {
@@ -4000,6 +4007,10 @@ html {
 
   .hide-tablet {
     display: none !important;
+  }
+
+  .tag {
+    font-size: 1.4rem;
   }
 }
 

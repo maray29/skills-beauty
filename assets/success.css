@@ -67,7 +67,7 @@
 }
 
 .success_number {
-  font-size: clamp(4.2rem, 4.5vw, 6.4rem);
+  font-size: clamp(5.2rem, 4.5vw, 6.4rem);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.07em;
@@ -77,6 +77,30 @@
   width: 100%;
   padding-top: clamp(4.2rem, 4.5vw, 6.4rem);
   margin-top: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .success_items {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 6.4rem;
+  }
+
+  .success_item {
+    max-width: 42rem;
+  }
+
+  .success_button-wrap {
+    padding-top: 3.2rem;
+  }
+
+  .success_header-img-wrap {
+    grid-column-start: span 5;
+    /* justify-self: start; */
+  }
+  .success_heading-wrap {
+    grid-column-start: 6;
+  }
 }
 
 @media screen and (max-width: 478px) {
