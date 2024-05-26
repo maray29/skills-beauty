@@ -80,6 +80,7 @@
 .slider-navigation {
   display: flex;
   gap: 1.6rem;
+  justify-content: flex-end;
 }
 .slider-button {
   color: rgb(var(--color-button-text));

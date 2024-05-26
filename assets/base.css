@@ -3950,7 +3950,7 @@ html {
   /* display: grid !important; */
   /* grid-template-columns: repeat(3, 1fr) !important; */
 
-  --layout-grid-min: 40ch;
+  --layout-grid-min: 36ch;
   --layout-grid-gap: 1.6rem;
 
   display: grid !important;

@@ -45,21 +45,20 @@
   --gap: 0.8rem;
   --gap-row: 0.8rem;
   gap: var(--gap-row) var(--gap);
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
 }
 
 .info_item {
   /* The flex basis is adjusted to ensure the content fits on one line, considering the padding and border if any */
-  flex-basis: calc(
+  /* flex-basis: calc(
     (100% / var(--cols)) - var(--gap) + (var(--gap) / var(--cols))
-  );
+  ); */
   display: flex;
+  flex-direction: row;
   gap: 0.6rem; /* Maintains the gap between internal items */
-  flex-grow: 0; /* Prevents the item from growing beyond its flex-basis */
-  align-items: center; /* Aligns children of the item in the center vertically */
-  white-space: nowrap; /* Ensures that the content of the item does not wrap */
+  align-items: flex-start; /* Aligns children of the item in the center vertically */
 }
 
 .course-header_button-wrap {

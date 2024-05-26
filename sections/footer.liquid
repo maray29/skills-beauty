@@ -195,30 +195,9 @@
             </localization-form>
           {%- endif -%}
         </div>
-        <div class="footer__column footer__column--info">
-          {%- if section.settings.payment_enable -%}
-            <div class="footer__payment">
-              <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-              <ul class="list list-payment" role="list">
-                {%- for type in shop.enabled_payment_types -%}
-                  <li class="list-payment__item">
-                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
-          {%- endif -%}
-        </div>
+
         <div class="footer__column">
           <h3 class="footer-block__heading">Info</h3>
-          {% comment %}
-            <ul class="footer-block__links">
-              <a class="text-style-link" href="">Impressum</a>
-              <a class="text-style-link" href="">Privacy Policy</a>
-              <a class="text-style-link" href="">Terms and Conditions</a>
-              <a class="text-style-link" href="">Shipping & Return</a>
-            </ul>
-          {% endcomment %}
           {%- if section.settings.show_policy -%}
             <ul class="list-unstyled">
               {%- for policy in shop.policies -%}
@@ -276,6 +255,18 @@
             {%- endif -%}
           {% endcomment %}
         </div>
+        {%- if section.settings.payment_enable -%}
+          <div class="footer__payment">
+            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+            <ul class="list list-payment" role="list">
+              {%- for type in shop.enabled_payment_types -%}
+                <li class="list-payment__item">
+                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
       </div>
     </div>
   </div>

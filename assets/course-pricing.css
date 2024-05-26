@@ -3,7 +3,7 @@
   grid-column-end: 12;
 
   --layout-grid-min: 24rem;
-  --layout-grid-max: 30rem;
+  --layout-grid-max: 36rem;
   --layout-grid-gap: clamp(1.6rem, 2.5vw, 2.4rem);
 
   display: grid;

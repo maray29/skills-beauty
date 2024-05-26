@@ -51,7 +51,7 @@
           {% if metaobject.date_text %}
             <div class="info_item">
               <div class="text-weight-semibold">{{ 'course-header.date' | t }}:</div>
-              <div>{{ metaobject.date_text | date: '%B %d, %Y' }}</div>
+              <div>{{ metaobject.date_text }}</div>
             </div>
           {% endif %}
           {% if metaobject.certificate %}
@@ -63,7 +63,7 @@
           {% if metaobject.duration %}
             <div class="info_item">
               <div class="text-weight-semibold">{{ 'course-header.duration' | t }}:</div>
-              <div>{{ metaobject.duration }}</div>
+              <p>{{ metaobject.duration }}</p>
             </div>
           {% endif %}
           {% if metaobject.language %}

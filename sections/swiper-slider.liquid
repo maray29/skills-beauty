@@ -13,6 +13,21 @@
     data-slides-per-view="{{ slides_per_view }}"
     class="swiper slider-container page-width"
   >
+    <div class="slider-navigation">
+      <!-- Left Navigation Button -->
+      <button aria-label="Previous image" class="slider-button swiper-prev">
+        <span aria-hidden="true">
+          {% render 'icon-arrow-left' %}
+        </span>
+      </button>
+
+      <!-- Right Navigation Button -->
+      <button aria-label="Next image" class="slider-button swiper-next">
+        <span aria-hidden="true">
+          {% render 'icon-arrow' %}
+        </span>
+      </button>
+    </div>
     <div class="swiper-wrapper">
       {%- for block in section.blocks -%}
         <div class="swiper-slide">
@@ -45,7 +60,7 @@
       spaceBetween: 16,
       grabCursor: true,
       centeredSlides: true,
-      speed: 1500,
+      speed: 1000,
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
@@ -62,8 +77,8 @@
 
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
       },
 
       // And if we need scrollbar
