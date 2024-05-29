@@ -840,6 +840,12 @@ summary::-webkit-details-marker {
   margin: 0;
 }
 
+@media screen and (max-width: 478px) {
+  .title + a {
+    margin-bottom: 1rem;
+  }
+}
+
 .title .link {
   font-size: inherit;
 }
@@ -3978,6 +3984,12 @@ html {
   background-size: 100%;
 }
 
+@media screen and (max-width: 478px) {
+  .utility-bar {
+    background-size: auto;
+  }
+}
+
 .announcement-bar__message {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
@@ -4067,6 +4079,10 @@ html.lenis body {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+small a {
+  color: inherit !important;
 }
 
 /* .grid {

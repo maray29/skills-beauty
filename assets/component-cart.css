@@ -159,6 +159,10 @@ cart-items {
   margin-top: 1rem;
 }
 
+.cart__ctas {
+  margin-top: 3.2rem !important;
+}
+
 .cart__update-button {
   margin-bottom: 1rem;
 }
@@ -188,7 +192,7 @@ cart-items {
 
 .tax-note {
   margin: 2.2rem 0 1.6rem auto;
-  text-align: center;
+  /* text-align: center; */
   display: block;
 }
 
