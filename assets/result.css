@@ -82,6 +82,7 @@
   gap: 1.6rem;
   justify-content: flex-end;
 }
+
 .slider-button {
   color: rgb(var(--color-button-text));
   background-color: rgb(var(--color-heading));
@@ -107,4 +108,10 @@
 .slider-button:hover {
   color: rgb(var(--color-button-text-hover));
   background-color: rgb(var(--color-button-hover));
+}
+
+@media screen and (max-width: 478px) {
+  .slider-navigation {
+    margin-bottom: 2.4rem;
+  }
 }
