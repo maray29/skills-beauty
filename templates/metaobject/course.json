@@ -1,12 +1,68 @@
 {
   "sections": {
+    "multirow_FHKWKi": {
+      "type": "multirow",
+      "blocks": {
+        "row_NcNtFB": {
+          "type": "row",
+          "settings": {
+            "image": "{{ metaobject.media.value }}",
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_RwWUYG": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_hazEJe": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_NcNtFB",
+        "row_RwWUYG",
+        "row_hazEJe"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "course-header": {
       "type": "course-header",
       "settings": {
         "heading": "Courses",
         "tag": "Skills Beauty",
         "button_label": "Оставить заявку",
-        "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
+        "button_link": "https:\/\/api.whatsapp.com\/send?phone=4915223333395",
         "padding_top": 0,
         "padding_bottom": 128
       }
@@ -15,7 +71,6 @@
       "type": "image-with-text",
       "settings": {
         "image": "{{ metaobject.course_goal_image.value }}",
-        "video": "{{ metaobject.course_goal_image.value }}",
         "heading": "{{ metaobject.course_goal_heading | metafield_tag }}",
         "subheading": "{{ metaobject.course_goal | metafield_tag }}",
         "section_color_scheme": "",
@@ -38,7 +93,9 @@
     "course-result": {
       "type": "course-result",
       "settings": {
+        "heading": "Результаты",
         "subheading": "{{ metaobject.result | metafield_tag }}",
+        "tag_content": "Скиллы и знания",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "scheme-3",
@@ -48,6 +105,7 @@
     "results_slider": {
       "type": "results-slider",
       "settings": {
+        "heading": "Результаты наших учеников",
         "slides_per_view": 3,
         "section_color_scheme": "scheme-3",
         "content_type": "result",
@@ -59,7 +117,6 @@
       "type": "course-instructors",
       "settings": {
         "heading": "Преподаватель курса",
-        "subheading": "<p>Небольшой параграф рассказывающий о специалистах курсов.</p>",
         "tag_content": "Специалист Skills Beauty",
         "padding_top": 128,
         "padding_bottom": 128
@@ -68,15 +125,18 @@
     "course-pricing": {
       "type": "course-pricing",
       "settings": {
+        "tag_content": "Прайс",
         "padding_top": 128,
         "padding_bottom": 128,
-        "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
+        "button_label": "Оставить заявку",
+        "button_link": "https:\/\/api.whatsapp.com\/send?phone=4915223333395",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2"
       }
     }
   },
   "order": [
+    "multirow_FHKWKi",
     "course-header",
     "image-with-text",
     "course-program",
