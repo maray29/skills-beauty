@@ -4018,6 +4018,10 @@ html {
   overflow: clip;
 }
 
+.shopify-pc__banner__dialog h2 {
+  font-size: 2.4rem;
+}
+
 @media screen and (max-width: 991px) {
   .course__grid {
     --layout-grid-min: 35ch;

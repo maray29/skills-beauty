@@ -46,7 +46,7 @@
 
     {% comment %} {%- if !request.design_mode -%} {% endcomment %}
     {% style %}
-      #shopify-section-template--16795261108375__home-header {
+      .home-header_layout {
         visibility: hidden;
       }
     {% endstyle %}
@@ -61,8 +61,6 @@
     </noscript>
 
     {% style %}
-
-
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}
@@ -386,9 +384,9 @@
         defer
         type="module"
       >
-        function animateHomeHeader(selector) {
+        function animateHomeHeader() {
           console.log('animating');
-          const homeHeading = document.querySelector(selector);
+          const homeHeading = document.querySelector('.home-header_heading');
           const homeSubheading = document.querySelectorAll('.home-header_text-wrap p');
           const homeTag = document.querySelector('.home-header_motto .tag');
           const homeButtonWrap = document.querySelector('.home-header_button-wrap');
@@ -428,7 +426,7 @@
             autoAlpha: 0,
           });
 
-          tl.from('#shopify-section-template--16795261108375__home-header', {
+          tl.from('.home-header_layout', {
             autoAlpha: 0,
           })
             .from(splitHeading.chars, {
@@ -484,7 +482,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-          animateHomeHeader('.home-header_heading');
+          animateHomeHeader();
         });
       </script>
     {% endif %}
