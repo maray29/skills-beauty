@@ -23,8 +23,10 @@
 .collection-hero__text-wrapper {
   flex-basis: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: end;
+  margin: 2.4rem 0rem;
+  gap: 1.6rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -40,8 +42,9 @@
 }
 
 .collection-hero__title {
-  margin: 2.5rem 0;
-  grid-column-start: span 2;
+  /* margin: 2.5rem 0; */
+  grid-column-start: span 1;
+  /* align-self: flex-end; */
 }
 
 .collection-hero__title + .collection-hero__description {
@@ -59,12 +62,20 @@
   }
 
   .collection-hero__description {
-    padding-bottom: 1.6rem;
-    /* max-width: 66.67%; */
+    padding-bottom: 0.8rem;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    max-width: 40ch;
   }
 
   .collection-hero--with-image .collection-hero__description {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collection-hero__description {
+    padding-bottom: 1.6rem;
   }
 }
 
@@ -107,16 +118,58 @@
 
 @media screen and (max-width: 991px) {
   .collection-hero__text-wrapper {
-    grid-template-columns: repeat(2, 1fr);
     align-items: start;
+    margin-bottom: 0rem;
   }
 
   .collection-hero__title {
-    margin: 1.6rem 0rem;
+    grid-column-start: span 2;
+    font-size: clamp(8.6rem, 7vw, 12rem);
   }
 
   .collection-hero__description {
-    grid-column-start: span 2;
     margin: 0rem !important;
+    grid-row-start: 2;
   }
+}
+
+@media screen and (max-width: 749px) {
+  .collection-hero__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .collection-hero__title {
+    font-size: clamp(6rem, 7vw, 12rem);
+    align-self: flex-start;
+  }
+
+  .facets-wrapper {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.benefit_list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.6rem;
+  row-gap: 0.8rem;
+  flex-wrap: wrap;
+  grid-column-start: 1;
+}
+
+.benefit_item {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  flex-wrap: nowrap;
+  font-size: 1.4rem;
+}
+
+.benefit_item svg {
+  width: 1.6rem;
 }

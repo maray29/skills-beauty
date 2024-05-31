@@ -16,6 +16,20 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
+      <div class="benefit_list">
+        <div class="benefit_item">
+          {% render 'icon-checkmark' %}
+          <div>{{ section.settings.benefit_1 }}</div>
+        </div>
+        <div class="benefit_item">
+          {% render 'icon-checkmark' %}
+          <div>{{ section.settings.benefit_2 }}</div>
+        </div>
+        <div class="benefit_item">
+          {% render 'icon-checkmark' %}
+          <div>{{ section.settings.benefit_3 }}</div>
+        </div>
+      </div>
 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
@@ -72,6 +86,24 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "benefit_1",
+      "default": "Доставка 2-4 дня",
+      "label": "Выгода"
+    },
+    {
+      "type": "text",
+      "id": "benefit_2",
+      "default": "Быстрая поддержка",
+      "label": "Выгода"
+    },
+    {
+      "type": "text",
+      "id": "benefit_3",
+      "default": "Доставка 2-4 дня",
+      "label": "Официальные партнеры брендов"
     }
   ]
 }

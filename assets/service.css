@@ -1,3 +1,7 @@
+.services-subheading {
+  grid-column-end: 7;
+}
+
 .service_list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
