@@ -4019,7 +4019,7 @@ html {
 }
 
 .shopify-pc__banner__dialog h2 {
-  font-size: 2.4rem;
+  font-size: 2.4rem !important;
 }
 
 @media screen and (max-width: 991px) {
