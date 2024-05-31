@@ -24,13 +24,13 @@
           <h1 class="course-header_heading text-style-allcaps">{{ metaobject.name }}</h1>
           {% for instructor in metaobject.instructors.value %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.instructor' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'course_header.instructor' | t }}:</div>
               <div>{{ instructor.name }}</div>
             </div>
           {% endfor %}
           {% if metaobject.author %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.author' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'course_header.author' | t }}:</div>
               <div>{{ metaobject.author }}</div>
             </div>
           {% endif %}
@@ -38,37 +38,37 @@
         <div class="course-header_info">
           {% if metaobject.type %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.format' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'course_header.format' | t }}:</div>
               <div>{{ metaobject.type }}</div>
             </div>
           {% endif %}
           {% if metaobject.access %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.access' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.access' | t }}:</div>
               <div>{{ metaobject.access }}</div>
             </div>
           {% endif %}
           {% if metaobject.date_text %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.date' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.date' | t }}:</div>
               <div>{{ metaobject.date_text }}</div>
             </div>
           {% endif %}
           {% if metaobject.certificate %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.certificate' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.certificate' | t }}:</div>
               <div>{{ metaobject.certificate }}</div>
             </div>
           {% endif %}
           {% if metaobject.duration %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.duration' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.duration' | t }}:</div>
               <p>{{ metaobject.duration }}</p>
             </div>
           {% endif %}
           {% if metaobject.language %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course-header.language' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.language' | t }}:</div>
               <div>{{ metaobject.language }}</div>
             </div>
           {% endif %}
