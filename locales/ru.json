@@ -400,10 +400,6 @@
       "language": "Язык",
       "duration": "Длительность",
       "certificate": "Сертификат"
-    },
-    "course_result": {
-      "heading": "Outcomes",
-      "tag_content": "Скиллы и знания"
     }
   },
   "localization": {

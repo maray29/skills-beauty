@@ -400,10 +400,6 @@
       "language": "Sprache",
       "duration": "Dauer",
       "certificate": "Zertifikat"
-    },
-    "course_result": {
-      "heading": "Ergebnisse",
-      "tag_content": "Fähigkeiten und Wissen"
     }
   },
   "localization": {

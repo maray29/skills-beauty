@@ -400,10 +400,6 @@
       "language": "Language",
       "duration": "Duration",
       "certificate": "Certificate"
-    },
-    "course_result": {
-      "heading": "Outcomes",
-      "tag_content": "Skills and knowledge"
     }
   },
   "localization": {
