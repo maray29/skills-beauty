@@ -24,13 +24,13 @@
           <h1 class="course-header_heading text-style-allcaps">{{ metaobject.name }}</h1>
           {% for instructor in metaobject.instructors.value %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course_header.instructor' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.instructor' | t }}:</div>
               <div>{{ instructor.name }}</div>
             </div>
           {% endfor %}
           {% if metaobject.author %}
             <div class="info_item">
-              <div class="text-weight-semibold">{{ 'course_header.author' | t }}:</div>
+              <div class="text-weight-semibold">{{ 'sections.course_header.author' | t }}:</div>
               <div>{{ metaobject.author }}</div>
             </div>
           {% endif %}
@@ -162,7 +162,7 @@
   ],
   "presets": [
     {
-      "name": "Пресет"
+      "name": "Шапка курса"
     }
   ]
 }
