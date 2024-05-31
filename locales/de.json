@@ -390,6 +390,20 @@
       "remove_all": "Alle entfernen",
       "cancel": "Abbrechen",
       "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?"
+    },
+    "course_header": {
+      "instructor": "Lehrer",
+      "author": "Autor",
+      "format": "Format",
+      "access": "Zugang",
+      "date": "Datum",
+      "language": "Sprache",
+      "duration": "Dauer",
+      "certificate": "Zertifikat"
+    },
+    "course_result": {
+      "heading": "Ergebnisse",
+      "tag_content": "Fähigkeiten und Wissen"
     }
   },
   "localization": {
@@ -963,26 +977,5 @@
         "many": "Monate"
       }
     }
-  },
-  "course_header": {
-    "instructor": "Lehrer",
-    "author": "Autor",
-    "format": "Format",
-    "access": "Zugang",
-    "date": "Datum",
-    "language": "Sprache",
-    "duration": "Dauer",
-    "certificate": "Zertifikat"
-  },
-  "course_result": {
-    "heading": "Ergebnisse",
-    "tag_content": "Fähigkeiten und Wissen"
-  },
-  "course-pricing": {
-    "tag_content": "Preis",
-    "button_label": "Reichen Sie Ihre Bewerbung ein"
-  },
-  "result-slider": {
-    "heading": "Ergebnisse unserer Studierenden"
   }
 }
