@@ -64,7 +64,7 @@
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
-  "course-header": {
+  "course_header": {
     "instructor": "Instructor",
     "author": "Author",
     "format": "Format",
@@ -74,7 +74,7 @@
     "duration": "Duration",
     "certificate": "Certificate"
   },
-  "course-result": {
+  "course_result": {
     "heading": "Outcomes",
     "tag_content": "Skills and knowledge"
   },
@@ -319,9 +319,6 @@
         "few": "Elements: {{ count }}",
         "many": "Elements: {{ count }}"
       }
-    },
-    "home-header": {
-      "name": "Home header"
     },
     "cart": {
       "title": "Your cart",

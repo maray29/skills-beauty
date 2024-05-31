@@ -17,8 +17,10 @@
         "share_on_pinterest": "Сохранить в Pinterest"
       },
       "links": {
-        "twitter": "Твиттер",
+        "twitter": "Twitter",
         "facebook": "Facebook",
+        "whatsapp": "WhatsApp",
+        "telegram": "Telegram",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
         "tumblr": "Tumblr",
@@ -62,7 +64,7 @@
     "success": "Спасибо, что подписались!",
     "button_label": "Подписаться"
   },
-  "course-header": {
+  "course_header": {
     "instructor": "Преподаватель",
     "author": "Автор",
     "format": "Формат",
@@ -72,7 +74,7 @@
     "duration": "Длительность",
     "certificate": "Сертификат"
   },
-  "course-result": {
+  "course_result": {
     "heading": "Outcomes",
     "tag_content": "Скиллы и знания"
   },
