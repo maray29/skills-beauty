@@ -371,8 +371,8 @@
       "title": "Collection",
       "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all<\/a>",
       "benefit_1": "Delivery 2-3 days",
-      "benefit_2": "Benefit 2",
-      "benefit_3": "Benefit 3"
+      "benefit_2": "Fast support",
+      "benefit_3": "Official brand partners"
     },
     "video": {
       "load_video": "Load video: {{ description }}"
