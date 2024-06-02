@@ -42,7 +42,7 @@
   grid-column-start: span 12;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3.2rem;
+  gap: 4.2rem;
   padding-top: 6.4rem;
   /* padding-bottom: 6.4rem; */
 }
@@ -67,15 +67,25 @@
 }
 
 .success_number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.8rem;
   font-size: clamp(5.2rem, 4.5vw, 6.4rem);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.07em;
 }
 
+.success_icon img {
+  display: inline-flex;
+  margin-top: 1rem;
+  width: clamp(5.2rem, 4.5vw, 6.4rem);
+}
+
 .success_button-wrap {
   width: 100%;
-  padding-top: clamp(4.2rem, 4.5vw, 6.4rem);
+  /* padding-top: clamp(4.2rem, 4.5vw, 6.4rem); */
   margin-top: auto;
 }
 

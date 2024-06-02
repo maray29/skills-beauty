@@ -6,24 +6,19 @@
   <div class="page-width">
     <div class="layout_12col">
       <div class="success_header-img-wrap">
-        <img
-          srcset="
-            {%- if section.settings.header_img.width >= 165 -%}{{ section.settings.header_img | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if section.settings.header_img.width >= 360 -%}{{ section.settings.header_img | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if section.settings.header_img.width >= 533 -%}{{ section.settings.header_img | image_url: width: 533 }} 533w,{%- endif -%}
-            {%- if section.settings.header_img.width >= 720 -%}{{ section.settings.header_img | image_url: width: 720 }} 720w,{%- endif -%}
-            {%- if section.settings.header_img.width >= 940 -%}{{ section.settings.header_img | image_url: width: 940 }} 940w,{%- endif -%}
-            {%- if section.settings.header_img.width >= 1066 -%}{{ section.settings.header_img | image_url: width: 1066 }} 1066w,{%- endif -%}
-            {{ section.settings.header_img | image_url }} {{ section.settings.header_img.width }}w
-          "
-          src="{{ section.settings.header_img | image_url: width: 533 }}"
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
-          alt="{{ section.settings.header_img.alt | escape }}"
-          class="motion-reduce"
-          loading="lazy"
-          width="{{ section.settings.header_img.width }}"
-          height="{{ section.settings.header_img.height }}"
-        >
+        {%- if section.settings.header_img != blank -%}
+          {%- capture sizes -%}
+          (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+          (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+        {%- endcapture -%}
+          {{
+            section.settings.header_img
+            | image_url: width: 535
+            | image_tag: sizes: sizes, widths: '165, 360, 535, 750, 1070, 1500'
+          }}
+        {%- else -%}
+          {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
       </div>
       <div class="success_heading-wrap">
         {% render 'tag-component', tag_content: section.settings.tag_content %}
@@ -32,27 +27,38 @@
       </div>
       <div class="success_items">
         <div class="success_item">
-          <div class="success_item-img-wrap">
-            <img
-              srcset="
-                {%- if section.settings.image_1.width >= 165 -%}{{ section.settings.image_1 | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if section.settings.image_1.width >= 360 -%}{{ section.settings.image_1 | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if section.settings.image_1.width >= 533 -%}{{ section.settings.image_1 | image_url: width: 533 }} 533w,{%- endif -%}
-                {%- if section.settings.image_1.width >= 720 -%}{{ section.settings.image_1 | image_url: width: 720 }} 720w,{%- endif -%}
-                {%- if section.settings.image_1.width >= 940 -%}{{ section.settings.image_1 | image_url: width: 940 }} 940w,{%- endif -%}
-                {%- if section.settings.image_1.width >= 1066 -%}{{ section.settings.image_1 | image_url: width: 1066 }} 1066w,{%- endif -%}
-                {{ section.settings.image_1 | image_url }} {{ section.settings.image_1.width }}w
-              "
-              src="{{ section.settings.image_1 | image_url: width: 533 }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
-              alt="{{ section.settings.image_1.alt | escape }}"
-              class="success_item-img"
-              loading="lazy"
-              width="{{ section.settings.image_1.width }}"
-              height="{{ section.settings.image_1.height }}"
-            >
+          {% comment %}
+            <div class="success_item-img-wrap">
+              <img
+                srcset="
+                  {%- if section.settings.image_1.width >= 165 -%}{{ section.settings.image_1 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.image_1.width >= 360 -%}{{ section.settings.image_1 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.image_1.width >= 533 -%}{{ section.settings.image_1 | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if section.settings.image_1.width >= 720 -%}{{ section.settings.image_1 | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if section.settings.image_1.width >= 940 -%}{{ section.settings.image_1 | image_url: width: 940 }} 940w,{%- endif -%}
+                  {%- if section.settings.image_1.width >= 1066 -%}{{ section.settings.image_1 | image_url: width: 1066 }} 1066w,{%- endif -%}
+                  {{ section.settings.image_1 | image_url }} {{ section.settings.image_1.width }}w
+                "
+                src="{{ section.settings.image_1 | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
+                alt="{{ section.settings.image_1.alt | escape }}"
+                class="success_item-img"
+                loading="lazy"
+                width="{{ section.settings.image_1.width }}"
+                height="{{ section.settings.image_1.height }}"
+              >
+            </div>
+          {% endcomment %}
+          <div class="success_number">
+            <div class="success_icon">
+              {%- if section.settings.icon_1 != blank -%}
+                {{ section.settings.icon_1 | image_url: width: 64, height: 64 | image_tag }}
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            {{ section.settings['success_item-1_number'] }}
           </div>
-          <div class="success_number">{{ section.settings['success_item-1_number'] }}</div>
           <div class="text-size-medium text-weight-medium">{{ section.settings['success_item-1_text'] }}</div>
           <div class="success_button-wrap">
             {%- if section.settings['success_item-1_button_label'] != blank -%}
@@ -72,27 +78,38 @@
           </div>
         </div>
         <div class="success_item">
-          <div class="success_item-img-wrap">
-            <img
-              srcset="
-                {%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 533 -%}{{ section.settings.image_2 | image_url: width: 533 }} 533w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | image_url: width: 720 }} 720w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 940 -%}{{ section.settings.image_2 | image_url: width: 940 }} 940w,{%- endif -%}
-                {%- if section.settings.image_2.width >= 1066 -%}{{ section.settings.image_2 | image_url: width: 1066 }} 1066w,{%- endif -%}
-                {{ section.settings.image_2 | image_url }} {{ section.settings.image_2.width }}w
-              "
-              src="{{ section.settings.image_2 | image_url: width: 533 }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
-              alt="{{ section.settings.image_2.alt | escape }}"
-              class="success_item-img"
-              loading="lazy"
-              width="{{ section.settings.image_2.width }}"
-              height="{{ section.settings.image_2.height }}"
-            >
+          {% comment %}
+            <div class="success_item-img-wrap">
+              <img
+                srcset="
+                  {%- if section.settings.image_2.width >= 165 -%}{{ section.settings.image_2 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.image_2.width >= 533 -%}{{ section.settings.image_2 | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if section.settings.image_2.width >= 940 -%}{{ section.settings.image_2 | image_url: width: 940 }} 940w,{%- endif -%}
+                  {%- if section.settings.image_2.width >= 1066 -%}{{ section.settings.image_2 | image_url: width: 1066 }} 1066w,{%- endif -%}
+                  {{ section.settings.image_2 | image_url }} {{ section.settings.image_2.width }}w
+                "
+                src="{{ section.settings.image_2 | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
+                alt="{{ section.settings.image_2.alt | escape }}"
+                class="success_item-img"
+                loading="lazy"
+                width="{{ section.settings.image_2.width }}"
+                height="{{ section.settings.image_2.height }}"
+              >
+            </div>
+          {% endcomment %}
+          <div class="success_number">
+            <div class="success_icon">
+              {%- if section.settings.icon_2 != blank -%}
+                {{ section.settings.icon_2 | image_url: width: 64, height: 64 | image_tag }}
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            {{ section.settings['success_item-2_number'] }}
           </div>
-          <div class="success_number">{{ section.settings['success_item-2_number'] }}</div>
           <div class="text-size-medium text-weight-medium">{{ section.settings['success_item-2_text'] }}</div>
           <div class="success_button-wrap">
             {%- if section.settings['success_item-2_button_label'] != blank -%}
@@ -112,27 +129,38 @@
           </div>
         </div>
         <div class="success_item">
-          <div class="success_item-img-wrap">
-            <img
-              srcset="
-                {%- if section.settings.image_3.width >= 165 -%}{{ section.settings.image_3 | image_url: width: 165 }} 165w,{%- endif -%}
-                {%- if section.settings.image_3.width >= 360 -%}{{ section.settings.image_3 | image_url: width: 360 }} 360w,{%- endif -%}
-                {%- if section.settings.image_3.width >= 533 -%}{{ section.settings.image_3 | image_url: width: 533 }} 533w,{%- endif -%}
-                {%- if section.settings.image_3.width >= 720 -%}{{ section.settings.image_3 | image_url: width: 720 }} 720w,{%- endif -%}
-                {%- if section.settings.image_3.width >= 940 -%}{{ section.settings.image_3 | image_url: width: 940 }} 940w,{%- endif -%}
-                {%- if section.settings.image_3.width >= 1066 -%}{{ section.settings.image_3 | image_url: width: 1066 }} 1066w,{%- endif -%}
-                {{ section.settings.image_3 | image_url }} {{ section.settings.image_3.width }}w
-              "
-              src="{{ section.settings.image_3 | image_url: width: 533 }}"
-              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
-              alt="{{ section.settings.image_3.alt | escape }}"
-              class="success_item-img"
-              loading="lazy"
-              width="{{ section.settings.image_3.width }}"
-              height="{{ section.settings.image_3.height }}"
-            >
+          {% comment %}
+            <div class="success_item-img-wrap">
+              <img
+                srcset="
+                  {%- if section.settings.image_3.width >= 165 -%}{{ section.settings.image_3 | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if section.settings.image_3.width >= 360 -%}{{ section.settings.image_3 | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if section.settings.image_3.width >= 533 -%}{{ section.settings.image_3 | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if section.settings.image_3.width >= 720 -%}{{ section.settings.image_3 | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if section.settings.image_3.width >= 940 -%}{{ section.settings.image_3 | image_url: width: 940 }} 940w,{%- endif -%}
+                  {%- if section.settings.image_3.width >= 1066 -%}{{ section.settings.image_3 | image_url: width: 1066 }} 1066w,{%- endif -%}
+                  {{ section.settings.image_3 | image_url }} {{ section.settings.image_3.width }}w
+                "
+                src="{{ section.settings.image_3 | image_url: width: 533 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 3 }}px, (min-width: 990px) calc((100vw - 130px) / 3), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 1)"
+                alt="{{ section.settings.image_3.alt | escape }}"
+                class="success_item-img"
+                loading="lazy"
+                width="{{ section.settings.image_3.width }}"
+                height="{{ section.settings.image_3.height }}"
+              >
+            </div>
+          {% endcomment %}
+          <div class="success_number">
+            <div class="success_icon">
+              {%- if section.settings.icon_3 != blank -%}
+                {{ section.settings.icon_3 | image_url: width: 64, height: 64 | image_tag }}
+              {%- else -%}
+                {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            {{ section.settings['success_item-3_number'] }}
           </div>
-          <div class="success_number">{{ section.settings['success_item-3_number'] }}</div>
           <div class="text-size-medium text-weight-medium">{{ section.settings['success_item-3_text'] }}</div>
           <div class="success_button-wrap">
             {%- if section.settings['success_item-3_button_label'] != blank -%}
@@ -181,18 +209,18 @@
     },
     {
       "type": "image_picker",
-      "id": "image_1",
-      "label": "Изображение 1"
+      "id": "icon_1",
+      "label": "Иконка 1"
     },
     {
       "type": "image_picker",
-      "id": "image_2",
-      "label": "Изображение 2"
+      "id": "icon_2",
+      "label": "Иконка 2"
     },
     {
       "type": "image_picker",
-      "id": "image_3",
-      "label": "Изображение 3"
+      "id": "icon_3",
+      "label": "Иконка 3"
     },
     {
       "type": "text",
