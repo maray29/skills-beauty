@@ -512,7 +512,7 @@
         requestAnimationFrame(raf);
 
         // fix for id links
-        document.querySelectorAll('a[href*="#"]').forEach((el) => {
+        document.querySelectorAll('.header a[href*="#"]').forEach((el) => {
           el.addEventListener('click', (e) => {
             // Prevent default only if target ID exists on the page
             const href = el.getAttribute('href');
