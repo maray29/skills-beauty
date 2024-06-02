@@ -173,7 +173,7 @@
           "secondary_button_label_hover": "#121212",
           "shadow": "#121212",
           "heading": "#221F1D",
-          "border_primary": "#D4D8DD",
+          "border_primary": "#FFDDC4",
           "border_secondary": "#EAECF0"
         }
       },
@@ -193,7 +193,7 @@
           "secondary_button_label_hover": "#121212",
           "shadow": "#121212",
           "heading": "#FFDDC4",
-          "border_primary": "#D4D8DD",
+          "border_primary": "#FFDDC4",
           "border_secondary": "#EAECF0"
         }
       }

@@ -1,6 +1,6 @@
 .course-program_component {
   margin-top: 3.2rem;
-  border-top: 1px solid #d4d8dd;
+  border-top: 1px solid #ffddc4;
 }
 
 .course-program_program {
@@ -19,7 +19,7 @@
 }
 
 .course-program_program h3:not(:first-child) {
-  border-top: 1px solid #d4d8dd;
+  border-top: 1px solid #ffddc4;
   padding-top: 3.2rem;
 }
 
@@ -41,7 +41,7 @@
 .course-program_program h4:not(:first-child) {
   width: 100%;
   /* display: inline-flex; */
-  border-top: 1px solid #d4d8dd;
+  border-top: 1px solid #ffddc4;
   text-transform: uppercase;
   padding-top: 3.2rem;
 }
