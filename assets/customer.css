@@ -760,3 +760,7 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+.customer_edit-address {
+  margin-top: 1.6rem;
+}
