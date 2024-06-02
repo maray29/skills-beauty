@@ -6,7 +6,7 @@
         "heading": "Courses",
         "tag": "Skills Beauty",
         "button_label": "Оставить заявку",
-        "button_link": "https:\/\/api.whatsapp.com\/send?phone=4915223333395",
+        "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
         "padding_top": 0,
         "padding_bottom": 128
       }
@@ -15,6 +15,7 @@
       "type": "image-with-text",
       "settings": {
         "image": "{{ metaobject.course_goal_image.value }}",
+        "video": "{{ metaobject.course_goal_image.value }}",
         "heading": "{{ metaobject.course_goal_heading | metafield_tag }}",
         "subheading": "{{ metaobject.course_goal | metafield_tag }}",
         "section_color_scheme": "",
@@ -73,7 +74,7 @@
         "padding_top": 128,
         "padding_bottom": 128,
         "button_label": "Оставить заявку",
-        "button_link": "https:\/\/api.whatsapp.com\/send?phone=4915223333395",
+        "button_link": "https://api.whatsapp.com/send?phone=4915223333395",
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-2"
       }
