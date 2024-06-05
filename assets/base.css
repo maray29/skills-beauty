@@ -3932,9 +3932,9 @@ html {
 .sdd-download-button {
   color: rgb(var(--color-button-text));
   font-size: 2rem !important;
-  font-weight: 520;
-  transition: background-color 0.25s ease-out, color 0.15s ease-out;
-  transition: box-shadow var(--duration-short) ease;
+  font-weight: 520 !important;
+  font-family: inter, sans-serif !important;
+  transition: background-color 0.25s ease-out, color 0.15s ease-out !important;
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
