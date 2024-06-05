@@ -3948,6 +3948,11 @@ html {
   color: rgb(var(--color-button-text-hover));
 }
 
+.sdd-download-image {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
 @media screen and (max-width: 991px) {
   .text-size-large {
     font-size: clamp(2rem, 2vw, 2.4rem);
