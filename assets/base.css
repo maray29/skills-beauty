@@ -3936,6 +3936,12 @@ html {
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
   line-height: 1;
+  border-width: 0px;
+  border-radius: var(--inputs-radius);
+}
+.sdd-download-button:hover {
+  background-color: rgb(var(--color-button-hover));
+  color: rgb(var(--color-button-text-hover));
 }
 
 @media screen and (max-width: 991px) {
