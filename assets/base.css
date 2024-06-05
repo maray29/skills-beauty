@@ -3949,8 +3949,8 @@ html {
 }
 
 .sdd-download-image {
-  max-width: 20rem;
-  max-height: 20rem;
+  max-width: 20rem !important;
+  max-height: 20rem !important;
 }
 
 @media screen and (max-width: 991px) {
