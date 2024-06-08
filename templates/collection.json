@@ -5,7 +5,10 @@
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "color_scheme": "scheme-1",
+        "benefit_1": "Доставка 2-3 дня",
+        "benefit_2": "Быстрая поддержка",
+        "benefit_3": "Официальные партнеры брендов"
       }
     },
     "product-grid": {
