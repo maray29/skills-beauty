@@ -4073,8 +4073,14 @@ html {
   font-size: 1.2rem !important;
 }
 
-.jdgm-rev__icon:not(.jdgm-rev__avatar):before {
-  content: "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/icon-woman.svg?v=1716328561" !important;
+.jdgm-rev__icon:not(.jdgm-rev__avatar)::before {
+  content: "" !important;
+  display: inline-block !important; /* Ensure the pseudo-element takes up space */
+  width: 2rem !important; /* Set width to the desired size of your icon */
+  height: 2rem !important; /* Set height to the desired size of your icon */
+  background-image: url("https://cdn.shopify.com/s/files/1/0640/9689/5127/files/icon-woman.svg?v=1716328561") !important;
+  background-size: contain !important; /* Adjust as necessary to fit the icon properly */
+  background-repeat: no-repeat !important; /* Prevent the image from repeating */
 }
 
 .jdgm-rev[data-verified-buyer="true"] .jdgm-rev__icon.jdgm-rev__icon:after {
