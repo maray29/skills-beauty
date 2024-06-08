@@ -4104,7 +4104,7 @@ html {
 
 .jdgm-rev-widg__body {
   max-width: 70ch !important;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .jdgm-prev-badge__text {
