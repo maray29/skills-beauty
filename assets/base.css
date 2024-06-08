@@ -4109,6 +4109,7 @@ html {
 
 .jdgm-prev-badge__text {
   margin-left: 1rem !important;
+  font-size: 1.2rem !important;
 }
 
 @media screen and (max-width: 991px) {
