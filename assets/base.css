@@ -4107,6 +4107,10 @@ html {
   margin: 0 auto;
 }
 
+.jdgm-prev-badge__text {
+  margin-left: 1rem !important;
+}
+
 @media screen and (max-width: 991px) {
   .course__grid {
     --layout-grid-min: 35ch;
