@@ -1353,6 +1353,7 @@ button.shopify-payment-button__button--unbranded {
 .jdgm-write-rev-link:hover {
   background-color: rgb(var(--color-button-hover)) !important;
   color: rgb(var(--color-button-text-hover)) !important;
+  opacity: 1 !important;
 }
 
 .button--secondary:hover {
@@ -4099,6 +4100,11 @@ html {
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown-arrow {
   color: rgb(var(--color-foreground)) !important;
+}
+
+.jdgm-rev-widg__body {
+  max-width: 70ch !important;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 991px) {
