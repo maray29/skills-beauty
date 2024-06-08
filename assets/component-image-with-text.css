@@ -528,6 +528,9 @@
     grid-column-start: 1;
     grid-column-end: 13;
   }
+  .image-with-text__bg-img-wrap {
+    display: none;
+  }
 
   .image-with-text__content-wrap {
     grid-column-start: 1;
