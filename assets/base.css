@@ -1306,6 +1306,7 @@ button.shopify-payment-button__button--unbranded {
   font-weight: 520;
   text-decoration: none;
   border-width: 0px;
+  border-radius: var(--buttons-radius-outset) !important;
   color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
@@ -1320,7 +1321,11 @@ button.shopify-payment-button__button--unbranded {
 
 .jdgm-write-rev-link {
   /* background-color: red !important; */
-  max-width: 30rem !important;
+  max-width: 34rem !important;
+  background-color: rgba(
+    var(--color-button),
+    var(--alpha-button-background)
+  ) !important;
 }
 
 .button--secondary,
