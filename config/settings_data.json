@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify://shop_images/skills-beauty-logo_809271ad-0792-44e0-9790-866b5c46e85d.svg",
+    "logo": "shopify:\/\/shop_images\/skills-beauty-logo_809271ad-0792-44e0-9790-866b5c46e85d.svg",
     "logo_width": 150,
-    "favicon": "shopify://shop_images/skills-beauty-logo-square_bd308fd0-2ea8-4d9a-9814-37a3f7f038a4.svg",
+    "favicon": "shopify:\/\/shop_images\/skills-beauty-logo-square_bd308fd0-2ea8-4d9a-9814-37a3f7f038a4.svg",
     "type_header_font": "inter_n5",
     "heading_scale": 100,
     "type_body_font": "inter_n4",
@@ -99,14 +99,14 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p></p>",
+    "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_whatsapp_link": "https://api.whatsapp.com/send?phone=4915223333395",
-    "social_telegram_link": "https://t.me/+DwCGeoxain45ZDJi",
+    "social_whatsapp_link": "https:\/\/api.whatsapp.com\/send?phone=4915223333395",
+    "social_telegram_link": "https:\/\/t.me\/+DwCGeoxain45ZDJi",
     "social_facebook_link": "",
-    "social_instagram_link": "https://www.instagram.com/skills.beauty.berlin",
-    "social_youtube_link": "https://www.youtube.com/channel/UCiaK_TnVlCmu02uecT24Riw",
-    "social_tiktok_link": "https://www.tiktok.com/@skillsbeauty",
+    "social_instagram_link": "https:\/\/www.instagram.com\/skills.beauty.berlin",
+    "social_youtube_link": "https:\/\/www.youtube.com\/channel\/UCiaK_TnVlCmu02uecT24Riw",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@skillsbeauty",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -135,32 +135,55 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "3842503713604335150": {
+        "type": "shopify:\/\/apps\/vify-order-printer\/blocks\/invoice_download_embed\/8e413796-b0ed-4419-ae4e-893123b931a9",
+        "disabled": false,
+        "settings": {
+          "icon": true,
+          "label": "Download PDF Invoice",
+          "fontSize": 16,
+          "align": "center",
+          "singleLine": false,
+          "autoDetectLanguage": false,
+          "language": "de",
+          "color": "#ffffff",
+          "bgColor": "#000000",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#FFFDFC",
-          "background_secondary": "#FFF8F3",
+          "background": "#fffdfc",
+          "background_secondary": "#fff8f3",
           "background_gradient": "",
-          "text": "#221F1D",
-          "button": "#221F1D",
-          "button_hover": "#5E5248",
+          "text": "#221f1d",
+          "button": "#221f1d",
+          "button_hover": "#5e5248",
           "button_label": "#f9fafb",
           "button_label_hover": "#f9fafb",
-          "secondary_button": "#FBEDE2",
-          "secondary_button_hover": "#D8BEAA",
+          "secondary_button": "#fbede2",
+          "secondary_button_hover": "#d8beaa",
           "secondary_button_label": "#1f2228",
           "secondary_button_label_hover": "#f9fafb",
           "shadow": "#121212",
-          "heading": "#221F1D",
-          "border_primary": "#FFEDE0",
-          "border_secondary": "#EAECF0"
+          "heading": "#221f1d",
+          "border_primary": "#ffede0",
+          "border_secondary": "#eaecf0"
         }
       },
       "scheme-2": {
         "settings": {
-          "background": "#FFF8F3",
-          "background_secondary": "#FFFDFC",
+          "background": "#fff8f3",
+          "background_secondary": "#fffdfc",
           "background_gradient": "",
           "text": "#121212",
           "button": "#1f2228",
@@ -172,19 +195,19 @@
           "secondary_button_label": "#121212",
           "secondary_button_label_hover": "#121212",
           "shadow": "#121212",
-          "heading": "#221F1D",
-          "border_primary": "#FFDDC4",
-          "border_secondary": "#EAECF0"
+          "heading": "#221f1d",
+          "border_primary": "#ffddc4",
+          "border_secondary": "#eaecf0"
         }
       },
       "scheme-3": {
         "settings": {
-          "background": "#221B16",
-          "background_secondary": "#31363D",
+          "background": "#221b16",
+          "background_secondary": "#31363d",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#f9fafb",
-          "button_hover": "#43362D",
+          "button_hover": "#43362d",
           "button_label": "#000000",
           "button_label_hover": "#ffffff",
           "secondary_button": "#ffffff",
@@ -192,9 +215,9 @@
           "secondary_button_label": "#ffffff",
           "secondary_button_label_hover": "#121212",
           "shadow": "#121212",
-          "heading": "#FFDDC4",
-          "border_primary": "#FFDDC4",
-          "border_secondary": "#EAECF0"
+          "heading": "#ffddc4",
+          "border_primary": "#ffddc4",
+          "border_secondary": "#eaecf0"
         }
       }
     }
@@ -351,7 +374,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p></p>",
+      "brand_description": "<p><\/p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
