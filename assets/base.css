@@ -1328,6 +1328,12 @@ button.shopify-payment-button__button--unbranded {
   transition: background-color 0.25s ease-out, color 0.15s ease-out;
 }
 
+@media screen and (max-width: 478px) {
+  .jdgm-write-rev-link {
+    font-size: 1.4rem !important;
+  }
+}
+
 .button--secondary,
 .button--tertiary {
   background-color: rgb(var(--color-secondary-button));
