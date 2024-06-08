@@ -1,0 +1,364 @@
+{% if gift_card.recipient %}
+  {% if gift_card.customer %}
+    {% if gift_card.customer.name != blank %}
+      {% assign sender_name = gift_card.customer.name %}
+    {% elsif gift_card.customer.email != blank %}
+      {% assign sender_name = gift_card.customer.email %}
+    {% else %}
+      {% assign sender_name = gift_card.customer.phone %}
+    {% endif %}
+  {% else %}
+    {% assign sender_name = shop.name %}
+  {% endif %}
+
+  {% if gift_card.recipient.nickname != blank %}
+    {% assign recipient_name = gift_card.recipient.nickname %}
+  {% elsif gift_card.recipient.name != blank %}
+    {% assign recipient_name = gift_card.recipient.name %}
+  {% else %}
+    {% assign recipient_name = gift_card.recipient.email %}
+  {% endif %}
+
+  {% capture email_title %}
+      Здравствуйте, {{ recipient_name }}
+  Вы получили подарочную карту от {{ sender_name }}.
+    {% endcapture %}
+{% endif %}
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>{{ email_title }}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+    <style>
+      .button__cell { background: {{ shop.email_accent_color }}; }
+      a, a:hover, a:active, a:visited { color: {{ shop.email_accent_color }}; }
+
+      .giftcard__disclaimer{
+        padding-bottom: 3rem;
+      }
+
+      .centered-ol {
+        display: flex;
+        justify-content: center;
+        max-width: 32rem;
+      }
+      .centered-ol ol li {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table align="center" class="body giftcard__body">
+      <tr>
+        <td class="empty-line">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="empty-line">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+          <table class="row content">
+            <tr>
+              <td class="content__cell">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td>
+                        {% if gift_card.recipient %}
+                          {% if shop.email_logo_url %}
+                            <table align="center" class="giftcard__doubletopmargin">
+                              <tr>
+                                <td>
+                                  <img
+                                    src="{{shop.email_logo_url}}"
+                                    alt="{{ shop.name }}"
+                                    class="giftcard__logosize"
+                                    width="{{ shop.email_logo_width }}"
+                                    height="auto"
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          {% endif %}
+
+                          <table align="center" class="row giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__title">{{ email_title }}</td>
+                            </tr>
+                          </table>
+
+                          {% if gift_card.recipient and gift_card.message != blank %}
+                            <table align="center" class="row giftcard__topmargin">
+                              <tr>
+                                <td class="giftcard__message">"{{ gift_card.message }}"</td>
+                              </tr>
+                            </table>
+                          {% endif %}
+
+                          <table align="center" class="giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__balance">{{ gift_card.initial_value | money_with_currency }}</td>
+                            </tr>
+                            {% if gift_card.expires_on %}
+                              <tr>
+                                <td class="giftcard__smalltext">
+                                  Срок действия истекает {{ gift_card.expires_on | date: '%B %e, %Y' }}
+                                </td>
+                              </tr>
+                            {% endif %}
+                          </table>
+
+                          <table align="center" class="giftcard__doubletopmargin">
+                            <tr>
+                              <td>
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/certificate_img.webp?v=1712780451"
+                                  alt="Изображение подарочной карты"
+                                  width="350"
+                                  height="495"
+                                >
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table align="center" class="row giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__shop_name">{{ shop.name }}</td>
+                            </tr>
+                          </table>
+
+                          <table align="center" class="row giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__smalltext">Используйте код подарочной карты для покупки онлайн</td>
+                            </tr>
+                            <tr>
+                              <td class="giftcard__code">
+                                {{ gift_card.code | format_code }}
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table class="row actions">
+                            <tr>
+                              <td class="actions__cell">
+                                <table align="center" class="button">
+                                  <tr>
+                                    <td class="button__cell">
+                                      <a href="{{ shop.url }}" class="button__text">Перейти в онлайн-магазин</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table align="center" class="button">
+                                  <tr>
+                                    <td class="link__cell">
+                                      <a href="{{ gift_card.url }}" class="link__text"
+                                        >Просмотреть баланс подарочной карты</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+
+                          {% if gift_card.pass_url %}
+                            <table align="center" class="row">
+                              <tr>
+                                <td class="giftcard__textcenter">
+                                  <a href="{{ gift_card.pass_url }}" class="apple-wallet-button">
+                                    <img
+                                      src="{{ 'gift-card/add-to-apple-wallet.png' | shopify_asset_url }}"
+                                      alt="Add to Apple Wallet"
+                                      width="120"
+                                      height="40"
+                                    >
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          {% endif %}
+
+                        {% else %}
+                          {% if shop.email_logo_url %}
+                            <table align="center" class="giftcard__doubletopmargin">
+                              <tr>
+                                <td>
+                                  <img
+                                    src="{{shop.email_logo_url}}"
+                                    alt="{{ shop.name }}"
+                                    class="giftcard__logosize"
+                                    width="{{ shop.email_logo_width }}"
+                                    height="auto"
+                                  >
+                                </td>
+                              </tr>
+                            </table>
+                          {% endif %}
+
+                          {% if gift_card.recipient and gift_card.message != blank %}
+                            <table align="center" class="row giftcard__topmargin">
+                              <tr>
+                                <td class="giftcard__message">"{{ gift_card.message }}"</td>
+                              </tr>
+                            </table>
+                          {% endif %}
+
+                          <table align="center" class="giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__balance">{{ gift_card.initial_value | money_with_currency }}</td>
+                            </tr>
+                            {% if gift_card.expires_on %}
+                              <tr>
+                                <td class="giftcard__smalltext">
+                                  Срок действия истекает {{ gift_card.expires_on | date: '%B %e, %Y' }}
+                                </td>
+                              </tr>
+                            {% endif %}
+                          </table>
+
+                          <table align="center" class="giftcard__doubletopmargin">
+                            <tr>
+                              <td>
+                                <img
+                                  src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/certificate_img.webp?v=1712780451"
+                                  alt="Изображение подарочной карты"
+                                  width="350"
+                                  height="495"
+                                >
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table align="center" class="row giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__shop_name">{{ shop.name }}</td>
+                            </tr>
+                          </table>
+
+                          <table align="center" class="row giftcard__topmargin">
+                            <tr>
+                              <td class="giftcard__smalltext">Используйте код подарочной карты для покупки онлайн</td>
+                            </tr>
+                            <tr>
+                              <td class="giftcard__code">
+                                {{ gift_card.code | format_code }}
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table class="row actions">
+                            <tr>
+                              <td class="actions__cell">
+                                <table align="center" class="button">
+                                  <tr>
+                                    <td class="button__cell">
+                                      <a href="{{ shop.url }}" class="button__text">Перейти в онлайн-магазин</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <table align="center" class="button">
+                                  <tr>
+                                    <td class="link__cell">
+                                      <a href="{{ gift_card.url }}" class="link__text"
+                                        >Просмотреть баланс подарочной карты</a
+                                      >
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+
+                          {% if gift_card.pass_url %}
+                            <table align="center" class="row">
+                              <tr>
+                                <td class="giftcard__textcenter">
+                                  <a href="{{ gift_card.pass_url }}" class="apple-wallet-button">
+                                    <img
+                                      src="{{ 'gift-card/add-to-apple-wallet.png' | shopify_asset_url }}"
+                                      alt="Add to Apple Wallet"
+                                      width="120"
+                                      height="40"
+                                    >
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          {% endif %}
+                        {% endif %}
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <table align="center" class="row">
+            <tr>
+              <td class="giftcard__smalltext">
+                <div class="giftcard__disclaimer">
+                  <p>Уважаемый клиент,</p>
+
+                  <p>
+                    Благодарим вас за приобретение подарочной карты от Skills Beauty. Настоящим письмом мы информируем
+                    вас об условиях использования данного сертификата.
+                  </p>
+
+                  <div class="centered-ol">
+                    <ol>
+                      <li>
+                        Подарочная карта может быть использована для покупок в нашем онлайн-магазине частично и
+                        многократно до полного исчерпания суммы на карте.
+                      </li>
+                      <li>
+                        В случае использования подарочной карты для оплаты оффлайн-услуг, сертификат списывается
+                        единоразово.
+                      </li>
+                      <li>
+                        При необходимости вы можете совершить доплату к выбранной услуге, если сумма подарочной карты
+                        недостаточна для полной оплаты.
+                      </li>
+                    </ol>
+                  </div>
+
+                  <p>
+                    Мы надеемся, что вам понравится наш сервис и вы получите удовольствие от покупок и услуг,
+                    предлагаемых нашей компанией.
+                  </p>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <table class="row footer">
+            <tr>
+              <td class="footer__cell">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td>
+                        <p class="disclaimer__subtext">
+                          Если у вас есть вопросы, вы можете их задать в ответ на это письмо или связаться с нами:
+                          <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>.
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" width="auto" height="1">
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
