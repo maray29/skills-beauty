@@ -1319,8 +1319,8 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .jdgm-write-rev-link {
-  background-color: red !important;
-  max-width: 18.75rem !important;
+  /* background-color: red !important; */
+  max-width: 30rem !important;
 }
 
 .button--secondary,
