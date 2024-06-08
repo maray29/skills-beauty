@@ -1325,6 +1325,7 @@ button.shopify-payment-button__button--unbranded {
     var(--color-button),
     var(--alpha-button-background)
   ) !important;
+  transition: background-color 0.25s ease-out, color 0.15s ease-out;
 }
 
 .button--secondary,
@@ -1348,7 +1349,8 @@ button.shopify-payment-button__button--unbranded {
 .customer button:hover,
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button:hover,
-.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+.shopify-payment-button__button--unbranded:hover:not([disabled]),
+.jdgm-write-rev-link:hover {
   background-color: rgb(var(--color-button-hover)) !important;
   color: rgb(var(--color-button-text-hover)) !important;
 }
