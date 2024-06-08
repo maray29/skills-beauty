@@ -393,20 +393,20 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
 }
 
 @media only screen and (min-width: 750px) {
   h5,
   .h5 {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
   }
 }
 
 h6,
 .h6 {
   font-family: "inter", serif !important;
-  font-size: 1.2rem;
+  font-size: 1.2rem !important;
   color: rgba(var(--color-foreground), 0.75);
   margin-block-end: 1.6rem;
 }
