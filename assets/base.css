@@ -1301,7 +1301,7 @@ button.shopify-payment-button__button--unbranded {
   /* padding: 0 2rem; */
   cursor: pointer;
   font: inherit !important;
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
   font-weight: 520 !important;
   text-decoration: none !important;
   border-width: 0px !important;
@@ -4090,6 +4090,8 @@ html {
 .jdgm-rev__icon {
   color: transparent !important;
   background-color: transparent !important;
+  width: 4.4rem !important;
+  height: 4rem !important;
 }
 
 .jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
