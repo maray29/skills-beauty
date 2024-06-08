@@ -1300,10 +1300,10 @@ button.shopify-payment-button__button--unbranded {
   gap: 0.8rem;
   /* padding: 0 2rem; */
   cursor: pointer;
-  font: inherit;
-  font-size: 2rem;
-  font-weight: 520;
-  text-decoration: none;
+  font: inherit !important;
+  font-size: 2rem !important;
+  font-weight: 520 !important;
+  text-decoration: none !important;
   border-width: 0px !important;
   border-radius: var(--buttons-radius-outset) !important;
   color: rgb(var(--color-button-text));
@@ -4076,8 +4076,8 @@ html {
 .jdgm-rev__icon:not(.jdgm-rev__avatar)::before {
   content: "" !important;
   display: inline-block !important; /* Ensure the pseudo-element takes up space */
-  width: 2.4rem !important; /* Set width to the desired size of your icon */
-  height: 2.4rem !important; /* Set height to the desired size of your icon */
+  width: 3.2rem !important; /* Set width to the desired size of your icon */
+  height: 3.2rem !important; /* Set height to the desired size of your icon */
   background-image: url("https://cdn.shopify.com/s/files/1/0640/9689/5127/files/icon-woman.svg?v=1716328561") !important;
   background-size: contain !important; /* Adjust as necessary to fit the icon properly */
   background-repeat: no-repeat !important; /* Prevent the image from repeating */
@@ -4090,6 +4090,11 @@ html {
 .jdgm-rev__icon {
   color: transparent !important;
   background-color: transparent !important;
+}
+
+.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown,
+.jdgm-sort-dropdown-wrapper .jdgm-sort-dropdown-arrow {
+  color: rgb(var(--color-foreground)) !important;
 }
 
 @media screen and (max-width: 991px) {
