@@ -1297,7 +1297,6 @@ button.shopify-payment-button__button--unbranded {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   gap: 0.8rem;
   /* padding: 0 2rem; */
   cursor: pointer;
@@ -1305,7 +1304,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 2rem;
   font-weight: 520;
   text-decoration: none;
-  border-width: 0px;
+  border-width: 0px !important;
   border-radius: var(--buttons-radius-outset) !important;
   color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
@@ -4059,6 +4058,31 @@ html {
 
 .shopify-pc__banner__dialog h2 {
   font-size: 2.4rem !important;
+}
+
+.jdgm-histogram {
+  padding-top: 3.2rem !important;
+}
+
+.jdgm-rev-widg__summary {
+  padding-bottom: 3.2rem !important;
+}
+
+.jdgm-star,
+.jdgm-rev__author {
+  font-size: 1.2rem !important;
+}
+
+.jdgm-rev__icon:not(.jdgm-rev__avatar):before {
+  content: "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/icon-woman.svg?v=1716328561" !important;
+}
+
+.jdgm-rev[data-verified-buyer="true"] .jdgm-rev__icon.jdgm-rev__icon:after {
+  border-radius: 100vw !important;
+}
+
+.jdgm-rev__icon {
+  background-color: none !important;
 }
 
 @media screen and (max-width: 991px) {
