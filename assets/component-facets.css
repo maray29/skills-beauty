@@ -129,10 +129,10 @@
 }
 
 .mobile-facets__sort .select__select:focus-visible {
-  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  /* outline: 0.2rem solid rgba(var(--color-foreground), 0.5); */
   outline-offset: 0.3rem;
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  /* box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3); */
 }
 
 .mobile-facets__sort .select__select.focused,
@@ -739,7 +739,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 .mobile-facets__header {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   padding: 1rem 2.5rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   position: sticky;
   top: 0;
@@ -756,7 +756,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .mobile-facets__heading {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
+  font-size: 1.6rem !important;
   margin: 0;
 }
 
@@ -1045,10 +1045,11 @@ input.mobile-facets__checkbox {
 .mobile-facets__sort .select__select {
   background-color: transparent;
   border-radius: 0;
+  border-width: 0px;
   box-shadow: none;
   filter: none;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: -0.5rem;
   padding-left: 0.5rem;
   padding-right: 1.5rem;
 }
