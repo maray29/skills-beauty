@@ -4231,6 +4231,6 @@ small a {
   border: 0.5px solid red;
 } */
 
-/* .page-width {
-  overflow: clip;
-} */
+.page-wrapper {
+  overflow-x: clip;
+}
