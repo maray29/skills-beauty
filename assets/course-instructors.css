@@ -64,12 +64,28 @@
   .instructor_list {
     grid-column-start: 1;
   }
+  .instructor_photo {
+    margin-bottom: 1.6rem;
+  }
   .instructor_item {
-    flex-direction: column;
-    gap: 3.2rem;
+    /* flex-direction: column; */
+    /* gap: 3.2rem; */
+    display: block;
+  }
+
+  .instructor_title {
+    padding-bottom: 1.2rem;
   }
 
   .instructor_info {
     padding-top: 0rem;
+  }
+
+  .instructor_name {
+    font-size: 2.4rem !important;
+  }
+
+  .instructor_description p {
+    font-size: 1.6rem;
   }
 }

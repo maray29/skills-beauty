@@ -4048,6 +4048,12 @@ html {
   color: rgb(var(--color-heading)) !important;
 }
 
+@media screen and (max-width: 478px) {
+  #insta-feed h2 {
+    padding-bottom: 0rem;
+  }
+}
+
 .metafield-rich_text_field p,
 .metafield-rich_text_field li,
 .text-rich-text p {
@@ -4220,3 +4226,11 @@ small a {
   padding: 0.5rem 1rem;
   justify-self: left;
 } */
+
+/* * {
+  border: 0.5px solid red;
+} */
+
+.page-width {
+  overflow: clip;
+}
