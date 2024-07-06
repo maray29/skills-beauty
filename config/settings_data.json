@@ -139,6 +139,12 @@
 
     ],
     "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
       "3842503713604335150": {
         "type": "shopify:\/\/apps\/vify-order-printer\/blocks\/invoice_download_embed\/8e413796-b0ed-4419-ae4e-893123b931a9",
         "disabled": false,
@@ -148,7 +154,7 @@
           "fontSize": 16,
           "align": "center",
           "singleLine": false,
-          "autoDetectLanguage": false,
+          "autoDetectLanguage": true,
           "language": "de",
           "color": "#ffffff",
           "bgColor": "#000000",
@@ -156,12 +162,6 @@
           "marginBottom": 10,
           "marginLeft": 10,
           "marginRight": 10
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {
         }
       }
     },
