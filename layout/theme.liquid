@@ -385,7 +385,7 @@
         type="module"
       >
         function animateHomeHeader() {
-          console.log('animating');
+          // console.log('animating');
           const homeHeading = document.querySelector('.home-header_heading');
           const homeSubheading = document.querySelectorAll('.home-header_text-wrap p');
           const homeTag = document.querySelector('.home-header_motto .tag');
@@ -415,7 +415,7 @@
 
           const homeHeadingBoundingRect = homeHeading.getBoundingClientRect();
           const heightToMoveFrom = window.innerHeight / 2 - homeHeadingBoundingRect.height / 2 - 100;
-          console.log('🚀 ~ animateHomeHeader ~ heightToMoveFrom:', heightToMoveFrom);
+          // console.log('🚀 ~ animateHomeHeader ~ heightToMoveFrom:', heightToMoveFrom);
 
           gsap.set(homeHeading, {
             y: heightToMoveFrom,
@@ -528,7 +528,7 @@
               e.preventDefault();
               // Scroll to the target if it exists on the current page
               if (closeButton) closeButton.dispatchEvent(new Event('click'));
-              lenis.scrollTo(target);
+              lenis.scrollTo(target, { offset: -128 });
             }
             // If the target does not exist, do nothing (let the browser follow the link)
           });

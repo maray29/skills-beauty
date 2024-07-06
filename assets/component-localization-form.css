@@ -448,6 +448,30 @@ noscript .localization-selector.link {
   right: 0.8rem;
 }
 
+@media screen and (max-width: 991px) {
+  .header-localization:not(.menu-drawer__localization)
+    .localization-form__select
+    .icon-caret {
+    display: none;
+  }
+
+  .header-localization:not(.menu-drawer__localization)
+    .localization-form__select {
+    padding-right: 1.2rem !important;
+    min-width: auto !important;
+  }
+
+  .header__icon .icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .header__icon--cart .icon {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+}
+
 .header-localization:not(.menu-drawer__localization) .disclosure__list-wrapper {
   bottom: initial;
   top: 100%;
