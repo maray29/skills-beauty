@@ -330,18 +330,10 @@
     "footer": {
       "payment": "Payment methods",
       "settings": {
-        "info_heading": {
-          "default": "Info"
-        },
-        "time_heading": {
-          "default": "Opening times"
-        },
-        "address_heading": {
-          "default": "Address"
-        },
-        "social_heading": {
-          "default": "Social Networks"
-        }
+        "info_heading": "Info",
+        "time_heading": "Opening times",
+        "address_heading": "Address",
+        "social_heading": "Social Networks"
       }
     },
     "featured_blog": {

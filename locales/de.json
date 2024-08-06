@@ -323,18 +323,10 @@
     "footer": {
       "payment": "Zahlungsmethoden",
       "settings": {
-        "info_heading": {
-          "default": "Info"
-        },
-        "time_heading": {
-          "default": "Öffnungszeit"
-        },
-        "address_heading": {
-          "default": "Adresse"
-        },
-        "social_heading": {
-          "default": "Soziale Netzwerke"
-        }
+        "info_heading": "Info",
+        "time_heading": "Öffnungszeit",
+        "address_heading": "Adresse",
+        "social_heading": "Soziale Netzwerke"
       }
     },
     "featured_blog": {
