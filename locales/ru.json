@@ -323,9 +323,17 @@
     "footer": {
       "payment": "Способы оплаты",
       "settings": {
+        "info_heading": {
+          "default": "Информация"
+        },
         "time_heading": {
-          "default": "Время работы",
-          "label": "Заглавие"
+          "default": "Время работы"
+        },
+        "address_heading": {
+          "default": "Адрес"
+        },
+        "social_heading": {
+          "default": "Соц сети"
         }
       }
     },

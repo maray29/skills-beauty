@@ -323,9 +323,17 @@
     "footer": {
       "payment": "Zahlungsmethoden",
       "settings": {
+        "info_heading": {
+          "default": "Info"
+        },
         "time_heading": {
-          "default": "Öffnungszeit",
-          "label": "Time heading"
+          "default": "Öffnungszeit"
+        },
+        "address_heading": {
+          "default": "Adresse"
+        },
+        "social_heading": {
+          "default": "Soziale Netzwerke"
         }
       }
     },
