@@ -197,7 +197,7 @@
         </div>
 
         <div class="footer__column">
-          <h3 class="footer-block__heading">Info</h3>
+          <h3 class="footer-block__heading">{{ section.settings.info_heading }}</h3>
           {%- if section.settings.show_policy -%}
             <ul class="list-unstyled">
               {%- for policy in shop.policies -%}
@@ -212,7 +212,7 @@
         </div>
 
         <div class="footer__column">
-          <h3 class="footer-block__heading">Адрес</h3>
+          <h3 class="footer-block__heading">{{ section.settings.address_heading }}</h3>
           {% comment %} {{ shop.address.summary }} {% endcomment %}
           {{ section.settings.address }}
           {% comment %} {{ location.studio.address }} {% endcomment %}
@@ -224,11 +224,11 @@
           {% comment %} {{ location.studio.metafields.opening_time }} {% endcomment %}
         </div>
         <div class="footer__column">
-          <h3 class="footer-block__heading">Время работы</h3>
+          <h3 class="footer-block__heading">{{ section.settings.time_heading }}</h3>
           {{ section.settings.opening_time }}
         </div>
         <div class="footer__column">
-          <h3 class="footer-block__heading">Социальные сети</h3>
+          <h3 class="footer-block__heading">{{ section.settings.social_heading }}</h3>
           {%- if has_social_icons -%}
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
