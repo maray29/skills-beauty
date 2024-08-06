@@ -224,7 +224,7 @@
           {% comment %} {{ location.studio.metafields.opening_time }} {% endcomment %}
         </div>
         <div class="footer__column">
-          <h3 class="footer-block__heading">{{ section.settings.time_heading }}</h3>
+          <h3 class="footer-block__heading">{{ section.settings.time_heading | t }}</h3>
           {{ section.settings.opening_time }}
         </div>
         <div class="footer__column">
@@ -424,8 +424,8 @@
     {
       "type": "inline_richtext",
       "id": "time_heading",
-      "default": "Öffnungszeit",
-      "label": "Time heading"
+      "default": "t:sections.footer.settings.time_heading.default",
+      "label": "t:sections.footer.settings.time_heading.label"
     },
     {
       "type": "inline_richtext",
