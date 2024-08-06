@@ -197,7 +197,7 @@
         </div>
 
         <div class="footer__column">
-          <h3 class="footer-block__heading">{{ section.settings.info_heading | t }}</h3>
+          <h3 class="footer-block__heading">{{ section.settings.info_heading }}</h3>
           {%- if section.settings.show_policy -%}
             <ul class="list-unstyled">
               {%- for policy in shop.policies -%}
@@ -212,15 +212,15 @@
         </div>
 
         <div class="footer__column">
-          <h3 class="footer-block__heading">{{ section.settings.address_heading | t }}</h3>
+          <h3 class="footer-block__heading">{{ section.settings.address_heading }}</h3>
           {{ section.settings.address }}
         </div>
         <div class="footer__column">
-          <h3 class="footer-block__heading">{{ section.settings.time_heading | t }}</h3>
+          <h3 class="footer-block__heading">{{ section.settings.time_heading }}</h3>
           {{ section.settings.opening_time }}
         </div>
         <div class="footer__column">
-          <h3 class="footer-block__heading">{{ section.settings.social_heading | t }}</h3>
+          <h3 class="footer-block__heading">{{ section.settings.social_heading }}</h3>
           {%- if has_social_icons -%}
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
@@ -404,25 +404,25 @@
     {
       "type": "text",
       "id": "info_heading",
-      "default": "t:sections.footer.settings.info_heading",
+      "default": "t:sections.footer.settings.info_heading | t",
       "label": "Заглавие информации"
     },
     {
       "type": "inline_richtext",
       "id": "address_heading",
-      "default": "t:sections.footer.settings.address_heading",
+      "default": "t:sections.footer.settings.address_heading | t",
       "label": "Заглавие адреса"
     },
     {
       "type": "inline_richtext",
       "id": "time_heading",
-      "default": "t:sections.footer.settings.time_heading",
+      "default": "t:sections.footer.settings.time_heading | t",
       "label": "Заглави времени работы"
     },
     {
       "type": "inline_richtext",
       "id": "social_heading",
-      "default": "t:sections.footer.settings.social_heading",
+      "default": "t:sections.footer.settings.social_heading | t",
       "label": "Заглавие соц сетей"
     },
     {
