@@ -9,8 +9,21 @@
 */
 {
   "sections": {
+    "page_header_Y6L4bY": {
+      "type": "page-header",
+      "settings": {
+        "heading": "Portfolio",
+        "tag": "Skills Beauty",
+        "subheading": "Some text that relates to the page and the value prop.",
+        "button_label": "Посмотреть все курсы",
+        "button_link": "\/",
+        "padding_top": 0,
+        "padding_bottom": 128,
+        "section_color_scheme": ""
+      }
+    }
   },
   "order": [
-
+    "page_header_Y6L4bY"
   ]
 }
