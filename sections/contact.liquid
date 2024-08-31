@@ -18,10 +18,12 @@
       <div class="contact_content-wrap">
         <div class="section_heading-wrap">
           {% assign default_tag_content = 'sections.contact.tag_html' | t %}
-          {% assign tag_content = section.settings.tag_content | default: default_tag_content %}
+          {% assign tag_content = section.settings.tag_content %}
 
           {% if tag_content != blank %}
             {% render 'tag-component', tag_content: tag_content %}
+          {% else %}
+            {% render 'tag-component', tag_content: default_tag_content %}
           {% endif %}
 
           <h2>{{ 'sections.contact.heading' | t }}</h2>
