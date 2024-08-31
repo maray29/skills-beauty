@@ -513,3 +513,7 @@ noscript .localization-selector.link {
 .menu-drawer__localization noscript .localization-form__select {
   padding: initial;
 }
+
+.disclosure__button.localization-form__select.localization-selector {
+  min-width: auto !important;
+}

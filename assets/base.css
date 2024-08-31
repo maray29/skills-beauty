@@ -2973,6 +2973,20 @@ details[open] > .header__submenu {
   color: rgba(var(--color-foreground), 0.75);
 }
 
+@media screen and (min-width: 990px) and (max-width: 1100px) {
+  .header__menu-item {
+    padding: 0.8rem !important;
+  }
+
+  .header__heading-logo-wrapper img {
+    max-width: 100px !important;
+  }
+
+  .disclosure__button.localization-form__select.localization-selector {
+    min-width: auto !important;
+  }
+}
+
 .header__menu-item:hover {
   color: rgb(var(--color-foreground));
 }
