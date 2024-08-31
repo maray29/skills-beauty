@@ -20,7 +20,7 @@
           {% assign default_tag_content = 'sections.contact.tag_html' | t %}
           {% assign tag_content = section.settings.tag_content | default: default_tag_content %}
 
-          {% if tag_content != blank and tag_content != 'sections.contact.tag_html' %}
+          {% if tag_content != blank %}
             {% render 'tag-component', tag_content: tag_content %}
           {% endif %}
 
