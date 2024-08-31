@@ -413,6 +413,11 @@
       "heading_time": "Время работы",
       "heading": "Контакты",
       "tag_html": "Свяжитесь с нами<br>если у вас есть вопросы"
+    },
+    "portfolio": {
+      "tag_content": "Портфолио",
+      "button_label_1": "Связаться",
+      "button_label_2": "Наши работы"
     }
   },
   "localization": {

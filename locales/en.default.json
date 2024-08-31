@@ -413,6 +413,11 @@
       "heading_time": "Opening times",
       "heading": "Contact Us",
       "tag_html": "Contact us<br>if you have questions"
+    },
+    "portfolio": {
+      "tag_content": "Portfolio",
+      "button_label_1": "Contact",
+      "button_label_2": "Explore our work"
     }
   },
   "localization": {

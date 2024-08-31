@@ -18,15 +18,11 @@
       <div class="contact_content-wrap">
         <div class="section_heading-wrap">
           {% assign default_tag_content = 'sections.contact.tag_html' | t %}
-          {% assign tag_content = section.settings.tag_content %}
-          {% render 'tag-component', tag_content: default_tag_content %}
+          {% assign tag_content = section.settings.tag_content | default: default_tag_content %}
 
-          {% comment %}
-            {% if tag_content != blank %}
-              {% render 'tag-component', tag_content: tag_content %}
-            {% else %}
-            {% endif %}
-          {% endcomment %}
+          {% if tag_content != blank and tag_content != 'sections.contact.tag_html' %}
+            {% render 'tag-component', tag_content: tag_content %}
+          {% endif %}
 
           <h2>{{ 'sections.contact.heading' | t }}</h2>
         </div>
@@ -56,7 +52,6 @@
     {
       "type": "text",
       "id": "tag_content",
-      "default": "",
       "label": "Тег",
       "info": "Leave blank to use default translation"
     },

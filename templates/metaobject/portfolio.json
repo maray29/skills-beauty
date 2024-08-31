@@ -29,7 +29,6 @@
     "contact": {
       "type": "contact",
       "settings": {
-        "tag_content": "Свяжитесь с нами",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "",

@@ -6,7 +6,12 @@
       {%- if section.settings.heading != blank -%}
         <div class="section_heading-wrap is-centered">
           {% if section.settings.show_tag %}
-            {% render 'tag-component', tag_content: 'PORTFOLIO' %}
+            {% assign default_tag_content = 'sections.portfolio.tag_content' | t %}
+            {% assign tag_content = section.settings.tag_content | default: default_tag_content %}
+
+            {% if tag_content != blank and tag_content != 'sections.contact.tag_content' %}
+              {% render 'tag-component', tag_content: tag_content %}
+            {% endif %}
           {% endif %}
           <h1 class="text-style-allcaps">
             {{ section.settings.heading }}
@@ -24,7 +29,7 @@
                     class="button button--primary"
                     {{ section.shopify_attributes }}
                   >
-                    Contact
+                    {{ 'sections.portfolio.button_label_1' | t }}
                     {% render 'icon-arrow-down' %}
                   </a>
 
@@ -35,7 +40,7 @@
                     class="button button--secondary"
                     {{ section.shopify_attributes }}
                   >
-                    Explore our work
+                    {{ 'sections.portfolio.button_label_2' | t }}
                     {% render 'icon-arrow-down' %}
                   </a>
                 </div>
@@ -65,6 +70,12 @@
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label",
       "default": "<p>Explore our portfolio.</p>"
+    },
+    {
+      "type": "text",
+      "id": "tag_content",
+      "label": "Тег",
+      "info": "Leave blank to use default translation"
     },
     {
       "type": "range",
