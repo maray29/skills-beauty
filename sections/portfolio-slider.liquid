@@ -153,19 +153,13 @@
 
 {% schema %}
 {
-  "name": "Слайдер результатов",
+  "name": "Слайдер портфолио",
   "tag": "section",
   "class": "section",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
-      "type": "inline_richtext",
-      "id": "heading",
-      "label": "Заголовок",
-      "default": "Portfolio"
-    },
     {
       "type": "number",
       "id": "slides_per_view",
@@ -177,22 +171,6 @@
       "id": "section_color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
-    },
-    {
-      "type": "select",
-      "id": "content_type",
-      "options": [
-        {
-          "value": "testimonial",
-          "label": "Testimonial"
-        },
-        {
-          "value": "result",
-          "label": "Result"
-        }
-      ],
-      "default": "testimonial",
-      "label": "Тип контента"
     },
     {
       "type": "range",
@@ -215,55 +193,9 @@
       "default": 128
     }
   ],
-  "blocks": [
-    {
-      "type": "slide",
-      "name": "t:sections.slideshow.blocks.slide.name",
-      "limit": 10,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Изображение"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "heading",
-          "default": "Image slide",
-          "label": "Заголовок"
-        },
-        {
-          "type": "inline_richtext",
-          "id": "name",
-          "default": "Name",
-          "label": "Имя"
-        },
-        {
-          "type": "richtext",
-          "id": "subheading",
-          "default": "<p>Tell your brand's story through images</p>",
-          "label": "Подзаголовок"
-        },
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "scheme-3"
-        }
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Слайдер результатов",
-      "blocks": [
-        {
-          "type": "slide"
-        },
-        {
-          "type": "slide"
-        }
-      ]
+      "name": "Слайдер портфолио"
     }
   ]
 }

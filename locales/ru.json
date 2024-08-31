@@ -406,6 +406,12 @@
       "language": "Язык",
       "duration": "Длительность",
       "certificate": "Сертификат"
+    },
+    "contact": {
+      "heading_social": "Социальные сети",
+      "heading_address": "Адрес студии",
+      "heading_time": "Время работы",
+      "heading": "Контакты"
     }
   },
   "localization": {

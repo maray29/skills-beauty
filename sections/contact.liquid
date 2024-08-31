@@ -18,18 +18,18 @@
       <div class="contact_content-wrap">
         <div class="section_heading-wrap">
           {% render 'tag-component', tag_content: section.settings.tag_content %}
-          <h2>{{ section.settings.heading }}</h2>
+          <h2>{{ 'sections.contact.heading' | t }}</h2>
         </div>
         <div class="contact_socials">
-          <h3>{{ section.settings.heading_social }}</h3>
+          <h3>{{ 'sections.contact.heading_social' | t }}</h3>
           {% render 'social-icons', class: 'my-class' %}
         </div>
         <div class="contact_address">
-          <h3>{{ section.settings.heading_address }}</h3>
+          <h3>{{ 'sections.contact.heading_address' | t }}</h3>
           {{ section.settings.text_address }}
         </div>
         <div class="contact_time">
-          <h3>{{ section.settings.heading_time }}</h3>
+          <h3>{{ 'sections.contact.heading_time' | t }}</h3>
           {{ section.settings.text_time }}
         </div>
       </div>

@@ -406,6 +406,12 @@
       "language": "Language",
       "duration": "Duration",
       "certificate": "Certificate"
+    },
+    "contact": {
+      "heading_social": "Social Networks",
+      "heading_address": "Address",
+      "heading_time": "Opening times",
+      "heading": "Contact Us"
     }
   },
   "localization": {
