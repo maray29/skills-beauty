@@ -4,10 +4,18 @@
       "type": "portfolio-header",
       "settings": {
         "heading": "Portfolio",
-        "description": "Explore our comprehensive range of makeup and hairstyling services, tailored to elevate your brand's visual presence across all media platforms.",
-        "padding_bottom": 0
+        "description": "<p>Explore our comprehensive range of makeup and hairstyling services, tailored to elevate your brand's visual presence across all media platforms.</p>",
+        "padding_bottom": 0,
+        "show_tag": false,
+        "show_buttons": false
+      }
+    },
+    "portfolio-categories": {
+      "type": "portfolio-categories",
+      "settings": {
+        "padding_top": 64
       }
     }
   },
-  "order": ["portfolio-header"]
+  "order": ["portfolio-header", "portfolio-categories"]
 }

@@ -8,68 +8,66 @@
 
 {% assign slides_per_view = section.settings.slides_per_view %}
 
-{% if metaobject.image.value != blank %}
-  <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="portfolio">
-    {%- for category in metaobject.category.value -%}
-      <div
-        data-slides-per-view="{{ slides_per_view }}"
-        class="swiper slider-container page-width"
-      >
-        <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
-          <h2>
-            {{ category.name }}
-          </h2>
-          <div class="slider-navigation">
-            <!-- Left Navigation Button -->
-            <button aria-label="Previous image" class="slider-button swiper-prev">
-              <span aria-hidden="true">
-                {% render 'icon-arrow-left' %}
-              </span>
-            </button>
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="portfolio">
+  {%- for category in metaobject.category.value -%}
+    <div
+      data-slides-per-view="{{ slides_per_view }}"
+      class="swiper slider-container page-width"
+    >
+      <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
+        <h2>
+          {{ category.name }}
+        </h2>
+        <div class="slider-navigation">
+          <!-- Left Navigation Button -->
+          <button aria-label="Previous image" class="slider-button swiper-prev">
+            <span aria-hidden="true">
+              {% render 'icon-arrow-left' %}
+            </span>
+          </button>
 
-            <!-- Right Navigation Button -->
-            <button aria-label="Next image" class="slider-button swiper-next">
-              <span aria-hidden="true">
-                {% render 'icon-arrow' %}
-              </span>
-            </button>
-          </div>
+          <!-- Right Navigation Button -->
+          <button aria-label="Next image" class="slider-button swiper-next">
+            <span aria-hidden="true">
+              {% render 'icon-arrow' %}
+            </span>
+          </button>
         </div>
+      </div>
 
-        <div class="swiper-wrapper">
-          {%- for block in shop.metaobjects.portfolio_image.values -%}
-            {% assign image_category = block.category.value.name | strip %}
-            {% assign category_category = category.name | strip %}
-            {%- if image_category == category_category -%}
-              <div class="swiper-slide">
-                <div class="result_component">
-                  <div class="result_img-wrap">
-                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
-                    {%- capture sizes -%}
+      <div class="swiper-wrapper">
+        {%- for block in shop.metaobjects.portfolio_image.values -%}
+          {% assign image_category = block.category.value.name | strip %}
+          {% assign category_category = category.name | strip %}
+          {%- if image_category == category_category -%}
+            <div class="swiper-slide">
+              <div class="result_component">
+                <div class="result_img-wrap">
+                  {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                  {%- capture sizes -%}
                       (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
                       (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
                     {%- endcapture -%}
-                    {{
-                      block.image
-                      | image_url: width: 1500
-                      | image_tag:
-                        loading: 'lazy',
-                        sizes: sizes,
-                        widths: widths,
-                        fetchpriority: 'auto',
-                        alt: block.image.alt
-                      | default: 'Portfolio image'
-                    }}
-                  </div>
+                  {{
+                    block.image
+                    | image_url: width: 1500
+                    | image_tag:
+                      loading: 'lazy',
+                      sizes: sizes,
+                      widths: widths,
+                      fetchpriority: 'auto',
+                      alt: block.image.alt
+                    | default: 'Portfolio image'
+                  }}
                 </div>
               </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
       </div>
-    {% endfor %}
-  </div>
-{% endif %}
+    </div>
+  {% endfor %}
+</div>
 
 <link
   rel="stylesheet"
