@@ -3871,6 +3871,10 @@ html {
   padding-top: 3.2rem;
 }
 
+.button-group.is-centered {
+  justify-content: center;
+}
+
 .is-vertical {
   flex-direction: column;
 }

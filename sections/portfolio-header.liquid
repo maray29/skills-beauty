@@ -1,0 +1,103 @@
+{% render 'section-padding' %}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="section_header">
+      {%- if section.settings.heading != blank -%}
+        <div class="section_heading-wrap is-centered">
+          {% render 'tag-component', tag_content: 'PORTFOLIO' %}
+          <h1 class="text-style-allcaps {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {{ section.settings.heading }}
+          </h1>
+          {%- if section.settings.description != blank -%}
+            <div class="section_subheading-wrap max-width-large subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              {{ section.settings.description }}
+
+              <div class="button-group is-centered">
+                <a
+                  href="#contact"
+                  onclick="lenis.scrollTo('#contact')"
+
+                  class="button button--primary"
+                  {{ section.shopify_attributes }}
+                >
+                  Contact
+                  {% render 'icon-arrow-down' %}
+                </a>
+
+                <a
+                  href="#portfolio"
+                  onclick="lenis.scrollTo('#portfolio')"
+
+                  class="button button--secondary"
+                  {{ section.shopify_attributes }}
+                >
+                  Explore our work
+                  {% render 'icon-arrow-down' %}
+                </a>
+
+                {% comment %}
+                  <a href="/pages/about-us" class="button is-full-width">
+                    УЗНАТЬ О НАС
+                    {% render 'icon-arrow-down' %}
+                  </a>
+                  <a href="/collections/all" class="button button--secondary is-full-width">
+                    ОБУЧЕНИЕ
+                    {% render 'icon-arrow' %}
+                  </a>
+                {% endcomment %}
+              </div>
+            </div>
+          {%- endif %}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Шапка портфолио",
+  "tag": "section",
+  "class": "page-header",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Portfolio",
+      "label": "Заголовок"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label",
+      "default": "<p>Explore our portfolio.</p>"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    }
+  ],
+  "presets": [
+    {
+      "name": "Шапка портфолио"
+    }
+  ]
+}
+{% endschema %}

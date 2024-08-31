@@ -1,0 +1,272 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+{{ 'result.css' | asset_url | stylesheet_tag }}
+
+{% render 'section-padding' %}
+
+{% assign slides_per_view = section.settings.slides_per_view %}
+
+{% if metaobject.image.value != blank %}
+  <div class="section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}" id="portfolio">
+    {%- for category in metaobject.category.value -%}
+      <div
+        data-slides-per-view="{{ slides_per_view }}"
+        class="swiper slider-container page-width"
+      >
+        <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
+          <h2>
+            {{ category.name }}
+          </h2>
+          <div class="slider-navigation">
+            <!-- Left Navigation Button -->
+            <button aria-label="Previous image" class="slider-button swiper-prev">
+              <span aria-hidden="true">
+                {% render 'icon-arrow-left' %}
+              </span>
+            </button>
+
+            <!-- Right Navigation Button -->
+            <button aria-label="Next image" class="slider-button swiper-next">
+              <span aria-hidden="true">
+                {% render 'icon-arrow' %}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="swiper-wrapper">
+          {%- for block in shop.metaobjects.portfolio_image.values -%}
+            {% assign image_category = block.category.value.name | strip %}
+            {% assign category_category = category.name | strip %}
+            {%- if image_category == category_category -%}
+              <div class="swiper-slide">
+                <div class="result_component">
+                  <div class="result_img-wrap">
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                      (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                      (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                    {%- endcapture -%}
+                    {{
+                      block.image
+                      | image_url: width: 1500
+                      | image_tag:
+                        loading: 'lazy',
+                        sizes: sizes,
+                        widths: widths,
+                        fetchpriority: 'auto',
+                        alt: block.image.alt
+                      | default: 'Portfolio image'
+                    }}
+                  </div>
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<link
+  rel="stylesheet"
+  href="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/swiper-bundle.min.css?v=1715153801"
+>
+
+<script defer src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/swiper-bundle.min.js?v=1715153801"></script>
+{% javascript %}
+  // const slides_per_view = '{{ slides_per_view | json }}';
+  const slides_per_view = document.querySelector('.swiper').getAttribute('data-slides-per-view');
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiperContainers = document.querySelectorAll('.swiper');
+    console.log(swiperContainers);
+    swiperContainers.forEach((container) => {
+      const buttonPrev = container.querySelector('.swiper-prev');
+      const buttonNext = container.querySelector('.swiper-next');
+
+      const swiper = new Swiper(container, {
+        // Optional parameters
+        slidesPerView: slides_per_view,
+        spaceBetween: 32,
+        grabCursor: true,
+        centeredSlides: true,
+        speed: 1000,
+        //   autoplay: {
+        //     delay: 1000,
+        //     disableOnInteraction: false,
+        //     pauseOnMouseEnter: true,
+        //   },
+
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          prevEl: buttonPrev,
+          nextEl: buttonNext,
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        breakpoints: {
+          0: {
+            /* when window >=0px - webflow mobile portriat */
+
+            slidesPerView: 1.25,
+            slidesPerGroup: 1,
+            spaceBetween: 16,
+          },
+          480: {
+            /* when window >=0px - webflow mobile landscape */
+
+            slidesPerView: 2.5,
+            slidesPerGroup: 1,
+            spaceBetween: 24,
+          },
+          767: {
+            /* when window >= 767px - webflow tablet */
+
+            slidesPerView: 3.5,
+            slidesPerGroup: 1,
+            spaceBetween: 32,
+          },
+          992: {
+            /* when window >= 988px - webflow desktop */
+
+            slidesPerView: slides_per_view,
+            slidesPerGroup: 1,
+            spaceBetween: 32,
+          },
+        },
+      });
+    });
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Слайдер результатов",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Заголовок",
+      "default": "Portfolio"
+    },
+    {
+      "type": "number",
+      "id": "slides_per_view",
+      "label": "Количество слайдов",
+      "default": 1
+    },
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "content_type",
+      "options": [
+        {
+          "value": "testimonial",
+          "label": "Testimonial"
+        },
+        {
+          "value": "result",
+          "label": "Result"
+        }
+      ],
+      "default": "testimonial",
+      "label": "Тип контента"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 256,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 128
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "t:sections.slideshow.blocks.slide.name",
+      "limit": 10,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Изображение"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Image slide",
+          "label": "Заголовок"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "name",
+          "default": "Name",
+          "label": "Имя"
+        },
+        {
+          "type": "richtext",
+          "id": "subheading",
+          "default": "<p>Tell your brand's story through images</p>",
+          "label": "Подзаголовок"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Слайдер результатов",
+      "blocks": [
+        {
+          "type": "slide"
+        },
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

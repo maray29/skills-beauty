@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "portfolio-header": {
+      "type": "portfolio-header",
+      "settings": {
+        "heading": "Portfolio",
+        "description": "Explore our comprehensive range of makeup and hairstyling services, tailored to elevate your brand's visual presence across all media platforms.",
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": ["portfolio-header"]
+}

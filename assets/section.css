@@ -32,6 +32,16 @@
   /* padding-bottom: 0; */
 }
 
+@media screen and (max-width: 478px) {
+  .is-centered .section_subheading-wrap {
+    padding-top: 2.4rem;
+  }
+
+  .section_heading-wrap.is-portfolio-slider-header h2 {
+    font-size: clamp(3.6rem, 4.5vw, 4.8rem) !important;
+  }
+}
+
 .section_heading-wrap .tag {
   margin-bottom: 1.6rem;
 }
@@ -45,6 +55,7 @@
   /* grid-row-end: 3; */
   /* padding-top: 1.6rem; */
   padding-bottom: clamp(3.2rem, 3.5vw, 8rem);
+  text-wrap: balance;
 }
 
 .section_subheading-wrap p {
