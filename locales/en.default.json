@@ -411,7 +411,8 @@
       "heading_social": "Social Networks",
       "heading_address": "Address",
       "heading_time": "Opening times",
-      "heading": "Contact Us"
+      "heading": "Contact Us",
+      "tag_html": "Contact us<br>if you have questions"
     }
   },
   "localization": {
