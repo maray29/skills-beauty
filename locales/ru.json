@@ -564,5 +564,9 @@
       "expanded": "Форма с данными получателя подарочной карты развернута",
       "collapsed": "Форма с данными получателя подарочной карты свернута"
     }
+  },
+  "shop": {
+    "address": "<p>Auguste-Viktoria-Straße 7, Grunewald  14193,<br>Berlin, Deutschland</p>",
+    "opening_time": "<p>Пн-Пт: 10:00-20:00<br>Сб: 10:00-18:00<br>Вc: Выходной</p>"
   }
 }
