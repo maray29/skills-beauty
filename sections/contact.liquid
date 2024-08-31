@@ -17,8 +17,10 @@
     <div class="container-medium">
       <div class="contact_content-wrap">
         <div class="section_heading-wrap">
-          {% capture translated_tag_content %}{{ 'sections.contact.tag_html' | t }}{% endcapture %}
-          {% render 'tag-component', tag_content: translated_tag_content %}
+          {% assign tag_content = section.settings.tag_content | default: 'sections.contact.tag_html' | t %}
+          {% if tag_content != blank %}
+            {% render 'tag-component', tag_content: tag_content %}
+          {% endif %}
           <h2>{{ 'sections.contact.heading' | t }}</h2>
         </div>
         <div class="contact_socials">
@@ -47,8 +49,9 @@
     {
       "type": "text",
       "id": "tag_content",
-      "default": "Свяжитесь с нами если у вас есть вопросы",
-      "label": "Тег"
+      "default": "",
+      "label": "Тег",
+      "info": "Leave blank to use default translation"
     },
     {
       "type": "inline_richtext",
