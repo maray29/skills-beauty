@@ -984,7 +984,7 @@
     }
   },
   "shop": {
-    "address": "Auguste-Viktoria-Straße 7, Grunewald  14193,<br>Berlin, Deutschland",
-    "opening_time": "Mon-Fri: 10:00-20:00<br>Sat: 10:00-18:00<br>Sun: closed"
+    "address_html": "<p>Auguste-Viktoria-Straße 7, Grunewald  14193,<br>Berlin, Deutschland</p>",
+    "opening_time_html": "<p>Mon-Fri: 10:00-20:00<br>Sat: 10:00-18:00<br>Sun: closed</p>"
   }
 }
