@@ -115,3 +115,8 @@
     margin-bottom: 2.4rem;
   }
 }
+
+.result_img-wrap video {
+  width: 100%;
+  object-fit: cover;
+}

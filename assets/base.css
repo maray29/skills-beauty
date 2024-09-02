@@ -2981,10 +2981,6 @@ details[open] > .header__submenu {
   .header__heading-logo-wrapper img {
     max-width: 100px !important;
   }
-
-  .disclosure__button.localization-form__select.localization-selector {
-    min-width: auto !important;
-  }
 }
 
 .header__menu-item:hover {
