@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "page-header": {
@@ -171,11 +180,14 @@
             "title": "Portfolio",
             "title_color": "#000000",
             "alignment": "left",
+            "background_color": "",
             "html_area": ""
           }
         }
       },
-      "block_order": ["instafeed_app_block_Rzqryk"],
+      "block_order": [
+        "instafeed_app_block_Rzqryk"
+      ],
       "settings": {
         "include_margins": true,
         "padding_top": 128,
@@ -186,12 +198,13 @@
     "contact": {
       "type": "contact",
       "settings": {
+        "tag_content": "",
         "heading": "Контакты",
         "heading_social": "Социальные сети",
         "heading_address": "Адрес студии",
-        "text_address": "<p>Auguste-Viktoria-Straße 7, Grunewald  14193,<br>Berlin, Deutschland</p>",
+        "text_address": "<p>Lietzenburger Str. 96, Grunewald  10719,<br/>Berlin, Deutschland</p>",
         "heading_time": "Время работы",
-        "text_time": "<p>Пн-Пт: 10:00-20:00<br>Сб: 10:00-18:00<br>Вc: Выходной</p>",
+        "text_time": "<p>Пн-Пт: 10:00-20:00<br/>Сб: 10:00-18:00<br/>Вc: Выходной</p>",
         "padding_top": 128,
         "padding_bottom": 128,
         "section_color_scheme": "",
