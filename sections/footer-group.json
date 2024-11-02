@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -6,11 +15,14 @@
       "type": "footer",
       "settings": {
         "opening_time": "<p>Пн-Пт: 10:00-20:00<br/>Сб: 10:00-18:00<br/>Вc: выходной</p>",
-        "address": "<p>Auguste-Viktoria-Straße 7 <br/> Grunewald • 14193 <br/> Berlin • Deutschland</p>",
+        "address": "<p>Lietzenburger Str. 96 <br/>  • 10719 <br/> Berlin • Deutschland</p>",
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
+        "info_heading": "sections.footer.settings.info_heading",
+        "address_heading": "sections.footer.settings.address_heading",
+        "time_heading": "sections.footer.settings.time_heading",
+        "social_heading": "sections.footer.settings.social_heading",
         "newsletter_heading": "Skills Beauty Рассылка",
-        "address_heading": "Address",
         "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": true,
@@ -23,5 +35,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
