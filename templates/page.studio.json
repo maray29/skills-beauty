@@ -29,7 +29,7 @@
         "button-1": {
           "type": "button",
           "settings": {
-            "label": "Оформление бровей",
+            "label": "Price DE",
             "link": "https://taplink.cc/skills.beauty.berlin"
           }
         },
@@ -39,59 +39,11 @@
             "label": "Свадебные услуги",
             "link": "https://taplink.cc/skills.beauty.berlin"
           }
-        },
-        "button-3": {
-          "type": "button",
-          "settings": {
-            "label": "Ресницы",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
-        },
-        "button-5": {
-          "type": "button",
-          "settings": {
-            "label": "Обучение для себя",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
-        },
-        "button-6": {
-          "type": "button",
-          "settings": {
-            "label": "Макияж и укладки",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
-        },
-        "button-7": {
-          "type": "button",
-          "settings": {
-            "label": "Обучение для мастера",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
-        },
-        "button-8": {
-          "type": "button",
-          "settings": {
-            "label": "Косметология",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
-        },
-        "button-9": {
-          "type": "button",
-          "settings": {
-            "label": "Выездные услуги",
-            "link": "https://taplink.cc/skills.beauty.berlin"
-          }
         }
       },
       "block_order": [
         "button-1",
-        "button-2",
-        "button-3",
-        "button-5",
-        "button-6",
-        "button-7",
-        "button-8",
-        "button-9"
+        "button-2"
       ],
       "settings": {
         "heading": "Наши Услуги",
@@ -181,6 +133,7 @@
             "title_color": "#000000",
             "alignment": "left",
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
