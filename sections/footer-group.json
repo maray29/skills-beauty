@@ -15,7 +15,7 @@
       "type": "footer",
       "settings": {
         "opening_time": "<p>Пн-Пт: 10:00-20:00<br/>Сб: 10:00-18:00<br/>Вc: выходной</p>",
-        "address": "<p>Lietzenburger Str. 96 <br/>10719 • Berlin <br/>Deutschland 1</p>",
+        "address": "<p>Lietzenburger Str. 96 <br/>10719 • Berlin <br/>Deutschland</p>",
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "info_heading": "sections.footer.settings.info_heading",
