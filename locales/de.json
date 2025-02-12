@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -993,7 +1002,7 @@
     }
   },
   "shop": {
-    "address_html": "<p>Auguste-Viktoria-Straße 7, Grunewald  14193,<br>Berlin, Deutschland</p>",
+    "address_html": "<p>Lietzenburger Str. 96, 10719,<br>Berlin, Deutschland</p>",
     "opening_time_html": "<p>Mo-Fr: 10:00-20:00 Uhr<br>Sa: 10:00-18:00 Uhr<br>So: geschlossen</p>"
   }
 }
