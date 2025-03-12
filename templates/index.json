@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "home-header": {
       "type": "home-header",
       "settings": {
         "heading": "SKILLS BEAUTY",
-        "subheading": "<p>Skill Beauty — это уникальный проект, который объединяет обучающие курсы, онлайн-магазин и услуги студии.</p><p>Мы стремимся вдохновлять и поддерживать каждую женщину на пути к её природной красоте и уверенности в себе.</p>",
+        "subheading": "<p>Skill Beauty —  это масштабный бьюти-проект в самом центре Берлина, где гармонично сочетаются три ключевых направления: салон красоты и косметология, обучающие курсы и оффлайн, и онлайн магазин.</p><p>Мы стремимся вдохновлять и поддерживать каждую женщину на пути к её природной красоте и уверенности в себе.</p>",
         "video": "shopify://files/videos/skills-beauty-promo-optimized.webm",
         "enable_video_looping": true,
         "button-1_label": "Обучение",
