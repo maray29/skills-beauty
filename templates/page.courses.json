@@ -14,8 +14,8 @@
       "settings": {
         "button_1_label": "Online courses",
         "button_2_label": "Studio courses",
-        "collection": "online-courses",
-        "offline_collection": "offline-courses",
+        "collection": "offline-courses",
+        "offline_collection": "online-courses",
         "section_color_scheme": "scheme-1",
         "tag_content": "Обучение",
         "title": "Courses",
