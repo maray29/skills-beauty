@@ -12,7 +12,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "button_1_label": "Studio courses",
+        "button_1_label": "Offline courses",
         "button_2_label": "Online courses",
         "collection": "offline-courses",
         "offline_collection": "online-courses",
