@@ -30,7 +30,7 @@
           "type": "button",
           "settings": {
             "label": "Price DE",
-            "link": "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/skills_beauty_nem_compressed_1.pdf?v=1742853723"
+            "link": "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/5_2mm_print_nem-2.pdf?v=1746699107"
           }
         },
         "button-2": {
@@ -131,7 +131,14 @@
           "settings": {
             "title": "Portfolio",
             "title_color": "#000000",
+            "title_size_v2": 0,
             "alignment": "left",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
             "html_area": ""
