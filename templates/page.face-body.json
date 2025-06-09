@@ -63,30 +63,12 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_wpUK87": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_xLrdTR",
         "slide_jRDTfb",
-        "slide_hRdR4X",
-        "slide_wpUK87"
+        "slide_hRdR4X"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -106,7 +88,7 @@
         "column_eHxD6Q": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "1",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
