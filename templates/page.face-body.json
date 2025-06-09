@@ -115,6 +115,15 @@
         "collapsible_row_6fFpUr": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "КЛАССИЧЕСКИЙ МАССАЖ ВСЕГО ТЕЛА",
+            "icon": "fire",
+            "row_content": "<p><strong>60 / 90 мин.</strong></p><p>Комплексная расслабляющая процедура, улучшающая кровообращение, обмен веществ и общее самочувствие. Подходит для регулярного ухода и профилактики стресса.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mNUPN4": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
             "row_content": "",
@@ -126,7 +135,8 @@
         "collapsible_row_c8RFXT",
         "collapsible_row_nDBRza",
         "collapsible_row_qE6NCb",
-        "collapsible_row_6fFpUr"
+        "collapsible_row_6fFpUr",
+        "collapsible_row_mNUPN4"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
