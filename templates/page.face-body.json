@@ -106,8 +106,35 @@
         "column_L4tfJU": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>20x - скидка 20%</p>",
+            "title": "20x - скидка 20%",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wFpr9k": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Только один вид массажа</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kaxMmy": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Не подлежит передаче другим лицам</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KRTwHJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Срок действия: 6 месяцев</p>",
             "link_label": "",
             "link": ""
           }
@@ -116,11 +143,14 @@
       "block_order": [
         "column_eHxD6Q",
         "column_wBU9rG",
-        "column_L4tfJU"
+        "column_L4tfJU",
+        "column_wFpr9k",
+        "column_kaxMmy",
+        "column_KRTwHJ"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Абонементы",
+        "title": "Абонементы - Только один вид массажа •Не подлежит передаче другим лицам • Срок действия: 6 месяцев",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
