@@ -150,7 +150,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Абонементы - Только один вид массажа •Не подлежит передаче другим лицам • Срок действия: 6 месяцев",
+        "title": "Абонементы",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
