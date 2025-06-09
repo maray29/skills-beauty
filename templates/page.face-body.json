@@ -88,8 +88,8 @@
         "column_eHxD6Q": {
           "type": "column",
           "settings": {
-            "title": "1",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "4x - скидка 10%",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -97,8 +97,8 @@
         "column_wBU9rG": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "8x - скидка 15%",
+            "text": "",
             "link_label": "",
             "link": ""
           }
