@@ -97,9 +97,9 @@
         "collapsible_row_nDBRza": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "КЛАССИЧЕСКИЙ МАССАЖ ЛИЦА",
+            "icon": "fire",
+            "row_content": "<p><strong>30 мин.</strong></p><p>Стимулирует кровообращение, снимает мышечное напряжение, улучшает тонус кожи. Идеален для профилактики возрастных изменений и восстановления после стресса.</p>",
             "page": ""
           }
         },
