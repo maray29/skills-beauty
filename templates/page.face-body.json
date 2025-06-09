@@ -12,6 +12,23 @@
     "slideshow_3kACdg": {
       "type": "slideshow",
       "blocks": {
+        "slide_jRDTfb": {
+          "type": "slide",
+          "settings": {
+            "heading": "Чистка лица",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_xLrdTR": {
           "type": "slide",
           "settings": {
@@ -49,6 +66,7 @@
         }
       },
       "block_order": [
+        "slide_jRDTfb",
         "slide_xLrdTR",
         "slide_hRdR4X"
       ],
