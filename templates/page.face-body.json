@@ -106,9 +106,9 @@
         "collapsible_row_qE6NCb": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "МАССАЖ СПИНЫ",
+            "icon": "fire",
+            "row_content": "<p><strong>30 / 45 / 60 мин.</strong></p><p>Снимает напряжение в мышцах, улучшает подвижность позвоночника, способствует снятию усталости и восстановлению после физической нагрузки.</p>",
             "page": ""
           }
         },
