@@ -12,23 +12,6 @@
     "slideshow_3kACdg": {
       "type": "slideshow",
       "blocks": {
-        "slide_jRDTfb": {
-          "type": "slide",
-          "settings": {
-            "heading": "Комбинированная чистка лица",
-            "heading_size": "h0",
-            "subheading": "Максимально эффективное очищение пор от глубоких загрязнений, лечение дерматологических заболеваний и предотвращение воспалений.",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_xLrdTR": {
           "type": "slide",
           "settings": {
@@ -44,6 +27,23 @@
             "text_alignment": "right",
             "image_overlay_opacity": 0,
             "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_jRDTfb": {
+          "type": "slide",
+          "settings": {
+            "heading": "Комбинированная чистка лица",
+            "heading_size": "h0",
+            "subheading": "Максимально эффективное очищение пор от глубоких загрязнений, лечение дерматологических заболеваний и предотвращение воспалений.",
+            "button_label": "Button label",
+            "link": "https://n636117.alteg.io",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         },
@@ -66,8 +66,8 @@
         }
       },
       "block_order": [
-        "slide_jRDTfb",
         "slide_xLrdTR",
+        "slide_jRDTfb",
         "slide_hRdR4X"
       ],
       "name": "t:sections.slideshow.presets.name",
