@@ -124,9 +124,63 @@
         "collapsible_row_mNUPN4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_x3Rh7K": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Воздействует на проблемные зоны, стимулирует лимфоотток и обмен веществ, улучшает текстуру кожи. Эффективен при регулярном курсе процедур.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_dzjekq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4fnjpQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7pACYU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_exY6cc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mtNfq6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "СПОРТИВНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p><strong>60 мин.</strong></p><p>Активный и глубокий массаж для восстановления после тренировок, снятия крепатуры и подготовки мышц к физической нагрузке. Рекомендуется как спортсменам, так и людям с высокой активностью.</p>",
             "page": ""
           }
         }
@@ -136,7 +190,13 @@
         "collapsible_row_nDBRza",
         "collapsible_row_qE6NCb",
         "collapsible_row_6fFpUr",
-        "collapsible_row_mNUPN4"
+        "collapsible_row_mNUPN4",
+        "collapsible_row_x3Rh7K",
+        "collapsible_row_dzjekq",
+        "collapsible_row_4fnjpQ",
+        "collapsible_row_7pACYU",
+        "collapsible_row_exY6cc",
+        "collapsible_row_mtNfq6"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
