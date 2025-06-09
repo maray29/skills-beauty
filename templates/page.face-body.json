@@ -82,11 +82,129 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "main": {
-      "type": "main-page",
+    "collapsible_content_44jER4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_c8RFXT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ANTI-AGING MACCAЖ KODIDO",
+            "icon": "fire",
+            "row_content": "<p><strong>50 мин.</strong></p><p>Премиум-процедура с акцентом на омоложение лица, шеи и зоны декольте. Улучшает микроциркуляцию, разглаживает мелкие морщины, повышает упругость кожи. Включает элементы лифтинга и глубокого расслабления.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nDBRza": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_qE6NCb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6fFpUr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_c8RFXT",
+        "collapsible_row_nDBRza",
+        "collapsible_row_qE6NCb",
+        "collapsible_row_6fFpUr"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "caption": "",
+        "heading": "Ручной массаж",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/IMG_3813.jpg",
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_yVNgqT": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_64w97U": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_FxH4B6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_WWz3g6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_aXM6Vx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_64w97U",
+        "collapsible_row_FxH4B6",
+        "collapsible_row_WWz3g6",
+        "collapsible_row_aXM6Vx"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_wkzzzB": {
@@ -130,11 +248,20 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
     "slideshow_3kACdg",
-    "main",
-    "rich_text_wkzzzB"
+    "collapsible_content_44jER4",
+    "collapsible_content_yVNgqT",
+    "rich_text_wkzzzB",
+    "main"
   ]
 }
