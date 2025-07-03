@@ -28,6 +28,7 @@
       "blocks": {
         "button-1": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "Price DE",
             "link": "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/5_2mm_print_nem-2.pdf?v=1746699107"
@@ -35,6 +36,7 @@
         },
         "button-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "Price RU",
             "link": "https://cdn.shopify.com/s/files/1/0640/9689/5127/files/5_2mm_print_rus-2.pdf?v=1746699106"
