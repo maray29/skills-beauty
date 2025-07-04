@@ -12,8 +12,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "button_1_label": "Offline courses",
-        "button_2_label": "Online courses",
+        "button_1_label": "courses For Yourself",
+        "button_2_label": "courses For Professionals",
+        "button_3_label": "Guides & Tutorials",
         "collection": "offline-courses",
         "offline_collection": "online-courses",
         "section_color_scheme": "scheme-1",
