@@ -1,6 +1,222 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+course_foryourself_collection,
+            limit: section.settings.products_to_show
+          %}
+        </div>
+        <!-- КОНЕЦ: Новый контент для третьей вкладки -->
+      </div>
+    </div>
+
+    <!-- Добавьте этот JavaScript для обработки вкладок -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const tabLinks = document.querySelectorAll('.tab-links button');
+        
+        tabLinks.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Удаляем активный класс со всех вкладок и кнопок
+            document.querySelectorAll('.tab-links li').forEach(li => {
+              li.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(tab => {
+              tab.classList.remove('active');
+            });
+            
+            // Добавляем активный класс текущей кнопке и вкладке
+            this.parentElement.classList.add('active');
+            const targetTab = document.querySelector(this.getAttribute('href'));
+            if (targetTab) {
+              targetTab.classList.add('active');
+            }
+          });
+        });
+      });
+    </script>
+  </div>
+</div>
+
+<style>
+  .tab-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
   }
+  
+  .tab-links li {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+  }
+  
+  .tab-links li.active button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  .tab.active {
+    display: block;
+  }
+  
+  @media (max-width: 750px) {
+    .tab-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tab-links li {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Courses with tabs",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Курсы",
+      "label": "Заголовок"
+    },
+    {
+      "type": "text",
+      "id": "button_1_label",
+      "label": "Текст первой кнопки",
+      "default": "Онлайн"
+    },
+    {
+      "type": "text",
+      "id": "button_2_label",
+      "label": "Текст второй кнопки",
+      "default": "Оффлайн"
+    },
+    {
+      "type": "text",
+      "id": "button_3_label",
+      "label": "Текст третьей кнопки",
+      "default": "Для себя"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Онлайн коллекция"
+    },
+    {
+      "type": "collection",
+      "id": "offline_collection",
+      "label": "Оффлайн коллекция"
+    },
+    {
+      "type": "collection",
+      "id": "course_foryourself_collection",
+      "label": "Коллекция 'Для себя'"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 25,
+      "step": 1,
+      "default": 4,
+      "label": "Количество продуктов"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Колонок на десктопе"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_desktop_slider",
+      "label": "Включить слайдер на десктопе",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Настройки мобильной версии"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2",
+      "label": "Колонок на мобильных"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "Свайп на мобильных"
+    },
+    {
+      "type": "header",
+      "content": "Настройки секции"
+    },
+    {
+      "type": "select",
+      "id": "section_color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Акцент 1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Акцент 2"
+        },
+
+
+{
+          "value": "background-1",
+          "label": "Фон 1"
+        },
+        {
+          "value": "background-2",
+          "label": "Фон 2"
+        },
+        {
+          "value": "inverse",
+          "label": "Инвертировать"
+        }
+      ],
+      "default": "background-1",
+      "label": "Цветовая схема"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "Включить быструю покупку"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Courses with tabs"
+    }
+  ]
+}
 {% endschema %}
