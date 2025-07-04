@@ -86,6 +86,12 @@
             limit: section.settings.products_to_show
           %}
         </div>
+        <div id="offline" class="tab">
+          {% render 'collection-tab',
+            collection: section.settings.offline_collection,
+            limit: section.settings.products_to_show
+          %}
+        </div>
       </div>
     </div>
 
