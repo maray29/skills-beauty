@@ -75,12 +75,6 @@
           <button class="button is-full-width" href="#third">{{ section.settings.button_3_label }}</button>
         </li>
       </ul>
-
-
-
-
-
-      
       <div class="tab-content">
         <div id="online" class="tab active">
           {% render 'collection-tab',
@@ -190,6 +184,17 @@
       "id": "button_2_label",
       "label": "Лейбл второй кнопки",
       "default": "Studio courses"
+    },
+    {
+      "type": "text",
+      "id": "button_3_label",
+      "label": "Лейбл третьей кнопки",
+      "default": "New Courses"
+    },
+    {
+      "type": "collection",
+      "id": "third_collection",
+      "label": "Third Courses Collection"
     },
     {
       "type": "collection",
