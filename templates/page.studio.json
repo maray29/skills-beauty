@@ -12,7 +12,7 @@
     "page-header": {
       "type": "page-header",
       "settings": {
-        "image": "shopify://shop_images/studio_header-img.webp",
+        "image": "shopify://shop_images/IMG_0148.jpg",
         "heading": "Салон",
         "tag": "Skills Beauty",
         "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
@@ -21,6 +21,16 @@
         "padding_top": 0,
         "padding_bottom": 128,
         "section_color_scheme": "scheme-1"
+      }
+    },
+    "portfolio_slider_wxemUL": {
+      "type": "portfolio-slider",
+      "name": "Слайдер портфолио",
+      "settings": {
+        "slides_per_view": 1,
+        "section_color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 128
       }
     },
     "services": {
@@ -176,6 +186,7 @@
   },
   "order": [
     "page-header",
+    "portfolio_slider_wxemUL",
     "services",
     "studio",
     "1713344670411ccd5a",
