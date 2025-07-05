@@ -100,3 +100,22 @@ h2 {
   font-size: 18px;
   line-height: 1.5;
 }
+
+.portfolio-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-heading {
+    font-size: 5rem;
+  }
+}
+
