@@ -12,18 +12,6 @@
   {%- for category in metaobject.category.value -%}
     <div data-slides-per-view="{{ slides_per_view }}" class="swiper slider-container page-width">
 
-      
-      <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
-        <h2>{{ category.name }}</h2>
-        <div class="slider-navigation">
-          <button aria-label="Previous item" class="slider-button swiper-prev">
-            <span aria-hidden="true">{% render 'icon-arrow-left' %}</span>
-          </button>
-          <button aria-label="Next item" class="slider-button swiper-next">
-            <span aria-hidden="true">{% render 'icon-arrow' %}</span>
-          </button>
-        </div>
-      </div>
 
       
       <div class="swiper-wrapper">
