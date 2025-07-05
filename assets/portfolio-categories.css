@@ -69,7 +69,7 @@
 
 /* Уменьшение основного заголовка */
 h1 {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 /* Уменьшение подзаголовков */
@@ -90,7 +90,7 @@ h2 {
 
 
 .text-style-allcaps {
-  font-size: 4px; /* или другой подходящий размер */
+  font-size: 18px; /* или другой подходящий размер */
   line-height: 1.2;
   text-transform: uppercase;
 }
