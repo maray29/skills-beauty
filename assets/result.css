@@ -131,3 +131,8 @@
   font-weight: 600; /* можно подстроить под стиль темы */
   margin-bottom: 1rem; /* если нужно */
 }
+
+
+.is-slider-header h2 {
+  font-size: 24px !important;
+}
