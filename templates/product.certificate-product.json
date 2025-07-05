@@ -86,7 +86,7 @@
       "type": "related-products",
       "settings": {
         "heading": "Shop",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
