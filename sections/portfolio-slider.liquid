@@ -55,9 +55,6 @@
           {%- endif -%}
         {%- endfor -%}
       </div>
-/* Дополнительно: если заголовки имеют классы — можешь уточнить */
-      <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
-        <h2>{{ category.name }}</h2>
         <div class="slider-navigation">
           <button aria-label="Previous item" class="slider-button swiper-prev">
             <span aria-hidden="true">{% render 'icon-arrow-left' %}</span>
@@ -67,7 +64,7 @@
           </button>
         </div>
       </div>
-/* Дополнительно: если заголовки имеют классы — можешь уточнить */
+
     </div>
   {% endfor %}
 </div>
