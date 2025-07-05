@@ -63,6 +63,15 @@
           {%- endif -%}
         {%- endfor -%}
       </div>
+      <div class="slider-navigation" style="margin-top: 2.4rem;">
+    <button aria-label="Previous item" class="slider-button swiper-prev">
+      <span aria-hidden="true">{% render 'icon-arrow-left' %}</span>
+    </button>
+    <button aria-label="Next item" class="slider-button swiper-next">
+      <span aria-hidden="true">{% render 'icon-arrow' %}</span>
+    </button>
+  </div>
+</div>
     </div>
   {% endfor %}
 </div>
