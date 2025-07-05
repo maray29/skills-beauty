@@ -13,7 +13,8 @@
     <div data-slides-per-view="{{ slides_per_view }}" class="swiper slider-container page-width">
       <div class="section_heading-wrap is-slider-header is-portfolio-slider-header">
         <h2>{{ category.name }}</h2>
-        
+      </div>
+
       <div class="swiper-wrapper">
         {%- for block in shop.metaobjects.portfolio_image.values -%}
           {% assign image_category = block.category.value.name | strip %}
@@ -28,8 +29,6 @@
                       <source src="{{ block.image | file_url }}" type="{{ block.image.value.content_type }}">
                       Your browser does not support the video tag.
                     </video>
-                    <!-- Debug: Video URL -->
-                    <p style="display:none;">Debug - Video URL: {{ block.image.value | file_url }}</p>
                   {% else %}
                     {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
                     {%- capture sizes -%}
@@ -55,15 +54,16 @@
           {%- endif -%}
         {%- endfor -%}
       </div>
+
+      <!-- СТРЕЛКИ ПОД СЛАЙДЕРОМ -->
       <div class="slider-navigation" style="margin-top: 2.4rem;">
-    <button aria-label="Previous item" class="slider-button swiper-prev">
-      <span aria-hidden="true">{% render 'icon-arrow-left' %}</span>
-    </button>
-    <button aria-label="Next item" class="slider-button swiper-next">
-      <span aria-hidden="true">{% render 'icon-arrow' %}</span>
-    </button>
-  </div>
-</div>
+        <button aria-label="Previous item" class="slider-button swiper-prev">
+          <span aria-hidden="true">{% render 'icon-arrow-left' %}</span>
+        </button>
+        <button aria-label="Next item" class="slider-button swiper-next">
+          <span aria-hidden="true">{% render 'icon-arrow' %}</span>
+        </button>
+      </div>
     </div>
   {% endfor %}
 </div>
@@ -71,75 +71,54 @@
 <link
   rel="stylesheet"
   href="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/swiper-bundle.min.css?v=1715153801"
->
+/>
 
 <script defer src="https://cdn.shopify.com/s/files/1/0640/9689/5127/files/swiper-bundle.min.js?v=1715153801"></script>
+
 {% javascript %}
-  // const slides_per_view = '{{ slides_per_view | json }}';
   const slides_per_view = document.querySelector('.swiper').getAttribute('data-slides-per-view');
   document.addEventListener('DOMContentLoaded', function () {
     const swiperContainers = document.querySelectorAll('.swiper');
-    console.log(swiperContainers);
+
     swiperContainers.forEach((container) => {
       const buttonPrev = container.querySelector('.swiper-prev');
       const buttonNext = container.querySelector('.swiper-next');
 
       const swiper = new Swiper(container, {
-        // Optional parameters
         slidesPerView: slides_per_view,
         spaceBetween: 32,
         grabCursor: true,
         centeredSlides: true,
         speed: 100,
-        //   autoplay: {
-        //     delay: 1000,
-        //     disableOnInteraction: false,
-        //     pauseOnMouseEnter: true,
-        //   },
-
         direction: 'horizontal',
         loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
         navigation: {
           prevEl: buttonPrev,
           nextEl: buttonNext,
         },
-
-        // And if we need scrollbar
+        pagination: {
+          el: '.swiper-pagination',
+        },
         scrollbar: {
           el: '.swiper-scrollbar',
         },
         breakpoints: {
           0: {
-            /* when window >=0px - webflow mobile portriat */
-
             slidesPerView: 1.25,
             slidesPerGroup: 1,
             spaceBetween: 16,
           },
           480: {
-            /* when window >=0px - webflow mobile landscape */
-
             slidesPerView: 2.5,
             slidesPerGroup: 1,
             spaceBetween: 24,
           },
           767: {
-            /* when window >= 767px - webflow tablet */
-
             slidesPerView: 3.5,
             slidesPerGroup: 1,
             spaceBetween: 32,
           },
           992: {
-            /* when window >= 988px - webflow desktop */
-
             slidesPerView: slides_per_view,
             slidesPerGroup: 1,
             spaceBetween: 32,
