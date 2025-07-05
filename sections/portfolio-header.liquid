@@ -13,10 +13,10 @@
               {% render 'tag-component', tag_content: tag_content %}
             {% endif %}
           {% endif %}
-          <h1 class="text-style-allcaps portfolio-heading">
+          <h1 class="text-style-allcaps" style="font-size: 3rem;">
             {{ section.settings.heading }}
-
           </h1>
+
           {%- if section.settings.description != blank -%}
             <div class="section_subheading-wrap max-width-large subtitle {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
               {{ section.settings.description }}
