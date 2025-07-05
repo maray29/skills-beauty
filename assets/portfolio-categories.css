@@ -90,7 +90,7 @@ h2 {
 
 
 .text-style-allcaps {
-  font-size: 18px; /* или другой подходящий размер */
+  font-size: 8px; /* или другой подходящий размер */
   line-height: 1.2;
   text-transform: uppercase;
 }
