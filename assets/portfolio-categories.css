@@ -102,20 +102,20 @@ h2 {
 }
 
 .portfolio-heading {
-  font-size: 3rem;
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-heading {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-heading {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
