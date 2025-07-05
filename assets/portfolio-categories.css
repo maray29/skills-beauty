@@ -109,13 +109,13 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .portfolio-heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-heading {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 
