@@ -12,8 +12,8 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "button_1_label": "courses For Yourself",
-        "button_2_label": "courses For Professionals",
+        "button_1_label": "For Yourself",
+        "button_2_label": "For Professionals",
         "button_3_label": "Guides & Tutorials",
         "third_collection": "online-courses",
         "collection": "courses-for-yourself",
