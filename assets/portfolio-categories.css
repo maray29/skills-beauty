@@ -87,3 +87,10 @@ h2 {
   font-size: 28px;
   font-weight: 600;
 }
+
+
+.text-style-allcaps {
+  font-size: 36px; /* или другой подходящий размер */
+  line-height: 1.2;
+  text-transform: uppercase;
+}
