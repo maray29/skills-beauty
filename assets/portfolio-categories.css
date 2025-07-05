@@ -94,3 +94,9 @@ h2 {
   line-height: 1.2;
   text-transform: uppercase;
 }
+
+
+.section_subheading-wrap {
+  font-size: 18px;
+  line-height: 1.5;
+}
