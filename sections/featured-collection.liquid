@@ -71,9 +71,6 @@
         <li>
           <button class="button is-full-width" href="#offline">{{ section.settings.button_2_label }}</button>
         </li>
-        <li>
-          <button class="button is-full-width" href="#123">{{ section.settings.button_3_label }}</button>
-        </li>
       </ul>
 
       <div class="tab-content">
@@ -84,12 +81,6 @@
           %}
         </div>
         <div id="offline" class="tab">
-          {% render 'collection-tab',
-            collection: section.settings.offline_collection,
-            limit: section.settings.products_to_show
-          %}
-        </div>
-        <div id="123" class="tab">
           {% render 'collection-tab',
             collection: section.settings.offline_collection,
             limit: section.settings.products_to_show
