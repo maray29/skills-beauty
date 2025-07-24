@@ -192,10 +192,11 @@
           {%- endif -%}
         </div>
       </div>
+      {% comment %}
       {%- if card_product.featured_media -%}
         <div class="card__media is-course-card">
           <div class="media media--transparent media--hover-effect">
-            {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+            !theme-check-disable ImgLazyLoading!
             <img
               srcset="
                 {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
@@ -216,7 +217,7 @@
               width="{{ card_product.featured_media.width }}"
               height="{{ card_product.featured_media.height }}"
             >
-            {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
+            !theme-check-enable ImgLazyLoading!
 
             {%- if card_product.media[1] != null and show_secondary_image -%}
               <img
@@ -241,6 +242,7 @@
           </div>
         </div>
       {%- endif -%}
+      {% endcomment %}
     </div>
     {% comment %} </div> {% endcomment %}
   </div>
