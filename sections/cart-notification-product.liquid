@@ -1,6 +1,7 @@
 {%- if cart != empty -%}
   {%- for item in cart.items -%}
     <div id="cart-notification-product-{{ item.key }}" class="cart-item">
+      {%- comment -%}
       {%- if item.image -%}
         <div class="cart-notification-product__image global-media-settings">
           <img
@@ -11,7 +12,9 @@
             loading="lazy"
           >
         </div>
+
       {%- endif -%}
+      {%- endcomment -%}
       <div>
         {%- if settings.show_vendor -%}
           <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
