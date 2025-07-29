@@ -475,21 +475,21 @@
             "page": ""
           }
         },
-        "collapsible_row_KkBw8t": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Доп.: ProEyeFlash (осветление вокруг глаз)",
-            "icon": "fire",
-            "row_content": "<p>20 мин<br/></p>",
-            "page": ""
-          }
-        },
         "collapsible_row_HjPCrj": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Melanopro Herbst: сильный эффект против пигментации (осень-зима)",
             "icon": "fire",
             "row_content": "<p>75 мин<br/>2 фазная программа: в кабинете и дома. Сильнейший пилинг против пигментации: видимый результат после 6 недель.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KkBw8t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Доп.: ProEyeFlash (осветление вокруг глаз)",
+            "icon": "fire",
+            "row_content": "<p>20 мин<br/></p>",
             "page": ""
           }
         }
@@ -499,8 +499,8 @@
         "collapsible_row_gbUGD3",
         "collapsible_row_QnerUG",
         "collapsible_row_UjdxpA",
-        "collapsible_row_KkBw8t",
-        "collapsible_row_HjPCrj"
+        "collapsible_row_HjPCrj",
+        "collapsible_row_KkBw8t"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
