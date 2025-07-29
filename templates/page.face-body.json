@@ -374,6 +374,48 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_BqWVLF": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_fkbb6H": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Механическая чистка T-zone",
+            "icon": "fire",
+            "row_content": "<p>75 мин<br/>Двойное очищение → механический пилинг → распаривающая маска<br/>→ ультразвук → механическая чистка T-zone → сужение пор и успокаивающая маска → уход и SPF</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aWzRiF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "BIOREPEEL ПИЛИНГ",
+            "icon": "fire",
+            "row_content": "<p>40 мин<br/>Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_fkbb6H",
+        "collapsible_row_aWzRiF"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "ЧИСТКА ЛИЦА",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -389,6 +431,7 @@
     "collapsible_content_44jER4",
     "collapsible_content_yVNgqT",
     "collapsible_content_hxp3Bj",
+    "collapsible_content_BqWVLF",
     "main"
   ]
 }
