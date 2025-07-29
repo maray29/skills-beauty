@@ -394,11 +394,21 @@
             "row_content": "<p>90 мин<br/>Двойное очищение → механический пилинг → распаривающая маска → ультразвук → механическая чистка всего лица → сужение пор и успокаивающая маска → уход и SPF</p>",
             "page": ""
           }
+        },
+        "collapsible_row_priaHq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Механическая чистка by Dermalogica + LED",
+            "icon": "fire",
+            "row_content": "<p>105 мин <br/>Двойное очищение → механический пилинг → распаривающая маска → ультразвук → механическая чистка всего лица → сужение пор<br/>→ маска + LED → уход и SPF</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_fkbb6H",
-        "collapsible_row_aWzRiF"
+        "collapsible_row_aWzRiF",
+        "collapsible_row_priaHq"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
