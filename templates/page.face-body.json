@@ -306,9 +306,9 @@
         "collapsible_row_64w97U": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "ACTIVE PURENESS CLEAN SKIN",
+            "heading": "Косметологическая консультация",
             "icon": "dryer",
-            "row_content": "<p>Атравматическая чистка лица Рекомендуется для жирной и проблемной кожи. Матирует и выравнивает кожу.</p>",
+            "row_content": "<p>15 мин</p>",
             "page": ""
           }
         },
@@ -369,7 +369,7 @@
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "эстетическая косметология",
+        "heading": "Косметология",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
