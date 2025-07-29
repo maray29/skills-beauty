@@ -403,17 +403,109 @@
             "row_content": "<p>105 мин <br/>Двойное очищение → механический пилинг → распаривающая маска → ультразвук → механическая чистка всего лица → сужение пор<br/>→ маска + LED → уход и SPF</p>",
             "page": ""
           }
+        },
+        "collapsible_row_ELLMNx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Механическая чистка + BioRepeel",
+            "icon": "fire",
+            "row_content": "<p>90 мин<br/>Двойное очищение → механический пилинг → распаривающая маска → ультразвук → механическая чистка всего лица → пилинг BioRepeel → уход и SPF</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "collapsible_row_fkbb6H",
         "collapsible_row_aWzRiF",
-        "collapsible_row_priaHq"
+        "collapsible_row_priaHq",
+        "collapsible_row_ELLMNx"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Жирный тип кожи, расширенные поры, комедоны (чёрные точки), снижение упругости и тонуса кожи, неровный тон кожи лица",
         "heading": "ЧИСТКА ЛИЦА",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_MePxL9": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_39yRAV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Microneedling по типу кожи",
+            "icon": "fire",
+            "row_content": "<p>40 мин<br/>Двойное очищение → серум по типу кожи, направленный на определнную проблему → Microneedling → уход и SPF</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gbUGD3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Microneedling exlusive (+ пилинг и маска)",
+            "icon": "fire",
+            "row_content": "<p>60 мин<br/>Двойное очищение → серум по типу кожи, направленный на определнную проблему → Microneedling → уход и SPF</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_QnerUG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Luminfusion Glasskin + LED (Peeling + Microneedling + LED)",
+            "icon": "fire",
+            "row_content": "<p>80 мин <br/>(Нельзя беременным)<br/>Двойное очищение → механический пилинг → фруктовая кислота → серум по типу кожи, направленный на определённую проблему → Microneedling → маска + LED → уход и SPF</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UjdxpA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Exo Booster Microneedling(сильный Anti-Аge)",
+            "icon": "fire",
+            "row_content": "<p>75 мин<br/>Двойное очищение → Exo Booster (экзосомы — наночастицы, которые активно используются в антивозрастной косметологии) → Microneedling → уход и SPF</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KkBw8t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Доп.: ProEyeFlash (осветление вокруг глаз)",
+            "icon": "fire",
+            "row_content": "<p>20 мин<br/></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HjPCrj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Melanopro Herbst: сильный эффект против пигментации (осень-зима)",
+            "icon": "fire",
+            "row_content": "<p>75 мин<br/>2 фазная программа: в кабинете и дома. Сильнейший пилинг против пигментации: видимый результат после 6 недель.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_39yRAV",
+        "collapsible_row_gbUGD3",
+        "collapsible_row_QnerUG",
+        "collapsible_row_UjdxpA",
+        "collapsible_row_KkBw8t",
+        "collapsible_row_HjPCrj"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "Акне и постакне, рубцы, шрамы и растяжки, расширенные поры, пигментация и следы от воспалений, неровный рельеф и тон кожи, жирная кожас нарушенным балансом, мелкие морщины и снижение упругости, обезвоженность и тусклый цвет лица",
+        "heading": "МИКРОНИДЛИНГ",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "row",
@@ -442,6 +534,7 @@
     "collapsible_content_yVNgqT",
     "collapsible_content_hxp3Bj",
     "collapsible_content_BqWVLF",
+    "collapsible_content_MePxL9",
     "main"
   ]
 }
