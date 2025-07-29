@@ -307,7 +307,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Косметологическая консультация",
-            "icon": "dryer",
+            "icon": "fire",
             "row_content": "<p>15 мин</p>",
             "page": ""
           }
