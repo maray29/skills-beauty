@@ -311,60 +311,10 @@
             "row_content": "<p>15 мин</p>",
             "page": ""
           }
-        },
-        "collapsible_row_FxH4B6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "HYDRA GLOW",
-            "icon": "dryer",
-            "row_content": "<p>Интенсивный увлажняющий уход, придающий коже свежесть, гладкость и сияющий вид.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WWz3g6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "HYDRA EXPRESS",
-            "icon": "dryer",
-            "row_content": "<p>Глубоко увлажняющий, быстрый уход для лица, шеи и декольте с мгновенным эффектом свежести.</p><p>Совет: идеально перед макияжем или важным мероприятием для мгновенного сияния. Рекомендуется для обезвоженной и тусклой кожи.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_aXM6Vx": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "SUBLIME SKIN – ANTI AGING",
-            "icon": "dryer",
-            "row_content": "<p>Обеспечивает мгновенный лифтинг-эффект, улучшает эластичность и увлажнение кожи, выравнивает тон. Включает: очищение, классический массаж, маску и финальный уход.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_QjqiHF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "INTENSIV LIFTING",
-            "icon": "dryer",
-            "row_content": "<p>Цель — восстановление и регенерация кожи. Используются высокоактивные вещества, улучшающие эластичность, уменьшающие морщины и дарящие сияние. Включает: очищение, массаж, сыворотку, маску и дневной крем.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_7piPhA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "LUMINANT GLOW – СИЯНИЕ И ВЫРАВНИВАНИЕ ТОНА КОЖИ",
-            "icon": "dryer",
-            "row_content": "<p>Специально разработанный уход для осветления и выравнивания тона кожи. Подходит для тусклой, неравномерной кожи и гиперпигментации.</p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
-        "collapsible_row_64w97U",
-        "collapsible_row_FxH4B6",
-        "collapsible_row_WWz3g6",
-        "collapsible_row_aXM6Vx",
-        "collapsible_row_QjqiHF",
-        "collapsible_row_7piPhA"
+        "collapsible_row_64w97U"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
@@ -388,9 +338,9 @@
         "collapsible_row_GrTfFB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "PRX T33 ПИЛИНГ",
+            "heading": "PRX T33",
             "icon": "fire",
-            "row_content": "<p>Мягкий, но глубоко действующий пилинг для омоложения кожи без видимого шелушения. Сочетает TCA и перекись водорода для стимуляции регенерации кожи, уменьшения морщин и пигментных пятен, а также для улучшения структуры кожи.</p>",
+            "row_content": "<p>40 мин<br/>Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения</p>",
             "page": ""
           }
         },
