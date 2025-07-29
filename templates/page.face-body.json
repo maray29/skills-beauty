@@ -340,16 +340,16 @@
           "settings": {
             "heading": "PRX T33",
             "icon": "fire",
-            "row_content": "<p>40 мин<br/>Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения</p>",
+            "row_content": "<p>40 мин<br/></p>",
             "page": ""
           }
         },
         "collapsible_row_NAtwLp": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "BIOREPEEL ПИЛИНГ",
+            "heading": "BIOREPEEL",
             "icon": "fire",
-            "row_content": "<p>40 мин<br/>Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения</p>",
+            "row_content": "<p>40 мин<br/></p>",
             "page": ""
           }
         }
@@ -360,7 +360,7 @@
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
-        "caption": "",
+        "caption": "Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения",
         "heading": "peeling &  cleaning",
         "heading_size": "h1",
         "heading_alignment": "center",
