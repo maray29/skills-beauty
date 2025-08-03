@@ -20,7 +20,7 @@
             "heading_size": "h1",
             "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
             "button_label": "НАШИ УСЛУГИ",
-            "link": "",
+            "link": "#services",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -38,7 +38,61 @@
             "heading_size": "h1",
             "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
             "button_label": "НАШИ УСЛУГИ",
-            "link": "",
+            "link": "#services",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_9neeLX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0176.jpg",
+            "heading": "САЛОН",
+            "heading_size": "h1",
+            "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
+            "button_label": "НАШИ УСЛУГИ",
+            "link": "#services",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_t6RQ4w": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0155.jpg",
+            "heading": "САЛОН",
+            "heading_size": "h1",
+            "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
+            "button_label": "НАШИ УСЛУГИ",
+            "link": "#services",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ENMwdx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0153_2df8ebf1-e208-4880-a80b-c1382e4e926a.jpg",
+            "heading": "САЛОН",
+            "heading_size": "h1",
+            "subheading": "Это пространство заботы о наших гостях. Для нас beauty услуги – это не только о красоте, это Ваш отдых и релаксация, наполнение энергией.",
+            "button_label": "НАШИ УСЛУГИ",
+            "link": "#services",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -51,7 +105,10 @@
       },
       "block_order": [
         "slide_tLafwe",
-        "slide_VXiiQp"
+        "slide_VXiiQp",
+        "slide_9neeLX",
+        "slide_t6RQ4w",
+        "slide_ENMwdx"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
