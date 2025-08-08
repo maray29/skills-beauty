@@ -303,6 +303,12 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <style>
+      [id^="altegio-widget"] iframe {
+        all: unset !important;
+      }
+    </style>
+
   </head>
 
   <body class="page-wrapper gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
