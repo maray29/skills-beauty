@@ -1,3 +1,9 @@
+@import url('https://w636117.alteg.io/css/ywidget/newweb.css?2');
+
+.yButton{position:fixed !important; right:24px !important; bottom:24px !important; z-index:2147483647 !important;}
+.yWidgetCover,.yCloseIcon,.yWidgetBlock-altegio{z-index:2147483646 !important;}
+
+
 :root {
   --alpha-button-background: 1;
   --alpha-button-border: 1;
