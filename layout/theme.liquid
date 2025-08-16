@@ -542,28 +542,7 @@
     </script>
     <script type="text/javascript" src="https://w636117.alteg.io/widgetJS" charset="UTF-8"></script>
 
-    <script>
-      // Форсим загрузку css + создание кнопки
-      (function startAltegio(){
-        function go(){
-          try {
-            if (typeof yWidget !== 'undefined') {
-              // На всякий случай подключим css еще раз
-              var css = document.createElement('link');
-              css.rel = 'stylesheet';
-              css.href = 'https://w636117.alteg.io/css/ywidget/newweb.css?2';
-              document.head.appendChild(css);
-
-              // И форсируем создание элементов
-              if (yWidget.bootstrapButton) yWidget.bootstrapButton();
-              return;
-            }
-          } catch(e) { console.error('Altegio force init error:', e); }
-          setTimeout(go, 150); // ждём, если widgetJS ещё не догрузился
-        }
-        go();
-      })();
-    </script>
+    
 
   </body>
 </html>
