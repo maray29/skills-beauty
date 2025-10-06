@@ -59,7 +59,7 @@
     "results_slider": {
       "type": "results-slider",
       "settings": {
-        "heading": "Результаты наших учеников",
+        "heading": "Наши работы",
         "slides_per_view": 3,
         "section_color_scheme": "scheme-3",
         "content_type": "result",
