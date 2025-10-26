@@ -90,7 +90,7 @@
         "column_eHxD6Q": {
           "type": "column",
           "settings": {
-            "title": "4x - скидка 10%",
+            "title": "5x - скидка 10%",
             "text": "",
             "link_label": "",
             "link": ""
@@ -99,7 +99,7 @@
         "column_wBU9rG": {
           "type": "column",
           "settings": {
-            "title": "8x - скидка 15%",
+            "title": "10x - скидка 15%",
             "text": "",
             "link_label": "",
             "link": ""
@@ -108,7 +108,7 @@
         "column_L4tfJU": {
           "type": "column",
           "settings": {
-            "title": "20x - скидка 20%",
+            "title": "15x - скидка 20%",
             "text": "",
             "link_label": "",
             "link": ""
@@ -118,7 +118,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Только один вид массажа</p>",
+            "text": "<p>В удобное для вас время </p>",
             "link_label": "",
             "link": ""
           }
@@ -136,7 +136,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Срок действия: 6 месяцев</p>",
+            "text": "<p>Срок действия: 3 месяцев</p>",
             "link_label": "",
             "link": ""
           }
