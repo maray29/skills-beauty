@@ -316,6 +316,7 @@
       "block_order": [
         "collapsible_row_64w97U"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
@@ -358,6 +359,7 @@
         "collapsible_row_GrTfFB",
         "collapsible_row_NAtwLp"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Акне и постакне, рубцы и шрамы, расширенные поры, пигментация, неровный тон кожи, жирная кожа, мелкие морщины и возрастные изменения",
@@ -420,6 +422,7 @@
         "collapsible_row_priaHq",
         "collapsible_row_ELLMNx"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Жирный тип кожи, расширенные поры, комедоны (чёрные точки), снижение упругости и тонуса кожи, неровный тон кожи лица",
@@ -502,6 +505,7 @@
         "collapsible_row_HjPCrj",
         "collapsible_row_KkBw8t"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Акне и постакне, рубцы, шрамы и растяжки, расширенные поры, пигментация и следы от воспалений, неровный рельеф и тон кожи, жирная кожас нарушенным балансом, мелкие морщины и снижение упругости, обезвоженность и тусклый цвет лица",
@@ -544,6 +548,7 @@
         "collapsible_row_bWR9T7",
         "collapsible_row_hTLfki"
       ],
+      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "Стресс и усталость, тусклый, уставший цвет лица, обезвоженность кожи, повышенная чувствительность, снижение тонуса, неровный рельеф кожи,напряжение лицевых мышц, поддержание общего баланса кожи",
