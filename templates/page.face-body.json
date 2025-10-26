@@ -255,13 +255,49 @@
         "collapsible_row_exY6cc": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "МАССАЖ ДЛЯ БЕРЕМЕННЫХ",
+            "heading": "ЛИМФОДРЕНАЖНЫЙ МАССАЖ",
             "icon": "fire",
-            "row_content": "<p><strong>60 мин.</strong></p><p>Деликатная техника для снятия напряжения в спине, ногах и шее. Уменьшает отечность, улучшает сон и общее самочувствие будущей мамы. Проводится с учетом сроков беременности.</p>",
+            "row_content": "<p>ЛИМФОДРЕНАЖНЫЙ МАССАЖ 60 мин — 90 €<br/><br/>Щадящая техника для стимуляции лимфатической системы и детоксикации организма.</p>",
             "page": ""
           }
         },
         "collapsible_row_mtNfq6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ",
+            "icon": "fire",
+            "row_content": "<p>АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ 60 мин — 90 €<br/><br/>Энергичный массаж для улучшения кровообращения и уменьшения проявлений целлюлита.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rRBjxQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ДЕТСКИЙ МАССАЖ (12–18 ЛЕТ)",
+            "icon": "fire",
+            "row_content": "<p><strong>30 / 45 / 60 мин.</strong></p><p>Массаж для подростков, направленный на коррекцию осанки, снятие напряжения после учебы и спорта. Также помогает справиться с эмоциональным перенапряжением.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YHRaD6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ДЕТСКИЙ МАССАЖ (12–18 ЛЕТ)",
+            "icon": "fire",
+            "row_content": "<p><strong>30 / 45 / 60 мин.</strong></p><p>Массаж для подростков, направленный на коррекцию осанки, снятие напряжения после учебы и спорта. Также помогает справиться с эмоциональным перенапряжением.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_xFLcEB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ДЕТСКИЙ МАССАЖ (12–18 ЛЕТ)",
+            "icon": "fire",
+            "row_content": "<p><strong>30 / 45 / 60 мин.</strong></p><p>Массаж для подростков, направленный на коррекцию осанки, снятие напряжения после учебы и спорта. Также помогает справиться с эмоциональным перенапряжением.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Y8hY9U": {
           "type": "collapsible_row",
           "settings": {
             "heading": "ДЕТСКИЙ МАССАЖ (12–18 ЛЕТ)",
@@ -282,7 +318,11 @@
         "collapsible_row_4fnjpQ",
         "collapsible_row_7pACYU",
         "collapsible_row_exY6cc",
-        "collapsible_row_mtNfq6"
+        "collapsible_row_mtNfq6",
+        "collapsible_row_rRBjxQ",
+        "collapsible_row_YHRaD6",
+        "collapsible_row_xFLcEB",
+        "collapsible_row_Y8hY9U"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
