@@ -102,10 +102,10 @@
         "row_NgiCUJ": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "caption": "Массаж лица и зоны декольте / Массаж спины / Массаж рефлексогенных зон (стопы и кисти)",
+            "heading": "",
+            "text": "<p>45 мин</p>",
+            "button_label": "Выбери курс",
             "button_link": ""
           }
         },
