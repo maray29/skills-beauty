@@ -122,9 +122,9 @@
         "row_LWwmgW": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "caption": "Лимфодренажный массаж / Антицеллюлитный массаж / Спортивный массаж / Вакуумный массаж",
+            "heading": "",
+            "text": "<p>60 мин</p>",
             "button_label": "Выбери курс",
             "button_link": ""
           }
@@ -132,9 +132,9 @@
         "row_4ecFYT": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "caption": "Классический массаж всего тела 90 мин",
+            "heading": "",
+            "text": "<p>90 мин</p>",
             "button_label": "Выбери курс",
             "button_link": ""
           }
