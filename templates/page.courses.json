@@ -44,6 +44,41 @@
         "padding_bottom": 128
       }
     },
+    "featured_collection_4w8LTg": {
+      "type": "featured-collection",
+      "settings": {
+        "button_1_label": "For Yourself",
+        "button_2_label": "For Professionals",
+        "button_3_label": "Guides & Tutorials",
+        "third_collection": "online-courses",
+        "collection": "courses-for-yourself",
+        "offline_collection": "offline-courses-professional",
+        "section_color_scheme": "scheme-1",
+        "tag_content": "Обучение",
+        "title": "Courses",
+        "heading_size": "h1",
+        "description": "<p>Выберите удобный формат обучения! Все оффлайн курсы проводятся в нашем пространстве!</p>",
+        "show_description": false,
+        "description_style": "body",
+        "products_to_show": 16,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 64,
+        "padding_bottom": 128
+      }
+    },
     "testimonials_slider": {
       "type": "swiper-slider",
       "blocks": {
@@ -163,6 +198,7 @@
   },
   "order": [
     "featured_collection",
+    "featured_collection_4w8LTg",
     "testimonials_slider",
     "team"
   ]

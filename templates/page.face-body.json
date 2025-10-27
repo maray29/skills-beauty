@@ -32,6 +32,7 @@
         },
         "slide_jRDTfb": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/milaa-zensina-leza-na-procedure-omolozenia-kozi.jpg",
             "heading": "Чистка лица",
@@ -50,6 +51,7 @@
         },
         "slide_hRdR4X": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/krupnym-planom-zensina-ispol-zuusaa-krem-dla-lica.jpg",
             "heading": "Peeling",
@@ -82,41 +84,6 @@
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "featured_collection_AY9rgQ": {
-      "type": "featured-collection",
-      "settings": {
-        "button_1_label": "For Yourself",
-        "button_2_label": "For Professionals",
-        "button_3_label": "Guides & Tutorials",
-        "third_collection": "1",
-        "collection": "courses-for-yourself",
-        "offline_collection": "offline-courses-professional",
-        "section_color_scheme": "scheme-1",
-        "tag_content": "Обучение",
-        "title": "Courses",
-        "heading_size": "h1",
-        "description": "<p>Выберите удобный формат обучения! Все оффлайн курсы проводятся в нашем пространстве!</p>",
-        "show_description": false,
-        "description_style": "body",
-        "products_to_show": 16,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 64,
-        "padding_bottom": 128
       }
     },
     "multicolumn_eJJGHM": {
@@ -708,7 +675,6 @@
   },
   "order": [
     "slideshow_3kACdg",
-    "featured_collection_AY9rgQ",
     "multicolumn_eJJGHM",
     "featured_collection_L3YJJz",
     "collapsible_content_44jER4",
