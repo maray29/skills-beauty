@@ -92,9 +92,9 @@
         "row_npmAQW": {
           "type": "row",
           "settings": {
-            "caption": "30 min",
+            "caption": "Klassische Gesichtsmassage / Reflexzonenmassage (Füße)",
             "heading": "",
-            "text": "<h3><strong>Behandlungen:</strong></h3><h3><strong>• Klassische Gesichtsmassage</strong></h3><h3><strong>• Reflexzonenmassage (Füße)</strong></h3>",
+            "text": "<h5><strong>30 min</strong></h5>",
             "button_label": "Button label",
             "button_link": "shopify://products/skills-beauty-подарочный-сертификат-kopie"
           }
