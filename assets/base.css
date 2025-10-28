@@ -4296,34 +4296,3 @@ small a {
 
 
 
-/* ===== ЯДЕРНЫЙ FIX для вариантов ===== */
-.product-form__input--pill fieldset,
-.product-form__input--pill,
-.product-form__input.product-form__input--pill {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 0.8rem !important;
-}
-
-.product-form__input--pill input[type='radio'] + label,
-.product-form__input--pill label,
-fieldset.product-form__input--pill label {
-  white-space: normal !important;
-  word-wrap: break-word !important;
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
-  text-overflow: clip !important;
-  overflow: visible !important;
-  max-width: 100% !important;
-  width: auto !important;
-  flex: 0 1 auto !important;
-}
-
-@media (max-width: 749px) {
-  .product-form__input--pill input[type='radio'] + label,
-  .product-form__input--pill label {
-    font-size: 9px !important;
-    padding: 8px 10px !important;
-    line-height: 1.4 !important;
-  }
-}
