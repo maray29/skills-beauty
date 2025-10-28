@@ -4262,3 +4262,33 @@ small a {
 .page-wrapper {
   overflow-x: clip;
 }
+
+
+
+
+
+
+/* ========== FIX: Полное название вариантов на мобильных ========== */
+
+/* Показываем полное название варианта на всех устройствах */
+.product-form__input--pill label {
+  white-space: normal !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+  display: block !important;
+  min-height: auto !important;
+}
+
+/* На мобильных делаем кнопки компактнее */
+@media (max-width: 749px) {
+  .product-form__input--pill label {
+    font-size: 11px !important;
+    padding: 10px 8px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+  }
+  
+  .product-form__input--pill {
+    gap: 0.8rem !important;
+  }
+}
