@@ -4268,4 +4268,27 @@ small a {
 
 
 
+/* ========== FIX: Полное название вариантов на мобильных ========== */
 
+/* КРИТИЧЕСКИЙ FIX - применяем ко всем label внутри pill */
+.product-form__input--pill input[type='radio'] + label,
+.product-form__input--pill label {
+  white-space: normal !important;
+  word-break: break-word !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+  display: inline-block !important;
+}
+
+@media (max-width: 749px) {
+  .product-form__input--pill input[type='radio'] + label,
+  .product-form__input--pill label {
+    font-size: 10px !important;
+    padding: 8px 10px !important;
+    line-height: 1.3 !important;
+    min-height: 40px !important;
+  }
+}
