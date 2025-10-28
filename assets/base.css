@@ -4293,11 +4293,11 @@ fieldset.product-form__input--pill label {
   display: inline-block !important;
 }
 
-/* Мобильная версия */
+/* Мобильная версия - УВЕЛИЧИВАЕМ размер шрифта */
 @media (max-width: 749px) {
   .product-form__input--pill input[type='radio'] + label,
   .product-form__input--pill label {
-    font-size: 1.2rem !important;
+    font-size: 1.2rem !important;  /* Было 9-10px - УВЕЛИЧЕНО */
     padding: 1rem 1.2rem !important;
     line-height: 1.3 !important;
     min-height: auto !important;
