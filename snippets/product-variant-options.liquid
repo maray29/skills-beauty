@@ -97,35 +97,6 @@
       {% endif %}
     >
 
-
-    <label for="{{ input_id }}" data-option-value="{{ value | escape }}">
-      {%- liquid
-        assign variant_found = false
-        for variant in product.variants
-          if variant_found == false
-            case option.position
-              when 1
-                if variant.option1 == value
-                  echo variant.title
-                  assign variant_found = true
-                endif
-              when 2
-                if variant.option2 == value
-                  echo variant.title
-                  assign variant_found = true
-                endif
-              when 3
-                if variant.option3 == value
-                  echo variant.title
-                  assign variant_found = true
-                endif
-            endcase
-          endif
-        endfor
-      -%}
-      {{ label_unavailable }}
-    </label>
-
     <label for="{{ input_id }}" data-variant-title="{%- liquid
       assign variant_found = false
       for variant in product.variants
