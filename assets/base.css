@@ -4330,3 +4330,22 @@ small a {
     min-height: 5.5rem !important;
   }
 }
+
+
+
+
+/* Исправляем текст вариантов через JS */
+document.addEventListener('DOMContentLoaded', function() {
+  const labels = document.querySelectorAll('.product-form__input--pill label[data-variant-title]');
+  labels.forEach(label => {
+    const fullTitle = label.getAttribute('data-variant-title');
+    if (fullTitle && fullTitle.trim() !== '') {
+      // Сохраняем скрытый span с accessibility текстом
+      const hiddenSpan = label.querySelector('.visually-hidden');
+      label.textContent = fullTitle;
+      if (hiddenSpan) {
+        label.appendChild(hiddenSpan);
+      }
+    }
+  });
+});
