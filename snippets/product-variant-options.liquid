@@ -98,25 +98,26 @@
     >
 
 
+
+  {%- elsif picker_type == 'button' -%}
+    <input
+      type="radio"
+      id="{{ input_id }}"
+      name="{{ option.name }}"
+      value="{{ value | escape }}"
+      form="{{ product_form_id }}"
+      {% if option.selected_value == value %}checked{% endif %}
+      {% if option_disabled %}class="disabled"{% endif %}
+    >
+
     <label for="{{ input_id }}">
-      {%- for variant in product.variants -%}
-        {%- case option.position -%}
-          {%- when 1 -%}
-            {%- if variant.option1 == value -%}
-              {{ variant.title }}
-            {%- endif -%}
-          {%- when 2 -%}
-            {%- if variant.option2 == value -%}
-              {{ variant.title }}
-            {%- endif -%}
-          {%- when 3 -%}
-            {%- if variant.option3 == value -%}
-              {{ variant.title }}
-            {%- endif -%}
-        {%- endcase -%}
-      {%- endfor -%}
+      {{ value | escape }}
       {{ label_unavailable }}
     </label>
+
+
+
+
 
 
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
