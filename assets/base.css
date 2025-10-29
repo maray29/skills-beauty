@@ -4349,3 +4349,61 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+
+
+/* ========================================
+   ИСПРАВЛЕНИЕ: Полный текст вариантов на мобильных
+   Добавьте этот код в конец вашего base.css
+   ======================================== */
+
+/* Показываем полный текст вариантов на мобильных устройствах */
+@media only screen and (max-width: 749px) {
+  /* Отменяем скрытие для visually-hidden в вариантах продукта */
+  .product-form__input label .visually-hidden {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+    display: block !important;
+    opacity: 1 !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Скрываем короткую цену */
+  .product-form__input label > span:not(.visually-hidden) {
+    display: none !important;
+  }
+  
+  /* Улучшаем внешний вид кнопок */
+  .product-form__input label {
+    padding: 12px 15px !important;
+    min-height: auto !important;
+    text-align: left !important;
+  }
+}
+
+/* Альтернативный вариант для pill-стиля (таблеток) */
+@media only screen and (max-width: 749px) {
+  .product-form__input--pill label .visually-hidden {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    clip: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    display: inline !important;
+  }
+  
+  .product-form__input--pill label > span:last-child {
+    display: none !important;
+  }
+}
