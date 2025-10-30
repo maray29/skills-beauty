@@ -82,10 +82,6 @@
       shape: block.settings.swatch_shape,
       help_text: label_unavailable
     %}
-  
-
-
-
   {%- elsif picker_type == 'button' -%}
     <input
       type="radio"
@@ -93,20 +89,17 @@
       name="{{ option.name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
-      {% if option.selected_value == value %}checked{% endif %}
-      {% if option_disabled %}class="disabled"{% endif %}
+      {% if option.selected_value == value %}
+        checked
+      {% endif %}
+      {% if option_disabled %}
+        class="disabled"
+      {% endif %}
     >
-
     <label for="{{ input_id }}">
-      {{ value | escape }}
+      {{ value -}}
       {{ label_unavailable }}
     </label>
-
-
-
-
-
-
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       value="{{ value | escape }}"
