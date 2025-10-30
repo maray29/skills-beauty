@@ -3,14 +3,6 @@
 .yButton{position:fixed !important; right:24px !important; bottom:24px !important; z-index:2147483647 !important;}
 .yWidgetCover,.yCloseIcon,.yWidgetBlock-altegio{z-index:2147483646 !important;}
 
-/* Временный стиль, если внешний CSS вдруг не применился */
-.yButton{
-  display:inline-flex !important; align-items:center !important; gap:8px !important;
-  padding:12px 16px !important; border-radius:9999px !important;
-  background:#CCB599 !important; color:#1a1a1a !important; font-weight:600 !important;
-  text-decoration:none !important; line-height:1 !important;
-}
-
 
 :root {
   --alpha-button-background: 1;
@@ -4262,43 +4254,3 @@ small a {
 .page-wrapper {
   overflow-x: clip;
 }
-
-
-
-
-
-
-
-
-
-
-/* ========================================
-   ИСПРАВЛЕНИЕ: Полный текст вариантов на мобильных
-   ======================================== */
-
-/* Показываем полный текст вариантов на мобильных устройствах */
-@media only screen and (max-width: 749px) {
-  /* Исправляем отображение для кнопок вариантов */
-  .product-form__input--pill label {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding: 12px 16px !important;
-    min-height: auto !important;
-    text-align: left !important;
-  }
-  
-  /* Показываем весь текст варианта, а не только цену */
-  .product-form__input--pill label > span {
-    display: block !important;
-    width: 100% !important;
-  }
-  
-  /* Убираем класс visually-hidden для текста вариантов */
-  .product-form__input--pill label span.visually-hidden {
-    position: static !important;
-    width: auto !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflo
