@@ -296,60 +296,6 @@
             "row_content": "<p>Массаж с горячими камнями оказывает глубокое расслабляющее воздействие, улучшает кровообращение и помогает снять мышечное напряжение.<br/>💶 80 € ⏱️ 60 мин<br/>💶 120 € ⏱️ 90 мин</p>",
             "page": ""
           }
-        },
-        "collapsible_row_x3Rh7K": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ «ПОЛНОЕ РАССЛАБЛЕНИЕ» (СПИНА И НОГИ)",
-            "icon": "fire",
-            "row_content": "<p>МАССАЖ «ПОЛНОЕ РАССЛАБЛЕНИЕ» (СПИНА И НОГИ) 60 мин — 80 €<br/><br/>Благотворный расслабляющий массаж для спины и ног, идеально подходит для снятия стресса.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_dzjekq": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "КЛАССИЧЕСКИЙ МАССАЖ ВСЕГО ТЕЛА",
-            "icon": "fire",
-            "row_content": "<p>КЛАССИЧЕСКИЙ МАССАЖ ВСЕГО ТЕЛА 60 мин — 80 €<br/><br/>Сочетает мягкие и более глубокие техники для ощущения баланса в теле.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_4fnjpQ": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "КЛАССИЧЕСКИЙ МАССАЖ ВСЕГО ТЕЛА",
-            "icon": "fire",
-            "row_content": "<p>КЛАССИЧЕСКИЙ МАССАЖ ВСЕГО ТЕЛА 90 мин — 120 €<br/><br/>Интенсивный, продолжительный массаж для максимального глубокого расслабления и восстановления.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_7pACYU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ DEEPTIP",
-            "icon": "fire",
-            "row_content": "<p>МАССАЖ DEEPTIP 60 мин — 80 €<br/><br/>Интенсивный глубокотканный массаж с сильным давлением для устранения глубоких мышечных зажимов.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_exY6cc": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ЛИМФОДРЕНАЖНЫЙ МАССАЖ",
-            "icon": "fire",
-            "row_content": "<p>ЛИМФОДРЕНАЖНЫЙ МАССАЖ 60 мин — 90 €<br/><br/>Щадящая техника для стимуляции лимфатической системы и детоксикации организма.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_mtNfq6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ",
-            "icon": "fire",
-            "row_content": "<p>АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ 60 мин — 90 €<br/><br/>Энергичный массаж для улучшения кровообращения и уменьшения проявлений целлюлита.</p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -357,13 +303,7 @@
         "collapsible_row_nDBRza",
         "collapsible_row_qE6NCb",
         "collapsible_row_6fFpUr",
-        "collapsible_row_mNUPN4",
-        "collapsible_row_x3Rh7K",
-        "collapsible_row_dzjekq",
-        "collapsible_row_4fnjpQ",
-        "collapsible_row_7pACYU",
-        "collapsible_row_exY6cc",
-        "collapsible_row_mtNfq6"
+        "collapsible_row_mNUPN4"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
