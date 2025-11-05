@@ -92,6 +92,7 @@
         "row_npmAQW": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/R7_02989.jpg",
             "caption": "Классический массаж лица / Массаж рефлексогенных зон (стопы)",
             "heading": "",
             "text": "<p>30 мин</p>",
