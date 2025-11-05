@@ -251,6 +251,78 @@
         "padding_bottom": 36
       }
     },
+    "collapsible_content_44jER4": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_c8RFXT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "ЛИЦО + МАССАЖ ВСЕГО ТЕЛА",
+            "icon": "fire",
+            "row_content": "<p>Одна из самых популярных комбинированных процедур для глубокого расслабления лица и тела.<br/>💶 112,50 € (−10 %) ⏱️ 90 мин </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nDBRza": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "МАССАЖ ЛИЦА",
+            "icon": "fire",
+            "row_content": "<p>Мягкий массаж лица для улучшения кровообращения, повышения упругости кожи и расслабления мимической мускулатуры. Способствует здоровому и ухоженному виду кожи.<br/>💶 45 € ⏱️ 30 мин<br/>💶 65 € ⏱️ 45 мин</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qE6NCb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "МАССАЖ «ПОЛНОЕ РАССЛАБЛЕНИЕ» (СПИНА И НОГИ)",
+            "icon": "fire",
+            "row_content": "<p>Благотворный расслабляющий массаж спины и ног, идеально подходит для снятия стресса.<br/>💶 80 € ⏱️ 60 мин</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6fFpUr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "МАССАЖ ЛОМИ-ЛОМИ",
+            "icon": "fire",
+            "row_content": "<p>Массаж Ломи-Ломи снимает стресс и внутреннее напряжение, нормализует давление, помогает при болях и благотворно влияет на нервную систему.<br/>💶 80 € ⏱️ 60 мин<br/>💶 120 € ⏱️ 90 мин</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mNUPN4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "МАССАЖ С ГОРЯЧИМИ КАМНЯМИ",
+            "icon": "fire",
+            "row_content": "<p>Массаж с горячими камнями оказывает глубокое расслабляющее воздействие, улучшает кровообращение и помогает снять мышечное напряжение.<br/>💶 80 € ⏱️ 60 мин<br/>💶 120 € ⏱️ 90 мин</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_c8RFXT",
+        "collapsible_row_nDBRza",
+        "collapsible_row_qE6NCb",
+        "collapsible_row_6fFpUr",
+        "collapsible_row_mNUPN4"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "<strong>РАССЛАБЛЯЮЩИЕ МАССАЖИ</strong>",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-1",
+        "container_color_scheme": "scheme-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "small",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collapsible_content_FyLUKd": {
       "type": "collapsible-content",
       "blocks": {
@@ -361,78 +433,6 @@
       "settings": {
         "caption": "",
         "heading": "<strong>КЛАССИЧЕСКИЕ И ТЕРАПЕВТИЧЕСКИЕ МАССАЖИ</strong>",
-        "heading_size": "h0",
-        "heading_alignment": "center",
-        "layout": "row",
-        "color_scheme": "scheme-1",
-        "container_color_scheme": "scheme-2",
-        "open_first_collapsible_row": false,
-        "image_ratio": "small",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_44jER4": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_c8RFXT": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "ЛИЦО + МАССАЖ ВСЕГО ТЕЛА",
-            "icon": "fire",
-            "row_content": "<p>Одна из самых популярных комбинированных процедур для глубокого расслабления лица и тела.<br/>💶 112,50 € (−10 %) ⏱️ 90 мин </p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_nDBRza": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ ЛИЦА",
-            "icon": "fire",
-            "row_content": "<p>Мягкий массаж лица для улучшения кровообращения, повышения упругости кожи и расслабления мимической мускулатуры. Способствует здоровому и ухоженному виду кожи.<br/>💶 45 € ⏱️ 30 мин<br/>💶 65 € ⏱️ 45 мин</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_qE6NCb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ «ПОЛНОЕ РАССЛАБЛЕНИЕ» (СПИНА И НОГИ)",
-            "icon": "fire",
-            "row_content": "<p>Благотворный расслабляющий массаж спины и ног, идеально подходит для снятия стресса.<br/>💶 80 € ⏱️ 60 мин</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_6fFpUr": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ ЛОМИ-ЛОМИ",
-            "icon": "fire",
-            "row_content": "<p>Массаж Ломи-Ломи снимает стресс и внутреннее напряжение, нормализует давление, помогает при болях и благотворно влияет на нервную систему.<br/>💶 80 € ⏱️ 60 мин<br/>💶 120 € ⏱️ 90 мин</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_mNUPN4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "МАССАЖ С ГОРЯЧИМИ КАМНЯМИ",
-            "icon": "fire",
-            "row_content": "<p>Массаж с горячими камнями оказывает глубокое расслабляющее воздействие, улучшает кровообращение и помогает снять мышечное напряжение.<br/>💶 80 € ⏱️ 60 мин<br/>💶 120 € ⏱️ 90 мин</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_c8RFXT",
-        "collapsible_row_nDBRza",
-        "collapsible_row_qE6NCb",
-        "collapsible_row_6fFpUr",
-        "collapsible_row_mNUPN4"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "<strong>РАССЛАБЛЯЮЩИЕ МАССАЖИ</strong>",
         "heading_size": "h0",
         "heading_alignment": "center",
         "layout": "row",
@@ -723,8 +723,8 @@
     "slideshow_3kACdg",
     "multirow_bFb9hw",
     "multicolumn_eJJGHM",
-    "collapsible_content_FyLUKd",
     "collapsible_content_44jER4",
+    "collapsible_content_FyLUKd",
     "collapsible_content_yVNgqT",
     "collapsible_content_hxp3Bj",
     "collapsible_content_BqWVLF",
