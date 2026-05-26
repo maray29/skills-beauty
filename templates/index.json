@@ -67,6 +67,14 @@
     "card-links": {
       "type": "card-links",
       "blocks": {
+        "featured_collection_bAn93d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "salon",
+            "button_name": "SALON",
+            "button_link": ""
+          }
+        },
         "featured_collection_BWjUJY": {
           "type": "featured_collection",
           "settings": {
@@ -77,6 +85,7 @@
         }
       },
       "block_order": [
+        "featured_collection_bAn93d",
         "featured_collection_BWjUJY"
       ],
       "settings": {
