@@ -30,13 +30,19 @@
           <h3>{{ 'sections.contact.heading_social' | t }}</h3>
           {% render 'social-icons', class: 'my-class' %}
         </div>
+        {% assign default_address = 'shop.address_html' | t %}
+        {% assign default_time = 'shop.opening_time_html' | t %}
+        {% assign default_heading_address = 'sections.contact.heading_address' | t %}
+        {% assign default_heading_time = 'sections.contact.heading_time' | t %}
+
         <div class="contact_address">
-          <h3>{{ 'sections.contact.heading_address' | t }}</h3>
-          {{ 'shop.address_html' | t }}
+          <h3>{{ section.settings.heading_address | default: default_heading_address }}</h3>
+          {{ section.settings.text_address | default: default_address }}
         </div>
+
         <div class="contact_time">
-          <h3>{{ 'sections.contact.heading_time' | t }}</h3>
-          {{ 'shop.opening_time_html' | t }}
+          <h3>{{ section.settings.heading_time | default: default_heading_time }}</h3>
+          {{ section.settings.text_time | default: default_time }}
         </div>
       </div>
     </div>
